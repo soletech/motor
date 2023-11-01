@@ -1,0 +1,72 @@
+inherit_gem:
+  rubocop-shopify: rubocop.yml
+
+require:
+  - "rubocop-packaging"
+  - "rubocop-performance"
+  - "rubocop-rake"
+
+Layout/ExtraSpacing:
+  Exclude: 
+    - "**/test/**/*.rb"
+Layout/HashAlignment:
+  Enabled: true
+  EnforcedHashRocketStyle: table
+  EnforcedColonStyle: table
+Layout/LineLength:
+  Max: 140
+  Exclude: 
+    - "**/test/**/*.rb"
+Layout/MultilineArrayLineBreaks:
+  Exclude: 
+    - "**/test/**/*.rb"
+Layout/MultilineMethodArgumentLineBreaks:
+  Exclude: 
+    - "**/test/**/*.rb"
+Layout/MultilineOperationIndentation:
+  Enabled: false
+
+Metrics/BlockLength:
+  Exclude: 
+    - "**/test/**/*.rb"
+    - "*.gemspec"
+Metrics/ClassLength:
+  Exclude: 
+    - "**/test/**/*.rb"
+Metrics/MethodLength:
+  Exclude: 
+    - "**/test/**/*.rb"
+
+Naming/MethodName:
+  Enabled: false
+
+Style/AsciiComments:
+  Enabled: false
+Style/ClassAndModuleChildren:
+  Exclude: 
+    - "**/test/**/*.rb"
+Style/Documentation:
+  Enabled: false
+Style/LambdaCall:
+  Enabled: false
+Style/MethodCallWithArgsParentheses:
+  Exclude: 
+    - "**/test/**/*.rb"
+Style/ParallelAssignment:
+  Enabled: false
+Style/SymbolArray:
+  Exclude: 
+    - "**/test/**/*.rb"
+Style/SymbolLiteral:
+  Exclude: 
+    - "**/test/**/*.rb"
+Style/TrailingCommaInArguments:
+  Exclude: 
+    - "**/test/**/*.rb"
+
+AllCops:
+  NewCops: enable
+  Exclude:
+    - "vendor/**/*"
+    - "_/**/*"
+    - "**/_/**/*"

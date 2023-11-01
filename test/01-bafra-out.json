@@ -1,0 +1,1133 @@
+{
+  "result": {
+    "solution": 799198102.884,
+    "sensitivity": {
+      "coeff": [
+        {
+          "basic_variable": true,
+          "activity": "Buğday",
+          "dual_value": 870.388,
+          "obj_coef": 0.0,
+          "range_from": -239.38,
+          "range_till": -153383.397
+        },
+        {
+          "basic_variable": true,
+          "activity": "Buğday+SM",
+          "dual_value": 57380.0,
+          "obj_coef": 0.0,
+          "range_from": -280.73,
+          "range_till": -3148.816
+        },
+        {
+          "basic_variable": true,
+          "activity": "Buğday satış",
+          "dual_value": 25484544.825,
+          "obj_coef": 0.0,
+          "range_from": 2.3,
+          "range_till": 0.0
+        },
+        {
+          "basic_variable": false,
+          "activity": "Silajlık mısır satış",
+          "dual_value": 0.0,
+          "obj_coef": -2.808,
+          "range_from": 1.33,
+          "range_till": -9e+99
+        },
+        {
+          "basic_variable": true,
+          "activity": "Çeltik",
+          "dual_value": 30019.612,
+          "obj_coef": 0.0,
+          "range_from": -469.2,
+          "range_till": -983.13
+        },
+        {
+          "basic_variable": true,
+          "activity": "Çeltik satış",
+          "dual_value": 21013728.281,
+          "obj_coef": 0.0,
+          "range_from": 2.5,
+          "range_till": 1.766
+        },
+        {
+          "basic_variable": true,
+          "activity": "Fındık",
+          "dual_value": 20531.0,
+          "obj_coef": 0.0,
+          "range_from": -901.47,
+          "range_till": -2367.188
+        },
+        {
+          "basic_variable": true,
+          "activity": "Fındık satış",
+          "dual_value": 1924781.25,
+          "obj_coef": 0.0,
+          "range_from": 25.25,
+          "range_till": 9.616
+        },
+        {
+          "basic_variable": true,
+          "activity": "Buğday+lahana",
+          "dual_value": 30525.0,
+          "obj_coef": 0.0,
+          "range_from": -1899.15,
+          "range_till": -18000.0
+        },
+        {
+          "basic_variable": true,
+          "activity": "Lahana satış",
+          "dual_value": 183150000.0,
+          "obj_coef": 0.0,
+          "range_from": 3.0,
+          "range_till": 0.317
+        },
+        {
+          "basic_variable": true,
+          "activity": "Süt sığırcılığı",
+          "dual_value": 33908.711,
+          "obj_coef": 0.0,
+          "range_from": 5806.18,
+          "range_till": 1875.192
+        },
+        {
+          "basic_variable": false,
+          "activity": "igk6",
+          "dual_value": 0.0,
+          "obj_coef": -12.5,
+          "range_from": -12.5,
+          "range_till": -9e+99
+        },
+        {
+          "basic_variable": false,
+          "activity": "igk7",
+          "dual_value": 0.0,
+          "obj_coef": -12.5,
+          "range_from": -12.5,
+          "range_till": -9e+99
+        },
+        {
+          "basic_variable": false,
+          "activity": "igk8",
+          "dual_value": 0.0,
+          "obj_coef": -12.5,
+          "range_from": -12.5,
+          "range_till": -9e+99
+        },
+        {
+          "basic_variable": false,
+          "activity": "Sermaye temini",
+          "dual_value": 0.0,
+          "obj_coef": -0.25,
+          "range_from": -0.25,
+          "range_till": -9e+99
+        }
+      ],
+      "bound": [
+        {
+          "constraint": true,
+          "activity": "Toplam arazi",
+          "dual_value": 88270.0,
+          "lower_bound": 0.0,
+          "upper_bound": -9e+99,
+          "range_lower": 602620.0,
+          "range_upper": 88270.0,
+          "product_id": null
+        },
+        {
+          "constraint": true,
+          "activity": "Toplam kuru tarla arazisi",
+          "dual_value": 58250.388,
+          "lower_bound": 0.0,
+          "upper_bound": -9e+99,
+          "range_lower": 359641.0,
+          "range_upper": 58250.388,
+          "product_id": null
+        },
+        {
+          "constraint": false,
+          "activity": "Toplam sulu tarla arazisi",
+          "dual_value": 88270.0,
+          "lower_bound": 1280.8,
+          "upper_bound": -9e+99,
+          "range_lower": 88270.0,
+          "range_upper": 58250.388,
+          "product_id": null
+        },
+        {
+          "constraint": true,
+          "activity": "Meyve arazisi",
+          "dual_value": 20531.0,
+          "lower_bound": 0.0,
+          "upper_bound": -9e+99,
+          "range_lower": 25396.0,
+          "range_upper": 20531.0,
+          "product_id": null
+        },
+        {
+          "constraint": true,
+          "activity": "Sebze arazisi",
+          "dual_value": 30525.0,
+          "lower_bound": 0.0,
+          "upper_bound": -9e+99,
+          "range_lower": 74740.0,
+          "range_upper": 30525.0,
+          "product_id": null
+        },
+        {
+          "constraint": true,
+          "activity": "Buğday arazisi",
+          "dual_value": 88775.388,
+          "lower_bound": 0.0,
+          "upper_bound": -9e+99,
+          "range_lower": 253452.0,
+          "range_upper": 88775.388,
+          "product_id": null
+        },
+        {
+          "constraint": false,
+          "activity": "Silajlık mısır arazisi",
+          "dual_value": 57380.0,
+          "lower_bound": 2868.086,
+          "upper_bound": -9e+99,
+          "range_lower": 57380.0,
+          "range_upper": 0.0,
+          "product_id": null
+        },
+        {
+          "constraint": true,
+          "activity": "Çeltik arazisi",
+          "dual_value": 30019.612,
+          "lower_bound": 0.0,
+          "upper_bound": -9e+99,
+          "range_lower": 334876.0,
+          "range_upper": 30019.612,
+          "product_id": null
+        },
+        {
+          "constraint": false,
+          "activity": "Fındık arazisi",
+          "dual_value": 20531.0,
+          "lower_bound": 1465.717,
+          "upper_bound": -9e+99,
+          "range_lower": 20531.0,
+          "range_upper": 0.0,
+          "product_id": null
+        },
+        {
+          "constraint": false,
+          "activity": "Lahana arazisi",
+          "dual_value": 30525.0,
+          "lower_bound": 16100.85,
+          "upper_bound": -9e+99,
+          "range_lower": 30525.0,
+          "range_upper": 0.0,
+          "product_id": null
+        },
+        {
+          "constraint": false,
+          "activity": "Buğday transfer",
+          "dual_value": 0.0,
+          "lower_bound": 2.3,
+          "upper_bound": -9e+99,
+          "range_lower": 0.0,
+          "range_upper": -25484544.825,
+          "product_id": null
+        },
+        {
+          "constraint": false,
+          "activity": "Silajlık mısır transfer",
+          "dual_value": 0.0,
+          "lower_bound": 4.138,
+          "upper_bound": -9e+99,
+          "range_lower": 0.0,
+          "range_upper": -47472195.4,
+          "product_id": null
+        },
+        {
+          "constraint": false,
+          "activity": "Çeltik transfer",
+          "dual_value": 0.0,
+          "lower_bound": 2.5,
+          "upper_bound": -9e+99,
+          "range_lower": 0.0,
+          "range_upper": -21013728.281,
+          "product_id": null
+        },
+        {
+          "constraint": false,
+          "activity": "Lahana transfer",
+          "dual_value": 0.0,
+          "lower_bound": 3.0,
+          "upper_bound": -9e+99,
+          "range_lower": 0.0,
+          "range_upper": -183150000.0,
+          "product_id": null
+        },
+        {
+          "constraint": false,
+          "activity": "Fındık transfer",
+          "dual_value": 0.0,
+          "lower_bound": 25.25,
+          "upper_bound": -9e+99,
+          "range_lower": 0.0,
+          "range_upper": -1924781.25,
+          "product_id": null
+        },
+        {
+          "constraint": true,
+          "activity": "İşgücü Ocak",
+          "dual_value": 929776.856,
+          "lower_bound": 0.0,
+          "upper_bound": -9e+99,
+          "range_lower": 11528550.0,
+          "range_upper": 929776.856,
+          "product_id": null
+        },
+        {
+          "constraint": true,
+          "activity": "İşgücü Şubat",
+          "dual_value": 866367.566,
+          "lower_bound": 0.0,
+          "upper_bound": -9e+99,
+          "range_lower": 11528550.0,
+          "range_upper": 866367.566,
+          "product_id": null
+        },
+        {
+          "constraint": true,
+          "activity": "İşgücü Mart",
+          "dual_value": 929776.856,
+          "lower_bound": 0.0,
+          "upper_bound": -9e+99,
+          "range_lower": 11528550.0,
+          "range_upper": 929776.856,
+          "product_id": null
+        },
+        {
+          "constraint": true,
+          "activity": "İşgücü Nisan",
+          "dual_value": 1135532.343,
+          "lower_bound": 0.0,
+          "upper_bound": -9e+99,
+          "range_lower": 11528550.0,
+          "range_upper": 1135532.343,
+          "product_id": null
+        },
+        {
+          "constraint": true,
+          "activity": "İşgücü Mayıs",
+          "dual_value": 956194.114,
+          "lower_bound": 0.0,
+          "upper_bound": -9e+99,
+          "range_lower": 11528550.0,
+          "range_upper": 956194.114,
+          "product_id": null
+        },
+        {
+          "constraint": true,
+          "activity": "İşgücü Haziran",
+          "dual_value": 960502.601,
+          "lower_bound": 0.0,
+          "upper_bound": -9e+99,
+          "range_lower": 11528550.0,
+          "range_upper": 960502.601,
+          "product_id": null
+        },
+        {
+          "constraint": true,
+          "activity": "İşgücü Temmuz",
+          "dual_value": 1638574.568,
+          "lower_bound": 0.0,
+          "upper_bound": -9e+99,
+          "range_lower": 11528550.0,
+          "range_upper": 1638574.568,
+          "product_id": null
+        },
+        {
+          "constraint": true,
+          "activity": "İşgücü Ağustos",
+          "dual_value": 1186414.356,
+          "lower_bound": 0.0,
+          "upper_bound": -9e+99,
+          "range_lower": 11528550.0,
+          "range_upper": 1186414.356,
+          "product_id": null
+        },
+        {
+          "constraint": true,
+          "activity": "İşgücü Eylül",
+          "dual_value": 1374199.225,
+          "lower_bound": 0.0,
+          "upper_bound": -9e+99,
+          "range_lower": 11528550.0,
+          "range_upper": 1374199.225,
+          "product_id": null
+        },
+        {
+          "constraint": true,
+          "activity": "İşgücü Ekim",
+          "dual_value": 1103806.304,
+          "lower_bound": 0.0,
+          "upper_bound": -9e+99,
+          "range_lower": 11528550.0,
+          "range_upper": 1103806.304,
+          "product_id": null
+        },
+        {
+          "constraint": true,
+          "activity": "İşgücü Kasım",
+          "dual_value": 926385.985,
+          "lower_bound": 0.0,
+          "upper_bound": -9e+99,
+          "range_lower": 11528550.0,
+          "range_upper": 926385.985,
+          "product_id": null
+        },
+        {
+          "constraint": true,
+          "activity": "İşgücü Aralık",
+          "dual_value": 929776.856,
+          "lower_bound": 0.0,
+          "upper_bound": -9e+99,
+          "range_lower": 11528550.0,
+          "range_upper": 929776.856,
+          "product_id": null
+        },
+        {
+          "constraint": false,
+          "activity": "Saman",
+          "dual_value": 0.0,
+          "lower_bound": 1.175,
+          "upper_bound": -9e+99,
+          "range_lower": 0.0,
+          "range_upper": -13133580.175,
+          "product_id": null
+        },
+        {
+          "constraint": true,
+          "activity": "İşletme sermayesi",
+          "dual_value": 225287305.052,
+          "lower_bound": 0.0,
+          "upper_bound": -9e+99,
+          "range_lower": 758079000.0,
+          "range_upper": 225287305.052,
+          "product_id": null
+        },
+        {
+          "constraint": true,
+          "activity": "Ahır Yeri",
+          "dual_value": 203452.266,
+          "lower_bound": 0.0,
+          "upper_bound": -9e+99,
+          "range_lower": 300000.0,
+          "range_upper": 203452.266,
+          "product_id": null
+        }
+      ]
+    }
+  },
+  "data": {
+    "name": "Bafra",
+    "variables": [
+      "Buğday",
+      "Buğday+SM",
+      "Buğday satış",
+      "Silajlık mısır satış",
+      "Çeltik",
+      "Çeltik satış",
+      "Fındık",
+      "Fındık satış",
+      "Buğday+lahana",
+      "Lahana satış",
+      "Süt sığırcılığı",
+      "igk6",
+      "igk7",
+      "igk8",
+      "Sermaye temini"
+    ],
+    "objective": {
+      "name": "Toplam maliyet",
+      "coefficients": [
+        -239.38,
+        -280.73,
+        2.3,
+        1.33,
+        -469.2,
+        2.5,
+        -901.47,
+        25.25,
+        -1899.15,
+        3.0,
+        5806.18,
+        -12.5,
+        -12.5,
+        -12.5,
+        -0.25
+      ]
+    },
+    "constraints": [
+      {
+        "name": "Toplam arazi",
+        "coefficients": [
+          1,
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "relation": "<=",
+        "rhs": 602620.0
+      },
+      {
+        "name": "Toplam kuru tarla arazisi",
+        "coefficients": [
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "relation": "<=",
+        "rhs": 359641.0
+      },
+      {
+        "name": "Toplam sulu tarla arazisi",
+        "coefficients": [
+          1,
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "relation": "<=",
+        "rhs": 88270.0
+      },
+      {
+        "name": "Meyve arazisi",
+        "coefficients": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "relation": "<=",
+        "rhs": 25396.0
+      },
+      {
+        "name": "Sebze arazisi",
+        "coefficients": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "relation": "<=",
+        "rhs": 74740.0
+      },
+      {
+        "name": "Buğday arazisi",
+        "coefficients": [
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "relation": "<=",
+        "rhs": 253452.0
+      },
+      {
+        "name": "Silajlık mısır arazisi",
+        "coefficients": [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "relation": "<=",
+        "rhs": 57380.0
+      },
+      {
+        "name": "Çeltik arazisi",
+        "coefficients": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "relation": "<=",
+        "rhs": 334876.0
+      },
+      {
+        "name": "Fındık arazisi",
+        "coefficients": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "relation": "<=",
+        "rhs": 20531.0
+      },
+      {
+        "name": "Lahana arazisi",
+        "coefficients": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "relation": "<=",
+        "rhs": 30525.0
+      },
+      {
+        "name": "Buğday transfer",
+        "coefficients": [
+          -437.5,
+          -437.5,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "relation": "<=",
+        "rhs": 0.0
+      },
+      {
+        "name": "Silajlık mısır transfer",
+        "coefficients": [
+          0,
+          -827.33,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1400,
+          0,
+          0,
+          0,
+          0
+        ],
+        "relation": "<=",
+        "rhs": 0.0
+      },
+      {
+        "name": "Çeltik transfer",
+        "coefficients": [
+          0,
+          0,
+          0,
+          0,
+          -700,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "relation": "<=",
+        "rhs": 0.0
+      },
+      {
+        "name": "Lahana transfer",
+        "coefficients": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -6000,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "relation": "<=",
+        "rhs": 0.0
+      },
+      {
+        "name": "Fındık transfer",
+        "coefficients": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -93.75,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "relation": "<=",
+        "rhs": 0.0
+      },
+      {
+        "name": "İşgücü Ocak",
+        "coefficients": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          27.42,
+          0,
+          0,
+          0,
+          0
+        ],
+        "relation": "<=",
+        "rhs": 11528550.0
+      },
+      {
+        "name": "İşgücü Şubat",
+        "coefficients": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          25.55,
+          0,
+          0,
+          0,
+          0
+        ],
+        "relation": "<=",
+        "rhs": 11528550.0
+      },
+      {
+        "name": "İşgücü Mart",
+        "coefficients": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          27.42,
+          0,
+          0,
+          0,
+          0
+        ],
+        "relation": "<=",
+        "rhs": 11528550.0
+      },
+      {
+        "name": "İşgücü Nisan",
+        "coefficients": [
+          0.88,
+          0.88,
+          0,
+          0,
+          1.76,
+          0,
+          2.5,
+          0,
+          1.76,
+          0,
+          27.32,
+          0,
+          0,
+          0,
+          0
+        ],
+        "relation": "<=",
+        "rhs": 11528550.0
+      },
+      {
+        "name": "İşgücü Mayıs",
+        "coefficients": [
+          0,
+          0,
+          0,
+          0,
+          0.88,
+          0,
+          0,
+          0,
+          0,
+          0,
+          27.42,
+          0,
+          0,
+          0,
+          0
+        ],
+        "relation": "<=",
+        "rhs": 11528550.0
+      },
+      {
+        "name": "İşgücü Haziran",
+        "coefficients": [
+          0,
+          0,
+          0,
+          0,
+          1.08,
+          0,
+          0,
+          0,
+          0,
+          0,
+          27.37,
+          -1,
+          0,
+          0,
+          0
+        ],
+        "relation": "<=",
+        "rhs": 11528550.0
+      },
+      {
+        "name": "İşgücü Temmuz",
+        "coefficients": [
+          3.17,
+          3.17,
+          0,
+          0,
+          5.2,
+          0,
+          8.5,
+          0,
+          6.34,
+          0,
+          27.42,
+          0,
+          -1,
+          0,
+          0
+        ],
+        "relation": "<=",
+        "rhs": 11528550.0
+      },
+      {
+        "name": "İşgücü Ağustos",
+        "coefficients": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          12.5,
+          0,
+          0,
+          0,
+          27.42,
+          0,
+          0,
+          -1,
+          0
+        ],
+        "relation": "<=",
+        "rhs": 11528550.0
+      },
+      {
+        "name": "İşgücü Eylül",
+        "coefficients": [
+          0.73,
+          0.73,
+          0,
+          0,
+          10.25,
+          0,
+          2.5,
+          0,
+          1.46,
+          0,
+          27.37,
+          0,
+          0,
+          0,
+          0
+        ],
+        "relation": "<=",
+        "rhs": 11528550.0
+      },
+      {
+        "name": "İşgücü Ekim",
+        "coefficients": [
+          0.88,
+          0.88,
+          0,
+          0,
+          2.3,
+          0,
+          0,
+          0,
+          1.76,
+          0,
+          27.42,
+          0,
+          0,
+          0,
+          0
+        ],
+        "relation": "<=",
+        "rhs": 11528550.0
+      },
+      {
+        "name": "İşgücü Kasım",
+        "coefficients": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          27.32,
+          0,
+          0,
+          0,
+          0
+        ],
+        "relation": "<=",
+        "rhs": 11528550.0
+      },
+      {
+        "name": "İşgücü Aralık",
+        "coefficients": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          27.42,
+          0,
+          0,
+          0,
+          0
+        ],
+        "relation": "<=",
+        "rhs": 11528550.0
+      },
+      {
+        "name": "Saman",
+        "coefficients": [
+          -437.5,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          11.23,
+          0,
+          0,
+          0,
+          0
+        ],
+        "relation": "<=",
+        "rhs": 0
+      },
+      {
+        "name": "İşletme sermayesi",
+        "coefficients": [
+          239.38,
+          280.73,
+          0,
+          0,
+          469.2,
+          0,
+          901.47,
+          0,
+          1899.15,
+          0,
+          3491.9,
+          12.5,
+          12.5,
+          12.5,
+          -1
+        ],
+        "relation": "<=",
+        "rhs": 758079000.0
+      },
+      {
+        "name": "Ahır Yeri",
+        "coefficients": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          6,
+          0,
+          0,
+          0,
+          0
+        ],
+        "relation": "<=",
+        "rhs": 300000.0
+      }
+    ]
+  }
+}

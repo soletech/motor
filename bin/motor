@@ -1,0 +1,180 @@
+#!/usr/bin/env python3
+
+import codecs
+import json
+import math
+import numpy as np
+import os
+import sys
+
+LIBRARY_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), "../lib/ext"))
+
+DATA_DEFAULTS = {
+    "round": 3,
+    "relation": "<=",
+    "method": "maximize"
+}
+
+SENSITIVITY_KEYS = {
+    "coeff": ["basic_variable", "activity", "dual_value", "obj_coef",    "range_from",  "range_till"],
+    "bound": ["constraint",     "activity", "dual_value", "lower_bound", "upper_bound", "range_lower", "range_upper"]
+}
+
+INFINITY = 9e99
+
+sys.path.append(LIBRARY_PATH)
+
+import pymprog as pm
+
+def load(input):
+    with open(input) as file:
+        data = json.load(file)
+    return data
+
+def store(output, data, solution):
+    result = {
+            "result": solution,
+            "data": data
+    }
+    with codecs.open(output, 'w', encoding='utf-8') as file:
+        json.dump(result, file, indent=2, ensure_ascii=False)
+
+class InvalidDataError(Exception):
+    pass
+
+def validate(data):
+    for required in ['variables', 'objective', 'constraints']:
+        if required not in data:
+            raise InvalidDataError(f'Missing field: {required}')
+
+    method = data.get('method')
+    match method:
+        case 'maximize' | 'minimize' | None:
+            pass
+        case _:
+            raise InvalidDataError(f'Invalid optimization method: {method}')
+
+    required = 'coefficients'
+    if required not in data['objective']:
+        raise InvalidDataError(f'Missing field in objective: {required}')
+
+    number_of_variables = len(data['variables'])
+    if number_of_variables == 0:
+        raise InvalidDataError(f'Empty variables')
+
+    for name in data['variables']:
+        if not isinstance(name, str):
+            raise InvalidDataError('Variable name must be a string')
+
+    def validate_coefficients(coefficients, where):
+        if len(coefficients) != number_of_variables:
+            raise InvalidDataError(f'Wrong number of coefficients at: {where}')
+        for coefficient in coefficients:
+            if not isinstance(coefficient, (int, float)):
+                raise InvalidDataError(f'Non numeric coefficient at: {where}')
+
+    validate_coefficients(data['objective']['coefficients'], 'objective')
+
+    for i, constraint in enumerate(data['constraints']):
+        for required in ['name', 'rhs', 'coefficients']:
+            if required not in constraint:
+                raise InvalidDataError(f'Error in constraint[{i}]: Missing field: {required}')
+
+        if not isinstance(constraint['name'], str):
+            raise InvalidDataError(f'Error in constraint[{i}]: Name must be a string')
+        if not isinstance(constraint['rhs'], (int, float)):
+            raise InvalidDataError(f'Error in constraint[{i}]: rhs value must be numeric')
+
+        match constraint.get('relation'):
+            case '<=' | '<' | '=' | '==' | '>' | '>=' | None:
+                pass
+            case _:
+                raise InvalidDataError(f'Error in constraint[{i}]: unrecognized relation')
+
+        validate_coefficients(constraint['coefficients'], f'constraint[{i}]')    
+
+    return data
+
+def setup(data):
+    variables = []
+    for name in data['variables']:
+        variables.append(pm.simplevar(name))
+
+    objective = np.dot(variables, data['objective']['coefficients'])
+
+    constraints = []
+    for constraint_data in data['constraints']:
+        match constraint_data.get('relation', DATA_DEFAULTS['relation']):
+            case '<=':
+                constraint = np.dot(variables, constraint_data['coefficients']) <= constraint_data['rhs']
+            case '=' | '==':
+                constraint = np.dot(variables, constraint_data['coefficients']) == constraint_data['rhs']
+            case '<':
+                constraint = np.dot(variables, constraint_data['coefficients']) < constraint_data['rhs']
+            case '>=':
+                constraint = np.dot(variables, constraint_data['coefficients']) >= constraint_data['rhs']
+            case '>':
+                constraint = np.dot(variables, constraint_data['coefficients']) > constraint_data['rhs']
+        constraint.name = constraint_data['name']
+        constraints.append(constraint)
+
+    match data.get('method', DATA_DEFAULTS['method']):
+        case 'maximize':
+            pm.maximize(objective, data['objective']['name'])
+        case 'minimize':
+            pm.minimize(objective, data['objective']['name'])
+
+def solve(data):
+    pm.begin(data['name'])
+
+    setup(data)
+
+    pm.solve()
+
+    solution     = pm.vobj()
+    coeff, bound = pm.sensitivity()
+
+    pm.end()
+
+    ndigits = int(data.get('round', DATA_DEFAULTS['round']))
+
+    def transfer(results, keys):
+        results = [dict(zip(keys, item)) for item in results]
+        for result in results:
+            result[keys[0]] = True if result[keys[0]] == "*" else False
+            for k in result.keys():
+                if isinstance(result[k], float):
+                    if math.isinf(result[k]) or math.fabs(result[k]) > INFINITY:
+                        result[k] = INFINITY if result[k] > 0 else -INFINITY
+                    else:
+                        result[k] = round(result[k], ndigits)
+        return results
+
+    def with_product_ids(bound):
+        constraints = data['constraints']
+        for i, _ in enumerate(bound):
+            bound[i]['product_id'] = constraints[i].get('product_id')
+        return bound
+
+    return {
+        "solution": round(solution, ndigits),
+        "sensitivity": {
+            "coeff": transfer(coeff, SENSITIVITY_KEYS["coeff"]),
+            "bound": with_product_ids(transfer(bound, SENSITIVITY_KEYS["bound"]))
+        }
+    }
+
+def main():
+    input, output = sys.argv[1], sys.argv[2]
+
+    data = load(input)
+
+    try:
+        validate(data)
+    except InvalidDataError as e:
+        store(output, data, { "error": str(e) })
+        sys.exit(1)
+
+    store(output, data, solve(data))
+
+main()

@@ -1,0 +1,12 @@
+#!/usr/bin/env ruby
+# frozen_string_literal: true
+
+require "motor"
+
+def main
+  puts(Motor.response(File.read(ARGV.first)).json)
+rescue Motor::ValidationError => e
+  abort("Validation errors found:\n\n#{e.message}")
+end
+
+main
