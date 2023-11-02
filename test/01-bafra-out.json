@@ -1,5 +1,10 @@
 {
-  "result": {
+  "success": true,
+  "status": {
+    "code": "optimal",
+    "description": "Solution is optimal"
+  },
+  "response": {
     "solution": 799198102.884,
     "sensitivity": {
       "coeff": [
@@ -428,7 +433,7 @@
       ]
     }
   },
-  "data": {
+  "request": {
     "name": "Bafra",
     "variables": [
       "Buğday",

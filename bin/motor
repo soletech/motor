@@ -26,23 +26,61 @@ sys.path.append(LIBRARY_PATH)
 
 import pymprog as pm
 
+import swiglpk as glpk
+
+from enum import StrEnum
+
+class Status(StrEnum):
+    optimal    = 'Solution is optimal'
+    feasible   = 'Solution is feasible'
+    infeasible = 'Solution is infeasible'
+    nofeasible = 'Problem has no feasible solution'
+    unbounded  = 'Problem has unbounded solution'
+    undefined  = 'Solution is undefined'
+
+    __glpk__ = {
+        glpk.GLP_OPT    : 'optimal',
+        glpk.GLP_FEAS   : 'feasible',
+        glpk.GLP_INFEAS : 'infeasible',
+        glpk.GLP_NOFEAS : 'nofeasible',
+        glpk.GLP_UNBND  : 'unbounded',
+        glpk.GLP_UNDEF  : 'undefined',
+    }
+
+    @classmethod
+    def code(self, status):
+        return self.__glpk__[status]
+
+    @classmethod
+    def desc(self, status):
+        return self[self.code(status)]
+
+    @classmethod
+    def is_success(self, status):
+        return status == glpk.GLP_OPT
+
 def load(input):
     with open(input) as file:
         data = json.load(file)
     return data
 
-def store(output, data, solution):
-    result = {
-            "result": solution,
-            "data": data
-    }
-    with codecs.open(output, 'w', encoding='utf-8') as file:
-        json.dump(result, file, indent=2, ensure_ascii=False)
+def store(output, result):
+    if output is None:
+        try:
+            print(json.dumps(result, indent=2, ensure_ascii=False))
+        except IOError:
+            pass
+    else:
+        with codecs.open(output, 'w', encoding='utf-8') as file:
+            json.dump(result, file, indent=2, ensure_ascii=False)
 
 class InvalidDataError(Exception):
     pass
 
 def validate(data):
+    if not data:
+        raise InvalidDataError(f'Input data is empty')
+
     for required in ['variables', 'objective', 'constraints']:
         if required not in data:
             raise InvalidDataError(f'Missing field: {required}')
@@ -95,6 +133,17 @@ def validate(data):
 
     return data
 
+def invalid(error):
+    return {
+        "success": False,
+        "status": {
+            "code": "invalid",
+            "desc": str(error),
+        },
+        "response": {},
+        "request": {}
+    }
+
 def setup(data):
     variables = []
     for name in data['variables']:
@@ -129,7 +178,9 @@ def solve(data):
 
     setup(data)
 
+    glpk.glp_term_out(glpk.GLP_OFF)
     pm.solve()
+    status = pm.status()
 
     solution     = pm.vobj()
     coeff, bound = pm.sensitivity()
@@ -157,24 +208,47 @@ def solve(data):
         return bound
 
     return {
-        "solution": round(solution, ndigits),
-        "sensitivity": {
-            "coeff": transfer(coeff, SENSITIVITY_KEYS["coeff"]),
-            "bound": with_product_ids(transfer(bound, SENSITIVITY_KEYS["bound"]))
-        }
+        "success": Status.is_success(status),
+        "status": {
+            "code": Status.code(status),
+            "description": Status.desc(status)
+        },
+        "response": {
+            "solution": round(solution, ndigits),
+            "sensitivity": {
+                "coeff": transfer(coeff, SENSITIVITY_KEYS["coeff"]),
+                "bound": with_product_ids(transfer(bound, SENSITIVITY_KEYS["bound"]))
+            }
+        },
+        "request": data
     }
 
 def main():
-    input, output = sys.argv[1], sys.argv[2]
+    narg = len(sys.argv)
+
+    if narg == 1 or (sys.argv[1] == '-validate' and narg < 3):
+        sys.exit("Input data required")
+
+    validate_only = False
+
+    if sys.argv[1] == '-validate':
+        validate_only = True
+
+        input = sys.argv[2]
+        output = sys.argv[3] if narg > 3 else None
+    else:
+        input = sys.argv[1]
+        output = sys.argv[2] if narg > 2 else None
 
     data = load(input)
 
     try:
         validate(data)
     except InvalidDataError as e:
-        store(output, data, { "error": str(e) })
-        sys.exit(1)
+        store(output, invalid(e))
+        sys.exit(100)
 
-    store(output, data, solve(data))
+    if not validate_only:
+        store(output, solve(data))
 
 main()

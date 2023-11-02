@@ -5380,7 +5380,7 @@ GLP_UNDEF | solution is undefined."""
                     if me._solved in ('simplex', 'exact') else
               me.ipt_status() if me._solved == 'interior' else
               me.mip_status())
-       return ret if format is int else me.status_map[ret]
+       return ret # XXX: roktas:w
 
    @_globalize
    def vobj(me):
@@ -5636,12 +5636,13 @@ GLP_SF_AUTO | chooses the scaling options automatically.
        print()
        print("PyMathProg 1.0 Sensitivity Report Created:",
             datetime.now().strftime('%Y/%m/%d %a %H:%M%p'))
-       return [me.coef_ranges(), me.bound_ranges()] # XXX: roktas
+       me.coef_ranges()
+       me.bound_ranges()
 
    @_globalize
    def sensitivity(me):
        '''print the sensitivity report.'''
-       return me.sensit() # XXX: roktas
+       return [me.coef_ranges(), me.bound_ranges()] # XXX: roktas
 
    @_globalize
    def coef_ranges(me, cols = None):
@@ -5663,6 +5664,7 @@ GLP_SF_AUTO | chooses the scaling options automatically.
           cols = [map(c.up.id) for k,c in cols.items()]
       elif isinstance (cols, list):
           cols = [map(c.up.id) for c in cols]
+      return me._viter(cols) # XXX: roktas
       print('===='*20)
       fmt = "%-15s %12s %12s %12s %12s %12s"
       print(fmt%("Variable", "Activity", "Dual.Value",
@@ -5674,7 +5676,6 @@ GLP_SF_AUTO | chooses the scaling options automatically.
       if me.verb: print(
 '''Note: rows marked with a * list a basic variable.
 ''')
-      return me._viter(cols) # XXX: roktas
 
    @_globalize
    def bound_ranges(me, rows = None):
@@ -5696,6 +5697,7 @@ GLP_SF_AUTO | chooses the scaling options automatically.
           rows = [map(c.up.id) for k,c in rows.items()]
       elif isinstance (rows, list):
           rows = [map(c.up.id) for c in rows]
+      return me._citer(rows) # XXX: roktas
       print('===='*20)
       #(name, prim, dual, lb, ub, slack, coef1[0], coef2[0])
       fmt = "%-14s %10s %10s %10s %10s %10s %10s"
@@ -5712,7 +5714,6 @@ marked with a *, and RangeLower is the max for Lower.Bnd(whose min is -inf),
 and RangeUpper is the min for Upper.Bnd(whose max value is inf). Then the
 columns of RangeLower, RangeUpper and Activity all have identical values.
 ''')
-      return me._citer(rows) # XXX: roktas
 
    def _viter(me, idx): #varialbes
       '''iterate over a set of raw index for variables.'''
