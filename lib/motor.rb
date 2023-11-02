@@ -114,12 +114,17 @@ module Motor
   private
 
   def call(request)
-    response = Tempfile.new("motor.json")
-    result = Shell.run(MOTOR, "/dev/stdin", response.path) { puts request }
-    Response.new(json: response.read, shell: result)
+    request_file, response_file = Tempfile.new("request.json."), Tempfile.new("response.json.")
+    File.write(request_file.path, request)
+
+    success = system(MOTOR, request_file.path, response_file.path)
+    Response.new(json: response_file.read, shell: success)
   ensure
-    response.close
-    response.unlink
+    request_file.close
+    request_file.unlink
+
+    response_file.close
+    response_file.unlink
   end
 
   def validate_chunk(data, type, context)
