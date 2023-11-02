@@ -12,6 +12,16 @@ class BasicsTest < Minitest::Test
     assert_equal(expected, Motor.solve(request))
   end
 
+  focus
+  def test_solve!
+    request  = File.read(File.join(FIXTURES, "03-unbound-in.json"))
+    expected = File.read(File.join(FIXTURES, "03-unbound-out.json"))
+
+    assert_equal(expected, Motor.solve(request))
+
+    assert_raises(Motor::Unsuccessful, "Problem has unbounded solution") { Motor.solve!(request) }
+  end
+
   def test_validate
     assert_raises(Motor::InvalidData, "Data empty") { Motor.validate("{}") }
   end

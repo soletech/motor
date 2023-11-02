@@ -8,6 +8,10 @@ module Motor
 
   MOTOR = File.expand_path(File.join(__dir__, "..", "bin", "motor"))
 
+  MotorError   = Class.new(StandardError)
+  InvalidData  = Class.new(MotorError)
+  Unsuccessful = Class.new(MotorError)
+
   def solve(request)
     Dir.mktmpdir do |dir|
       request_file, response_file = File.join(dir, "request.json"), File.join(dir, "response.json")
@@ -18,7 +22,12 @@ module Motor
     end
   end
 
-  InvalidData = Class.new(StandardError)
+  def solve!(request)
+    solve(request).tap do |json|
+      response = JSON.parse(json)
+      raise Unsuccessful, response["status"]["desc"] unless response["success"]
+    end
+  end
 
   def validate(request)
     Dir.mktmpdir do |dir|

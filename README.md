@@ -67,6 +67,20 @@ Geçerli (optimal) bir çözüm elde edilmişse cevap verisinde `success` alanı
 `success` alanı `false` değerindedir ve sorunu görmek için `status` durum alanına bakılır.  Durum bilgisinde `code`
 alanı hata kodunu, `desc` ise hata açıklamasını içerir.
 
+Sadece başarılı bir çözümle ilgileniyorsanız `solve!` metodunun aşağıdaki örnekteki gibi kullanılması önerilir:
+
+```ruby
+require "motor"
+
+def ilgili_metot(...)
+  request = ...                    # JSON string ver
+  response = Motor.solve!(request)  # Çöz ve JSON string al
+rescue Motor::Error => e
+  # Hata iletisi e.message ile hatayı yönet
+end
+```
+
+
 ## Şema
 
 ### Request
