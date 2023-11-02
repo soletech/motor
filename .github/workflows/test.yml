@@ -9,6 +9,8 @@ jobs:
     - name: Ruby 🥁
       uses: ruby/setup-ruby@v1
       with: { bundler-cache: true }
+    - name: Python 🥁
+      uses: actions/setup-python@v4
     - name: Dependencies 🥁
       run: sudo apt-get -y update && sudo apt-get -y install python3-swiglpk python3-numpy
     - name: Test 🔬
