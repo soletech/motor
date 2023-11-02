@@ -8,6 +8,9 @@ gemspec
 
 group :development do
   gem "bundler"
+  gem "minitest"
+  gem "minitest-focus", ">= 1.2.1"
+  gem "minitest-reporters", ">= 1.4.3"
   gem "rake"
   gem "rubocop"
   gem "rubocop-minitest"

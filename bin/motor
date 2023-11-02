@@ -79,7 +79,7 @@ class InvalidDataError(Exception):
 
 def validate(data):
     if not data:
-        raise InvalidDataError(f'Input data is empty')
+        raise InvalidDataError(f'Data empty')
 
     for required in ['variables', 'objective', 'constraints']:
         if required not in data:
@@ -227,7 +227,7 @@ def main():
     narg = len(sys.argv)
 
     if narg == 1 or (sys.argv[1] == '-validate' and narg < 3):
-        sys.exit("Input data required")
+        sys.exit("Input data file required")
 
     validate_only = False
 

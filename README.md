@@ -3,13 +3,10 @@
 
 # Motor
 
-Depo iki program ve Web uygulamasında kullanılacak bir kitaplık sunuyor.
+Depo bir program ve Web uygulamasında kullanılacak bir kitaplık sunuyor.
 
 - `bin/motor`: Python ile çözümleme yapan ana program. Bu programı (test hariç) doğrudan kullanmak yerine `Motor`
   kitaplığıyla kullanıyoruz.
-
-- `bin/rotor`: Ruby ile (kitaplık üzerinden) `rotor`'u çalıştıran program.  Bu programı sadece test yapmak için
-  kullanın.
 
 - `lib/motor`: Web uygulamasında kullanılacak ana kitaplık.
 
@@ -55,12 +52,6 @@ Elle deneme yapmak için:
 bin/motor <JSON BİÇİMİNDE İSTEK DOSYASI> <JSON BİÇİMİNDE ÇIKTI DOSYASI ADI>
 ```
 
-Ruby entegrasyonunu denemek için
-
-```sh
-bin/rotor <JSON BİÇİMİNDE İSTEK DOSYASI> # çıktı stdout
-```
-
 ### Entegrasyon
 
 Çözümlenecek veriyi JSON biçiminde `request` adıyla `Motor`'a gönderen ve sonucu `response` adıyla alan örnek kod:
@@ -68,18 +59,13 @@ bin/rotor <JSON BİÇİMİNDE İSTEK DOSYASI> # çıktı stdout
 ```ruby
 require "motor"
 
-request = ...                       # JSON string ver
-Motor.validate(request)             # Doğrulama yap
-response = Motor.response(request)  # Analiz yap
-... response.json                   # JSON string al
+request = ...                    # JSON string ver
+response = Motor.solve(request)  # Çöz ve JSON string al
 ```
 
-Çözümlemede oluşacak hataları görmek için `motor` programının tam çıktısını taşıyan `response.shell` değerini
-okuyabilirsiniz.
-
-- `response.shell.to_s`: `motor` programının STDOUT çıktısı.
-- `response.shell.err`: `motor` programının STDERR'de görüntülediği satırlar (bir dizi).
-- `response.shell.exit_code`: `motor` programının sonlanma kodu.
+Geçerli (optimal) bir çözüm elde edilmişse cevap verisinde `success` alanı `true` değerini alır.  Aksi tüm durumlarda
+`success` alanı `false` değerindedir ve sorunu görmek için `status` durum alanına bakılır.  Durum bilgisinde `code`
+alanı hata kodunu, `desc` ise hata açıklamasını içerir.
 
 ## Şema
 
@@ -122,8 +108,12 @@ okuyabilirsiniz.
 
 ```json
 {
-    "data": <REQUEST VERİSİ: Hash>
-    "result": { # Optimal Çözüm ve Duyarlılık Değerleri
+    "success": <ÇÖZÜMÜN BAŞARISI: Bool>,
+    "status": {
+        "code": <HATA KODU: String>,
+        "desc": <HATA AÇIKLAMASI: String>,
+    },
+    "response": { # Optimal Çözüm ve Duyarlılık Değerleri
         "solution": <ÇÖZÜM: Float>,
         "sensitivity": { # Duyarlık çözümlemesi sonuçları
             "coeff": [
@@ -133,6 +123,7 @@ okuyabilirsiniz.
                 ...
             ]
         }
-    }
+    },
+    "request": <REQUEST VERİSİ: Hash>
 }
 ```
