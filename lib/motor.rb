@@ -8,9 +8,9 @@ module Motor
 
   MOTOR = File.expand_path(File.join(__dir__, "..", "bin", "motor"))
 
-  MotorError   = Class.new(StandardError)
-  InvalidData  = Class.new(MotorError)
-  Unsuccessful = Class.new(MotorError)
+  Error        = Class.new(StandardError)
+  InvalidData  = Class.new(Error)
+  Unsuccessful = Class.new(Error)
 
   def solve(request)
     Dir.mktmpdir do |dir|
