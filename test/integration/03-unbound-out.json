@@ -1,7 +1,7 @@
 {
   "success": false,
   "status": {
-    "code": "unbounded",
+    "code": "UNBOUNDED",
     "description": "Problem has unbounded solution"
   },
   "response": {

@@ -1,7 +1,7 @@
 {
   "success": true,
   "status": {
-    "code": "optimal",
+    "code": "OPTIMAL",
     "description": "Solution is optimal"
   },
   "response": {
