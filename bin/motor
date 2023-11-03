@@ -3,11 +3,16 @@
 import codecs
 import json
 import math
-import numpy as np
 import os
 import sys
+from enum import StrEnum
+import numpy as np
+import swiglpk as glpk
 
-LIBRARY_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), "../lib/ext"))
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "../lib/ext")))
+
+# pylint: disable=import-error,wrong-import-position
+import pymprog as pm
 
 DATA_DEFAULTS = {
     "round": 3,
@@ -22,45 +27,37 @@ SENSITIVITY_KEYS = {
 
 INFINITY = 9e99
 
-sys.path.append(LIBRARY_PATH)
-
-import pymprog as pm
-
-import swiglpk as glpk
-
-from enum import StrEnum
-
 class Status(StrEnum):
-    optimal    = 'Solution is optimal'
-    feasible   = 'Solution is feasible'
-    infeasible = 'Solution is infeasible'
-    nofeasible = 'Problem has no feasible solution'
-    unbounded  = 'Problem has unbounded solution'
-    undefined  = 'Solution is undefined'
+    OPTIMAL    = 'Solution is optimal'
+    FEASIBLE   = 'Solution is feasible'
+    INFEASIBLE = 'Solution is infeasible'
+    NOFEASIBLE = 'Problem has no feasible solution'
+    UNBOUNDED  = 'Problem has unbounded solution'
+    UNDEFINED  = 'Solution is undefined'
 
     __glpk__ = {
-        glpk.GLP_OPT    : 'optimal',
-        glpk.GLP_FEAS   : 'feasible',
-        glpk.GLP_INFEAS : 'infeasible',
-        glpk.GLP_NOFEAS : 'nofeasible',
-        glpk.GLP_UNBND  : 'unbounded',
-        glpk.GLP_UNDEF  : 'undefined',
+        glpk.GLP_OPT    : 'OPTIMAL',
+        glpk.GLP_FEAS   : 'FEASIBLE',
+        glpk.GLP_INFEAS : 'INFEASIBLE',
+        glpk.GLP_NOFEAS : 'NOFEASIBLE',
+        glpk.GLP_UNBND  : 'UNBOUNDED',
+        glpk.GLP_UNDEF  : 'UNDEFINED',
     }
 
     @classmethod
-    def code(self, status):
-        return self.__glpk__[status]
+    def code(cls, status):
+        return cls.__glpk__[status]
 
     @classmethod
-    def desc(self, status):
-        return self[self.code(status)]
+    def desc(cls, status):
+        return cls[cls.code(status)]
 
     @classmethod
-    def is_success(self, status):
+    def is_success(cls, status):
         return status == glpk.GLP_OPT
 
-def load(input):
-    with open(input) as file:
+def load(infile):
+    with open(infile, encoding='utf-8') as file:
         data = json.load(file)
     return data
 
@@ -79,7 +76,7 @@ class InvalidDataError(Exception):
 
 def validate(data):
     if not data:
-        raise InvalidDataError(f'Data empty')
+        raise InvalidDataError('Data empty')
 
     for required in ['variables', 'objective', 'constraints']:
         if required not in data:
@@ -98,7 +95,7 @@ def validate(data):
 
     number_of_variables = len(data['variables'])
     if number_of_variables == 0:
-        raise InvalidDataError(f'Empty variables')
+        raise InvalidDataError('Empty variables')
 
     for name in data['variables']:
         if not isinstance(name, str):
@@ -129,7 +126,7 @@ def validate(data):
             case _:
                 raise InvalidDataError(f'Error in constraint[{i}]: unrecognized relation')
 
-        validate_coefficients(constraint['coefficients'], f'constraint[{i}]')    
+        validate_coefficients(constraint['coefficients'], f'constraint[{i}]')
 
     return data
 
@@ -192,7 +189,7 @@ def solve(data):
     def transfer(results, keys):
         results = [dict(zip(keys, item)) for item in results]
         for result in results:
-            result[keys[0]] = True if result[keys[0]] == "*" else False
+            result[keys[0]] = result[keys[0]] == "*"
             for k in result.keys():
                 if isinstance(result[k], float):
                     if math.isinf(result[k]) or math.fabs(result[k]) > INFINITY:
@@ -234,18 +231,18 @@ def main():
     if sys.argv[1] == '-validate':
         validate_only = True
 
-        input = sys.argv[2]
+        infile = sys.argv[2]
         output = sys.argv[3] if narg > 3 else None
     else:
-        input = sys.argv[1]
+        infile = sys.argv[1]
         output = sys.argv[2] if narg > 2 else None
 
-    data = load(input)
+    data = load(infile)
 
     try:
         validate(data)
-    except InvalidDataError as e:
-        store(output, invalid(e))
+    except InvalidDataError as error:
+        store(output, invalid(error))
         sys.exit(100)
 
     if not validate_only:

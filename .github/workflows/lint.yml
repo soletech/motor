@@ -9,5 +9,10 @@ jobs:
     - name: Ruby 🥁
       uses: ruby/setup-ruby@v1
       with: { bundler-cache: true }
+    - name: Python 🥁
+      uses: actions/setup-python@v4
+      with: { cache: 'pip' }
+    - name: Dependencies 🥁
+      run: pip install pylint
     - name: Lint 🔬
       run: bundle exec rake lint

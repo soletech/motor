@@ -28,7 +28,12 @@ RuboCop::RakeTask.new(:rubocop) do |t|
   t.options = ["--display-cop-names"]
 end
 
+desc "Pylint"
+task :pylint do
+  sh "pylint bin/motor"
+end
+
 desc "Lint code"
-task lint: :rubocop
+task lint: [:pylint, :rubocop]
 
 task default: [:test]
