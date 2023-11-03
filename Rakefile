@@ -2,8 +2,8 @@
 
 desc "Test"
 task :"test:integration" do
-  FileList["test/*-in.json"].each do |infile|
-    outfile = infile.gsub("in", "out")
+  FileList["test/integration/*-in.json"].each do |infile|
+    outfile = infile.gsub("-in", "-out")
 
     actual = %x(bin/motor #{infile}).strip
     expected = File.read(outfile).strip
