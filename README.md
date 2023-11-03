@@ -12,6 +12,8 @@ Depo bir program ve Web uygulamasında kullanılacak bir kitaplık sunuyor.
 
 ## Kurulum
 
+**Dikkat!** Ruby sürümü >= 3.2, Python sürümü >= 3.11 olmalı.
+
 ### Konuşlandırma
 
 - Gerekli Python paketlerini kur
@@ -28,7 +30,6 @@ Depoyu klonladıktan sonra
 
 - Gerekli Python paketlerini kur (bk. Konuşlandırma)
 
-
 - Bundle kurulumu yap
 
   ```sh
@@ -36,10 +37,16 @@ Depoyu klonladıktan sonra
   bundle install
   ```
 
-- Test et
+- Test
 
   ```sh
   bundle exec rake test
+  ```
+
+- Lint (Ruby ve Python kodlarını denetler)
+
+  ```sh
+  bundle exec rake lint
   ```
 
 ## Kullanım
@@ -65,7 +72,7 @@ response = Motor.solve(request)  # Çöz ve JSON string al
 
 Geçerli (optimal) bir çözüm elde edilmişse cevap verisinde `success` alanı `true` değerini alır.  Aksi tüm durumlarda
 `success` alanı `false` değerindedir ve sorunu görmek için `status` durum alanına bakılır.  Durum bilgisinde `code`
-alanı hata kodunu, `desc` ise hata açıklamasını içerir.
+alanı hata kodunu, `message` ise hata açıklamasını içerir.
 
 Sadece başarılı bir çözümle ilgileniyorsanız `solve!` metodunun aşağıdaki örnekteki gibi kullanılması önerilir:
 
@@ -127,7 +134,7 @@ end
     "success": <ÇÖZÜMÜN BAŞARISI: Bool>,
     "status": {
         "code": <HATA KODU: String>,
-        "desc": <HATA AÇIKLAMASI: String>,
+        "message": <HATA MESAJI: String>,
     },
     "response": { # Optimal Çözüm ve Duyarlılık Değerleri
         "solution": <ÇÖZÜM: Float>,
