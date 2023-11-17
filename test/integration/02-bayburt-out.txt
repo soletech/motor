@@ -1,0 +1,1042 @@
+GLPK 5.0  - SENSITIVITY ANALYSIS REPORT                                                                         Page   1
+
+Problem:    Bayburt
+Objective:  Amaç Fonksiyonu = 1506809780 (MAXimum)
+
+   No. Row name     St      Activity         Slack   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+     1 Toplam Arazi BS   1.04865e+06   94406.00000          -Inf   918696.32000     -92.13795   1.41019e+09 Toplam Kuru Tarla Arazisi
+                                            .        1.14306e+06    1.04865e+06          +Inf          +Inf
+
+     2 Toplam Kuru Tarla Arazisi
+                    NU  933464.68000        .               -Inf   803509.00000     -92.13795   1.49484e+09 Arpa (Diğer) (Kuru) Satış
+                                          92.13795  933464.68000   960647.50000          +Inf   1.50931e+09 Arpa (Diğer) (Kuru) Arazisi
+
+     3 Toplam Sulu Tarla Arazisi
+                    NU  110760.32000        .               -Inf         .        -1516.49825   1.33884e+09 Yonca (Yeşilot) Satış
+                                        1516.49825  110760.32000   205166.32000          +Inf   1.64998e+09 Toplam Arazi
+
+     4 Toplam Meyve Arazisi
+                    NS    1700.00000        .         1700.00000      900.00000          -Inf   1.50699e+09 Elma (Bütünleştirilmiş) Satış
+                                        -231.10534    1700.00000     1700.00000          +Inf   1.50681e+09 Elma (Bütünleştirilmiş) Arazisi
+
+     5 Toplam Sebze Arazisi
+                    NU    2693.00000        .               -Inf     2406.40000   -1263.96349   1.50645e+09 Domates (Sofralık) Satış
+                                        1263.96349    2693.00000     2798.00000          +Inf   1.50694e+09 Domates (Sofralık) Arazisi
+
+     6 Toplam Örtü Altı Arazisi
+                    NS      34.00000        .           34.00000       28.60000          -Inf    1.5068e+09 Domates (Sofralık, Örtüaltı) Satış
+                                        1238.33565      34.00000       37.40000          +Inf   1.50681e+09 Domates (Sofralık, Örtüaltı) Arazisi
+
+     7 Toplam Süs Bitkisi Arazisi
+                    BS        .             .               -Inf         .               -Inf   1.50681e+09
+                                            .             .              .               +Inf   1.50681e+09
+
+     8 Buğday, Durum Buğdayı Hariç Arazisi
+                    NU  217095.00000        .               -Inf   189912.18000    -208.09416   1.50115e+09 Arpa (Diğer) (Kuru) Arazisi
+                                         208.09416  217095.00000   347050.68000          +Inf   1.53385e+09 Arpa (Diğer) (Kuru) Satış
+
+     9 Buğday (Sulu) Arazisi
+                    BS        .        62344.50000          -Inf         .               -Inf   1.50681e+09
+                                            .        62344.50000   110760.32000    1506.22837   1.50681e+09 Buğday (Sulu)
+
+    10 Arpa (Diğer) (Kuru) Arazisi
+                    BS  129955.68000   27182.82000          -Inf   128652.18000     -56.48692   1.49947e+09 Yulaf
+                                            .       157138.50000   148899.18000      12.07091   1.50838e+09 Şeker Pancarı Arazisi
+
+GLPK 5.0  - SENSITIVITY ANALYSIS REPORT                                                                         Page   2
+
+Problem:    Bayburt
+Objective:  Amaç Fonksiyonu = 1506809780 (MAXimum)
+
+   No. Row name     St      Activity         Slack   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+    11 Arpa (Sulu) Arazisi
+                    BS        .        89521.50000          -Inf         .               -Inf   1.50681e+09
+                                            .        89521.50000   110760.32000    1474.74299   1.50681e+09 Arpa (Sulu)
+
+    12 Yulaf Arazisi
+                    BS        .         1303.50000          -Inf         .               -Inf   1.50681e+09
+                                            .         1303.50000   129955.68000      56.48692   1.50681e+09 Yulaf
+
+    13 Yulaf (Yeşilot) Arazisi
+                    NU  197191.50000        .               -Inf   170008.68000    -824.05497   1.48441e+09 Arpa (Diğer) (Kuru) Arazisi
+                                         824.05497  197191.50000   327147.18000          +Inf    1.6139e+09 Arpa (Diğer) (Kuru) Satış
+
+    14 Triticale Arazisi
+                    NU   26476.50000        .               -Inf         .         -607.30506   1.49073e+09 Triticale Satış
+                                         607.30506   26476.50000   156432.18000          +Inf   1.58573e+09 Arpa (Diğer) (Kuru) Satış
+
+    15 Fasulye, Taze Arazisi
+                    NU     518.10000        .               -Inf      413.10000    -508.69062   1.50676e+09 Domates (Sofralık) Arazisi
+                                         508.69062     518.10000      804.70000          +Inf   1.50696e+09 Domates (Sofralık) Satış
+
+    16 Patates (Tatlı Patates Hariç) Arazisi
+                    NU    8698.50000        .               -Inf         .        -1395.82615   1.49467e+09 Patates (Tatlı Patates Hariç) Satış
+                                        1395.82615    8698.50000   132269.95386          +Inf   1.67929e+09 İşgücü Haziran
+
+    17 Şeker Pancarı Arazisi
+                    NU   18943.50000        .               -Inf         .          -12.07091   1.50658e+09 Şeker Pancarı Satış
+                                          12.07091   18943.50000   148899.18000          +Inf   1.50838e+09 Arpa (Diğer) (Kuru) Satış
+
+    18 Fiğ (Adi) (Yeşil Ot) Arazisi
+                    NU   52444.50000        .               -Inf    25261.68000    -766.75239   1.48597e+09 Arpa (Diğer) (Kuru) Arazisi
+                                         766.75239   52444.50000   182400.18000          +Inf   1.60645e+09 Arpa (Diğer) (Kuru) Satış
+
+    19 Fiğ (Macar) (Yeşil Ot) Arazisi
+                    NU     345.00000        .               -Inf         .         -764.45239   1.50655e+09 Fiğ (Macar) (Yeşil Ot) Satış
+                                         764.45239     345.00000   130300.68000          +Inf   1.60615e+09 Arpa (Diğer) (Kuru) Satış
+
+    20 Yonca (Yeşilot) Arazisi
+                    BS  110760.32000  101712.38000          -Inf   108185.22000    -384.26500   1.46425e+09 Triticale (Sulu) Satış
+                                            .       212472.70000   110760.32000          +Inf          +Inf
+
+GLPK 5.0  - SENSITIVITY ANALYSIS REPORT                                                                         Page   3
+
+Problem:    Bayburt
+Objective:  Amaç Fonksiyonu = 1506809780 (MAXimum)
+
+   No. Row name     St      Activity         Slack   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+    21 Korunga (Yeşilot) Arazisi
+                    NU  110056.10000        .               -Inf    82873.28000   -1436.72761   1.46776e+09 Arpa (Diğer) (Kuru) Arazisi
+                                        1436.72761  110056.10000   240011.78000          +Inf   1.69352e+09 Arpa (Diğer) (Kuru) Satış
+
+    22 Mısır (Slaj) Arazisi
+                    NU    7635.00000        .               -Inf         .        -1344.10073   1.49655e+09 Mısır (Slaj) Satış
+                                        1344.10073    7635.00000   137590.68000          +Inf   1.68148e+09 Arpa (Diğer) (Kuru) Satış
+
+    23 Çayır Otu (Yeşilot) Arazisi
+                    NU  100568.60000        .               -Inf    73385.78000    -983.75038   1.48007e+09 Arpa (Diğer) (Kuru) Arazisi
+                                         983.75038  100568.60000   230524.28000          +Inf   1.63465e+09 Arpa (Diğer) (Kuru) Satış
+
+    24 Bezelye (Yemlik) Arazisi
+                    NU    3521.10000        .               -Inf         .         -651.24029   1.50452e+09 Bezelye (Yemlik)
+                                         651.24029    3521.10000   133476.78000          +Inf   1.59144e+09 Arpa (Diğer) (Kuru) Satış
+
+    25 Barbunya, Taze Arazisi
+                    NU     119.90000        .               -Inf         .         -183.56648   1.50679e+09 Barbunya, Taze Satış
+                                         183.56648     119.90000   104963.97516          +Inf   1.52606e+09 İşgücü Temmuz
+
+    26 Lahana (Beyaz) Arazisi
+                    NU    1608.20000        .               -Inf     1503.20000   -2012.70658    1.5066e+09 Domates (Sofralık) Arazisi
+                                        2012.70658    1608.20000     1894.80000          +Inf   1.50739e+09 Domates (Sofralık) Satış
+
+    27 Marul (Kıvırcık) Arazisi
+                    NU      18.00000        .               -Inf         .        -1682.37207   1.50678e+09 Marul (Kıvırcık) Satış
+                                        1682.37207      18.00000      304.60000          +Inf   1.50729e+09 Domates (Sofralık) Satış
+
+    28 Marul (Göbekli) Arazisi
+                    NU       3.60000        .               -Inf         .        -1257.37207   1.50681e+09 Marul (Göbekli)
+                                        1257.37207       3.60000      290.20000          +Inf   1.50717e+09 Domates (Sofralık) Satış
+
+    29 Ispanak Arazisi
+                    BS        .            8.40000          -Inf         .               -Inf   1.50681e+09
+                                            .            8.40000      286.60000     467.35508   1.50681e+09 Ispanak Satış
+
+    30 Maydanoz Arazisi
+                    BS        .            5.50000          -Inf         .               -Inf   1.50681e+09
+                                            .            5.50000      286.60000     936.03801   1.50681e+09 Maydanoz Satış
+
+GLPK 5.0  - SENSITIVITY ANALYSIS REPORT                                                                         Page   4
+
+Problem:    Bayburt
+Objective:  Amaç Fonksiyonu = 1506809780 (MAXimum)
+
+   No. Row name     St      Activity         Slack   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+    31 Biber (Sivri) Arazisi
+                    BS        .           13.20000          -Inf         .               -Inf   1.50681e+09
+                                            .           13.20000      286.60000    2064.90744   1.50681e+09 Biber (Sivri)
+
+    32 Hıyar (Sofralık) Arazisi
+                    NU     181.50000        .               -Inf       76.50000   -2216.43096   1.50658e+09 Domates (Sofralık) Arazisi
+                                        2216.43096     181.50000      468.10000          +Inf   1.50745e+09 Domates (Sofralık) Satış
+
+    33 Hıyar (Sofralık, Örtüaltı) Arazisi
+                    NU      28.60000        .               -Inf       25.20000   -2614.00606    1.5068e+09 Domates (Sofralık, Örtüaltı) Arazisi
+                                        2614.00606      28.60000       34.00000          +Inf   1.50682e+09 Domates (Sofralık, Örtüaltı) Satış
+
+    34 Domates (Sofralık) Arazisi
+                    BS     286.60000     105.00000          -Inf      266.80000     -26.11879    1.5068e+09 Soğan (Taze) Satış
+                                            .          391.60000      804.70000     508.69062   1.50696e+09 Fasulye, Taze Arazisi
+
+    35 Domates (Sofralık, Örtüaltı) Arazisi
+                    BS       5.40000       3.40000          -Inf        5.40000          -Inf          -Inf
+                                            .            8.80000       34.00000    2614.00606   1.50682e+09 Hıyar (Sofralık, Örtüaltı) Arazisi
+
+    36 Bal Kabağı Arazisi
+                    NU      68.20000        .               -Inf         .        -2368.39784   1.50665e+09 Bal Kabağı Satış
+                                        2368.39784      68.20000      354.80000          +Inf   1.50749e+09 Domates (Sofralık) Satış
+
+    37 Havuç Arazisi
+                    NU       8.80000        .               -Inf         .        -3272.17536   1.50678e+09 Havuç Satış
+                                        3272.17536       8.80000      295.40000          +Inf   1.50775e+09 Domates (Sofralık) Satış
+
+    38 Soğan (Taze) Arazisi
+                    BS        .           19.80000          -Inf         .               -Inf   1.50681e+09
+                                            .           19.80000      286.60000      26.11879   1.50681e+09 Soğan (Taze) Satış
+
+    39 Elma (Bütünleştirilmiş) Arazisi
+                    BS     800.00000        .               -Inf      800.00000          -Inf          -Inf
+                                            .          800.00000     1110.00000      33.08549   1.50684e+09 Kiraz Arazisi
+
+    40 Armut Arazisi
+                    NU     145.00000        .               -Inf      145.00000   -2902.00000   1.50681e+09 Elma (Bütünleştirilmiş) Arazisi
+                                        2902.00000     145.00000      945.00000          +Inf   1.50913e+09 Elma (Bütünleştirilmiş) Satış
+
+GLPK 5.0  - SENSITIVITY ANALYSIS REPORT                                                                         Page   5
+
+Problem:    Bayburt
+Objective:  Amaç Fonksiyonu = 1506809780 (MAXimum)
+
+   No. Row name     St      Activity         Slack   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+    41 Kiraz Arazisi
+                    NU     310.00000        .               -Inf      310.00000     -33.08549   1.50681e+09 Elma (Bütünleştirilmiş) Arazisi
+                                          33.08549     310.00000     1110.00000          +Inf   1.50684e+09 Elma (Bütünleştirilmiş) Satış
+
+    42 Vişne Arazisi
+                    NU     445.00000        .               -Inf      445.00000    -448.02108   1.50681e+09 Elma (Bütünleştirilmiş) Arazisi
+                                         448.02108     445.00000     1245.00000          +Inf   1.50717e+09 Elma (Bütünleştirilmiş) Satış
+
+    43 Çavdar Arazisi
+                    NU   53197.50000        .               -Inf    26014.68000     -27.29388   1.50607e+09 Arpa (Diğer) (Kuru) Arazisi
+                                          27.29388   53197.50000   183153.18000          +Inf   1.51036e+09 Arpa (Diğer) (Kuru) Satış
+
+    44 Fiğ (Adi) Tohumu Arazisi
+                    BS        .         1584.00000          -Inf         .               -Inf   1.50681e+09
+                                            .         1584.00000   129955.68000      59.09430   1.50681e+09 Fiğ (Adi) Tohumu
+
+    45 Mercimek, Kuru (Yeşil) Arazisi
+                    NU    4187.30000        .               -Inf         .          -16.45763   1.50674e+09 Mercimek, Kuru (Yeşil) Satış
+                                          16.45763    4187.30000   134142.98000          +Inf   1.50895e+09 Arpa (Diğer) (Kuru) Satış
+
+    46 Nohut, Kuru Arazisi
+                    NU    3029.00000        .               -Inf         .         -525.58340   1.50522e+09 Nohut, Kuru Satış
+                                         525.58340    3029.00000   132984.68000          +Inf   1.57511e+09 Arpa (Diğer) (Kuru) Satış
+
+    47 Triticale (Sulu) Arazisi
+                    BS        .         2575.10000          -Inf         .               -Inf   1.50681e+09
+                                            .         2575.10000   110760.32000     384.26500   1.50681e+09 Triticale (Sulu) Satış
+
+    48 Mercimek, Sulu (Yeşil) Arazisi
+                    BS        .          907.50000          -Inf         .               -Inf   1.50681e+09
+                                            .          907.50000   110760.32000    1064.97939   1.50681e+09 Mercimek, Sulu (Yeşil) Satış
+
+    49 Fasulye, Kuru (Sulu) Arazisi
+                    BS        .         3734.90000          -Inf         .               -Inf   1.50681e+09
+                                            .         3734.90000   110760.32000     977.77509   1.50681e+09 Fasulye, Kuru (Sulu) Satış
+
+    50 Yulaf (Sulu) Arazisi
+                    BS        .         1575.00000          -Inf         .               -Inf   1.50681e+09
+                                            .         1575.00000   110760.32000    1483.08335   1.50681e+09 Yulaf (Sulu)
+
+GLPK 5.0  - SENSITIVITY ANALYSIS REPORT                                                                         Page   6
+
+Problem:    Bayburt
+Objective:  Amaç Fonksiyonu = 1506809780 (MAXimum)
+
+   No. Row name     St      Activity         Slack   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+    51 Buğday, Durum Buğdayı Hariç Transfer
+                    NU        .             .               -Inf    -4.3419e+07      -2.20000   1.41129e+09 Buğday, Durum Buğdayı Hariç Satış
+                                           2.20000        .                +Inf          +Inf          +Inf
+
+    52 Buğday (Sulu) Transfer
+                    NU        .             .               -Inf         .           -2.20000   1.50681e+09 Buğday (Sulu) Satış
+                                           2.20000        .                +Inf          +Inf          +Inf
+
+    53 Arpa (Diğer) (Kuru) Transfer
+                    NU        .             .               -Inf   -1.85837e+07      -2.48000   1.46072e+09 Arpa (Diğer) (Kuru) Satış
+                                           2.48000        .                +Inf          +Inf          +Inf
+
+    54 Arpa (Sulu) Transfer
+                    NU        .             .               -Inf         .           -2.48000   1.50681e+09 Arpa (Sulu) Satış
+                                           2.48000        .                +Inf          +Inf          +Inf
+
+    55 Yulaf Transfer
+                    NU        .             .               -Inf         .           -2.50000   1.50681e+09 Yulaf Satış
+                                           2.50000        .                +Inf          +Inf          +Inf
+
+    56 Yulaf (Yeşilot) Transfer
+                    NU        .             .               -Inf   -2.69758e+08      -1.10000   1.21008e+09 Yulaf (Yeşilot) Satış
+                                           1.10000        .                +Inf          +Inf          +Inf
+
+    57 Triticale Transfer
+                    NU        .             .               -Inf   -8.26067e+06      -3.50000    1.4779e+09 Triticale Satış
+                                           3.50000        .                +Inf          +Inf          +Inf
+
+    58 Fasulye, Taze Transfer
+                    NU        .             .               -Inf  -545559.30000      -5.00000   1.50408e+09 Fasulye, Taze Satış
+                                           5.00000        .                +Inf          +Inf          +Inf
+
+    59 Patates (Tatlı Patates Hariç) Transfer
+                    NU        .             .               -Inf   -2.45037e+07      -1.70000   1.46515e+09 Patates (Tatlı Patates Hariç) Satış
+                                           1.70000        .                +Inf          +Inf          +Inf
+
+    60 Şeker Pancarı Transfer
+                    NU        .             .               -Inf   -5.25682e+07       -.45000   1.48315e+09 Şeker Pancarı Satış
+                                            .45000        .                +Inf          +Inf          +Inf
+
+GLPK 5.0  - SENSITIVITY ANALYSIS REPORT                                                                         Page   7
+
+Problem:    Bayburt
+Objective:  Amaç Fonksiyonu = 1506809780 (MAXimum)
+
+   No. Row name     St      Activity         Slack   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+    61 Fiğ (Adi) (Yeşil Ot) Transfer
+                    NU        .             .               -Inf   -6.57654e+07      -1.15000   1.43118e+09 Fiğ (Adi) (Yeşil Ot) Satış
+                                           1.15000        .                +Inf          +Inf          +Inf
+
+    62 Fiğ (Macar) (Yeşil Ot) Transfer
+                    NU        .             .               -Inf  -431940.00000      -1.15000   1.50631e+09 Fiğ (Macar) (Yeşil Ot) Satış
+                                           1.15000        .                +Inf          +Inf          +Inf
+
+    63 Yonca (Yeşilot) Transfer
+                    NU        .             .               -Inf   -1.52185e+08      -1.65000   1.25571e+09 Yonca (Yeşilot) Satış
+                                           1.65000        .                +Inf          +Inf          +Inf
+
+    64 Korunga (Yeşilot) Transfer
+                    NU        .             .               -Inf   -1.34819e+08      -1.95000   1.24391e+09 Korunga (Yeşilot) Satış
+                                           1.95000        .                +Inf          +Inf          +Inf
+
+    65 Mısır (Slaj) Transfer
+                    NU        .             .               -Inf    -4.0916e+07       -.42000   1.48963e+09 Mısır (Slaj) Satış
+                                            .42000        .                +Inf          +Inf          +Inf
+
+    66 Çayır Otu (Yeşilot) Transfer
+                    NU        .             .               -Inf   -1.20381e+08      -1.50000   1.32624e+09 Çayır Otu (Yeşilot) Satış
+                                           1.50000        .                +Inf          +Inf          +Inf
+
+    67 Bezelye (Yemlik) Transfer
+                    NU        .             .               -Inf   -4.92954e+06      -1.00000   1.50188e+09 Bezelye (Yemlik) Satış
+                                           1.00000        .                +Inf          +Inf          +Inf
+
+    68 Barbunya, Taze Transfer
+                    NU        .             .               -Inf   -17625.30000      -5.25000   1.50672e+09 Barbunya, Taze Satış
+                                           5.25000        .                +Inf          +Inf          +Inf
+
+    69 Lahana (Beyaz) Transfer
+                    NU        .             .               -Inf   -9.97084e+06      -1.05000   1.49634e+09 Lahana (Beyaz) Satış
+                                           1.05000        .                +Inf          +Inf          +Inf
+
+    70 Marul (Kıvırcık) Transfer
+                    NU        .             .               -Inf   -30060.00000      -2.75000   1.50673e+09 Marul (Kıvırcık) Satış
+                                           2.75000        .                +Inf          +Inf          +Inf
+
+GLPK 5.0  - SENSITIVITY ANALYSIS REPORT                                                                         Page   8
+
+Problem:    Bayburt
+Objective:  Amaç Fonksiyonu = 1506809780 (MAXimum)
+
+   No. Row name     St      Activity         Slack   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+    71 Marul (Göbekli) Transfer
+                    NU        .             .               -Inf    -6001.20000      -2.50000   1.50679e+09 Marul (Göbekli) Satış
+                                           2.50000        .                +Inf          +Inf          +Inf
+
+    72 Ispanak Transfer
+                    NU        .             .               -Inf    -7198.80000      -4.54534   1.50678e+09 Ispanak Arazisi
+                                           4.54534        .              .               +Inf   1.50681e+09 Ispanak
+
+    73 Maydanoz Transfer
+                    NU        .             .               -Inf    -2200.00000      -4.94010    1.5068e+09 Maydanoz Arazisi
+                                           4.94010        .              .               +Inf   1.50681e+09 Maydanoz
+
+    74 Biber (Sivri) Transfer
+                    NU        .             .               -Inf         .           -1.86000   1.50681e+09 Biber (Sivri) Satış
+                                           1.86000        .                +Inf          +Inf          +Inf
+
+    75 Hıyar (Sofralık) Transfer
+                    NU        .             .               -Inf  -573177.00000      -2.25000   1.50552e+09 Hıyar (Sofralık) Satış
+                                           2.25000        .                +Inf          +Inf          +Inf
+
+    76 Hıyar (Sofralık, Örtüaltı) Transfer
+                    NU        .             .               -Inf  -114400.00000      -2.25000   1.50655e+09 Hıyar (Sofralık, Örtüaltı) Satış
+                                           2.25000        .                +Inf          +Inf          +Inf
+
+    77 Domates (Sofralık) Transfer
+                    NU        .             .               -Inf   -1.09653e+06      -1.63000   1.50502e+09 Domates (Sofralık) Satış
+                                           1.63000        .                +Inf          +Inf          +Inf
+
+    78 Domates (Sofralık, Örtüaltı) Transfer
+                    NU        .             .               -Inf   -27000.00000      -1.63000   1.50677e+09 Domates (Sofralık, Örtüaltı) Satış
+                                           1.63000        .                +Inf          +Inf          +Inf
+
+    79 Bal Kabağı Transfer
+                    NU        .             .               -Inf  -204600.00000      -1.75000   1.50645e+09 Bal Kabağı Satış
+                                           1.75000        .                +Inf          +Inf          +Inf
+
+    80 Havuç Transfer
+                    NU        .             .               -Inf   -24200.00000      -2.50000   1.50675e+09 Havuç Satış
+                                           2.50000        .                +Inf          +Inf          +Inf
+
+GLPK 5.0  - SENSITIVITY ANALYSIS REPORT                                                                         Page   9
+
+Problem:    Bayburt
+Objective:  Amaç Fonksiyonu = 1506809780 (MAXimum)
+
+   No. Row name     St      Activity         Slack   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+    81 Soğan (Taze) Transfer
+                    NU        .             .               -Inf   -19800.00000      -3.52612   1.50674e+09 Soğan (Taze) Arazisi
+                                           3.52612        .              .               +Inf   1.50681e+09 Soğan (Taze)
+
+    82 Elma (Bütünleştirilmiş) Transfer
+                    NU        .             .               -Inf  -627200.00000      -3.25000   1.50477e+09 Elma (Bütünleştirilmiş) Satış
+                                           3.25000        .                +Inf          +Inf          +Inf
+
+    83 Armut Transfer
+                    NU        .             .               -Inf  -158050.00000      -5.00000   1.50602e+09 Armut Satış
+                                           5.00000        .                +Inf          +Inf          +Inf
+
+    84 Kiraz Transfer
+                    NU        .             .               -Inf   -56110.00000     -10.00000   1.50625e+09 Kiraz Satış
+                                          10.00000        .                +Inf          +Inf          +Inf
+
+    85 Vişne Transfer
+                    NU        .             .               -Inf   -97010.00000      -7.00000   1.50613e+09 Vişne Satış
+                                           7.00000        .                +Inf          +Inf          +Inf
+
+    86 Süt Sığırcılığı Transfer
+                    NU        .             .               -Inf   -1.80609e+08      -5.50000    5.1346e+08 Süt Sığırcılığı Satış
+                                           5.50000        .                +Inf          +Inf          +Inf
+
+    87 Besi Sığırcılığı Transfer
+                    NU        .             .               -Inf   -2.96319e+07     -45.00000   1.73373e+08 Besi Sığırcılığı Satış
+                                          45.00000        .                +Inf          +Inf          +Inf
+
+    88 Koyunculuk Transfer
+                    NU        .             .               -Inf         .           -8.00000   1.50681e+09 Koyunculuk Satış
+                                           8.00000        .                +Inf          +Inf          +Inf
+
+    89 Keçicilik Transfer
+                    NU        .             .               -Inf         .           -4.50000   1.50681e+09 Keçicilik Satış
+                                           4.50000        .                +Inf          +Inf          +Inf
+
+    90 Mandacılık Transfer
+                    NU        .             .               -Inf         .           -4.50000   1.50681e+09 Mandacılık Satış
+                                           4.50000        .                +Inf          +Inf          +Inf
+
+GLPK 5.0  - SENSITIVITY ANALYSIS REPORT                                                                         Page  10
+
+Problem:    Bayburt
+Objective:  Amaç Fonksiyonu = 1506809780 (MAXimum)
+
+   No. Row name     St      Activity         Slack   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+    91 Çavdar Transfer
+                    NU        .             .               -Inf   -6.54329e+06      -2.50000   1.49045e+09 Çavdar Satış
+                                           2.50000        .                +Inf          +Inf          +Inf
+
+    92 Fiğ (Adi) Tohumu Transfer
+                    NU        .             .               -Inf         .           -2.00000   1.50681e+09 Fiğ (Adi) Tohumu Satış
+                                           2.00000        .                +Inf          +Inf          +Inf
+
+    93 Mercimek, Kuru (Yeşil) Transfer
+                    NU        .             .               -Inf  -515037.90000      -5.60000   1.50393e+09 Mercimek, Kuru (Yeşil) Satış
+                                           5.60000        .                +Inf          +Inf          +Inf
+
+    94 Nohut, Kuru Transfer
+                    NU        .             .               -Inf  -726960.00000      -4.50000   1.50354e+09 Nohut, Kuru Satış
+                                           4.50000        .                +Inf          +Inf          +Inf
+
+    95 Triticale (Sulu) Transfer
+                    NU        .             .               -Inf    -1.2103e+06      -4.31759   1.50158e+09 Triticale (Sulu) Arazisi
+                                           4.31759        .              .               +Inf   1.50681e+09 Triticale (Sulu)
+
+    96 Mercimek, Sulu (Yeşil) Transfer
+                    NU        .             .               -Inf  -178777.50000     -11.00599   1.50484e+09 Mercimek, Sulu (Yeşil) Arazisi
+                                          11.00599        .              .               +Inf   1.50681e+09 Mercimek, Sulu (Yeşil)
+
+    97 Fasulye, Kuru (Sulu) Transfer
+                    NU        .             .               -Inf  -448188.00000     -23.14813   1.49644e+09 Fasulye, Kuru (Sulu) Arazisi
+                                          23.14813        .              .               +Inf   1.50681e+09 Fasulye, Kuru (Sulu)
+
+    98 Yulaf (Sulu) Transfer
+                    NU        .             .               -Inf         .           -2.50000   1.50681e+09 Yulaf (Sulu) Satış
+                                           2.50000        .                +Inf          +Inf          +Inf
+
+    99 İşgücü Ocak
+                    BS   2.47779e+06   8.00839e+06          -Inf    2.47776e+06     -15.63816   1.46806e+09 Soğan (Taze) Satış
+                                            .        1.04862e+07    5.15836e+06      57.33168   1.64887e+09 Koyunculuk
+
+   100 İşgücü Şubat
+                    BS   2.32835e+06   1.12606e+07          -Inf   -3.83206e+07     -21.22541   1.45739e+09 İg2
+                                            .         1.3589e+07    2.32842e+06       7.38403     1.524e+09 Soğan (Taze) Satış
+
+GLPK 5.0  - SENSITIVITY ANALYSIS REPORT                                                                         Page  11
+
+Problem:    Bayburt
+Objective:  Amaç Fonksiyonu = 1506809780 (MAXimum)
+
+   No. Row name     St      Activity         Slack   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+   101 İşgücü Mart
+                    BS   2.76527e+06   1.14692e+07          -Inf    2.76527e+06      -5.75919   1.49088e+09 Kiraz Arazisi
+                                            .        1.42345e+07    2.76536e+06       5.89615   1.52311e+09 Soğan (Taze) Satış
+
+   102 İşgücü Nisan
+                    BS   3.31432e+06   1.07813e+07          -Inf    2.94947e+06       -.62674   1.50473e+09 Şeker Pancarı Arazisi
+                                            .        1.40956e+07    3.31436e+06      14.18831   1.55383e+09 Soğan (Taze) Satış
+
+   103 İşgücü Mayıs
+                    BS   3.14919e+06   1.10853e+07          -Inf    2.78732e+06       -.63189   1.50482e+09 Şeker Pancarı Arazisi
+                                            .        1.42345e+07     3.1496e+06       1.28899   1.51087e+09 Soğan (Taze) Satış
+
+   104 İşgücü Haziran
+                    BS    1.0531e+07   3.56457e+06          -Inf    1.01769e+07       -.64579   1.50001e+09 Şeker Pancarı Arazisi
+                                            .        1.40956e+07    1.05335e+07      21.27605   1.73087e+09 Fasulye, Taze Arazisi
+
+   105 İşgücü Temmuz
+                    BS   1.11593e+07   3.07519e+06          -Inf    1.11593e+07       -.50734   1.50115e+09 Kiraz Arazisi
+                                            .        1.42345e+07    1.12877e+07       1.78109   1.52669e+09 Şeker Pancarı Arazisi
+
+   106 İşgücü Ağustos
+                    BS   2.61968e+06   1.16148e+07          -Inf    2.61968e+06       -.50741   1.50548e+09 Kiraz Arazisi
+                                            .        1.42345e+07    2.61987e+06      20.32213   1.56005e+09 Ispanak Satış
+
+   107 İşgücü Eylül
+                    BS   2.55437e+06   1.15412e+07          -Inf    2.55433e+06     -15.69012   1.46673e+09 Soğan (Taze) Satış
+                                            .        1.40956e+07    2.55437e+06       1.08964   1.50959e+09 Kiraz Arazisi
+
+   108 İşgücü Ekim
+                    BS   3.04764e+06   1.11869e+07          -Inf     3.0476e+06     -15.63816   1.45915e+09 Soğan (Taze) Satış
+                                            .        1.42345e+07    3.04764e+06       1.54930   1.51153e+09 Kiraz Arazisi
+
+   109 İşgücü Kasım
+                    BS   3.19864e+06    1.0897e+07          -Inf    2.72507e+06       -.48285   1.50527e+09 Şeker Pancarı Arazisi
+                                            .        1.40956e+07    3.19876e+06      32.30800   1.61015e+09 Ispanak Satış
+
+   110 İşgücü Aralık
+                    BS   2.93905e+06   1.12955e+07          -Inf    2.47105e+06       -.48859   1.50537e+09 Şeker Pancarı Arazisi
+                                            .        1.42345e+07    2.93905e+06       6.64801   1.52635e+09 Kiraz Arazisi
+
+GLPK 5.0  - SENSITIVITY ANALYSIS REPORT                                                                         Page  12
+
+Problem:    Bayburt
+Objective:  Amaç Fonksiyonu = 1506809780 (MAXimum)
+
+   No. Row name     St      Activity         Slack   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+   111 İşletme Sermayesi
+                    NU   2.18912e+09        .               -Inf    1.47139e+09       -.20210   1.36176e+09 Besi Sığırcılığı Satış
+                                            .20210   2.18912e+09    3.70399e+09          +Inf   1.81296e+09 Süt Sığırcılığı
+
+   112 Ahır Yeri   NU    1.2608e+06        .               -Inf   671284.21649    -200.81566   1.38843e+09 Süt Sığırcılığı Satış
+                                         200.81566    1.2608e+06    2.15921e+06          +Inf   1.68723e+09 Besi Sığırcılığı Satış
+
+   113 Ağıl Yeri  BS        .         1.0752e+06          -Inf         .               -Inf   1.50681e+09
+                                            .         1.0752e+06   985464.78657     155.94801   1.50681e+09 Koyunculuk
+
+GLPK 5.0  - SENSITIVITY ANALYSIS REPORT                                                                         Page  13
+
+Problem:    Bayburt
+Objective:  Amaç Fonksiyonu = 1506809780 (MAXimum)
+
+   No. Column name  St      Activity      Obj coef   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+     1 Buğday, Durum Buğdayı Hariç
+                    BS  217095.00000    -116.27000        .        189912.18000    -324.36416   1.46163e+09 Buğday, Durum Buğdayı Hariç Arazisi
+                                            .               +Inf   217095.00000          +Inf          +Inf
+
+     2 Buğday, Durum Buğdayı Hariç Satış
+                    BS    4.3419e+07       2.20000        .         3.79824e+07       1.15953   1.46163e+09 Buğday, Durum Buğdayı Hariç Arazisi
+                                            .               +Inf     4.3419e+07          +Inf          +Inf
+
+     3 Buğday (Sulu)
+                    NL        .         -445.33000        .              .               -Inf   1.50681e+09 Buğday (Sulu) Satış
+                                       -1506.22837          +Inf    62344.50000    1060.89837    1.4129e+09 Buğday (Sulu) Arazisi
+
+     4 Buğday (Sulu) Satış
+                    BS        .            2.20000        .                -Inf        .        1.50681e+09 Buğday (Sulu) Transfer
+                                            .               +Inf    1.54614e+07       8.27350   1.50681e+09 Buğday (Sulu)
+
+     5 Arpa (Diğer) (Kuru)
+                    BS  129955.68000    -218.37000        .        128652.18000    -274.85692   1.49947e+09 Yulaf
+                                            .               +Inf   148899.18000    -206.29909   1.50838e+09 Şeker Pancarı Arazisi
+
+     6 Arpa (Diğer) (Kuru) Satış
+                    BS   1.85837e+07       2.48000        .         1.83973e+07       2.08499   1.49947e+09 Yulaf
+                                            .               +Inf    2.12926e+07       2.56441   1.50838e+09 Şeker Pancarı Arazisi
+
+     7 Arpa (Sulu)  NL        .         -454.21000        .              .               -Inf   1.50681e+09 Arpa (Sulu) Satış
+                                       -1474.74299          +Inf    89521.50000    1020.53299   1.37479e+09 Arpa (Sulu) Arazisi
+
+     8 Arpa (Sulu) Satış
+                    BS        .            2.48000        .                -Inf        .        1.50681e+09 Arpa (Sulu) Transfer
+                                            .               +Inf    2.12166e+07       8.70254   1.50681e+09 Arpa (Sulu)
+
+     9 Yulaf        NL        .         -126.32000        .              .               -Inf   1.50681e+09 Yulaf Satış
+                                         -56.48692          +Inf     1303.50000     -69.83308   1.50674e+09 Yulaf Arazisi
+
+    10 Yulaf Satış
+                    BS        .            2.50000        .                -Inf        .        1.50681e+09 Yulaf Transfer
+                                            .               +Inf    97762.50000       3.25316   1.50681e+09 Yulaf
+
+GLPK 5.0  - SENSITIVITY ANALYSIS REPORT                                                                         Page  14
+
+Problem:    Bayburt
+Objective:  Amaç Fonksiyonu = 1506809780 (MAXimum)
+
+   No. Column name  St      Activity      Obj coef   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+    11 Yulaf (Yeşilot)
+                    BS  197191.50000    -489.65000        .        170008.68000   -1313.70497   1.34431e+09 Yulaf (Yeşilot) Arazisi
+                                            .               +Inf   197191.50000          +Inf          +Inf
+
+    12 Yulaf (Yeşilot) Satış
+                    BS   2.69758e+08       1.10000        .         2.32572e+08        .49762   1.34431e+09 Yulaf (Yeşilot) Arazisi
+                                            .               +Inf    2.69758e+08          +Inf          +Inf
+
+    13 Triticale    BS   26476.50000    -326.56000        .              .         -933.86506   1.49073e+09 Triticale Arazisi
+                                            .               +Inf    26476.50000          +Inf          +Inf
+
+    14 Triticale Satış
+                    BS   8.26067e+06       3.50000        .              .            1.55351   1.49073e+09 Triticale Arazisi
+                                            .               +Inf    8.26067e+06          +Inf          +Inf
+
+    15 Fasulye, Taze
+                    BS     518.10000   -2905.21000        .           413.10000   -3413.90062   1.50655e+09 Fasulye, Taze Arazisi
+                                            .               +Inf      518.10000          +Inf          +Inf
+
+    16 Fasulye, Taze Satış
+                    BS  545559.30000       5.00000        .        434994.30000       4.51691   1.50655e+09 Fasulye, Taze Arazisi
+                                            .               +Inf   545559.30000          +Inf          +Inf
+
+    17 Patates (Tatlı Patates Hariç)
+                    BS    8698.50000   -2745.98000        .              .        -4141.80615   1.49467e+09 Patates (Tatlı Patates Hariç) Arazisi
+                                            .               +Inf     8698.50000          +Inf          +Inf
+
+    18 Patates (Tatlı Patates Hariç) Satış
+                    BS   2.45037e+07       1.70000        .              .            1.20450   1.49467e+09 Patates (Tatlı Patates Hariç) Arazisi
+                                            .               +Inf    2.45037e+07          +Inf          +Inf
+
+    19 Şeker Pancarı
+                    BS   18943.50000    -952.12000        .              .         -964.19091   1.50658e+09 Şeker Pancarı Arazisi
+                                            .               +Inf    18943.50000          +Inf          +Inf
+
+    20 Şeker Pancarı Satış
+                    BS   5.25682e+07        .45000        .              .             .44565   1.50658e+09 Şeker Pancarı Arazisi
+                                            .               +Inf    5.25682e+07          +Inf          +Inf
+
+GLPK 5.0  - SENSITIVITY ANALYSIS REPORT                                                                         Page  15
+
+Problem:    Bayburt
+Objective:  Amaç Fonksiyonu = 1506809780 (MAXimum)
+
+   No. Column name  St      Activity      Obj coef   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+    21 Fiğ (Adi) (Yeşil Ot)
+                    BS   52444.50000    -485.16000        .         25261.68000   -1251.91239    1.4666e+09 Fiğ (Adi) (Yeşil Ot) Arazisi
+                                            .               +Inf    52444.50000          +Inf          +Inf
+
+    22 Fiğ (Adi) (Yeşil Ot) Satış
+                    BS   6.57654e+07       1.15000        .         3.16781e+07        .53855    1.4666e+09 Fiğ (Adi) (Yeşil Ot) Arazisi
+                                            .               +Inf    6.57654e+07          +Inf          +Inf
+
+    23 Fiğ (Macar) (Yeşil Ot)
+                    BS     345.00000    -485.16000        .              .        -1249.61239   1.50655e+09 Fiğ (Macar) (Yeşil Ot) Arazisi
+                                            .               +Inf      345.00000          +Inf          +Inf
+
+    24 Fiğ (Macar) (Yeşil Ot) Satış
+                    BS  431940.00000       1.15000        .              .             .53942   1.50655e+09 Fiğ (Macar) (Yeşil Ot) Arazisi
+                                            .               +Inf   431940.00000          +Inf          +Inf
+
+    25 Yonca (Yeşilot)
+                    BS  110760.32000    -624.41000        .        108185.22000   -1008.67500   1.46425e+09 Triticale (Sulu) Satış
+                                            .               +Inf   110760.32000          +Inf          +Inf
+
+    26 Yonca (Yeşilot) Satış
+                    BS   1.52185e+08       1.65000        .         1.48646e+08       1.37033   1.46425e+09 Triticale (Sulu) Satış
+                                            .               +Inf    1.52185e+08          +Inf          +Inf
+
+    27 Korunga (Yeşilot)
+                    BS  110056.10000    -715.32000        .         82873.28000   -2152.04761   1.34869e+09 Korunga (Yeşilot) Arazisi
+                                            .               +Inf   110056.10000          +Inf          +Inf
+
+    28 Korunga (Yeşilot) Satış
+                    BS   1.34819e+08       1.95000        .          1.0152e+08        .77716   1.34869e+09 Korunga (Yeşilot) Arazisi
+                                            .               +Inf    1.34819e+08          +Inf          +Inf
+
+    29 Mısır (Slaj)
+                    BS    7635.00000    -677.60000        .              .        -2021.70073   1.49655e+09 Mısır (Slaj) Arazisi
+                                            .               +Inf     7635.00000          +Inf          +Inf
+
+    30 Mısır (Slaj) Satış
+                    BS    4.0916e+07        .42000        .              .             .16919   1.49655e+09 Mısır (Slaj) Arazisi
+                                            .               +Inf     4.0916e+07          +Inf          +Inf
+
+GLPK 5.0  - SENSITIVITY ANALYSIS REPORT                                                                         Page  16
+
+Problem:    Bayburt
+Objective:  Amaç Fonksiyonu = 1506809780 (MAXimum)
+
+   No. Column name  St      Activity      Obj coef   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+    31 Çayır Otu (Yeşilot)
+                    BS  100568.60000    -598.63000        .         73385.78000   -1582.38038   1.40788e+09 Çayır Otu (Yeşilot) Arazisi
+                                            .               +Inf   100568.60000          +Inf          +Inf
+
+    32 Çayır Otu (Yeşilot) Satış
+                    BS   1.20381e+08       1.50000        .         8.78428e+07        .67815   1.40788e+09 Çayır Otu (Yeşilot) Arazisi
+                                            .               +Inf    1.20381e+08          +Inf          +Inf
+
+    33 Bezelye (Yemlik)
+                    BS    3521.10000    -546.23000        .              .        -1197.47029   1.50452e+09 Bezelye (Yemlik) Arazisi
+                                            .               +Inf     3521.10000          +Inf          +Inf
+
+    34 Bezelye (Yemlik) Satış
+                    BS   4.92954e+06       1.00000        .              .             .53483   1.50452e+09 Bezelye (Yemlik) Arazisi
+                                            .               +Inf    4.92954e+06          +Inf          +Inf
+
+    35 Barbunya, Taze
+                    BS     119.90000    -412.65000        .              .         -596.21648   1.50679e+09 Barbunya, Taze Arazisi
+                                            .               +Inf      119.90000          +Inf          +Inf
+
+    36 Barbunya, Taze Satış
+                    BS   17625.30000       5.25000        .              .            4.00125   1.50679e+09 Barbunya, Taze Arazisi
+                                            .               +Inf    17625.30000          +Inf          +Inf
+
+    37 Lahana (Beyaz)
+                    BS    1608.20000   -2689.74000        .          1503.20000   -4702.44658   1.50357e+09 Lahana (Beyaz) Arazisi
+                                            .               +Inf     1608.20000          +Inf          +Inf
+
+    38 Lahana (Beyaz) Satış
+                    BS   9.97084e+06       1.05000        .         9.31984e+06        .72537   1.50357e+09 Lahana (Beyaz) Arazisi
+                                            .               +Inf    9.97084e+06          +Inf          +Inf
+
+    39 Marul (Kıvırcık)
+                    BS      18.00000   -1369.41000        .              .        -3051.78207   1.50678e+09 Marul (Kıvırcık) Arazisi
+                                            .               +Inf       18.00000          +Inf          +Inf
+
+    40 Marul (Kıvırcık) Satış
+                    BS   30060.00000       2.75000        .              .            1.74259   1.50678e+09 Marul (Kıvırcık) Arazisi
+                                            .               +Inf    30060.00000          +Inf          +Inf
+
+GLPK 5.0  - SENSITIVITY ANALYSIS REPORT                                                                         Page  17
+
+Problem:    Bayburt
+Objective:  Amaç Fonksiyonu = 1506809780 (MAXimum)
+
+   No. Column name  St      Activity      Obj coef   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+    41 Marul (Göbekli)
+                    BS       3.60000   -1369.41000        .              .        -2626.78207   1.50681e+09 Marul (Göbekli) Arazisi
+                                            .               +Inf        3.60000          +Inf          +Inf
+
+    42 Marul (Göbekli) Satış
+                    BS    6001.20000       2.50000        .              .            1.74573   1.50681e+09 Marul (Göbekli) Arazisi
+                                            .               +Inf     6001.20000          +Inf          +Inf
+
+    43 Ispanak      BS        .        -2189.00000        .              .               -Inf   1.50681e+09
+                                            .               +Inf        8.40000   -1721.64492   1.50681e+09 Ispanak Satış
+
+    44 Ispanak Satış
+                    NL        .            4.00000        .              .               -Inf   1.50681e+09 Ispanak
+                                           -.54534          +Inf     7198.80000       4.54534   1.50681e+09 Ispanak Arazisi
+
+    45 Maydanoz     BS        .         -592.36000        .              .               -Inf   1.50681e+09
+                                            .               +Inf        5.50000     343.67801   1.50681e+09 Maydanoz Satış
+
+    46 Maydanoz Satış
+                    NL        .            2.60000        .              .               -Inf   1.50681e+09 Maydanoz
+                                          -2.34010          +Inf     2200.00000       4.94010    1.5068e+09 Maydanoz Arazisi
+
+    47 Biber (Sivri)
+                    NL        .        -3245.63000        .              .               -Inf   1.50681e+09 Biber (Sivri) Satış
+                                       -2064.90744          +Inf       13.20000   -1180.72256   1.50678e+09 Biber (Sivri) Arazisi
+
+    48 Biber (Sivri) Satış
+                    BS        .            1.86000        .                -Inf        .        1.50681e+09 Biber (Sivri) Transfer
+                                            .               +Inf    22004.40000       3.09870   1.50681e+09 Biber (Sivri)
+
+    49 Hıyar (Sofralık)
+                    BS     181.50000   -3015.65000        .            76.50000   -5232.08096   1.50641e+09 Hıyar (Sofralık) Arazisi
+                                            .               +Inf      181.50000          +Inf          +Inf
+
+    50 Hıyar (Sofralık) Satış
+                    BS  573177.00000       2.25000        .        241587.00000       1.54815   1.50641e+09 Hıyar (Sofralık) Arazisi
+                                            .               +Inf   573177.00000          +Inf          +Inf
+
+GLPK 5.0  - SENSITIVITY ANALYSIS REPORT                                                                         Page  18
+
+Problem:    Bayburt
+Objective:  Amaç Fonksiyonu = 1506809780 (MAXimum)
+
+   No. Column name  St      Activity      Obj coef   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+    51 Hıyar (Sofralık, Örtüaltı)
+                    BS      28.60000   -4282.23000        .            25.20000   -6896.23606   1.50674e+09 Hıyar (Sofralık, Örtüaltı) Arazisi
+                                            .               +Inf       28.60000          +Inf          +Inf
+
+    52 Hıyar (Sofralık, Örtüaltı) Satış
+                    BS  114400.00000       2.25000        .        100800.00000       1.59650   1.50674e+09 Hıyar (Sofralık, Örtüaltı) Arazisi
+                                            .               +Inf   114400.00000          +Inf          +Inf
+
+    53 Domates (Sofralık)
+                    BS     286.60000   -4136.45000        .           266.80000   -4162.56879    1.5068e+09 Soğan (Taze) Satış
+                                            .               +Inf      391.60000   -3627.75938   1.50696e+09 Fasulye, Taze Arazisi
+
+    54 Domates (Sofralık) Satış
+                    BS   1.09653e+06       1.63000        .         1.02078e+06       1.62317    1.5068e+09 Soğan (Taze) Satış
+                                            .               +Inf    1.49826e+06       1.76296   1.50696e+09 Fasulye, Taze Arazisi
+
+    55 Domates (Sofralık, Örtüaltı)
+                    BS       5.40000   -5749.67000        .             5.40000          -Inf          -Inf
+                                            .               +Inf        8.80000   -3135.66394   1.50682e+09 Hıyar (Sofralık, Örtüaltı) Arazisi
+
+    56 Domates (Sofralık, Örtüaltı) Satış
+                    BS   27000.00000       1.63000        .                -Inf        .        1.50677e+09 Domates (Sofralık, Örtüaltı) Transfer
+                                            .               +Inf    44000.00000       2.15280   1.50682e+09 Hıyar (Sofralık, Örtüaltı) Arazisi
+
+    57 Bal Kabağı BS      68.20000   -1345.68000        .              .        -3714.07784   1.50665e+09 Bal Kabağı Arazisi
+                                            .               +Inf       68.20000          +Inf          +Inf
+
+    58 Bal Kabağı Satış
+                    BS  204600.00000       1.75000        .              .             .96053   1.50665e+09 Bal Kabağı Arazisi
+                                            .               +Inf   204600.00000          +Inf          +Inf
+
+    59 Havuç       BS       8.80000   -1945.65000        .              .        -5217.82536   1.50678e+09 Havuç Arazisi
+                                            .               +Inf        8.80000          +Inf          +Inf
+
+    60 Havuç Satış
+                    BS   24200.00000       2.50000        .              .            1.31012   1.50678e+09 Havuç Arazisi
+                                            .               +Inf    24200.00000          +Inf          +Inf
+
+GLPK 5.0  - SENSITIVITY ANALYSIS REPORT                                                                         Page  19
+
+Problem:    Bayburt
+Objective:  Amaç Fonksiyonu = 1506809780 (MAXimum)
+
+   No. Column name  St      Activity      Obj coef   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+    61 Soğan (Taze)
+                    BS        .        -1881.84000        .              .               -Inf   1.50681e+09
+                                            .               +Inf       19.80000   -1855.72121   1.50681e+09 Soğan (Taze) Satış
+
+    62 Soğan (Taze) Satış
+                    NL        .            3.50000        .              .               -Inf   1.50681e+09 Soğan (Taze)
+                                           -.02612          +Inf    19800.00000       3.52612   1.50681e+09 Soğan (Taze) Arazisi
+
+    63 Elma (Bütünleştirilmiş)
+                    BS     800.00000   -2311.88000        .           800.00000          -Inf          -Inf
+                                            .               +Inf      800.00000   -2278.79451   1.50684e+09 Kiraz Arazisi
+
+    64 Elma (Bütünleştirilmiş) Satış
+                    BS  627200.00000       3.25000        .                -Inf        .        1.50477e+09 Elma (Bütünleştirilmiş) Transfer
+                                            .               +Inf   627200.00000       3.29220   1.50684e+09 Kiraz Arazisi
+
+    65 Armut        BS     145.00000   -2311.88000        .           145.00000   -5213.88000   1.50639e+09 Armut Arazisi
+                                            .               +Inf      145.00000          +Inf          +Inf
+
+    66 Armut Satış
+                    BS  158050.00000       5.00000        .        158050.00000       2.33761   1.50639e+09 Armut Arazisi
+                                            .               +Inf   158050.00000          +Inf          +Inf
+
+    67 Kiraz        BS     310.00000   -1670.43000        .           310.00000   -1703.51549    1.5068e+09 Kiraz Arazisi
+                                            .               +Inf      310.00000          +Inf          +Inf
+
+    68 Kiraz Satış
+                    BS   56110.00000      10.00000        .         56110.00000       9.81721    1.5068e+09 Kiraz Arazisi
+                                            .               +Inf    56110.00000          +Inf          +Inf
+
+    69 Vişne       BS     445.00000   -1089.00000        .           445.00000   -1537.02108   1.50661e+09 Vişne Arazisi
+                                            .               +Inf      445.00000          +Inf          +Inf
+
+    70 Vişne Satış
+                    BS   97010.00000       7.00000        .         97010.00000       4.94486   1.50661e+09 Vişne Arazisi
+                                            .               +Inf    97010.00000          +Inf          +Inf
+
+GLPK 5.0  - SENSITIVITY ANALYSIS REPORT                                                                         Page  20
+
+Problem:    Bayburt
+Objective:  Amaç Fonksiyonu = 1506809780 (MAXimum)
+
+   No. Column name  St      Activity      Obj coef   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+    71 Süt Sığırcılığı
+                    BS   74324.73445   -9195.27000        .         74322.54419   -9431.38420   1.48926e+09 Soğan (Taze) Satış
+                                            .               +Inf    74324.73445   -8143.99770   1.58495e+09 Kiraz Arazisi
+
+    72 Süt Sığırcılığı Satış
+                    BS   1.80609e+08       5.50000        .         1.80604e+08       5.40283   1.48926e+09 Soğan (Taze) Satış
+                                            .               +Inf    1.80609e+08       5.93262   1.58495e+09 Kiraz Arazisi
+
+    73 Besi Sığırcılığı
+                    BS  105828.27845   -9841.86000        .        105828.27845  -10191.67519   1.46979e+09 Kiraz Arazisi
+                                            .               +Inf   105834.86068   -9763.29202   1.51512e+09 Soğan (Taze) Satış
+
+    74 Besi Sığırcılığı Satış
+                    BS   2.96319e+07      45.00000        .         2.96319e+07      43.75066   1.46979e+09 Kiraz Arazisi
+                                            .               +Inf    2.96338e+07      45.28060   1.51512e+09 Soğan (Taze) Satış
+
+    75 Koyunculuk   NL        .        -1041.25000        .              .               -Inf   1.50681e+09 Koyunculuk Satış
+                                        -227.68410          +Inf   674975.88121    -813.56590   1.35313e+09 İşgücü Temmuz
+
+    76 Koyunculuk Satış
+                    BS        .            8.00000        .                -Inf        .        1.50681e+09 Koyunculuk Transfer
+                                            .               +Inf    8.63969e+07       9.77878   1.50681e+09 Koyunculuk
+
+    77 Keçicilik   NL        .        -5000.00000        .              .               -Inf   1.50681e+09 Keçicilik Satış
+                                        -469.95287          +Inf   143547.50795   -4530.04713   1.43935e+09 Besi Sığırcılığı Satış
+
+    78 Keçicilik Satış
+                    BS        .            4.50000        .                -Inf        .        1.50681e+09 Keçicilik Transfer
+                                            .               +Inf     1.7674e+08       4.88169   1.50681e+09 Keçicilik
+
+    79 Mandacılık NL        .        -8814.30000        .              .               -Inf   1.50681e+09 Mandacılık Satış
+                                       -2661.87131          +Inf    69437.47629   -6152.42869   1.32198e+09 Süt Sığırcılığı Satış
+
+    80 Mandacılık Satış
+                    BS        .            4.50000        .                -Inf        .        1.50681e+09 Mandacılık Transfer
+                                            .               +Inf    1.59359e+08       5.65986   1.50681e+09 Mandacılık
+
+GLPK 5.0  - SENSITIVITY ANALYSIS REPORT                                                                         Page  21
+
+Problem:    Bayburt
+Objective:  Amaç Fonksiyonu = 1506809780 (MAXimum)
+
+   No. Column name  St      Activity      Obj coef   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+    81 Çavdar      BS   53197.50000    -156.45000        .         26014.68000    -183.74388   1.50536e+09 Çavdar Arazisi
+                                            .               +Inf    53197.50000          +Inf          +Inf
+
+    82 Çavdar Satış
+                    BS   6.54329e+06       2.50000        .         3.19981e+06       2.27810   1.50536e+09 Çavdar Arazisi
+                                            .               +Inf    6.54329e+06          +Inf          +Inf
+
+    83 Fiğ (Adi) Tohumu
+                    NL        .         -135.56000        .              .               -Inf   1.50681e+09 Fiğ (Adi) Tohumu Satış
+                                         -59.09430          +Inf     1584.00000     -76.46570   1.50672e+09 Fiğ (Adi) Tohumu Arazisi
+
+    84 Fiğ (Adi) Tohumu Satış
+                    BS        .            2.00000        .                -Inf        .        1.50681e+09 Fiğ (Adi) Tohumu Transfer
+                                            .               +Inf   155232.00000       2.60300   1.50681e+09 Fiğ (Adi) Tohumu
+
+    85 Mercimek, Kuru (Yeşil)
+                    BS    4187.30000    -482.66000        .              .         -499.11763   1.50674e+09 Mercimek, Kuru (Yeşil) Arazisi
+                                            .               +Inf     4187.30000          +Inf          +Inf
+
+    86 Mercimek, Kuru (Yeşil) Satış
+                    BS  515037.90000       5.60000        .              .            5.46620   1.50674e+09 Mercimek, Kuru (Yeşil) Arazisi
+                                            .               +Inf   515037.90000          +Inf          +Inf
+
+    87 Nohut, Kuru  BS    3029.00000    -384.56000        .              .         -910.14340   1.50522e+09 Nohut, Kuru Arazisi
+                                            .               +Inf     3029.00000          +Inf          +Inf
+
+    88 Nohut, Kuru Satış
+                    BS  726960.00000       4.50000        .              .            2.31007   1.50522e+09 Nohut, Kuru Arazisi
+                                            .               +Inf   726960.00000          +Inf          +Inf
+
+    89 Triticale (Sulu)
+                    BS        .         -426.56000        .              .               -Inf   1.50681e+09
+                                            .               +Inf     2575.10000     -42.29500   1.50681e+09 Triticale (Sulu) Satış
+
+    90 Triticale (Sulu) Satış
+                    NL        .            3.50000        .              .               -Inf   1.50681e+09 Triticale (Sulu)
+                                           -.81759          +Inf     1.2103e+06       4.31759   1.50582e+09 Triticale (Sulu) Arazisi
+
+GLPK 5.0  - SENSITIVITY ANALYSIS REPORT                                                                         Page  22
+
+Problem:    Bayburt
+Objective:  Amaç Fonksiyonu = 1506809780 (MAXimum)
+
+   No. Column name  St      Activity      Obj coef   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+    91 Mercimek, Sulu (Yeşil)
+                    BS        .         -542.12000        .              .               -Inf   1.50681e+09
+                                            .               +Inf      907.50000     522.85939   1.50681e+09 Mercimek, Sulu (Yeşil) Satış
+
+    92 Mercimek, Sulu (Yeşil) Satış
+                    NL        .            5.60000        .              .               -Inf   1.50681e+09 Mercimek, Sulu (Yeşil)
+                                          -5.40599          +Inf   178777.50000      11.00599   1.50584e+09 Mercimek, Sulu (Yeşil) Arazisi
+
+    93 Fasulye, Kuru (Sulu)
+                    BS        .        -1049.23000        .              .               -Inf   1.50681e+09
+                                            .               +Inf     3734.90000     -71.45491   1.50681e+09 Fasulye, Kuru (Sulu) Satış
+
+    94 Fasulye, Kuru (Sulu) Satış
+                    NL        .           15.00000        .              .               -Inf   1.50681e+09 Fasulye, Kuru (Sulu)
+                                          -8.14813          +Inf   448188.00000      23.14813   1.50316e+09 Fasulye, Kuru (Sulu) Arazisi
+
+    95 Yulaf (Sulu) NL        .         -336.15000        .              .               -Inf   1.50681e+09 Yulaf (Sulu) Satış
+                                       -1483.08335          +Inf     1575.00000    1146.93335   1.50447e+09 Yulaf (Sulu) Arazisi
+
+    96 Yulaf (Sulu) Satış
+                    BS        .            2.50000        .                -Inf        .        1.50681e+09 Yulaf (Sulu) Transfer
+                                            .               +Inf   275625.00000      10.97476   1.50681e+09 Yulaf (Sulu)
+
+    97 İg1         NL        .          -17.43000        .        -8.11314e+06          -Inf    1.6768e+09 İşgücü Ocak
+                                         -20.95256          +Inf    4.11783e+07       3.52256   6.44019e+08 Besi Sığırcılığı Satış
+
+    98 İg2         NL        .          -17.43000        .        -1.14073e+07          -Inf   1.74582e+09 İşgücü Şubat
+                                         -20.95256          +Inf    4.11783e+07       3.52256   6.44019e+08 Besi Sığırcılığı Satış
+
+    99 İg3         NL        .          -17.43000        .        -1.16193e+07          -Inf   1.75026e+09 İşgücü Mart
+                                         -20.95256          +Inf    4.11783e+07       3.52256   6.44019e+08 Besi Sığırcılığı Satış
+
+   100 İg4         NL        .          -17.43000        .        -1.09214e+07          -Inf   1.73564e+09 İşgücü Nisan
+                                         -20.95256          +Inf    4.11783e+07       3.52256   6.44019e+08 Besi Sığırcılığı Satış
+
+GLPK 5.0  - SENSITIVITY ANALYSIS REPORT                                                                         Page  23
+
+Problem:    Bayburt
+Objective:  Amaç Fonksiyonu = 1506809780 (MAXimum)
+
+   No. Column name  St      Activity      Obj coef   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+   101 İg5         NL        .          -17.43000        .        -1.12274e+07          -Inf   1.74205e+09 İşgücü Mayıs
+                                         -20.95256          +Inf    4.11783e+07       3.52256   6.44019e+08 Besi Sığırcılığı Satış
+
+   102 İg6         NL        .          -17.43000        .        -3.61104e+06          -Inf   1.58247e+09 İşgücü Haziran
+                                         -20.95256          +Inf    4.11783e+07       3.52256   6.44019e+08 Besi Sığırcılığı Satış
+
+   103 İg7         NL        .          -17.43000        .         -3.1146e+06          -Inf   1.57207e+09 İşgücü Temmuz
+                                         -20.95256          +Inf    4.11783e+07       3.52256   6.44019e+08 Besi Sığırcılığı Satış
+
+   104 İg8         NL        .          -17.43000        .        -1.17668e+07          -Inf   1.75335e+09 İşgücü Ağustos
+                                         -20.95256          +Inf    4.11783e+07       3.52256   6.44019e+08 Besi Sığırcılığı Satış
+
+   105 İg9         NL        .          -17.43000        .        -1.16917e+07          -Inf   1.75178e+09 İşgücü Eylül
+                                         -20.95256          +Inf    4.11783e+07       3.52256   6.44019e+08 Besi Sığırcılığı Satış
+
+   106 İg10        NL        .          -17.43000        .        -1.13332e+07          -Inf   1.74427e+09 İşgücü Ekim
+                                         -20.95256          +Inf    4.11783e+07       3.52256   6.44019e+08 Besi Sığırcılığı Satış
+
+   107 İg11        NL        .          -17.43000        .        -1.10357e+07          -Inf   1.73804e+09 İşgücü Kasım
+                                         -20.95256          +Inf    4.11783e+07       3.52256   6.44019e+08 Besi Sığırcılığı Satış
+
+   108 İg12        NL        .          -17.43000        .        -1.14437e+07          -Inf   1.74658e+09 İşgücü Aralık
+                                         -20.95256          +Inf    4.11783e+07       3.52256   6.44019e+08 Besi Sığırcılığı Satış
+
+   109 Sermaye Temini
+                    NL        .            -.25000        .        -7.17738e+08          -Inf   1.54119e+09 Besi Sığırcılığı Satış
+                                           -.04790          +Inf    1.51486e+09       -.20210   1.43424e+09 Süt Sığırcılığı
+
+End of report

@@ -1,0 +1,211 @@
+GLPK 5.0  - SENSITIVITY ANALYSIS REPORT                                                                         Page   1
+
+Problem:    Bafra
+Objective:  Toplam maliyet = 799198102.9 (MAXimum)
+
+   No. Row name     St      Activity         Slack   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+     1 Toplam arazi BS   88270.00000  514350.00000          -Inf    58250.38817   -1280.80000   6.86142e+08 Toplam sulu tarla arazisi
+                                            .       602620.00000    88270.00000          +Inf          +Inf
+
+     2 Toplam kuru tarla arazisi
+                    BS   58250.38817  301390.61183          -Inf         .        -2825.23087   6.34627e+08 Silajlık mısır arazisi
+                                            .       359641.00000    88270.00000     513.93000   8.29135e+08 Saman
+
+     3 Toplam sulu tarla arazisi
+                    NU   88270.00000        .               -Inf    58250.38817   -1280.80000   7.60749e+08 Çeltik satış
+                                        1280.80000   88270.00000   393126.38817          +Inf   1.18966e+09 Çeltik arazisi
+
+     4 Meyve arazisi
+                    BS   20531.00000    4865.00000          -Inf         .        -1465.71750   7.69105e+08 Fındık arazisi
+                                            .        25396.00000    20531.00000          +Inf          +Inf
+
+     5 Sebze arazisi
+                    BS   30525.00000   44215.00000          -Inf         .       -16100.85000    3.0772e+08 Lahana arazisi
+                                            .        74740.00000    30525.00000          +Inf          +Inf
+
+     6 Buğday arazisi
+                    BS   88775.38817  164676.61183          -Inf    30525.00000   -2825.23087   5.48387e+08 Silajlık mısır arazisi
+                                            .       253452.00000   118795.00000     513.93000   8.44822e+08 Saman
+
+     7 Silajlık mısır arazisi
+                    NU   57380.00000        .               -Inf         .        -2868.08635   6.34627e+08 Süt sığırcılığı
+                                        2868.08635   57380.00000    84609.52703          +Inf   8.77295e+08 Ahır Yeri
+
+     8 Çeltik arazisi
+                    BS   30019.61183  304856.38817          -Inf         .         -513.93000    7.8377e+08 Saman
+                                            .       334876.00000    88270.00000    2825.23087    8.8401e+08 Silajlık mısır arazisi
+
+     9 Fındık arazisi
+                    NU   20531.00000        .               -Inf         .        -1465.71750   7.69105e+08 Fındık satış
+                                        1465.71750   20531.00000    25396.00000          +Inf   8.06329e+08 Meyve arazisi
+
+    10 Lahana arazisi
+                    NU   30525.00000        .               -Inf         .       -16100.85000    3.0772e+08 Lahana satış
+                                       16100.85000   30525.00000    74740.00000          +Inf    1.5111e+09 Sebze arazisi
+
+GLPK 5.0  - SENSITIVITY ANALYSIS REPORT                                                                         Page   2
+
+Problem:    Bafra
+Objective:  Toplam maliyet = 799198102.9 (MAXimum)
+
+   No. Row name     St      Activity         Slack   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+    11 Buğday transfer
+                    NU        .             .               -Inf   -2.54845e+07      -2.30000   7.40584e+08 Buğday satış
+                                           2.30000        .                +Inf          +Inf          +Inf
+
+    12 Silajlık mısır transfer
+                    NU        .             .               -Inf   -4.74722e+07      -4.13785   6.02765e+08 Süt sığırcılığı
+                                           4.13785        .         2.25278e+07          +Inf   8.92415e+08 Ahır Yeri
+
+    13 Çeltik transfer
+                    NU        .             .               -Inf   -2.10137e+07      -2.50000   7.46664e+08 Çeltik satış
+                                           2.50000        .                +Inf          +Inf          +Inf
+
+    14 Lahana transfer
+                    NU        .             .               -Inf    -1.8315e+08      -3.00000   2.49748e+08 Lahana satış
+                                           3.00000        .                +Inf          +Inf          +Inf
+
+    15 Fındık transfer
+                    NU        .             .               -Inf   -1.92478e+06     -25.25000   7.50597e+08 Fındık satış
+                                          25.25000        .                +Inf          +Inf          +Inf
+
+    16 İşgücü Ocak
+                    BS  929776.85562   1.05988e+07          -Inf         .         -143.36208   6.65903e+08 Silajlık mısır satış
+                                            .        1.15286e+07   929776.85562          +Inf          +Inf
+
+    17 İşgücü Şubat
+                    BS  866367.56605   1.06622e+07          -Inf         .         -153.85472   6.65903e+08 Silajlık mısır satış
+                                            .        1.15286e+07   866367.56605          +Inf          +Inf
+
+    18 İşgücü Mart
+                    BS  929776.85562   1.05988e+07          -Inf         .         -143.36208   6.65903e+08 Silajlık mısır satış
+                                            .        1.15286e+07   929776.85562          +Inf          +Inf
+
+    19 İşgücü Nisan
+                    BS   1.13553e+06    1.0393e+07          -Inf   209912.30000    -144.00589   6.35675e+08 Silajlık mısır satış
+                                            .        1.15286e+07    1.13553e+06          +Inf          +Inf
+
+    20 İşgücü Mayıs
+                    BS  956194.11403   1.05724e+07          -Inf    27183.20000    -143.48027   6.62003e+08 Silajlık mısır satış
+                                            .        1.15286e+07   956194.11403          +Inf          +Inf
+
+GLPK 5.0  - SENSITIVITY ANALYSIS REPORT                                                                         Page   3
+
+Problem:    Bafra
+Objective:  Toplam maliyet = 799198102.9 (MAXimum)
+
+   No. Row name     St      Activity         Slack   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+    21 İşgücü Haziran
+                    BS  960502.60085    1.0568e+07          -Inf   -4.16628e+07     -12.50000   7.87192e+08 igk6
+                                            .        1.15286e+07   960502.60085          +Inf          +Inf
+
+    22 İşgücü Temmuz
+                    BS   1.63857e+06   9.88998e+06          -Inf   -4.09848e+07     -12.50000   7.78716e+08 igk7
+                                            .        1.15286e+07    1.63857e+06          +Inf          +Inf
+
+    23 İşgücü Ağustos
+                    BS   1.18641e+06   1.03421e+07          -Inf   -4.14369e+07     -12.50000   7.84368e+08 igk8
+                                            .        1.15286e+07    1.18641e+06          +Inf          +Inf
+
+    24 İşgücü Eylül
+                    BS    1.3742e+06   1.01544e+07          -Inf    1.08841e+06     -53.98424   7.25013e+08 Saman
+                                            .        1.15286e+07     1.3742e+06          +Inf          +Inf
+
+    25 İşgücü Ekim
+                    BS   1.10381e+06   1.04247e+07          -Inf   175265.40000    -143.55290   6.40744e+08 Silajlık mısır satış
+                                            .        1.15286e+07    1.10381e+06          +Inf          +Inf
+
+    26 İşgücü Kasım
+                    BS  926385.98452   1.06022e+07          -Inf         .         -143.88683   6.65903e+08 Silajlık mısır satış
+                                            .        1.15286e+07   926385.98452          +Inf          +Inf
+
+    27 İşgücü Aralık
+                    BS  929776.85562   1.05988e+07          -Inf         .         -143.36208   6.65903e+08 Silajlık mısır satış
+                                            .        1.15286e+07   929776.85562          +Inf          +Inf
+
+    28 Saman        NU        .             .               -Inf   -1.31336e+07      -1.17470    7.8377e+08 Çeltik satış
+                                           1.17470        .        380794.82453          +Inf   7.99645e+08 Buğday
+
+    29 İşletme sermayesi
+                    BS   2.25287e+08   5.32792e+08          -Inf           -Inf       -.25000   7.42876e+08 Sermaye temini
+                                            .        7.58079e+08           +Inf       1.00000   1.02449e+09 igk6
+
+    30 Ahır Yeri   BS  203452.26600   96547.73400          -Inf         .         -655.16469   6.65903e+08 Silajlık mısır satış
+                                            .       300000.00000   203452.26600          +Inf          +Inf
+
+GLPK 5.0  - SENSITIVITY ANALYSIS REPORT                                                                         Page   4
+
+Problem:    Bafra
+Objective:  Toplam maliyet = 799198102.9 (MAXimum)
+
+   No. Column name  St      Activity      Obj coef   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+     1 Buğday      BS     870.38817    -239.38000        .              .      -153383.39746   6.65903e+08 Silajlık mısır satış
+                                            .               +Inf    30890.00000     274.55000   7.99645e+08 Saman
+
+     2 Buğday+SM   BS   57380.00000    -280.73000        .              .        -3148.81635   6.34627e+08 Silajlık mısır arazisi
+                                            .               +Inf    57380.00000          +Inf          +Inf
+
+     3 Buğday satış
+                    BS   2.54845e+07       2.30000        .                -Inf        .        7.40584e+08 Buğday transfer
+                                            .               +Inf    3.86181e+07       3.47470   8.29135e+08 Saman
+
+     4 Silajlık mısır satış
+                    NL        .            1.33000        .        -2.25278e+07          -Inf   8.62453e+08 Ahır Yeri
+                                          -2.80785          +Inf    4.74722e+07       4.13785   6.65903e+08 Süt sığırcılığı
+
+     5 Çeltik      BS   30019.61183    -469.20000        .              .         -983.13000    7.8377e+08 Saman
+                                            .               +Inf    88270.00000    2356.03087    8.8401e+08 Silajlık mısır arazisi
+
+     6 Çeltik satış
+                    BS   2.10137e+07       2.50000        .              .            1.76581    7.8377e+08 Saman
+                                            .               +Inf     6.1789e+07       6.53604    8.8401e+08 Silajlık mısır arazisi
+
+     7 Fındık     BS   20531.00000    -901.47000        .              .        -2367.18750   7.69105e+08 Fındık arazisi
+                                            .               +Inf    20531.00000          +Inf          +Inf
+
+     8 Fındık satış
+                    BS   1.92478e+06      25.25000        .              .            9.61568   7.69105e+08 Fındık arazisi
+                                            .               +Inf    1.92478e+06          +Inf          +Inf
+
+     9 Buğday+lahana
+                    BS   30525.00000   -1899.15000        .              .       -18000.00000    3.0772e+08 Lahana arazisi
+                                            .               +Inf    30525.00000          +Inf          +Inf
+
+    10 Lahana satış
+                    BS    1.8315e+08       3.00000        .              .             .31653    3.0772e+08 Lahana arazisi
+                                            .               +Inf     1.8315e+08          +Inf          +Inf
+
+GLPK 5.0  - SENSITIVITY ANALYSIS REPORT                                                                         Page   5
+
+Problem:    Bafra
+Objective:  Toplam maliyet = 799198102.9 (MAXimum)
+
+   No. Column name  St      Activity      Obj coef   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+    11 Süt sığırcılığı
+                    BS   33908.71100    5806.18000        .              .         1875.19185   6.65903e+08 Silajlık mısır satış
+                                            .               +Inf    33908.71100          +Inf          +Inf
+
+    12 igk6         NL        .          -12.50000        .         -1.0568e+07          -Inf   9.31299e+08 İşgücü Haziran
+                                         -12.50000          +Inf    4.26233e+07        .        2.66406e+08 İşletme sermayesi
+
+    13 igk7         NL        .          -12.50000        .        -9.88998e+06          -Inf   9.22823e+08 İşgücü Temmuz
+                                         -12.50000          +Inf    4.26233e+07        .        2.66406e+08 İşletme sermayesi
+
+    14 igk8         NL        .          -12.50000        .        -1.03421e+07          -Inf   9.28475e+08 İşgücü Ağustos
+                                         -12.50000          +Inf    4.26233e+07        .        2.66406e+08 İşletme sermayesi
+
+    15 Sermaye temini
+                    NL        .            -.25000        .        -5.32792e+08          -Inf   9.32396e+08 İşletme sermayesi
+                                           -.25000          +Inf           +Inf        .               -Inf
+
+End of report

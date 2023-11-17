@@ -9,2008 +9,2004 @@
     "sensitivity": {
       "coeff": [
         {
-          "basic_variable": true,
-          "activity": "Buğday, Durum Buğdayı Hariç",
-          "dual_value": 217095.0,
-          "obj_coef": 0.0,
-          "range_from": -116.27,
-          "range_till": -324.364
-        },
-        {
-          "basic_variable": true,
-          "activity": "Buğday, Durum Buğdayı Hariç Satış",
-          "dual_value": 43419000.0,
-          "obj_coef": 0.0,
-          "range_from": 2.2,
-          "range_till": 1.16
-        },
-        {
-          "basic_variable": false,
-          "activity": "Buğday (Sulu)",
-          "dual_value": 0.0,
-          "obj_coef": -1506.228,
-          "range_from": -445.33,
-          "range_till": -9e+99
-        },
-        {
-          "basic_variable": true,
-          "activity": "Buğday (Sulu) Satış",
-          "dual_value": 0.0,
-          "obj_coef": 0.0,
-          "range_from": 2.2,
-          "range_till": 0.0
-        },
-        {
-          "basic_variable": true,
-          "activity": "Arpa (Diğer) (Kuru)",
-          "dual_value": 129955.68,
-          "obj_coef": 0.0,
-          "range_from": -218.37,
-          "range_till": -274.857
-        },
-        {
-          "basic_variable": true,
-          "activity": "Arpa (Diğer) (Kuru) Satış",
-          "dual_value": 18583662.24,
-          "obj_coef": 0.0,
-          "range_from": 2.48,
-          "range_till": 2.085
-        },
-        {
-          "basic_variable": false,
-          "activity": "Arpa (Sulu)",
-          "dual_value": 0.0,
-          "obj_coef": -1474.743,
-          "range_from": -454.21,
-          "range_till": -9e+99
-        },
-        {
-          "basic_variable": true,
-          "activity": "Arpa (Sulu) Satış",
-          "dual_value": 0.0,
-          "obj_coef": 0.0,
-          "range_from": 2.48,
-          "range_till": 0.0
-        },
-        {
-          "basic_variable": false,
-          "activity": "Yulaf",
-          "dual_value": 0.0,
-          "obj_coef": -56.487,
-          "range_from": -126.32,
-          "range_till": -9e+99
-        },
-        {
-          "basic_variable": true,
-          "activity": "Yulaf Satış",
-          "dual_value": 0.0,
-          "obj_coef": 0.0,
-          "range_from": 2.5,
-          "range_till": 0.0
-        },
-        {
-          "basic_variable": true,
-          "activity": "Yulaf (Yeşilot)",
-          "dual_value": 197191.5,
-          "obj_coef": 0.0,
-          "range_from": -489.65,
-          "range_till": -1313.705
-        },
-        {
-          "basic_variable": true,
-          "activity": "Yulaf (Yeşilot) Satış",
-          "dual_value": 269757972.0,
-          "obj_coef": 0.0,
-          "range_from": 1.1,
-          "range_till": 0.498
-        },
-        {
-          "basic_variable": true,
-          "activity": "Triticale",
-          "dual_value": 26476.5,
-          "obj_coef": 0.0,
-          "range_from": -326.56,
-          "range_till": -933.865
-        },
-        {
-          "basic_variable": true,
-          "activity": "Triticale Satış",
-          "dual_value": 8260668.0,
-          "obj_coef": 0.0,
-          "range_from": 3.5,
-          "range_till": 1.554
-        },
-        {
-          "basic_variable": true,
-          "activity": "Fasulye, Taze",
-          "dual_value": 518.1,
-          "obj_coef": 0.0,
-          "range_from": -2905.21,
-          "range_till": -3413.901
-        },
-        {
-          "basic_variable": true,
-          "activity": "Fasulye, Taze Satış",
-          "dual_value": 545559.3,
-          "obj_coef": 0.0,
-          "range_from": 5.0,
-          "range_till": 4.517
-        },
-        {
-          "basic_variable": true,
-          "activity": "Patates (Tatlı Patates Hariç)",
-          "dual_value": 8698.5,
-          "obj_coef": 0.0,
-          "range_from": -2745.98,
-          "range_till": -4141.806
-        },
-        {
-          "basic_variable": true,
-          "activity": "Patates (Tatlı Patates Hariç) Satış",
-          "dual_value": 24503674.5,
-          "obj_coef": 0.0,
-          "range_from": 1.7,
-          "range_till": 1.204
-        },
-        {
-          "basic_variable": true,
-          "activity": "Şeker Pancarı",
-          "dual_value": 18943.5,
-          "obj_coef": 0.0,
-          "range_from": -952.12,
-          "range_till": -964.191
-        },
-        {
-          "basic_variable": true,
-          "activity": "Şeker Pancarı Satış",
-          "dual_value": 52568212.5,
-          "obj_coef": 0.0,
-          "range_from": 0.45,
-          "range_till": 0.446
-        },
-        {
-          "basic_variable": true,
-          "activity": "Fiğ (Adi) (Yeşil Ot)",
-          "dual_value": 52444.5,
-          "obj_coef": 0.0,
-          "range_from": -485.16,
-          "range_till": -1251.912
-        },
-        {
-          "basic_variable": true,
-          "activity": "Fiğ (Adi) (Yeşil Ot) Satış",
-          "dual_value": 65765403.0,
-          "obj_coef": 0.0,
-          "range_from": 1.15,
-          "range_till": 0.539
-        },
-        {
-          "basic_variable": true,
-          "activity": "Fiğ (Macar) (Yeşil Ot)",
-          "dual_value": 345.0,
-          "obj_coef": 0.0,
-          "range_from": -485.16,
-          "range_till": -1249.612
-        },
-        {
-          "basic_variable": true,
-          "activity": "Fiğ (Macar) (Yeşil Ot) Satış",
-          "dual_value": 431940.0,
-          "obj_coef": 0.0,
-          "range_from": 1.15,
-          "range_till": 0.539
-        },
-        {
-          "basic_variable": true,
-          "activity": "Yonca (Yeşilot)",
-          "dual_value": 110760.32,
-          "obj_coef": 0.0,
-          "range_from": -624.41,
-          "range_till": -1008.675
-        },
-        {
-          "basic_variable": true,
-          "activity": "Yonca (Yeşilot) Satış",
-          "dual_value": 152184679.68,
-          "obj_coef": 0.0,
-          "range_from": 1.65,
-          "range_till": 1.37
-        },
-        {
-          "basic_variable": true,
-          "activity": "Korunga (Yeşilot)",
-          "dual_value": 110056.1,
-          "obj_coef": 0.0,
-          "range_from": -715.32,
-          "range_till": -2152.048
-        },
-        {
-          "basic_variable": true,
-          "activity": "Korunga (Yeşilot) Satış",
-          "dual_value": 134818722.5,
-          "obj_coef": 0.0,
-          "range_from": 1.95,
-          "range_till": 0.777
-        },
-        {
-          "basic_variable": true,
-          "activity": "Mısır (Slaj)",
-          "dual_value": 7635.0,
-          "obj_coef": 0.0,
-          "range_from": -677.6,
-          "range_till": -2021.701
-        },
-        {
-          "basic_variable": true,
-          "activity": "Mısır (Slaj) Satış",
-          "dual_value": 40915965.0,
-          "obj_coef": 0.0,
-          "range_from": 0.42,
-          "range_till": 0.169
-        },
-        {
-          "basic_variable": true,
-          "activity": "Çayır Otu (Yeşilot)",
-          "dual_value": 100568.6,
-          "obj_coef": 0.0,
-          "range_from": -598.63,
-          "range_till": -1582.38
-        },
-        {
-          "basic_variable": true,
-          "activity": "Çayır Otu (Yeşilot) Satış",
-          "dual_value": 120380614.2,
-          "obj_coef": 0.0,
-          "range_from": 1.5,
-          "range_till": 0.678
-        },
-        {
-          "basic_variable": true,
-          "activity": "Bezelye (Yemlik)",
-          "dual_value": 3521.1,
-          "obj_coef": 0.0,
-          "range_from": -546.23,
-          "range_till": -1197.47
-        },
-        {
-          "basic_variable": true,
-          "activity": "Bezelye (Yemlik) Satış",
-          "dual_value": 4929540.0,
-          "obj_coef": 0.0,
-          "range_from": 1.0,
-          "range_till": 0.535
-        },
-        {
-          "basic_variable": true,
-          "activity": "Barbunya, Taze",
-          "dual_value": 119.9,
-          "obj_coef": 0.0,
-          "range_from": -412.65,
-          "range_till": -596.216
-        },
-        {
-          "basic_variable": true,
-          "activity": "Barbunya, Taze Satış",
-          "dual_value": 17625.3,
-          "obj_coef": 0.0,
-          "range_from": 5.25,
-          "range_till": 4.001
-        },
-        {
-          "basic_variable": true,
-          "activity": "Lahana (Beyaz)",
-          "dual_value": 1608.2,
-          "obj_coef": 0.0,
-          "range_from": -2689.74,
-          "range_till": -4702.447
-        },
-        {
-          "basic_variable": true,
-          "activity": "Lahana (Beyaz) Satış",
-          "dual_value": 9970840.0,
-          "obj_coef": 0.0,
-          "range_from": 1.05,
-          "range_till": 0.725
-        },
-        {
-          "basic_variable": true,
-          "activity": "Marul (Kıvırcık)",
-          "dual_value": 18.0,
-          "obj_coef": 0.0,
-          "range_from": -1369.41,
-          "range_till": -3051.782
-        },
-        {
-          "basic_variable": true,
-          "activity": "Marul (Kıvırcık) Satış",
-          "dual_value": 30060.0,
-          "obj_coef": 0.0,
-          "range_from": 2.75,
-          "range_till": 1.743
-        },
-        {
-          "basic_variable": true,
-          "activity": "Marul (Göbekli)",
-          "dual_value": 3.6,
-          "obj_coef": 0.0,
-          "range_from": -1369.41,
-          "range_till": -2626.782
-        },
-        {
-          "basic_variable": true,
-          "activity": "Marul (Göbekli) Satış",
-          "dual_value": 6001.2,
-          "obj_coef": 0.0,
-          "range_from": 2.5,
-          "range_till": 1.746
-        },
-        {
-          "basic_variable": true,
-          "activity": "Ispanak",
-          "dual_value": 0.0,
-          "obj_coef": 0.0,
-          "range_from": -2189.0,
-          "range_till": -9e+99
-        },
-        {
-          "basic_variable": false,
-          "activity": "Ispanak Satış",
-          "dual_value": 0.0,
-          "obj_coef": -0.545,
-          "range_from": 4.0,
-          "range_till": -9e+99
-        },
-        {
-          "basic_variable": true,
-          "activity": "Maydanoz",
-          "dual_value": 0.0,
-          "obj_coef": 0.0,
-          "range_from": -592.36,
-          "range_till": -9e+99
-        },
-        {
-          "basic_variable": false,
-          "activity": "Maydanoz Satış",
-          "dual_value": 0.0,
-          "obj_coef": -2.34,
-          "range_from": 2.6,
-          "range_till": -9e+99
-        },
-        {
-          "basic_variable": false,
-          "activity": "Biber (Sivri)",
-          "dual_value": 0.0,
-          "obj_coef": -2064.907,
-          "range_from": -3245.63,
-          "range_till": -9e+99
-        },
-        {
-          "basic_variable": true,
-          "activity": "Biber (Sivri) Satış",
-          "dual_value": 0.0,
-          "obj_coef": 0.0,
-          "range_from": 1.86,
-          "range_till": 0.0
-        },
-        {
-          "basic_variable": true,
-          "activity": "Hıyar (Sofralık)",
-          "dual_value": 181.5,
-          "obj_coef": 0.0,
-          "range_from": -3015.65,
-          "range_till": -5232.081
-        },
-        {
-          "basic_variable": true,
-          "activity": "Hıyar (Sofralık) Satış",
-          "dual_value": 573177.0,
-          "obj_coef": 0.0,
-          "range_from": 2.25,
-          "range_till": 1.548
-        },
-        {
-          "basic_variable": true,
-          "activity": "Hıyar (Sofralık, Örtüaltı)",
-          "dual_value": 28.6,
-          "obj_coef": 0.0,
-          "range_from": -4282.23,
-          "range_till": -6896.236
-        },
-        {
-          "basic_variable": true,
-          "activity": "Hıyar (Sofralık, Örtüaltı) Satış",
-          "dual_value": 114400.0,
-          "obj_coef": 0.0,
-          "range_from": 2.25,
-          "range_till": 1.596
-        },
-        {
-          "basic_variable": true,
-          "activity": "Domates (Sofralık)",
-          "dual_value": 286.6,
-          "obj_coef": 0.0,
-          "range_from": -4136.45,
-          "range_till": -4162.569
-        },
-        {
-          "basic_variable": true,
-          "activity": "Domates (Sofralık) Satış",
-          "dual_value": 1096531.6,
-          "obj_coef": 0.0,
-          "range_from": 1.63,
-          "range_till": 1.623
-        },
-        {
-          "basic_variable": true,
-          "activity": "Domates (Sofralık, Örtüaltı)",
-          "dual_value": 5.4,
-          "obj_coef": 0.0,
-          "range_from": -5749.67,
-          "range_till": -9e+99
-        },
-        {
-          "basic_variable": true,
-          "activity": "Domates (Sofralık, Örtüaltı) Satış",
-          "dual_value": 27000.0,
-          "obj_coef": 0.0,
-          "range_from": 1.63,
-          "range_till": 0.0
-        },
-        {
-          "basic_variable": true,
-          "activity": "Bal Kabağı",
-          "dual_value": 68.2,
-          "obj_coef": 0.0,
-          "range_from": -1345.68,
-          "range_till": -3714.078
-        },
-        {
-          "basic_variable": true,
-          "activity": "Bal Kabağı Satış",
-          "dual_value": 204600.0,
-          "obj_coef": 0.0,
-          "range_from": 1.75,
-          "range_till": 0.961
-        },
-        {
-          "basic_variable": true,
-          "activity": "Havuç",
-          "dual_value": 8.8,
-          "obj_coef": 0.0,
-          "range_from": -1945.65,
-          "range_till": -5217.825
-        },
-        {
-          "basic_variable": true,
-          "activity": "Havuç Satış",
-          "dual_value": 24200.0,
-          "obj_coef": 0.0,
-          "range_from": 2.5,
-          "range_till": 1.31
-        },
-        {
-          "basic_variable": true,
-          "activity": "Soğan (Taze)",
-          "dual_value": 0.0,
-          "obj_coef": 0.0,
-          "range_from": -1881.84,
-          "range_till": -9e+99
-        },
-        {
-          "basic_variable": false,
-          "activity": "Soğan (Taze) Satış",
-          "dual_value": 0.0,
-          "obj_coef": -0.026,
-          "range_from": 3.5,
-          "range_till": -9e+99
-        },
-        {
-          "basic_variable": true,
-          "activity": "Elma (Bütünleştirilmiş)",
-          "dual_value": 800.0,
-          "obj_coef": 0.0,
-          "range_from": -2311.88,
-          "range_till": -9e+99
-        },
-        {
-          "basic_variable": true,
-          "activity": "Elma (Bütünleştirilmiş) Satış",
-          "dual_value": 627200.0,
-          "obj_coef": 0.0,
-          "range_from": 3.25,
-          "range_till": 0.0
-        },
-        {
-          "basic_variable": true,
-          "activity": "Armut",
-          "dual_value": 145.0,
-          "obj_coef": 0.0,
-          "range_from": -2311.88,
-          "range_till": -5213.88
-        },
-        {
-          "basic_variable": true,
-          "activity": "Armut Satış",
-          "dual_value": 158050.0,
-          "obj_coef": 0.0,
-          "range_from": 5.0,
-          "range_till": 2.338
-        },
-        {
-          "basic_variable": true,
-          "activity": "Kiraz",
-          "dual_value": 310.0,
-          "obj_coef": 0.0,
-          "range_from": -1670.43,
-          "range_till": -1703.515
-        },
-        {
-          "basic_variable": true,
-          "activity": "Kiraz Satış",
-          "dual_value": 56110.0,
-          "obj_coef": 0.0,
-          "range_from": 10.0,
-          "range_till": 9.817
-        },
-        {
-          "basic_variable": true,
-          "activity": "Vişne",
-          "dual_value": 445.0,
-          "obj_coef": 0.0,
-          "range_from": -1089.0,
-          "range_till": -1537.021
-        },
-        {
-          "basic_variable": true,
-          "activity": "Vişne Satış",
-          "dual_value": 97010.0,
-          "obj_coef": 0.0,
-          "range_from": 7.0,
-          "range_till": 4.945
-        },
-        {
-          "basic_variable": true,
-          "activity": "Süt Sığırcılığı",
-          "dual_value": 74324.734,
-          "obj_coef": 0.0,
-          "range_from": -9195.27,
-          "range_till": -9431.384
-        },
-        {
-          "basic_variable": true,
-          "activity": "Süt Sığırcılığı Satış",
-          "dual_value": 180609104.713,
-          "obj_coef": 0.0,
-          "range_from": 5.5,
-          "range_till": 5.403
-        },
-        {
-          "basic_variable": true,
-          "activity": "Besi Sığırcılığı",
-          "dual_value": 105828.278,
-          "obj_coef": 0.0,
-          "range_from": -9841.86,
-          "range_till": -10191.675
-        },
-        {
-          "basic_variable": true,
-          "activity": "Besi Sığırcılığı Satış",
-          "dual_value": 29631917.967,
-          "obj_coef": 0.0,
-          "range_from": 45.0,
-          "range_till": 43.751
-        },
-        {
-          "basic_variable": false,
-          "activity": "Koyunculuk",
-          "dual_value": 0.0,
-          "obj_coef": -227.684,
-          "range_from": -1041.25,
-          "range_till": -9e+99
-        },
-        {
-          "basic_variable": true,
-          "activity": "Koyunculuk Satış",
-          "dual_value": 0.0,
-          "obj_coef": 0.0,
-          "range_from": 8.0,
-          "range_till": 0.0
-        },
-        {
-          "basic_variable": false,
-          "activity": "Keçicilik",
-          "dual_value": 0.0,
-          "obj_coef": -469.953,
-          "range_from": -5000.0,
-          "range_till": -9e+99
-        },
-        {
-          "basic_variable": true,
-          "activity": "Keçicilik Satış",
-          "dual_value": 0.0,
-          "obj_coef": 0.0,
-          "range_from": 4.5,
-          "range_till": 0.0
-        },
-        {
-          "basic_variable": false,
-          "activity": "Mandacılık",
-          "dual_value": 0.0,
-          "obj_coef": -2661.871,
-          "range_from": -8814.3,
-          "range_till": -9e+99
-        },
-        {
-          "basic_variable": true,
-          "activity": "Mandacılık Satış",
-          "dual_value": 0.0,
-          "obj_coef": 0.0,
-          "range_from": 4.5,
-          "range_till": 0.0
-        },
-        {
-          "basic_variable": true,
-          "activity": "Çavdar",
-          "dual_value": 53197.5,
-          "obj_coef": 0.0,
-          "range_from": -156.45,
-          "range_till": -183.744
-        },
-        {
-          "basic_variable": true,
-          "activity": "Çavdar Satış",
-          "dual_value": 6543292.5,
-          "obj_coef": 0.0,
-          "range_from": 2.5,
-          "range_till": 2.278
-        },
-        {
-          "basic_variable": false,
-          "activity": "Fiğ (Adi) Tohumu",
-          "dual_value": 0.0,
-          "obj_coef": -59.094,
-          "range_from": -135.56,
-          "range_till": -9e+99
-        },
-        {
-          "basic_variable": true,
-          "activity": "Fiğ (Adi) Tohumu Satış",
-          "dual_value": 0.0,
-          "obj_coef": 0.0,
-          "range_from": 2.0,
-          "range_till": 0.0
-        },
-        {
-          "basic_variable": true,
-          "activity": "Mercimek, Kuru (Yeşil)",
-          "dual_value": 4187.3,
-          "obj_coef": 0.0,
-          "range_from": -482.66,
-          "range_till": -499.118
-        },
-        {
-          "basic_variable": true,
-          "activity": "Mercimek, Kuru (Yeşil) Satış",
-          "dual_value": 515037.9,
-          "obj_coef": 0.0,
-          "range_from": 5.6,
-          "range_till": 5.466
-        },
-        {
-          "basic_variable": true,
-          "activity": "Nohut, Kuru",
-          "dual_value": 3029.0,
-          "obj_coef": 0.0,
-          "range_from": -384.56,
-          "range_till": -910.143
-        },
-        {
-          "basic_variable": true,
-          "activity": "Nohut, Kuru Satış",
-          "dual_value": 726960.0,
-          "obj_coef": 0.0,
-          "range_from": 4.5,
-          "range_till": 2.31
-        },
-        {
-          "basic_variable": true,
-          "activity": "Triticale (Sulu)",
-          "dual_value": 0.0,
-          "obj_coef": 0.0,
-          "range_from": -426.56,
-          "range_till": -9e+99
-        },
-        {
-          "basic_variable": false,
-          "activity": "Triticale (Sulu) Satış",
-          "dual_value": 0.0,
-          "obj_coef": -0.818,
-          "range_from": 3.5,
-          "range_till": -9e+99
-        },
-        {
-          "basic_variable": true,
-          "activity": "Mercimek, Sulu (Yeşil)",
-          "dual_value": 0.0,
-          "obj_coef": 0.0,
-          "range_from": -542.12,
-          "range_till": -9e+99
-        },
-        {
-          "basic_variable": false,
-          "activity": "Mercimek, Sulu (Yeşil) Satış",
-          "dual_value": 0.0,
-          "obj_coef": -5.406,
-          "range_from": 5.6,
-          "range_till": -9e+99
-        },
-        {
-          "basic_variable": true,
-          "activity": "Fasulye, Kuru (Sulu)",
-          "dual_value": 0.0,
-          "obj_coef": 0.0,
-          "range_from": -1049.23,
-          "range_till": -9e+99
-        },
-        {
-          "basic_variable": false,
-          "activity": "Fasulye, Kuru (Sulu) Satış",
-          "dual_value": 0.0,
-          "obj_coef": -8.148,
-          "range_from": 15.0,
-          "range_till": -9e+99
-        },
-        {
-          "basic_variable": false,
-          "activity": "Yulaf (Sulu)",
-          "dual_value": 0.0,
-          "obj_coef": -1483.083,
-          "range_from": -336.15,
-          "range_till": -9e+99
-        },
-        {
-          "basic_variable": true,
-          "activity": "Yulaf (Sulu) Satış",
-          "dual_value": 0.0,
-          "obj_coef": 0.0,
-          "range_from": 2.5,
-          "range_till": 0.0
-        },
-        {
-          "basic_variable": false,
-          "activity": "İg1",
-          "dual_value": 0.0,
-          "obj_coef": -20.953,
-          "range_from": -17.43,
-          "range_till": -9e+99
-        },
-        {
-          "basic_variable": false,
-          "activity": "İg2",
-          "dual_value": 0.0,
-          "obj_coef": -20.953,
-          "range_from": -17.43,
-          "range_till": -9e+99
-        },
-        {
-          "basic_variable": false,
-          "activity": "İg3",
-          "dual_value": 0.0,
-          "obj_coef": -20.953,
-          "range_from": -17.43,
-          "range_till": -9e+99
-        },
-        {
-          "basic_variable": false,
-          "activity": "İg4",
-          "dual_value": 0.0,
-          "obj_coef": -20.953,
-          "range_from": -17.43,
-          "range_till": -9e+99
-        },
-        {
-          "basic_variable": false,
-          "activity": "İg5",
-          "dual_value": 0.0,
-          "obj_coef": -20.953,
-          "range_from": -17.43,
-          "range_till": -9e+99
-        },
-        {
-          "basic_variable": false,
-          "activity": "İg6",
-          "dual_value": 0.0,
-          "obj_coef": -20.953,
-          "range_from": -17.43,
-          "range_till": -9e+99
-        },
-        {
-          "basic_variable": false,
-          "activity": "İg7",
-          "dual_value": 0.0,
-          "obj_coef": -20.953,
-          "range_from": -17.43,
-          "range_till": -9e+99
-        },
-        {
-          "basic_variable": false,
-          "activity": "İg8",
-          "dual_value": 0.0,
-          "obj_coef": -20.953,
-          "range_from": -17.43,
-          "range_till": -9e+99
-        },
-        {
-          "basic_variable": false,
-          "activity": "İg9",
-          "dual_value": 0.0,
-          "obj_coef": -20.953,
-          "range_from": -17.43,
-          "range_till": -9e+99
-        },
-        {
-          "basic_variable": false,
-          "activity": "İg10",
-          "dual_value": 0.0,
-          "obj_coef": -20.953,
-          "range_from": -17.43,
-          "range_till": -9e+99
-        },
-        {
-          "basic_variable": false,
-          "activity": "İg11",
-          "dual_value": 0.0,
-          "obj_coef": -20.953,
-          "range_from": -17.43,
-          "range_till": -9e+99
-        },
-        {
-          "basic_variable": false,
-          "activity": "İg12",
-          "dual_value": 0.0,
-          "obj_coef": -20.953,
-          "range_from": -17.43,
-          "range_till": -9e+99
-        },
-        {
-          "basic_variable": false,
-          "activity": "Sermaye Temini",
-          "dual_value": 0.0,
-          "obj_coef": -0.048,
-          "range_from": -0.25,
-          "range_till": -9e+99
+          "variable": "Buğday, Durum Buğdayı Hariç",
+          "value": 217095.0,
+          "reduced_cost": -0.0,
+          "original_value": -116.27,
+          "lower_bound": -324.364,
+          "upper_bound": 9e+99,
+          "is_basic_variable": true
+        },
+        {
+          "variable": "Buğday, Durum Buğdayı Hariç Satış",
+          "value": 43419000.0,
+          "reduced_cost": -0.0,
+          "original_value": 2.2,
+          "lower_bound": 1.16,
+          "upper_bound": 9e+99,
+          "is_basic_variable": true
+        },
+        {
+          "variable": "Buğday (Sulu)",
+          "value": 0.0,
+          "reduced_cost": 1506.228,
+          "original_value": -445.33,
+          "lower_bound": -9e+99,
+          "upper_bound": 1060.898,
+          "is_basic_variable": false
+        },
+        {
+          "variable": "Buğday (Sulu) Satış",
+          "value": 0.0,
+          "reduced_cost": -0.0,
+          "original_value": 2.2,
+          "lower_bound": 0.0,
+          "upper_bound": 8.274,
+          "is_basic_variable": true
+        },
+        {
+          "variable": "Arpa (Diğer) (Kuru)",
+          "value": 129955.68,
+          "reduced_cost": -0.0,
+          "original_value": -218.37,
+          "lower_bound": -274.857,
+          "upper_bound": -206.299,
+          "is_basic_variable": true
+        },
+        {
+          "variable": "Arpa (Diğer) (Kuru) Satış",
+          "value": 18583662.24,
+          "reduced_cost": -0.0,
+          "original_value": 2.48,
+          "lower_bound": 2.085,
+          "upper_bound": 2.564,
+          "is_basic_variable": true
+        },
+        {
+          "variable": "Arpa (Sulu)",
+          "value": 0.0,
+          "reduced_cost": 1474.743,
+          "original_value": -454.21,
+          "lower_bound": -9e+99,
+          "upper_bound": 1020.533,
+          "is_basic_variable": false
+        },
+        {
+          "variable": "Arpa (Sulu) Satış",
+          "value": 0.0,
+          "reduced_cost": -0.0,
+          "original_value": 2.48,
+          "lower_bound": 0.0,
+          "upper_bound": 8.703,
+          "is_basic_variable": true
+        },
+        {
+          "variable": "Yulaf",
+          "value": 0.0,
+          "reduced_cost": 56.487,
+          "original_value": -126.32,
+          "lower_bound": -9e+99,
+          "upper_bound": -69.833,
+          "is_basic_variable": false
+        },
+        {
+          "variable": "Yulaf Satış",
+          "value": 0.0,
+          "reduced_cost": -0.0,
+          "original_value": 2.5,
+          "lower_bound": 0.0,
+          "upper_bound": 3.253,
+          "is_basic_variable": true
+        },
+        {
+          "variable": "Yulaf (Yeşilot)",
+          "value": 197191.5,
+          "reduced_cost": -0.0,
+          "original_value": -489.65,
+          "lower_bound": -1313.705,
+          "upper_bound": 9e+99,
+          "is_basic_variable": true
+        },
+        {
+          "variable": "Yulaf (Yeşilot) Satış",
+          "value": 269757972.0,
+          "reduced_cost": -0.0,
+          "original_value": 1.1,
+          "lower_bound": 0.498,
+          "upper_bound": 9e+99,
+          "is_basic_variable": true
+        },
+        {
+          "variable": "Triticale",
+          "value": 26476.5,
+          "reduced_cost": -0.0,
+          "original_value": -326.56,
+          "lower_bound": -933.865,
+          "upper_bound": 9e+99,
+          "is_basic_variable": true
+        },
+        {
+          "variable": "Triticale Satış",
+          "value": 8260668.0,
+          "reduced_cost": -0.0,
+          "original_value": 3.5,
+          "lower_bound": 1.554,
+          "upper_bound": 9e+99,
+          "is_basic_variable": true
+        },
+        {
+          "variable": "Fasulye, Taze",
+          "value": 518.1,
+          "reduced_cost": -0.0,
+          "original_value": -2905.21,
+          "lower_bound": -3413.901,
+          "upper_bound": 9e+99,
+          "is_basic_variable": true
+        },
+        {
+          "variable": "Fasulye, Taze Satış",
+          "value": 545559.3,
+          "reduced_cost": -0.0,
+          "original_value": 5.0,
+          "lower_bound": 4.517,
+          "upper_bound": 9e+99,
+          "is_basic_variable": true
+        },
+        {
+          "variable": "Patates (Tatlı Patates Hariç)",
+          "value": 8698.5,
+          "reduced_cost": -0.0,
+          "original_value": -2745.98,
+          "lower_bound": -4141.806,
+          "upper_bound": 9e+99,
+          "is_basic_variable": true
+        },
+        {
+          "variable": "Patates (Tatlı Patates Hariç) Satış",
+          "value": 24503674.5,
+          "reduced_cost": -0.0,
+          "original_value": 1.7,
+          "lower_bound": 1.204,
+          "upper_bound": 9e+99,
+          "is_basic_variable": true
+        },
+        {
+          "variable": "Şeker Pancarı",
+          "value": 18943.5,
+          "reduced_cost": -0.0,
+          "original_value": -952.12,
+          "lower_bound": -964.191,
+          "upper_bound": 9e+99,
+          "is_basic_variable": true
+        },
+        {
+          "variable": "Şeker Pancarı Satış",
+          "value": 52568212.5,
+          "reduced_cost": -0.0,
+          "original_value": 0.45,
+          "lower_bound": 0.446,
+          "upper_bound": 9e+99,
+          "is_basic_variable": true
+        },
+        {
+          "variable": "Fiğ (Adi) (Yeşil Ot)",
+          "value": 52444.5,
+          "reduced_cost": -0.0,
+          "original_value": -485.16,
+          "lower_bound": -1251.912,
+          "upper_bound": 9e+99,
+          "is_basic_variable": true
+        },
+        {
+          "variable": "Fiğ (Adi) (Yeşil Ot) Satış",
+          "value": 65765403.0,
+          "reduced_cost": -0.0,
+          "original_value": 1.15,
+          "lower_bound": 0.539,
+          "upper_bound": 9e+99,
+          "is_basic_variable": true
+        },
+        {
+          "variable": "Fiğ (Macar) (Yeşil Ot)",
+          "value": 345.0,
+          "reduced_cost": -0.0,
+          "original_value": -485.16,
+          "lower_bound": -1249.612,
+          "upper_bound": 9e+99,
+          "is_basic_variable": true
+        },
+        {
+          "variable": "Fiğ (Macar) (Yeşil Ot) Satış",
+          "value": 431940.0,
+          "reduced_cost": -0.0,
+          "original_value": 1.15,
+          "lower_bound": 0.539,
+          "upper_bound": 9e+99,
+          "is_basic_variable": true
+        },
+        {
+          "variable": "Yonca (Yeşilot)",
+          "value": 110760.32,
+          "reduced_cost": -0.0,
+          "original_value": -624.41,
+          "lower_bound": -1008.675,
+          "upper_bound": 9e+99,
+          "is_basic_variable": true
+        },
+        {
+          "variable": "Yonca (Yeşilot) Satış",
+          "value": 152184679.68,
+          "reduced_cost": -0.0,
+          "original_value": 1.65,
+          "lower_bound": 1.37,
+          "upper_bound": 9e+99,
+          "is_basic_variable": true
+        },
+        {
+          "variable": "Korunga (Yeşilot)",
+          "value": 110056.1,
+          "reduced_cost": -0.0,
+          "original_value": -715.32,
+          "lower_bound": -2152.048,
+          "upper_bound": 9e+99,
+          "is_basic_variable": true
+        },
+        {
+          "variable": "Korunga (Yeşilot) Satış",
+          "value": 134818722.5,
+          "reduced_cost": -0.0,
+          "original_value": 1.95,
+          "lower_bound": 0.777,
+          "upper_bound": 9e+99,
+          "is_basic_variable": true
+        },
+        {
+          "variable": "Mısır (Slaj)",
+          "value": 7635.0,
+          "reduced_cost": -0.0,
+          "original_value": -677.6,
+          "lower_bound": -2021.701,
+          "upper_bound": 9e+99,
+          "is_basic_variable": true
+        },
+        {
+          "variable": "Mısır (Slaj) Satış",
+          "value": 40915965.0,
+          "reduced_cost": -0.0,
+          "original_value": 0.42,
+          "lower_bound": 0.169,
+          "upper_bound": 9e+99,
+          "is_basic_variable": true
+        },
+        {
+          "variable": "Çayır Otu (Yeşilot)",
+          "value": 100568.6,
+          "reduced_cost": -0.0,
+          "original_value": -598.63,
+          "lower_bound": -1582.38,
+          "upper_bound": 9e+99,
+          "is_basic_variable": true
+        },
+        {
+          "variable": "Çayır Otu (Yeşilot) Satış",
+          "value": 120380614.2,
+          "reduced_cost": -0.0,
+          "original_value": 1.5,
+          "lower_bound": 0.678,
+          "upper_bound": 9e+99,
+          "is_basic_variable": true
+        },
+        {
+          "variable": "Bezelye (Yemlik)",
+          "value": 3521.1,
+          "reduced_cost": -0.0,
+          "original_value": -546.23,
+          "lower_bound": -1197.47,
+          "upper_bound": 9e+99,
+          "is_basic_variable": true
+        },
+        {
+          "variable": "Bezelye (Yemlik) Satış",
+          "value": 4929540.0,
+          "reduced_cost": -0.0,
+          "original_value": 1.0,
+          "lower_bound": 0.535,
+          "upper_bound": 9e+99,
+          "is_basic_variable": true
+        },
+        {
+          "variable": "Barbunya, Taze",
+          "value": 119.9,
+          "reduced_cost": -0.0,
+          "original_value": -412.65,
+          "lower_bound": -596.216,
+          "upper_bound": 9e+99,
+          "is_basic_variable": true
+        },
+        {
+          "variable": "Barbunya, Taze Satış",
+          "value": 17625.3,
+          "reduced_cost": -0.0,
+          "original_value": 5.25,
+          "lower_bound": 4.001,
+          "upper_bound": 9e+99,
+          "is_basic_variable": true
+        },
+        {
+          "variable": "Lahana (Beyaz)",
+          "value": 1608.2,
+          "reduced_cost": -0.0,
+          "original_value": -2689.74,
+          "lower_bound": -4702.447,
+          "upper_bound": 9e+99,
+          "is_basic_variable": true
+        },
+        {
+          "variable": "Lahana (Beyaz) Satış",
+          "value": 9970840.0,
+          "reduced_cost": -0.0,
+          "original_value": 1.05,
+          "lower_bound": 0.725,
+          "upper_bound": 9e+99,
+          "is_basic_variable": true
+        },
+        {
+          "variable": "Marul (Kıvırcık)",
+          "value": 18.0,
+          "reduced_cost": -0.0,
+          "original_value": -1369.41,
+          "lower_bound": -3051.782,
+          "upper_bound": 9e+99,
+          "is_basic_variable": true
+        },
+        {
+          "variable": "Marul (Kıvırcık) Satış",
+          "value": 30060.0,
+          "reduced_cost": -0.0,
+          "original_value": 2.75,
+          "lower_bound": 1.743,
+          "upper_bound": 9e+99,
+          "is_basic_variable": true
+        },
+        {
+          "variable": "Marul (Göbekli)",
+          "value": 3.6,
+          "reduced_cost": -0.0,
+          "original_value": -1369.41,
+          "lower_bound": -2626.782,
+          "upper_bound": 9e+99,
+          "is_basic_variable": true
+        },
+        {
+          "variable": "Marul (Göbekli) Satış",
+          "value": 6001.2,
+          "reduced_cost": -0.0,
+          "original_value": 2.5,
+          "lower_bound": 1.746,
+          "upper_bound": 9e+99,
+          "is_basic_variable": true
+        },
+        {
+          "variable": "Ispanak",
+          "value": 0.0,
+          "reduced_cost": -0.0,
+          "original_value": -2189.0,
+          "lower_bound": -9e+99,
+          "upper_bound": -1721.645,
+          "is_basic_variable": true
+        },
+        {
+          "variable": "Ispanak Satış",
+          "value": 0.0,
+          "reduced_cost": 0.545,
+          "original_value": 4.0,
+          "lower_bound": -9e+99,
+          "upper_bound": 4.545,
+          "is_basic_variable": false
+        },
+        {
+          "variable": "Maydanoz",
+          "value": 0.0,
+          "reduced_cost": -0.0,
+          "original_value": -592.36,
+          "lower_bound": -9e+99,
+          "upper_bound": 343.678,
+          "is_basic_variable": true
+        },
+        {
+          "variable": "Maydanoz Satış",
+          "value": 0.0,
+          "reduced_cost": 2.34,
+          "original_value": 2.6,
+          "lower_bound": -9e+99,
+          "upper_bound": 4.94,
+          "is_basic_variable": false
+        },
+        {
+          "variable": "Biber (Sivri)",
+          "value": 0.0,
+          "reduced_cost": 2064.907,
+          "original_value": -3245.63,
+          "lower_bound": -9e+99,
+          "upper_bound": -1180.723,
+          "is_basic_variable": false
+        },
+        {
+          "variable": "Biber (Sivri) Satış",
+          "value": 0.0,
+          "reduced_cost": -0.0,
+          "original_value": 1.86,
+          "lower_bound": 0.0,
+          "upper_bound": 3.099,
+          "is_basic_variable": true
+        },
+        {
+          "variable": "Hıyar (Sofralık)",
+          "value": 181.5,
+          "reduced_cost": -0.0,
+          "original_value": -3015.65,
+          "lower_bound": -5232.081,
+          "upper_bound": 9e+99,
+          "is_basic_variable": true
+        },
+        {
+          "variable": "Hıyar (Sofralık) Satış",
+          "value": 573177.0,
+          "reduced_cost": -0.0,
+          "original_value": 2.25,
+          "lower_bound": 1.548,
+          "upper_bound": 9e+99,
+          "is_basic_variable": true
+        },
+        {
+          "variable": "Hıyar (Sofralık, Örtüaltı)",
+          "value": 28.6,
+          "reduced_cost": -0.0,
+          "original_value": -4282.23,
+          "lower_bound": -6896.236,
+          "upper_bound": 9e+99,
+          "is_basic_variable": true
+        },
+        {
+          "variable": "Hıyar (Sofralık, Örtüaltı) Satış",
+          "value": 114400.0,
+          "reduced_cost": -0.0,
+          "original_value": 2.25,
+          "lower_bound": 1.596,
+          "upper_bound": 9e+99,
+          "is_basic_variable": true
+        },
+        {
+          "variable": "Domates (Sofralık)",
+          "value": 286.6,
+          "reduced_cost": -0.0,
+          "original_value": -4136.45,
+          "lower_bound": -4162.569,
+          "upper_bound": -3627.759,
+          "is_basic_variable": true
+        },
+        {
+          "variable": "Domates (Sofralık) Satış",
+          "value": 1096531.6,
+          "reduced_cost": -0.0,
+          "original_value": 1.63,
+          "lower_bound": 1.623,
+          "upper_bound": 1.763,
+          "is_basic_variable": true
+        },
+        {
+          "variable": "Domates (Sofralık, Örtüaltı)",
+          "value": 5.4,
+          "reduced_cost": -0.0,
+          "original_value": -5749.67,
+          "lower_bound": -9e+99,
+          "upper_bound": -3135.664,
+          "is_basic_variable": true
+        },
+        {
+          "variable": "Domates (Sofralık, Örtüaltı) Satış",
+          "value": 27000.0,
+          "reduced_cost": -0.0,
+          "original_value": 1.63,
+          "lower_bound": 0.0,
+          "upper_bound": 2.153,
+          "is_basic_variable": true
+        },
+        {
+          "variable": "Bal Kabağı",
+          "value": 68.2,
+          "reduced_cost": -0.0,
+          "original_value": -1345.68,
+          "lower_bound": -3714.078,
+          "upper_bound": 9e+99,
+          "is_basic_variable": true
+        },
+        {
+          "variable": "Bal Kabağı Satış",
+          "value": 204600.0,
+          "reduced_cost": -0.0,
+          "original_value": 1.75,
+          "lower_bound": 0.961,
+          "upper_bound": 9e+99,
+          "is_basic_variable": true
+        },
+        {
+          "variable": "Havuç",
+          "value": 8.8,
+          "reduced_cost": -0.0,
+          "original_value": -1945.65,
+          "lower_bound": -5217.825,
+          "upper_bound": 9e+99,
+          "is_basic_variable": true
+        },
+        {
+          "variable": "Havuç Satış",
+          "value": 24200.0,
+          "reduced_cost": -0.0,
+          "original_value": 2.5,
+          "lower_bound": 1.31,
+          "upper_bound": 9e+99,
+          "is_basic_variable": true
+        },
+        {
+          "variable": "Soğan (Taze)",
+          "value": 0.0,
+          "reduced_cost": -0.0,
+          "original_value": -1881.84,
+          "lower_bound": -9e+99,
+          "upper_bound": -1855.721,
+          "is_basic_variable": true
+        },
+        {
+          "variable": "Soğan (Taze) Satış",
+          "value": 0.0,
+          "reduced_cost": 0.026,
+          "original_value": 3.5,
+          "lower_bound": -9e+99,
+          "upper_bound": 3.526,
+          "is_basic_variable": false
+        },
+        {
+          "variable": "Elma (Bütünleştirilmiş)",
+          "value": 800.0,
+          "reduced_cost": -0.0,
+          "original_value": -2311.88,
+          "lower_bound": -9e+99,
+          "upper_bound": -2278.795,
+          "is_basic_variable": true
+        },
+        {
+          "variable": "Elma (Bütünleştirilmiş) Satış",
+          "value": 627200.0,
+          "reduced_cost": -0.0,
+          "original_value": 3.25,
+          "lower_bound": 0.0,
+          "upper_bound": 3.292,
+          "is_basic_variable": true
+        },
+        {
+          "variable": "Armut",
+          "value": 145.0,
+          "reduced_cost": -0.0,
+          "original_value": -2311.88,
+          "lower_bound": -5213.88,
+          "upper_bound": 9e+99,
+          "is_basic_variable": true
+        },
+        {
+          "variable": "Armut Satış",
+          "value": 158050.0,
+          "reduced_cost": -0.0,
+          "original_value": 5.0,
+          "lower_bound": 2.338,
+          "upper_bound": 9e+99,
+          "is_basic_variable": true
+        },
+        {
+          "variable": "Kiraz",
+          "value": 310.0,
+          "reduced_cost": -0.0,
+          "original_value": -1670.43,
+          "lower_bound": -1703.515,
+          "upper_bound": 9e+99,
+          "is_basic_variable": true
+        },
+        {
+          "variable": "Kiraz Satış",
+          "value": 56110.0,
+          "reduced_cost": -0.0,
+          "original_value": 10.0,
+          "lower_bound": 9.817,
+          "upper_bound": 9e+99,
+          "is_basic_variable": true
+        },
+        {
+          "variable": "Vişne",
+          "value": 445.0,
+          "reduced_cost": -0.0,
+          "original_value": -1089.0,
+          "lower_bound": -1537.021,
+          "upper_bound": 9e+99,
+          "is_basic_variable": true
+        },
+        {
+          "variable": "Vişne Satış",
+          "value": 97010.0,
+          "reduced_cost": -0.0,
+          "original_value": 7.0,
+          "lower_bound": 4.945,
+          "upper_bound": 9e+99,
+          "is_basic_variable": true
+        },
+        {
+          "variable": "Süt Sığırcılığı",
+          "value": 74324.734,
+          "reduced_cost": -0.0,
+          "original_value": -9195.27,
+          "lower_bound": -9431.384,
+          "upper_bound": -8143.998,
+          "is_basic_variable": true
+        },
+        {
+          "variable": "Süt Sığırcılığı Satış",
+          "value": 180609104.713,
+          "reduced_cost": -0.0,
+          "original_value": 5.5,
+          "lower_bound": 5.403,
+          "upper_bound": 5.933,
+          "is_basic_variable": true
+        },
+        {
+          "variable": "Besi Sığırcılığı",
+          "value": 105828.278,
+          "reduced_cost": -0.0,
+          "original_value": -9841.86,
+          "lower_bound": -10191.675,
+          "upper_bound": -9763.292,
+          "is_basic_variable": true
+        },
+        {
+          "variable": "Besi Sığırcılığı Satış",
+          "value": 29631917.967,
+          "reduced_cost": -0.0,
+          "original_value": 45.0,
+          "lower_bound": 43.751,
+          "upper_bound": 45.281,
+          "is_basic_variable": true
+        },
+        {
+          "variable": "Koyunculuk",
+          "value": 0.0,
+          "reduced_cost": 227.684,
+          "original_value": -1041.25,
+          "lower_bound": -9e+99,
+          "upper_bound": -813.566,
+          "is_basic_variable": false
+        },
+        {
+          "variable": "Koyunculuk Satış",
+          "value": 0.0,
+          "reduced_cost": -0.0,
+          "original_value": 8.0,
+          "lower_bound": 0.0,
+          "upper_bound": 9.779,
+          "is_basic_variable": true
+        },
+        {
+          "variable": "Keçicilik",
+          "value": 0.0,
+          "reduced_cost": 469.953,
+          "original_value": -5000.0,
+          "lower_bound": -9e+99,
+          "upper_bound": -4530.047,
+          "is_basic_variable": false
+        },
+        {
+          "variable": "Keçicilik Satış",
+          "value": 0.0,
+          "reduced_cost": -0.0,
+          "original_value": 4.5,
+          "lower_bound": 0.0,
+          "upper_bound": 4.882,
+          "is_basic_variable": true
+        },
+        {
+          "variable": "Mandacılık",
+          "value": 0.0,
+          "reduced_cost": 2661.871,
+          "original_value": -8814.3,
+          "lower_bound": -9e+99,
+          "upper_bound": -6152.429,
+          "is_basic_variable": false
+        },
+        {
+          "variable": "Mandacılık Satış",
+          "value": 0.0,
+          "reduced_cost": -0.0,
+          "original_value": 4.5,
+          "lower_bound": 0.0,
+          "upper_bound": 5.66,
+          "is_basic_variable": true
+        },
+        {
+          "variable": "Çavdar",
+          "value": 53197.5,
+          "reduced_cost": -0.0,
+          "original_value": -156.45,
+          "lower_bound": -183.744,
+          "upper_bound": 9e+99,
+          "is_basic_variable": true
+        },
+        {
+          "variable": "Çavdar Satış",
+          "value": 6543292.5,
+          "reduced_cost": -0.0,
+          "original_value": 2.5,
+          "lower_bound": 2.278,
+          "upper_bound": 9e+99,
+          "is_basic_variable": true
+        },
+        {
+          "variable": "Fiğ (Adi) Tohumu",
+          "value": 0.0,
+          "reduced_cost": 59.094,
+          "original_value": -135.56,
+          "lower_bound": -9e+99,
+          "upper_bound": -76.466,
+          "is_basic_variable": false
+        },
+        {
+          "variable": "Fiğ (Adi) Tohumu Satış",
+          "value": 0.0,
+          "reduced_cost": -0.0,
+          "original_value": 2.0,
+          "lower_bound": 0.0,
+          "upper_bound": 2.603,
+          "is_basic_variable": true
+        },
+        {
+          "variable": "Mercimek, Kuru (Yeşil)",
+          "value": 4187.3,
+          "reduced_cost": -0.0,
+          "original_value": -482.66,
+          "lower_bound": -499.118,
+          "upper_bound": 9e+99,
+          "is_basic_variable": true
+        },
+        {
+          "variable": "Mercimek, Kuru (Yeşil) Satış",
+          "value": 515037.9,
+          "reduced_cost": -0.0,
+          "original_value": 5.6,
+          "lower_bound": 5.466,
+          "upper_bound": 9e+99,
+          "is_basic_variable": true
+        },
+        {
+          "variable": "Nohut, Kuru",
+          "value": 3029.0,
+          "reduced_cost": -0.0,
+          "original_value": -384.56,
+          "lower_bound": -910.143,
+          "upper_bound": 9e+99,
+          "is_basic_variable": true
+        },
+        {
+          "variable": "Nohut, Kuru Satış",
+          "value": 726960.0,
+          "reduced_cost": -0.0,
+          "original_value": 4.5,
+          "lower_bound": 2.31,
+          "upper_bound": 9e+99,
+          "is_basic_variable": true
+        },
+        {
+          "variable": "Triticale (Sulu)",
+          "value": 0.0,
+          "reduced_cost": -0.0,
+          "original_value": -426.56,
+          "lower_bound": -9e+99,
+          "upper_bound": -42.295,
+          "is_basic_variable": true
+        },
+        {
+          "variable": "Triticale (Sulu) Satış",
+          "value": 0.0,
+          "reduced_cost": 0.818,
+          "original_value": 3.5,
+          "lower_bound": -9e+99,
+          "upper_bound": 4.318,
+          "is_basic_variable": false
+        },
+        {
+          "variable": "Mercimek, Sulu (Yeşil)",
+          "value": 0.0,
+          "reduced_cost": -0.0,
+          "original_value": -542.12,
+          "lower_bound": -9e+99,
+          "upper_bound": 522.859,
+          "is_basic_variable": true
+        },
+        {
+          "variable": "Mercimek, Sulu (Yeşil) Satış",
+          "value": 0.0,
+          "reduced_cost": 5.406,
+          "original_value": 5.6,
+          "lower_bound": -9e+99,
+          "upper_bound": 11.006,
+          "is_basic_variable": false
+        },
+        {
+          "variable": "Fasulye, Kuru (Sulu)",
+          "value": 0.0,
+          "reduced_cost": -0.0,
+          "original_value": -1049.23,
+          "lower_bound": -9e+99,
+          "upper_bound": -71.455,
+          "is_basic_variable": true
+        },
+        {
+          "variable": "Fasulye, Kuru (Sulu) Satış",
+          "value": 0.0,
+          "reduced_cost": 8.148,
+          "original_value": 15.0,
+          "lower_bound": -9e+99,
+          "upper_bound": 23.148,
+          "is_basic_variable": false
+        },
+        {
+          "variable": "Yulaf (Sulu)",
+          "value": 0.0,
+          "reduced_cost": 1483.083,
+          "original_value": -336.15,
+          "lower_bound": -9e+99,
+          "upper_bound": 1146.933,
+          "is_basic_variable": false
+        },
+        {
+          "variable": "Yulaf (Sulu) Satış",
+          "value": 0.0,
+          "reduced_cost": -0.0,
+          "original_value": 2.5,
+          "lower_bound": 0.0,
+          "upper_bound": 10.975,
+          "is_basic_variable": true
+        },
+        {
+          "variable": "İg1",
+          "value": 0.0,
+          "reduced_cost": 20.953,
+          "original_value": -17.43,
+          "lower_bound": -9e+99,
+          "upper_bound": 3.523,
+          "is_basic_variable": false
+        },
+        {
+          "variable": "İg2",
+          "value": 0.0,
+          "reduced_cost": 20.953,
+          "original_value": -17.43,
+          "lower_bound": -9e+99,
+          "upper_bound": 3.523,
+          "is_basic_variable": false
+        },
+        {
+          "variable": "İg3",
+          "value": 0.0,
+          "reduced_cost": 20.953,
+          "original_value": -17.43,
+          "lower_bound": -9e+99,
+          "upper_bound": 3.523,
+          "is_basic_variable": false
+        },
+        {
+          "variable": "İg4",
+          "value": 0.0,
+          "reduced_cost": 20.953,
+          "original_value": -17.43,
+          "lower_bound": -9e+99,
+          "upper_bound": 3.523,
+          "is_basic_variable": false
+        },
+        {
+          "variable": "İg5",
+          "value": 0.0,
+          "reduced_cost": 20.953,
+          "original_value": -17.43,
+          "lower_bound": -9e+99,
+          "upper_bound": 3.523,
+          "is_basic_variable": false
+        },
+        {
+          "variable": "İg6",
+          "value": 0.0,
+          "reduced_cost": 20.953,
+          "original_value": -17.43,
+          "lower_bound": -9e+99,
+          "upper_bound": 3.523,
+          "is_basic_variable": false
+        },
+        {
+          "variable": "İg7",
+          "value": 0.0,
+          "reduced_cost": 20.953,
+          "original_value": -17.43,
+          "lower_bound": -9e+99,
+          "upper_bound": 3.523,
+          "is_basic_variable": false
+        },
+        {
+          "variable": "İg8",
+          "value": 0.0,
+          "reduced_cost": 20.953,
+          "original_value": -17.43,
+          "lower_bound": -9e+99,
+          "upper_bound": 3.523,
+          "is_basic_variable": false
+        },
+        {
+          "variable": "İg9",
+          "value": 0.0,
+          "reduced_cost": 20.953,
+          "original_value": -17.43,
+          "lower_bound": -9e+99,
+          "upper_bound": 3.523,
+          "is_basic_variable": false
+        },
+        {
+          "variable": "İg10",
+          "value": 0.0,
+          "reduced_cost": 20.953,
+          "original_value": -17.43,
+          "lower_bound": -9e+99,
+          "upper_bound": 3.523,
+          "is_basic_variable": false
+        },
+        {
+          "variable": "İg11",
+          "value": 0.0,
+          "reduced_cost": 20.953,
+          "original_value": -17.43,
+          "lower_bound": -9e+99,
+          "upper_bound": 3.523,
+          "is_basic_variable": false
+        },
+        {
+          "variable": "İg12",
+          "value": 0.0,
+          "reduced_cost": 20.953,
+          "original_value": -17.43,
+          "lower_bound": -9e+99,
+          "upper_bound": 3.523,
+          "is_basic_variable": false
+        },
+        {
+          "variable": "Sermaye Temini",
+          "value": 0.0,
+          "reduced_cost": 0.048,
+          "original_value": -0.25,
+          "lower_bound": -9e+99,
+          "upper_bound": -0.202,
+          "is_basic_variable": false
         }
       ],
       "bound": [
         {
-          "constraint": true,
-          "activity": "Toplam Arazi",
-          "dual_value": 1048652.0,
+          "constraint": "Toplam Arazi",
+          "shadow_price": 0.0,
+          "slack_or_surplus": 94406.0,
+          "original_value": 1143058.0,
+          "lower_bound": 1048652.0,
+          "upper_bound": 9e+99,
+          "neither_bounds_are_binding": true
+        },
+        {
+          "constraint": "Toplam Kuru Tarla Arazisi",
+          "shadow_price": 92.138,
+          "slack_or_surplus": 0.0,
+          "original_value": 933464.68,
+          "lower_bound": 803509.0,
+          "upper_bound": 960647.5,
+          "neither_bounds_are_binding": false
+        },
+        {
+          "constraint": "Toplam Sulu Tarla Arazisi",
+          "shadow_price": 1516.498,
+          "slack_or_surplus": 0.0,
+          "original_value": 110760.32,
           "lower_bound": 0.0,
-          "upper_bound": -9e+99,
-          "range_lower": 1143058.0,
-          "range_upper": 1048652.0,
-          "product_id": null
+          "upper_bound": 205166.32,
+          "neither_bounds_are_binding": false
         },
         {
-          "constraint": false,
-          "activity": "Toplam Kuru Tarla Arazisi",
-          "dual_value": 933464.68,
-          "lower_bound": 92.138,
-          "upper_bound": -9e+99,
-          "range_lower": 933464.68,
-          "range_upper": 803509.0,
-          "product_id": null
-        },
-        {
-          "constraint": false,
-          "activity": "Toplam Sulu Tarla Arazisi",
-          "dual_value": 110760.32,
-          "lower_bound": 1516.498,
-          "upper_bound": -9e+99,
-          "range_lower": 110760.32,
-          "range_upper": 0.0,
-          "product_id": null
-        },
-        {
-          "constraint": false,
-          "activity": "Toplam Meyve Arazisi",
-          "dual_value": 1700.0,
-          "lower_bound": -231.105,
+          "constraint": "Toplam Meyve Arazisi",
+          "shadow_price": -231.105,
+          "slack_or_surplus": 0.0,
+          "original_value": 1700.0,
+          "lower_bound": 900.0,
           "upper_bound": 1700.0,
-          "range_lower": 1700.0,
-          "range_upper": 900.0,
-          "product_id": null
+          "neither_bounds_are_binding": false
         },
         {
-          "constraint": false,
-          "activity": "Toplam Sebze Arazisi",
-          "dual_value": 2693.0,
-          "lower_bound": 1263.963,
-          "upper_bound": -9e+99,
-          "range_lower": 2693.0,
-          "range_upper": 2406.4,
-          "product_id": null
+          "constraint": "Toplam Sebze Arazisi",
+          "shadow_price": 1263.963,
+          "slack_or_surplus": 0.0,
+          "original_value": 2693.0,
+          "lower_bound": 2406.4,
+          "upper_bound": 2798.0,
+          "neither_bounds_are_binding": false
         },
         {
-          "constraint": false,
-          "activity": "Toplam Örtü Altı Arazisi",
-          "dual_value": 34.0,
-          "lower_bound": 1238.336,
+          "constraint": "Toplam Örtü Altı Arazisi",
+          "shadow_price": 1238.336,
+          "slack_or_surplus": 0.0,
+          "original_value": 34.0,
+          "lower_bound": 28.6,
+          "upper_bound": 37.4,
+          "neither_bounds_are_binding": false
+        },
+        {
+          "constraint": "Toplam Süs Bitkisi Arazisi",
+          "shadow_price": 0.0,
+          "slack_or_surplus": 0.0,
+          "original_value": 0.0,
+          "lower_bound": 0.0,
+          "upper_bound": 9e+99,
+          "neither_bounds_are_binding": true
+        },
+        {
+          "constraint": "Buğday, Durum Buğdayı Hariç Arazisi",
+          "shadow_price": 208.094,
+          "slack_or_surplus": 0.0,
+          "original_value": 217095.0,
+          "lower_bound": 189912.18,
+          "upper_bound": 347050.68,
+          "neither_bounds_are_binding": false
+        },
+        {
+          "constraint": "Buğday (Sulu) Arazisi",
+          "shadow_price": 0.0,
+          "slack_or_surplus": 62344.5,
+          "original_value": 62344.5,
+          "lower_bound": 0.0,
+          "upper_bound": 9e+99,
+          "neither_bounds_are_binding": true
+        },
+        {
+          "constraint": "Arpa (Diğer) (Kuru) Arazisi",
+          "shadow_price": 0.0,
+          "slack_or_surplus": 27182.820000000007,
+          "original_value": 157138.5,
+          "lower_bound": 129955.68,
+          "upper_bound": 9e+99,
+          "neither_bounds_are_binding": true
+        },
+        {
+          "constraint": "Arpa (Sulu) Arazisi",
+          "shadow_price": 0.0,
+          "slack_or_surplus": 89521.5,
+          "original_value": 89521.5,
+          "lower_bound": 0.0,
+          "upper_bound": 9e+99,
+          "neither_bounds_are_binding": true
+        },
+        {
+          "constraint": "Yulaf Arazisi",
+          "shadow_price": 0.0,
+          "slack_or_surplus": 1303.5,
+          "original_value": 1303.5,
+          "lower_bound": 0.0,
+          "upper_bound": 9e+99,
+          "neither_bounds_are_binding": true
+        },
+        {
+          "constraint": "Yulaf (Yeşilot) Arazisi",
+          "shadow_price": 824.055,
+          "slack_or_surplus": 0.0,
+          "original_value": 197191.5,
+          "lower_bound": 170008.68,
+          "upper_bound": 327147.18,
+          "neither_bounds_are_binding": false
+        },
+        {
+          "constraint": "Triticale Arazisi",
+          "shadow_price": 607.305,
+          "slack_or_surplus": 0.0,
+          "original_value": 26476.5,
+          "lower_bound": 0.0,
+          "upper_bound": 156432.18,
+          "neither_bounds_are_binding": false
+        },
+        {
+          "constraint": "Fasulye, Taze Arazisi",
+          "shadow_price": 508.691,
+          "slack_or_surplus": 0.0,
+          "original_value": 518.1,
+          "lower_bound": 413.1,
+          "upper_bound": 804.7,
+          "neither_bounds_are_binding": false
+        },
+        {
+          "constraint": "Patates (Tatlı Patates Hariç) Arazisi",
+          "shadow_price": 1395.826,
+          "slack_or_surplus": 0.0,
+          "original_value": 8698.5,
+          "lower_bound": 0.0,
+          "upper_bound": 132269.954,
+          "neither_bounds_are_binding": false
+        },
+        {
+          "constraint": "Şeker Pancarı Arazisi",
+          "shadow_price": 12.071,
+          "slack_or_surplus": 0.0,
+          "original_value": 18943.5,
+          "lower_bound": 0.0,
+          "upper_bound": 148899.18,
+          "neither_bounds_are_binding": false
+        },
+        {
+          "constraint": "Fiğ (Adi) (Yeşil Ot) Arazisi",
+          "shadow_price": 766.752,
+          "slack_or_surplus": 0.0,
+          "original_value": 52444.5,
+          "lower_bound": 25261.68,
+          "upper_bound": 182400.18,
+          "neither_bounds_are_binding": false
+        },
+        {
+          "constraint": "Fiğ (Macar) (Yeşil Ot) Arazisi",
+          "shadow_price": 764.452,
+          "slack_or_surplus": 0.0,
+          "original_value": 345.0,
+          "lower_bound": 0.0,
+          "upper_bound": 130300.68,
+          "neither_bounds_are_binding": false
+        },
+        {
+          "constraint": "Yonca (Yeşilot) Arazisi",
+          "shadow_price": 0.0,
+          "slack_or_surplus": 101712.38,
+          "original_value": 212472.7,
+          "lower_bound": 110760.32,
+          "upper_bound": 9e+99,
+          "neither_bounds_are_binding": true
+        },
+        {
+          "constraint": "Korunga (Yeşilot) Arazisi",
+          "shadow_price": 1436.728,
+          "slack_or_surplus": 0.0,
+          "original_value": 110056.1,
+          "lower_bound": 82873.28,
+          "upper_bound": 240011.78,
+          "neither_bounds_are_binding": false
+        },
+        {
+          "constraint": "Mısır (Slaj) Arazisi",
+          "shadow_price": 1344.101,
+          "slack_or_surplus": 0.0,
+          "original_value": 7635.0,
+          "lower_bound": 0.0,
+          "upper_bound": 137590.68,
+          "neither_bounds_are_binding": false
+        },
+        {
+          "constraint": "Çayır Otu (Yeşilot) Arazisi",
+          "shadow_price": 983.75,
+          "slack_or_surplus": 0.0,
+          "original_value": 100568.6,
+          "lower_bound": 73385.78,
+          "upper_bound": 230524.28,
+          "neither_bounds_are_binding": false
+        },
+        {
+          "constraint": "Bezelye (Yemlik) Arazisi",
+          "shadow_price": 651.24,
+          "slack_or_surplus": 0.0,
+          "original_value": 3521.1,
+          "lower_bound": 0.0,
+          "upper_bound": 133476.78,
+          "neither_bounds_are_binding": false
+        },
+        {
+          "constraint": "Barbunya, Taze Arazisi",
+          "shadow_price": 183.566,
+          "slack_or_surplus": 0.0,
+          "original_value": 119.9,
+          "lower_bound": 0.0,
+          "upper_bound": 104963.975,
+          "neither_bounds_are_binding": false
+        },
+        {
+          "constraint": "Lahana (Beyaz) Arazisi",
+          "shadow_price": 2012.707,
+          "slack_or_surplus": 0.0,
+          "original_value": 1608.2,
+          "lower_bound": 1503.2,
+          "upper_bound": 1894.8,
+          "neither_bounds_are_binding": false
+        },
+        {
+          "constraint": "Marul (Kıvırcık) Arazisi",
+          "shadow_price": 1682.372,
+          "slack_or_surplus": 0.0,
+          "original_value": 18.0,
+          "lower_bound": 0.0,
+          "upper_bound": 304.6,
+          "neither_bounds_are_binding": false
+        },
+        {
+          "constraint": "Marul (Göbekli) Arazisi",
+          "shadow_price": 1257.372,
+          "slack_or_surplus": 0.0,
+          "original_value": 3.6,
+          "lower_bound": 0.0,
+          "upper_bound": 290.2,
+          "neither_bounds_are_binding": false
+        },
+        {
+          "constraint": "Ispanak Arazisi",
+          "shadow_price": 0.0,
+          "slack_or_surplus": 8.4,
+          "original_value": 8.4,
+          "lower_bound": 0.0,
+          "upper_bound": 9e+99,
+          "neither_bounds_are_binding": true
+        },
+        {
+          "constraint": "Maydanoz Arazisi",
+          "shadow_price": 0.0,
+          "slack_or_surplus": 5.5,
+          "original_value": 5.5,
+          "lower_bound": 0.0,
+          "upper_bound": 9e+99,
+          "neither_bounds_are_binding": true
+        },
+        {
+          "constraint": "Biber (Sivri) Arazisi",
+          "shadow_price": 0.0,
+          "slack_or_surplus": 13.2,
+          "original_value": 13.2,
+          "lower_bound": 0.0,
+          "upper_bound": 9e+99,
+          "neither_bounds_are_binding": true
+        },
+        {
+          "constraint": "Hıyar (Sofralık) Arazisi",
+          "shadow_price": 2216.431,
+          "slack_or_surplus": 0.0,
+          "original_value": 181.5,
+          "lower_bound": 76.5,
+          "upper_bound": 468.1,
+          "neither_bounds_are_binding": false
+        },
+        {
+          "constraint": "Hıyar (Sofralık, Örtüaltı) Arazisi",
+          "shadow_price": 2614.006,
+          "slack_or_surplus": 0.0,
+          "original_value": 28.6,
+          "lower_bound": 25.2,
           "upper_bound": 34.0,
-          "range_lower": 34.0,
-          "range_upper": 28.6,
-          "product_id": null
+          "neither_bounds_are_binding": false
         },
         {
-          "constraint": true,
-          "activity": "Toplam Süs Bitkisi Arazisi",
-          "dual_value": 0.0,
+          "constraint": "Domates (Sofralık) Arazisi",
+          "shadow_price": 0.0,
+          "slack_or_surplus": 105.0,
+          "original_value": 391.6,
+          "lower_bound": 286.6,
+          "upper_bound": 9e+99,
+          "neither_bounds_are_binding": true
+        },
+        {
+          "constraint": "Domates (Sofralık, Örtüaltı) Arazisi",
+          "shadow_price": 0.0,
+          "slack_or_surplus": 3.4000000000000004,
+          "original_value": 8.8,
+          "lower_bound": 5.4,
+          "upper_bound": 9e+99,
+          "neither_bounds_are_binding": true
+        },
+        {
+          "constraint": "Bal Kabağı Arazisi",
+          "shadow_price": 2368.398,
+          "slack_or_surplus": 0.0,
+          "original_value": 68.2,
           "lower_bound": 0.0,
-          "upper_bound": -9e+99,
-          "range_lower": 0.0,
-          "range_upper": 0.0,
-          "product_id": null
+          "upper_bound": 354.8,
+          "neither_bounds_are_binding": false
         },
         {
-          "constraint": false,
-          "activity": "Buğday, Durum Buğdayı Hariç Arazisi",
-          "dual_value": 217095.0,
-          "lower_bound": 208.094,
-          "upper_bound": -9e+99,
-          "range_lower": 217095.0,
-          "range_upper": 189912.18,
-          "product_id": 36
-        },
-        {
-          "constraint": true,
-          "activity": "Buğday (Sulu) Arazisi",
-          "dual_value": 0.0,
+          "constraint": "Havuç Arazisi",
+          "shadow_price": 3272.175,
+          "slack_or_surplus": 0.0,
+          "original_value": 8.8,
           "lower_bound": 0.0,
-          "upper_bound": -9e+99,
-          "range_lower": 62344.5,
-          "range_upper": 0.0,
-          "product_id": 252
+          "upper_bound": 295.4,
+          "neither_bounds_are_binding": false
         },
         {
-          "constraint": true,
-          "activity": "Arpa (Diğer) (Kuru) Arazisi",
-          "dual_value": 129955.68,
+          "constraint": "Soğan (Taze) Arazisi",
+          "shadow_price": 0.0,
+          "slack_or_surplus": 19.8,
+          "original_value": 19.8,
           "lower_bound": 0.0,
-          "upper_bound": -9e+99,
-          "range_lower": 157138.5,
-          "range_upper": 129955.68,
-          "product_id": 9
+          "upper_bound": 9e+99,
+          "neither_bounds_are_binding": true
         },
         {
-          "constraint": true,
-          "activity": "Arpa (Sulu) Arazisi",
-          "dual_value": 0.0,
+          "constraint": "Elma (Bütünleştirilmiş) Arazisi",
+          "shadow_price": 0.0,
+          "slack_or_surplus": 0.0,
+          "original_value": 800.0,
+          "lower_bound": 800.0,
+          "upper_bound": 9e+99,
+          "neither_bounds_are_binding": true
+        },
+        {
+          "constraint": "Armut Arazisi",
+          "shadow_price": 2902.0,
+          "slack_or_surplus": 0.0,
+          "original_value": 145.0,
+          "lower_bound": 145.0,
+          "upper_bound": 945.0,
+          "neither_bounds_are_binding": false
+        },
+        {
+          "constraint": "Kiraz Arazisi",
+          "shadow_price": 33.085,
+          "slack_or_surplus": 0.0,
+          "original_value": 310.0,
+          "lower_bound": 310.0,
+          "upper_bound": 1110.0,
+          "neither_bounds_are_binding": false
+        },
+        {
+          "constraint": "Vişne Arazisi",
+          "shadow_price": 448.021,
+          "slack_or_surplus": 0.0,
+          "original_value": 445.0,
+          "lower_bound": 445.0,
+          "upper_bound": 1245.0,
+          "neither_bounds_are_binding": false
+        },
+        {
+          "constraint": "Çavdar Arazisi",
+          "shadow_price": 27.294,
+          "slack_or_surplus": 0.0,
+          "original_value": 53197.5,
+          "lower_bound": 26014.68,
+          "upper_bound": 183153.18,
+          "neither_bounds_are_binding": false
+        },
+        {
+          "constraint": "Fiğ (Adi) Tohumu Arazisi",
+          "shadow_price": 0.0,
+          "slack_or_surplus": 1584.0,
+          "original_value": 1584.0,
           "lower_bound": 0.0,
-          "upper_bound": -9e+99,
-          "range_lower": 89521.5,
-          "range_upper": 0.0,
-          "product_id": 255
+          "upper_bound": 9e+99,
+          "neither_bounds_are_binding": true
         },
         {
-          "constraint": true,
-          "activity": "Yulaf Arazisi",
-          "dual_value": 0.0,
+          "constraint": "Mercimek, Kuru (Yeşil) Arazisi",
+          "shadow_price": 16.458,
+          "slack_or_surplus": 0.0,
+          "original_value": 4187.3,
           "lower_bound": 0.0,
-          "upper_bound": -9e+99,
-          "range_lower": 1303.5,
-          "range_upper": 0.0,
-          "product_id": 217
+          "upper_bound": 134142.98,
+          "neither_bounds_are_binding": false
         },
         {
-          "constraint": false,
-          "activity": "Yulaf (Yeşilot) Arazisi",
-          "dual_value": 197191.5,
-          "lower_bound": 824.055,
-          "upper_bound": -9e+99,
-          "range_lower": 197191.5,
-          "range_upper": 170008.68,
-          "product_id": 218
-        },
-        {
-          "constraint": false,
-          "activity": "Triticale Arazisi",
-          "dual_value": 26476.5,
-          "lower_bound": 607.305,
-          "upper_bound": -9e+99,
-          "range_lower": 26476.5,
-          "range_upper": 0.0,
-          "product_id": 201
-        },
-        {
-          "constraint": false,
-          "activity": "Fasulye, Taze Arazisi",
-          "dual_value": 518.1,
-          "lower_bound": 508.691,
-          "upper_bound": -9e+99,
-          "range_lower": 518.1,
-          "range_upper": 413.1,
-          "product_id": 65
-        },
-        {
-          "constraint": false,
-          "activity": "Patates (Tatlı Patates Hariç) Arazisi",
-          "dual_value": 8698.5,
-          "lower_bound": 1395.826,
-          "upper_bound": -9e+99,
-          "range_lower": 8698.5,
-          "range_upper": 0.0,
-          "product_id": 164
-        },
-        {
-          "constraint": false,
-          "activity": "Şeker Pancarı Arazisi",
-          "dual_value": 18943.5,
-          "lower_bound": 12.071,
-          "upper_bound": -9e+99,
-          "range_lower": 18943.5,
-          "range_upper": 0.0,
-          "product_id": 195
-        },
-        {
-          "constraint": false,
-          "activity": "Fiğ (Adi) (Yeşil Ot) Arazisi",
-          "dual_value": 52444.5,
-          "lower_bound": 766.752,
-          "upper_bound": -9e+99,
-          "range_lower": 52444.5,
-          "range_upper": 25261.68,
-          "product_id": 68
-        },
-        {
-          "constraint": false,
-          "activity": "Fiğ (Macar) (Yeşil Ot) Arazisi",
-          "dual_value": 345.0,
-          "lower_bound": 764.452,
-          "upper_bound": -9e+99,
-          "range_lower": 345.0,
-          "range_upper": 0.0,
-          "product_id": 72
-        },
-        {
-          "constraint": true,
-          "activity": "Yonca (Yeşilot) Arazisi",
-          "dual_value": 110760.32,
+          "constraint": "Nohut, Kuru Arazisi",
+          "shadow_price": 525.583,
+          "slack_or_surplus": 0.0,
+          "original_value": 3029.0,
           "lower_bound": 0.0,
-          "upper_bound": -9e+99,
-          "range_lower": 212472.7,
-          "range_upper": 110760.32,
-          "product_id": 215
+          "upper_bound": 132984.68,
+          "neither_bounds_are_binding": false
         },
         {
-          "constraint": false,
-          "activity": "Korunga (Yeşilot) Arazisi",
-          "dual_value": 110056.1,
-          "lower_bound": 1436.728,
-          "upper_bound": -9e+99,
-          "range_lower": 110056.1,
-          "range_upper": 82873.28,
-          "product_id": 120
-        },
-        {
-          "constraint": false,
-          "activity": "Mısır (Slaj) Arazisi",
-          "dual_value": 7635.0,
-          "lower_bound": 1344.101,
-          "upper_bound": -9e+99,
-          "range_lower": 7635.0,
-          "range_upper": 0.0,
-          "product_id": 149
-        },
-        {
-          "constraint": false,
-          "activity": "Çayır Otu (Yeşilot) Arazisi",
-          "dual_value": 100568.6,
-          "lower_bound": 983.75,
-          "upper_bound": -9e+99,
-          "range_lower": 100568.6,
-          "range_upper": 73385.78,
-          "product_id": 44
-        },
-        {
-          "constraint": false,
-          "activity": "Bezelye (Yemlik) Arazisi",
-          "dual_value": 3521.1,
-          "lower_bound": 651.24,
-          "upper_bound": -9e+99,
-          "range_lower": 3521.1,
-          "range_upper": 0.0,
-          "product_id": 23
-        },
-        {
-          "constraint": false,
-          "activity": "Barbunya, Taze Arazisi",
-          "dual_value": 119.9,
-          "lower_bound": 183.566,
-          "upper_bound": -9e+99,
-          "range_lower": 119.9,
-          "range_upper": 0.0,
-          "product_id": 22
-        },
-        {
-          "constraint": false,
-          "activity": "Lahana (Beyaz) Arazisi",
-          "dual_value": 1608.2,
-          "lower_bound": 2012.707,
-          "upper_bound": -9e+99,
-          "range_lower": 1608.2,
-          "range_upper": 1503.2,
-          "product_id": 126
-        },
-        {
-          "constraint": false,
-          "activity": "Marul (Kıvırcık) Arazisi",
-          "dual_value": 18.0,
-          "lower_bound": 1682.372,
-          "upper_bound": -9e+99,
-          "range_lower": 18.0,
-          "range_upper": 0.0,
-          "product_id": 142
-        },
-        {
-          "constraint": false,
-          "activity": "Marul (Göbekli) Arazisi",
-          "dual_value": 3.6,
-          "lower_bound": 1257.372,
-          "upper_bound": -9e+99,
-          "range_lower": 3.6,
-          "range_upper": 0.0,
-          "product_id": 140
-        },
-        {
-          "constraint": true,
-          "activity": "Ispanak Arazisi",
-          "dual_value": 0.0,
+          "constraint": "Triticale (Sulu) Arazisi",
+          "shadow_price": 0.0,
+          "slack_or_surplus": 2575.1,
+          "original_value": 2575.1,
           "lower_bound": 0.0,
-          "upper_bound": -9e+99,
-          "range_lower": 8.4,
-          "range_upper": 0.0,
-          "product_id": 89
+          "upper_bound": 9e+99,
+          "neither_bounds_are_binding": true
         },
         {
-          "constraint": true,
-          "activity": "Maydanoz Arazisi",
-          "dual_value": 0.0,
+          "constraint": "Mercimek, Sulu (Yeşil) Arazisi",
+          "shadow_price": 0.0,
+          "slack_or_surplus": 907.5,
+          "original_value": 907.5,
           "lower_bound": 0.0,
-          "upper_bound": -9e+99,
-          "range_lower": 5.5,
-          "range_upper": 0.0,
-          "product_id": 144
+          "upper_bound": 9e+99,
+          "neither_bounds_are_binding": true
         },
         {
-          "constraint": true,
-          "activity": "Biber (Sivri) Arazisi",
-          "dual_value": 0.0,
+          "constraint": "Fasulye, Kuru (Sulu) Arazisi",
+          "shadow_price": 0.0,
+          "slack_or_surplus": 3734.9,
+          "original_value": 3734.9,
           "lower_bound": 0.0,
-          "upper_bound": -9e+99,
-          "range_lower": 13.2,
-          "range_upper": 0.0,
-          "product_id": 29
+          "upper_bound": 9e+99,
+          "neither_bounds_are_binding": true
         },
         {
-          "constraint": false,
-          "activity": "Hıyar (Sofralık) Arazisi",
-          "dual_value": 181.5,
-          "lower_bound": 2216.431,
-          "upper_bound": -9e+99,
-          "range_lower": 181.5,
-          "range_upper": 76.5,
-          "product_id": 85
-        },
-        {
-          "constraint": false,
-          "activity": "Hıyar (Sofralık, Örtüaltı) Arazisi",
-          "dual_value": 28.6,
-          "lower_bound": 2614.006,
-          "upper_bound": -9e+99,
-          "range_lower": 28.6,
-          "range_upper": 25.2,
-          "product_id": 316
-        },
-        {
-          "constraint": true,
-          "activity": "Domates (Sofralık) Arazisi",
-          "dual_value": 286.6,
+          "constraint": "Yulaf (Sulu) Arazisi",
+          "shadow_price": 0.0,
+          "slack_or_surplus": 1575.0,
+          "original_value": 1575.0,
           "lower_bound": 0.0,
-          "upper_bound": -9e+99,
-          "range_lower": 391.6,
-          "range_upper": 286.6,
-          "product_id": 56
+          "upper_bound": 9e+99,
+          "neither_bounds_are_binding": true
         },
         {
-          "constraint": true,
-          "activity": "Domates (Sofralık, Örtüaltı) Arazisi",
-          "dual_value": 5.4,
+          "constraint": "Buğday, Durum Buğdayı Hariç Transfer",
+          "shadow_price": 2.2,
+          "slack_or_surplus": 0.0,
+          "original_value": 0.0,
+          "lower_bound": -43419000.0,
+          "upper_bound": 9e+99,
+          "neither_bounds_are_binding": false
+        },
+        {
+          "constraint": "Buğday (Sulu) Transfer",
+          "shadow_price": 2.2,
+          "slack_or_surplus": 0.0,
+          "original_value": 0.0,
           "lower_bound": 0.0,
-          "upper_bound": -9e+99,
-          "range_lower": 8.8,
-          "range_upper": 5.4,
-          "product_id": 321
+          "upper_bound": 9e+99,
+          "neither_bounds_are_binding": false
         },
         {
-          "constraint": false,
-          "activity": "Bal Kabağı Arazisi",
-          "dual_value": 68.2,
-          "lower_bound": 2368.398,
-          "upper_bound": -9e+99,
-          "range_lower": 68.2,
-          "range_upper": 0.0,
-          "product_id": 20
+          "constraint": "Arpa (Diğer) (Kuru) Transfer",
+          "shadow_price": 2.48,
+          "slack_or_surplus": 0.0,
+          "original_value": 0.0,
+          "lower_bound": -18583662.24,
+          "upper_bound": 9e+99,
+          "neither_bounds_are_binding": false
         },
         {
-          "constraint": false,
-          "activity": "Havuç Arazisi",
-          "dual_value": 8.8,
-          "lower_bound": 3272.175,
-          "upper_bound": -9e+99,
-          "range_lower": 8.8,
-          "range_upper": 0.0,
-          "product_id": 83
-        },
-        {
-          "constraint": true,
-          "activity": "Soğan (Taze) Arazisi",
-          "dual_value": 0.0,
+          "constraint": "Arpa (Sulu) Transfer",
+          "shadow_price": 2.48,
+          "slack_or_surplus": 0.0,
+          "original_value": 0.0,
           "lower_bound": 0.0,
-          "upper_bound": -9e+99,
-          "range_lower": 19.8,
-          "range_upper": 0.0,
-          "product_id": 180
+          "upper_bound": 9e+99,
+          "neither_bounds_are_binding": false
         },
         {
-          "constraint": true,
-          "activity": "Elma (Bütünleştirilmiş) Arazisi",
-          "dual_value": 800.0,
+          "constraint": "Yulaf Transfer",
+          "shadow_price": 2.5,
+          "slack_or_surplus": 0.0,
+          "original_value": 0.0,
           "lower_bound": 0.0,
-          "upper_bound": -9e+99,
-          "range_lower": 800.0,
-          "range_upper": 800.0,
-          "product_id": 339
+          "upper_bound": 9e+99,
+          "neither_bounds_are_binding": false
         },
         {
-          "constraint": false,
-          "activity": "Armut Arazisi",
-          "dual_value": 145.0,
-          "lower_bound": 2902.0,
-          "upper_bound": -9e+99,
-          "range_lower": 145.0,
-          "range_upper": 145.0,
-          "product_id": 7
+          "constraint": "Yulaf (Yeşilot) Transfer",
+          "shadow_price": 1.1,
+          "slack_or_surplus": 0.0,
+          "original_value": 0.0,
+          "lower_bound": -269757972.0,
+          "upper_bound": 9e+99,
+          "neither_bounds_are_binding": false
         },
         {
-          "constraint": false,
-          "activity": "Kiraz Arazisi",
-          "dual_value": 310.0,
-          "lower_bound": 33.085,
-          "upper_bound": -9e+99,
-          "range_lower": 310.0,
-          "range_upper": 310.0,
-          "product_id": 117
+          "constraint": "Triticale Transfer",
+          "shadow_price": 3.5,
+          "slack_or_surplus": 0.0,
+          "original_value": 0.0,
+          "lower_bound": -8260668.0,
+          "upper_bound": 9e+99,
+          "neither_bounds_are_binding": false
         },
         {
-          "constraint": false,
-          "activity": "Vişne Arazisi",
-          "dual_value": 445.0,
-          "lower_bound": 448.021,
-          "upper_bound": -9e+99,
-          "range_lower": 445.0,
-          "range_upper": 445.0,
-          "product_id": 209
+          "constraint": "Fasulye, Taze Transfer",
+          "shadow_price": 5.0,
+          "slack_or_surplus": 0.0,
+          "original_value": 0.0,
+          "lower_bound": -545559.3,
+          "upper_bound": 9e+99,
+          "neither_bounds_are_binding": false
         },
         {
-          "constraint": false,
-          "activity": "Çavdar Arazisi",
-          "dual_value": 53197.5,
-          "lower_bound": 27.294,
-          "upper_bound": -9e+99,
-          "range_lower": 53197.5,
-          "range_upper": 26014.68,
-          "product_id": 41
+          "constraint": "Patates (Tatlı Patates Hariç) Transfer",
+          "shadow_price": 1.7,
+          "slack_or_surplus": 0.0,
+          "original_value": 0.0,
+          "lower_bound": -24503674.5,
+          "upper_bound": 9e+99,
+          "neither_bounds_are_binding": false
         },
         {
-          "constraint": true,
-          "activity": "Fiğ (Adi) Tohumu Arazisi",
-          "dual_value": 0.0,
+          "constraint": "Şeker Pancarı Transfer",
+          "shadow_price": 0.45,
+          "slack_or_surplus": 0.0,
+          "original_value": 0.0,
+          "lower_bound": -52568212.5,
+          "upper_bound": 9e+99,
+          "neither_bounds_are_binding": false
+        },
+        {
+          "constraint": "Fiğ (Adi) (Yeşil Ot) Transfer",
+          "shadow_price": 1.15,
+          "slack_or_surplus": 0.0,
+          "original_value": 0.0,
+          "lower_bound": -65765403.0,
+          "upper_bound": 9e+99,
+          "neither_bounds_are_binding": false
+        },
+        {
+          "constraint": "Fiğ (Macar) (Yeşil Ot) Transfer",
+          "shadow_price": 1.15,
+          "slack_or_surplus": 0.0,
+          "original_value": 0.0,
+          "lower_bound": -431940.0,
+          "upper_bound": 9e+99,
+          "neither_bounds_are_binding": false
+        },
+        {
+          "constraint": "Yonca (Yeşilot) Transfer",
+          "shadow_price": 1.65,
+          "slack_or_surplus": 0.0,
+          "original_value": 0.0,
+          "lower_bound": -152184679.68,
+          "upper_bound": 9e+99,
+          "neither_bounds_are_binding": false
+        },
+        {
+          "constraint": "Korunga (Yeşilot) Transfer",
+          "shadow_price": 1.95,
+          "slack_or_surplus": 0.0,
+          "original_value": 0.0,
+          "lower_bound": -134818722.5,
+          "upper_bound": 9e+99,
+          "neither_bounds_are_binding": false
+        },
+        {
+          "constraint": "Mısır (Slaj) Transfer",
+          "shadow_price": 0.42,
+          "slack_or_surplus": 0.0,
+          "original_value": 0.0,
+          "lower_bound": -40915965.0,
+          "upper_bound": 9e+99,
+          "neither_bounds_are_binding": false
+        },
+        {
+          "constraint": "Çayır Otu (Yeşilot) Transfer",
+          "shadow_price": 1.5,
+          "slack_or_surplus": 0.0,
+          "original_value": 0.0,
+          "lower_bound": -120380614.2,
+          "upper_bound": 9e+99,
+          "neither_bounds_are_binding": false
+        },
+        {
+          "constraint": "Bezelye (Yemlik) Transfer",
+          "shadow_price": 1.0,
+          "slack_or_surplus": 0.0,
+          "original_value": 0.0,
+          "lower_bound": -4929540.0,
+          "upper_bound": 9e+99,
+          "neither_bounds_are_binding": false
+        },
+        {
+          "constraint": "Barbunya, Taze Transfer",
+          "shadow_price": 5.25,
+          "slack_or_surplus": 0.0,
+          "original_value": 0.0,
+          "lower_bound": -17625.3,
+          "upper_bound": 9e+99,
+          "neither_bounds_are_binding": false
+        },
+        {
+          "constraint": "Lahana (Beyaz) Transfer",
+          "shadow_price": 1.05,
+          "slack_or_surplus": 0.0,
+          "original_value": 0.0,
+          "lower_bound": -9970840.0,
+          "upper_bound": 9e+99,
+          "neither_bounds_are_binding": false
+        },
+        {
+          "constraint": "Marul (Kıvırcık) Transfer",
+          "shadow_price": 2.75,
+          "slack_or_surplus": 0.0,
+          "original_value": 0.0,
+          "lower_bound": -30060.0,
+          "upper_bound": 9e+99,
+          "neither_bounds_are_binding": false
+        },
+        {
+          "constraint": "Marul (Göbekli) Transfer",
+          "shadow_price": 2.5,
+          "slack_or_surplus": 0.0,
+          "original_value": 0.0,
+          "lower_bound": -6001.2,
+          "upper_bound": 9e+99,
+          "neither_bounds_are_binding": false
+        },
+        {
+          "constraint": "Ispanak Transfer",
+          "shadow_price": 4.545,
+          "slack_or_surplus": 0.0,
+          "original_value": 0.0,
+          "lower_bound": -7198.8,
+          "upper_bound": 0.0,
+          "neither_bounds_are_binding": false
+        },
+        {
+          "constraint": "Maydanoz Transfer",
+          "shadow_price": 4.94,
+          "slack_or_surplus": 0.0,
+          "original_value": 0.0,
+          "lower_bound": -2200.0,
+          "upper_bound": 0.0,
+          "neither_bounds_are_binding": false
+        },
+        {
+          "constraint": "Biber (Sivri) Transfer",
+          "shadow_price": 1.86,
+          "slack_or_surplus": 0.0,
+          "original_value": 0.0,
           "lower_bound": 0.0,
-          "upper_bound": -9e+99,
-          "range_lower": 1584.0,
-          "range_upper": 0.0,
-          "product_id": 69
+          "upper_bound": 9e+99,
+          "neither_bounds_are_binding": false
         },
         {
-          "constraint": false,
-          "activity": "Mercimek, Kuru (Yeşil) Arazisi",
-          "dual_value": 4187.3,
-          "lower_bound": 16.458,
-          "upper_bound": -9e+99,
-          "range_lower": 4187.3,
-          "range_upper": 0.0,
-          "product_id": 146
+          "constraint": "Hıyar (Sofralık) Transfer",
+          "shadow_price": 2.25,
+          "slack_or_surplus": 0.0,
+          "original_value": 0.0,
+          "lower_bound": -573177.0,
+          "upper_bound": 9e+99,
+          "neither_bounds_are_binding": false
         },
         {
-          "constraint": false,
-          "activity": "Nohut, Kuru Arazisi",
-          "dual_value": 3029.0,
-          "lower_bound": 525.583,
-          "upper_bound": -9e+99,
-          "range_lower": 3029.0,
-          "range_upper": 0.0,
-          "product_id": 158
+          "constraint": "Hıyar (Sofralık, Örtüaltı) Transfer",
+          "shadow_price": 2.25,
+          "slack_or_surplus": 0.0,
+          "original_value": 0.0,
+          "lower_bound": -114400.0,
+          "upper_bound": 9e+99,
+          "neither_bounds_are_binding": false
         },
         {
-          "constraint": true,
-          "activity": "Triticale (Sulu) Arazisi",
-          "dual_value": 0.0,
+          "constraint": "Domates (Sofralık) Transfer",
+          "shadow_price": 1.63,
+          "slack_or_surplus": 0.0,
+          "original_value": 0.0,
+          "lower_bound": -1096531.6,
+          "upper_bound": 9e+99,
+          "neither_bounds_are_binding": false
+        },
+        {
+          "constraint": "Domates (Sofralık, Örtüaltı) Transfer",
+          "shadow_price": 1.63,
+          "slack_or_surplus": 0.0,
+          "original_value": 0.0,
+          "lower_bound": -27000.0,
+          "upper_bound": 9e+99,
+          "neither_bounds_are_binding": false
+        },
+        {
+          "constraint": "Bal Kabağı Transfer",
+          "shadow_price": 1.75,
+          "slack_or_surplus": 0.0,
+          "original_value": 0.0,
+          "lower_bound": -204600.0,
+          "upper_bound": 9e+99,
+          "neither_bounds_are_binding": false
+        },
+        {
+          "constraint": "Havuç Transfer",
+          "shadow_price": 2.5,
+          "slack_or_surplus": 0.0,
+          "original_value": 0.0,
+          "lower_bound": -24200.0,
+          "upper_bound": 9e+99,
+          "neither_bounds_are_binding": false
+        },
+        {
+          "constraint": "Soğan (Taze) Transfer",
+          "shadow_price": 3.526,
+          "slack_or_surplus": 0.0,
+          "original_value": 0.0,
+          "lower_bound": -19800.0,
+          "upper_bound": 0.0,
+          "neither_bounds_are_binding": false
+        },
+        {
+          "constraint": "Elma (Bütünleştirilmiş) Transfer",
+          "shadow_price": 3.25,
+          "slack_or_surplus": 0.0,
+          "original_value": 0.0,
+          "lower_bound": -627200.0,
+          "upper_bound": 9e+99,
+          "neither_bounds_are_binding": false
+        },
+        {
+          "constraint": "Armut Transfer",
+          "shadow_price": 5.0,
+          "slack_or_surplus": 0.0,
+          "original_value": 0.0,
+          "lower_bound": -158050.0,
+          "upper_bound": 9e+99,
+          "neither_bounds_are_binding": false
+        },
+        {
+          "constraint": "Kiraz Transfer",
+          "shadow_price": 10.0,
+          "slack_or_surplus": 0.0,
+          "original_value": 0.0,
+          "lower_bound": -56110.0,
+          "upper_bound": 9e+99,
+          "neither_bounds_are_binding": false
+        },
+        {
+          "constraint": "Vişne Transfer",
+          "shadow_price": 7.0,
+          "slack_or_surplus": 0.0,
+          "original_value": 0.0,
+          "lower_bound": -97010.0,
+          "upper_bound": 9e+99,
+          "neither_bounds_are_binding": false
+        },
+        {
+          "constraint": "Süt Sığırcılığı Transfer",
+          "shadow_price": 5.5,
+          "slack_or_surplus": 0.0,
+          "original_value": 0.0,
+          "lower_bound": -180609104.713,
+          "upper_bound": 9e+99,
+          "neither_bounds_are_binding": false
+        },
+        {
+          "constraint": "Besi Sığırcılığı Transfer",
+          "shadow_price": 45.0,
+          "slack_or_surplus": 0.0,
+          "original_value": 0.0,
+          "lower_bound": -29631917.967,
+          "upper_bound": 9e+99,
+          "neither_bounds_are_binding": false
+        },
+        {
+          "constraint": "Koyunculuk Transfer",
+          "shadow_price": 8.0,
+          "slack_or_surplus": 0.0,
+          "original_value": 0.0,
           "lower_bound": 0.0,
-          "upper_bound": -9e+99,
-          "range_lower": 2575.1,
-          "range_upper": 0.0,
-          "product_id": 497
+          "upper_bound": 9e+99,
+          "neither_bounds_are_binding": false
         },
         {
-          "constraint": true,
-          "activity": "Mercimek, Sulu (Yeşil) Arazisi",
-          "dual_value": 0.0,
+          "constraint": "Keçicilik Transfer",
+          "shadow_price": 4.5,
+          "slack_or_surplus": 0.0,
+          "original_value": 0.0,
           "lower_bound": 0.0,
-          "upper_bound": -9e+99,
-          "range_lower": 907.5,
-          "range_upper": 0.0,
-          "product_id": 501
+          "upper_bound": 9e+99,
+          "neither_bounds_are_binding": false
         },
         {
-          "constraint": true,
-          "activity": "Fasulye, Kuru (Sulu) Arazisi",
-          "dual_value": 0.0,
+          "constraint": "Mandacılık Transfer",
+          "shadow_price": 4.5,
+          "slack_or_surplus": 0.0,
+          "original_value": 0.0,
           "lower_bound": 0.0,
-          "upper_bound": -9e+99,
-          "range_lower": 3734.9,
-          "range_upper": 0.0,
-          "product_id": 498
+          "upper_bound": 9e+99,
+          "neither_bounds_are_binding": false
         },
         {
-          "constraint": true,
-          "activity": "Yulaf (Sulu) Arazisi",
-          "dual_value": 0.0,
+          "constraint": "Çavdar Transfer",
+          "shadow_price": 2.5,
+          "slack_or_surplus": 0.0,
+          "original_value": 0.0,
+          "lower_bound": -6543292.5,
+          "upper_bound": 9e+99,
+          "neither_bounds_are_binding": false
+        },
+        {
+          "constraint": "Fiğ (Adi) Tohumu Transfer",
+          "shadow_price": 2.0,
+          "slack_or_surplus": 0.0,
+          "original_value": 0.0,
           "lower_bound": 0.0,
-          "upper_bound": -9e+99,
-          "range_lower": 1575.0,
-          "range_upper": 0.0,
-          "product_id": 503
+          "upper_bound": 9e+99,
+          "neither_bounds_are_binding": false
         },
         {
-          "constraint": false,
-          "activity": "Buğday, Durum Buğdayı Hariç Transfer",
-          "dual_value": 0.0,
-          "lower_bound": 2.2,
-          "upper_bound": -9e+99,
-          "range_lower": 0.0,
-          "range_upper": -43419000.0,
-          "product_id": 36
+          "constraint": "Mercimek, Kuru (Yeşil) Transfer",
+          "shadow_price": 5.6,
+          "slack_or_surplus": 0.0,
+          "original_value": 0.0,
+          "lower_bound": -515037.9,
+          "upper_bound": 9e+99,
+          "neither_bounds_are_binding": false
         },
         {
-          "constraint": false,
-          "activity": "Buğday (Sulu) Transfer",
-          "dual_value": 0.0,
-          "lower_bound": 2.2,
-          "upper_bound": -9e+99,
-          "range_lower": 0.0,
-          "range_upper": 0.0,
-          "product_id": 252
+          "constraint": "Nohut, Kuru Transfer",
+          "shadow_price": 4.5,
+          "slack_or_surplus": 0.0,
+          "original_value": 0.0,
+          "lower_bound": -726960.0,
+          "upper_bound": 9e+99,
+          "neither_bounds_are_binding": false
         },
         {
-          "constraint": false,
-          "activity": "Arpa (Diğer) (Kuru) Transfer",
-          "dual_value": 0.0,
-          "lower_bound": 2.48,
-          "upper_bound": -9e+99,
-          "range_lower": 0.0,
-          "range_upper": -18583662.24,
-          "product_id": 9
+          "constraint": "Triticale (Sulu) Transfer",
+          "shadow_price": 4.318,
+          "slack_or_surplus": 0.0,
+          "original_value": 0.0,
+          "lower_bound": -1210297.0,
+          "upper_bound": 0.0,
+          "neither_bounds_are_binding": false
         },
         {
-          "constraint": false,
-          "activity": "Arpa (Sulu) Transfer",
-          "dual_value": 0.0,
-          "lower_bound": 2.48,
-          "upper_bound": -9e+99,
-          "range_lower": 0.0,
-          "range_upper": 0.0,
-          "product_id": 255
+          "constraint": "Mercimek, Sulu (Yeşil) Transfer",
+          "shadow_price": 11.006,
+          "slack_or_surplus": 0.0,
+          "original_value": 0.0,
+          "lower_bound": -178777.5,
+          "upper_bound": 0.0,
+          "neither_bounds_are_binding": false
         },
         {
-          "constraint": false,
-          "activity": "Yulaf Transfer",
-          "dual_value": 0.0,
-          "lower_bound": 2.5,
-          "upper_bound": -9e+99,
-          "range_lower": 0.0,
-          "range_upper": 0.0,
-          "product_id": 217
+          "constraint": "Fasulye, Kuru (Sulu) Transfer",
+          "shadow_price": 23.148,
+          "slack_or_surplus": 0.0,
+          "original_value": 0.0,
+          "lower_bound": -448188.0,
+          "upper_bound": 0.0,
+          "neither_bounds_are_binding": false
         },
         {
-          "constraint": false,
-          "activity": "Yulaf (Yeşilot) Transfer",
-          "dual_value": 0.0,
-          "lower_bound": 1.1,
-          "upper_bound": -9e+99,
-          "range_lower": 0.0,
-          "range_upper": -269757972.0,
-          "product_id": 218
-        },
-        {
-          "constraint": false,
-          "activity": "Triticale Transfer",
-          "dual_value": 0.0,
-          "lower_bound": 3.5,
-          "upper_bound": -9e+99,
-          "range_lower": 0.0,
-          "range_upper": -8260668.0,
-          "product_id": 201
-        },
-        {
-          "constraint": false,
-          "activity": "Fasulye, Taze Transfer",
-          "dual_value": 0.0,
-          "lower_bound": 5.0,
-          "upper_bound": -9e+99,
-          "range_lower": 0.0,
-          "range_upper": -545559.3,
-          "product_id": 65
-        },
-        {
-          "constraint": false,
-          "activity": "Patates (Tatlı Patates Hariç) Transfer",
-          "dual_value": 0.0,
-          "lower_bound": 1.7,
-          "upper_bound": -9e+99,
-          "range_lower": 0.0,
-          "range_upper": -24503674.5,
-          "product_id": 164
-        },
-        {
-          "constraint": false,
-          "activity": "Şeker Pancarı Transfer",
-          "dual_value": 0.0,
-          "lower_bound": 0.45,
-          "upper_bound": -9e+99,
-          "range_lower": 0.0,
-          "range_upper": -52568212.5,
-          "product_id": 195
-        },
-        {
-          "constraint": false,
-          "activity": "Fiğ (Adi) (Yeşil Ot) Transfer",
-          "dual_value": 0.0,
-          "lower_bound": 1.15,
-          "upper_bound": -9e+99,
-          "range_lower": 0.0,
-          "range_upper": -65765403.0,
-          "product_id": 68
-        },
-        {
-          "constraint": false,
-          "activity": "Fiğ (Macar) (Yeşil Ot) Transfer",
-          "dual_value": 0.0,
-          "lower_bound": 1.15,
-          "upper_bound": -9e+99,
-          "range_lower": 0.0,
-          "range_upper": -431940.0,
-          "product_id": 72
-        },
-        {
-          "constraint": false,
-          "activity": "Yonca (Yeşilot) Transfer",
-          "dual_value": 0.0,
-          "lower_bound": 1.65,
-          "upper_bound": -9e+99,
-          "range_lower": 0.0,
-          "range_upper": -152184679.68,
-          "product_id": 215
-        },
-        {
-          "constraint": false,
-          "activity": "Korunga (Yeşilot) Transfer",
-          "dual_value": 0.0,
-          "lower_bound": 1.95,
-          "upper_bound": -9e+99,
-          "range_lower": 0.0,
-          "range_upper": -134818722.5,
-          "product_id": 120
-        },
-        {
-          "constraint": false,
-          "activity": "Mısır (Slaj) Transfer",
-          "dual_value": 0.0,
-          "lower_bound": 0.42,
-          "upper_bound": -9e+99,
-          "range_lower": 0.0,
-          "range_upper": -40915965.0,
-          "product_id": 149
-        },
-        {
-          "constraint": false,
-          "activity": "Çayır Otu (Yeşilot) Transfer",
-          "dual_value": 0.0,
-          "lower_bound": 1.5,
-          "upper_bound": -9e+99,
-          "range_lower": 0.0,
-          "range_upper": -120380614.2,
-          "product_id": 44
-        },
-        {
-          "constraint": false,
-          "activity": "Bezelye (Yemlik) Transfer",
-          "dual_value": 0.0,
-          "lower_bound": 1.0,
-          "upper_bound": -9e+99,
-          "range_lower": 0.0,
-          "range_upper": -4929540.0,
-          "product_id": 23
-        },
-        {
-          "constraint": false,
-          "activity": "Barbunya, Taze Transfer",
-          "dual_value": 0.0,
-          "lower_bound": 5.25,
-          "upper_bound": -9e+99,
-          "range_lower": 0.0,
-          "range_upper": -17625.3,
-          "product_id": 22
-        },
-        {
-          "constraint": false,
-          "activity": "Lahana (Beyaz) Transfer",
-          "dual_value": 0.0,
-          "lower_bound": 1.05,
-          "upper_bound": -9e+99,
-          "range_lower": 0.0,
-          "range_upper": -9970840.0,
-          "product_id": 126
-        },
-        {
-          "constraint": false,
-          "activity": "Marul (Kıvırcık) Transfer",
-          "dual_value": 0.0,
-          "lower_bound": 2.75,
-          "upper_bound": -9e+99,
-          "range_lower": 0.0,
-          "range_upper": -30060.0,
-          "product_id": 142
-        },
-        {
-          "constraint": false,
-          "activity": "Marul (Göbekli) Transfer",
-          "dual_value": 0.0,
-          "lower_bound": 2.5,
-          "upper_bound": -9e+99,
-          "range_lower": 0.0,
-          "range_upper": -6001.2,
-          "product_id": 140
-        },
-        {
-          "constraint": false,
-          "activity": "Ispanak Transfer",
-          "dual_value": 0.0,
-          "lower_bound": 4.545,
-          "upper_bound": -9e+99,
-          "range_lower": 0.0,
-          "range_upper": -7198.8,
-          "product_id": 89
-        },
-        {
-          "constraint": false,
-          "activity": "Maydanoz Transfer",
-          "dual_value": 0.0,
-          "lower_bound": 4.94,
-          "upper_bound": -9e+99,
-          "range_lower": 0.0,
-          "range_upper": -2200.0,
-          "product_id": 144
-        },
-        {
-          "constraint": false,
-          "activity": "Biber (Sivri) Transfer",
-          "dual_value": 0.0,
-          "lower_bound": 1.86,
-          "upper_bound": -9e+99,
-          "range_lower": 0.0,
-          "range_upper": 0.0,
-          "product_id": 29
-        },
-        {
-          "constraint": false,
-          "activity": "Hıyar (Sofralık) Transfer",
-          "dual_value": 0.0,
-          "lower_bound": 2.25,
-          "upper_bound": -9e+99,
-          "range_lower": 0.0,
-          "range_upper": -573177.0,
-          "product_id": 85
-        },
-        {
-          "constraint": false,
-          "activity": "Hıyar (Sofralık, Örtüaltı) Transfer",
-          "dual_value": 0.0,
-          "lower_bound": 2.25,
-          "upper_bound": -9e+99,
-          "range_lower": 0.0,
-          "range_upper": -114400.0,
-          "product_id": 316
-        },
-        {
-          "constraint": false,
-          "activity": "Domates (Sofralık) Transfer",
-          "dual_value": 0.0,
-          "lower_bound": 1.63,
-          "upper_bound": -9e+99,
-          "range_lower": 0.0,
-          "range_upper": -1096531.6,
-          "product_id": 56
-        },
-        {
-          "constraint": false,
-          "activity": "Domates (Sofralık, Örtüaltı) Transfer",
-          "dual_value": 0.0,
-          "lower_bound": 1.63,
-          "upper_bound": -9e+99,
-          "range_lower": 0.0,
-          "range_upper": -27000.0,
-          "product_id": 321
-        },
-        {
-          "constraint": false,
-          "activity": "Bal Kabağı Transfer",
-          "dual_value": 0.0,
-          "lower_bound": 1.75,
-          "upper_bound": -9e+99,
-          "range_lower": 0.0,
-          "range_upper": -204600.0,
-          "product_id": 20
-        },
-        {
-          "constraint": false,
-          "activity": "Havuç Transfer",
-          "dual_value": 0.0,
-          "lower_bound": 2.5,
-          "upper_bound": -9e+99,
-          "range_lower": 0.0,
-          "range_upper": -24200.0,
-          "product_id": 83
-        },
-        {
-          "constraint": false,
-          "activity": "Soğan (Taze) Transfer",
-          "dual_value": 0.0,
-          "lower_bound": 3.526,
-          "upper_bound": -9e+99,
-          "range_lower": 0.0,
-          "range_upper": -19800.0,
-          "product_id": 180
-        },
-        {
-          "constraint": false,
-          "activity": "Elma (Bütünleştirilmiş) Transfer",
-          "dual_value": 0.0,
-          "lower_bound": 3.25,
-          "upper_bound": -9e+99,
-          "range_lower": 0.0,
-          "range_upper": -627200.0,
-          "product_id": 339
-        },
-        {
-          "constraint": false,
-          "activity": "Armut Transfer",
-          "dual_value": 0.0,
-          "lower_bound": 5.0,
-          "upper_bound": -9e+99,
-          "range_lower": 0.0,
-          "range_upper": -158050.0,
-          "product_id": 7
-        },
-        {
-          "constraint": false,
-          "activity": "Kiraz Transfer",
-          "dual_value": 0.0,
-          "lower_bound": 10.0,
-          "upper_bound": -9e+99,
-          "range_lower": 0.0,
-          "range_upper": -56110.0,
-          "product_id": 117
-        },
-        {
-          "constraint": false,
-          "activity": "Vişne Transfer",
-          "dual_value": 0.0,
-          "lower_bound": 7.0,
-          "upper_bound": -9e+99,
-          "range_lower": 0.0,
-          "range_upper": -97010.0,
-          "product_id": 209
-        },
-        {
-          "constraint": false,
-          "activity": "Süt Sığırcılığı Transfer",
-          "dual_value": 0.0,
-          "lower_bound": 5.5,
-          "upper_bound": -9e+99,
-          "range_lower": 0.0,
-          "range_upper": -180609104.713,
-          "product_id": null
-        },
-        {
-          "constraint": false,
-          "activity": "Besi Sığırcılığı Transfer",
-          "dual_value": 0.0,
-          "lower_bound": 45.0,
-          "upper_bound": -9e+99,
-          "range_lower": 0.0,
-          "range_upper": -29631917.967,
-          "product_id": null
-        },
-        {
-          "constraint": false,
-          "activity": "Koyunculuk Transfer",
-          "dual_value": 0.0,
-          "lower_bound": 8.0,
-          "upper_bound": -9e+99,
-          "range_lower": 0.0,
-          "range_upper": 0.0,
-          "product_id": null
-        },
-        {
-          "constraint": false,
-          "activity": "Keçicilik Transfer",
-          "dual_value": 0.0,
-          "lower_bound": 4.5,
-          "upper_bound": -9e+99,
-          "range_lower": 0.0,
-          "range_upper": 0.0,
-          "product_id": null
-        },
-        {
-          "constraint": false,
-          "activity": "Mandacılık Transfer",
-          "dual_value": 0.0,
-          "lower_bound": 4.5,
-          "upper_bound": -9e+99,
-          "range_lower": 0.0,
-          "range_upper": 0.0,
-          "product_id": null
-        },
-        {
-          "constraint": false,
-          "activity": "Çavdar Transfer",
-          "dual_value": 0.0,
-          "lower_bound": 2.5,
-          "upper_bound": -9e+99,
-          "range_lower": 0.0,
-          "range_upper": -6543292.5,
-          "product_id": 41
-        },
-        {
-          "constraint": false,
-          "activity": "Fiğ (Adi) Tohumu Transfer",
-          "dual_value": 0.0,
-          "lower_bound": 2.0,
-          "upper_bound": -9e+99,
-          "range_lower": 0.0,
-          "range_upper": 0.0,
-          "product_id": 69
-        },
-        {
-          "constraint": false,
-          "activity": "Mercimek, Kuru (Yeşil) Transfer",
-          "dual_value": 0.0,
-          "lower_bound": 5.6,
-          "upper_bound": -9e+99,
-          "range_lower": 0.0,
-          "range_upper": -515037.9,
-          "product_id": 146
-        },
-        {
-          "constraint": false,
-          "activity": "Nohut, Kuru Transfer",
-          "dual_value": 0.0,
-          "lower_bound": 4.5,
-          "upper_bound": -9e+99,
-          "range_lower": 0.0,
-          "range_upper": -726960.0,
-          "product_id": 158
-        },
-        {
-          "constraint": false,
-          "activity": "Triticale (Sulu) Transfer",
-          "dual_value": 0.0,
-          "lower_bound": 4.318,
-          "upper_bound": -9e+99,
-          "range_lower": 0.0,
-          "range_upper": -1210297.0,
-          "product_id": 497
-        },
-        {
-          "constraint": false,
-          "activity": "Mercimek, Sulu (Yeşil) Transfer",
-          "dual_value": 0.0,
-          "lower_bound": 11.006,
-          "upper_bound": -9e+99,
-          "range_lower": 0.0,
-          "range_upper": -178777.5,
-          "product_id": 501
-        },
-        {
-          "constraint": false,
-          "activity": "Fasulye, Kuru (Sulu) Transfer",
-          "dual_value": 0.0,
-          "lower_bound": 23.148,
-          "upper_bound": -9e+99,
-          "range_lower": 0.0,
-          "range_upper": -448188.0,
-          "product_id": 498
-        },
-        {
-          "constraint": false,
-          "activity": "Yulaf (Sulu) Transfer",
-          "dual_value": 0.0,
-          "lower_bound": 2.5,
-          "upper_bound": -9e+99,
-          "range_lower": 0.0,
-          "range_upper": 0.0,
-          "product_id": 503
-        },
-        {
-          "constraint": true,
-          "activity": "İşgücü Ocak",
-          "dual_value": 2477792.53,
+          "constraint": "Yulaf (Sulu) Transfer",
+          "shadow_price": 2.5,
+          "slack_or_surplus": 0.0,
+          "original_value": 0.0,
           "lower_bound": 0.0,
-          "upper_bound": -9e+99,
-          "range_lower": 10486180.0,
-          "range_upper": 2477792.53,
-          "product_id": null
+          "upper_bound": 9e+99,
+          "neither_bounds_are_binding": false
         },
         {
-          "constraint": true,
-          "activity": "İşgücü Şubat",
-          "dual_value": 2328350.97,
+          "constraint": "İşgücü Ocak",
+          "shadow_price": 0.0,
+          "slack_or_surplus": 8008387.470000001,
+          "original_value": 10486180.0,
+          "lower_bound": 2477792.53,
+          "upper_bound": 9e+99,
+          "neither_bounds_are_binding": true
+        },
+        {
+          "constraint": "İşgücü Şubat",
+          "shadow_price": 0.0,
+          "slack_or_surplus": 11260621.03,
+          "original_value": 13588972.0,
+          "lower_bound": 2328350.97,
+          "upper_bound": 9e+99,
+          "neither_bounds_are_binding": true
+        },
+        {
+          "constraint": "İşgücü Mart",
+          "shadow_price": 0.0,
+          "slack_or_surplus": 11469238.265999999,
+          "original_value": 14234509.0,
+          "lower_bound": 2765270.734,
+          "upper_bound": 9e+99,
+          "neither_bounds_are_binding": true
+        },
+        {
+          "constraint": "İşgücü Nisan",
+          "shadow_price": 0.0,
+          "slack_or_surplus": 10781273.254999999,
+          "original_value": 14095596.0,
+          "lower_bound": 3314322.745,
+          "upper_bound": 9e+99,
+          "neither_bounds_are_binding": true
+        },
+        {
+          "constraint": "İşgücü Mayıs",
+          "shadow_price": 0.0,
+          "slack_or_surplus": 11085314.814,
+          "original_value": 14234509.0,
+          "lower_bound": 3149194.186,
+          "upper_bound": 9e+99,
+          "neither_bounds_are_binding": true
+        },
+        {
+          "constraint": "İşgücü Haziran",
+          "shadow_price": 0.0,
+          "slack_or_surplus": 3564570.7019999996,
+          "original_value": 14095596.0,
+          "lower_bound": 10531025.298,
+          "upper_bound": 9e+99,
+          "neither_bounds_are_binding": true
+        },
+        {
+          "constraint": "İşgücü Temmuz",
+          "shadow_price": 0.0,
+          "slack_or_surplus": 3075187.476,
+          "original_value": 14234509.0,
+          "lower_bound": 11159321.524,
+          "upper_bound": 9e+99,
+          "neither_bounds_are_binding": true
+        },
+        {
+          "constraint": "İşgücü Ağustos",
+          "shadow_price": 0.0,
+          "slack_or_surplus": 11614832.08,
+          "original_value": 14234509.0,
+          "lower_bound": 2619676.92,
+          "upper_bound": 9e+99,
+          "neither_bounds_are_binding": true
+        },
+        {
+          "constraint": "İşgücü Eylül",
+          "shadow_price": 0.0,
+          "slack_or_surplus": 11541230.515999999,
+          "original_value": 14095596.0,
+          "lower_bound": 2554365.484,
+          "upper_bound": 9e+99,
+          "neither_bounds_are_binding": true
+        },
+        {
+          "constraint": "İşgücü Ekim",
+          "shadow_price": 0.0,
+          "slack_or_surplus": 11186873.532,
+          "original_value": 14234509.0,
+          "lower_bound": 3047635.468,
+          "upper_bound": 9e+99,
+          "neither_bounds_are_binding": true
+        },
+        {
+          "constraint": "İşgücü Kasım",
+          "shadow_price": 0.0,
+          "slack_or_surplus": 10896953.608,
+          "original_value": 14095596.0,
+          "lower_bound": 3198642.392,
+          "upper_bound": 9e+99,
+          "neither_bounds_are_binding": true
+        },
+        {
+          "constraint": "İşgücü Aralık",
+          "shadow_price": 0.0,
+          "slack_or_surplus": 11295455.569,
+          "original_value": 14234509.0,
+          "lower_bound": 2939053.431,
+          "upper_bound": 9e+99,
+          "neither_bounds_are_binding": true
+        },
+        {
+          "constraint": "İşletme Sermayesi",
+          "shadow_price": 0.202,
+          "slack_or_surplus": 0.0,
+          "original_value": 2189124194.78,
+          "lower_bound": 1471386655.013,
+          "upper_bound": 3703988896.896,
+          "neither_bounds_are_binding": false
+        },
+        {
+          "constraint": "Ahır Yeri",
+          "shadow_price": 200.816,
+          "slack_or_surplus": 0.0,
+          "original_value": 1260800.0,
+          "lower_bound": 671284.216,
+          "upper_bound": 2159213.976,
+          "neither_bounds_are_binding": false
+        },
+        {
+          "constraint": "Ağıl Yeri",
+          "shadow_price": 0.0,
+          "slack_or_surplus": 1075200.0,
+          "original_value": 1075200.0,
           "lower_bound": 0.0,
-          "upper_bound": -9e+99,
-          "range_lower": 13588972.0,
-          "range_upper": 2328350.97,
-          "product_id": null
-        },
-        {
-          "constraint": true,
-          "activity": "İşgücü Mart",
-          "dual_value": 2765270.734,
-          "lower_bound": 0.0,
-          "upper_bound": -9e+99,
-          "range_lower": 14234509.0,
-          "range_upper": 2765270.734,
-          "product_id": null
-        },
-        {
-          "constraint": true,
-          "activity": "İşgücü Nisan",
-          "dual_value": 3314322.745,
-          "lower_bound": 0.0,
-          "upper_bound": -9e+99,
-          "range_lower": 14095596.0,
-          "range_upper": 3314322.745,
-          "product_id": null
-        },
-        {
-          "constraint": true,
-          "activity": "İşgücü Mayıs",
-          "dual_value": 3149194.186,
-          "lower_bound": 0.0,
-          "upper_bound": -9e+99,
-          "range_lower": 14234509.0,
-          "range_upper": 3149194.186,
-          "product_id": null
-        },
-        {
-          "constraint": true,
-          "activity": "İşgücü Haziran",
-          "dual_value": 10531025.298,
-          "lower_bound": 0.0,
-          "upper_bound": -9e+99,
-          "range_lower": 14095596.0,
-          "range_upper": 10531025.298,
-          "product_id": null
-        },
-        {
-          "constraint": true,
-          "activity": "İşgücü Temmuz",
-          "dual_value": 11159321.524,
-          "lower_bound": 0.0,
-          "upper_bound": -9e+99,
-          "range_lower": 14234509.0,
-          "range_upper": 11159321.524,
-          "product_id": null
-        },
-        {
-          "constraint": true,
-          "activity": "İşgücü Ağustos",
-          "dual_value": 2619676.92,
-          "lower_bound": 0.0,
-          "upper_bound": -9e+99,
-          "range_lower": 14234509.0,
-          "range_upper": 2619676.92,
-          "product_id": null
-        },
-        {
-          "constraint": true,
-          "activity": "İşgücü Eylül",
-          "dual_value": 2554365.484,
-          "lower_bound": 0.0,
-          "upper_bound": -9e+99,
-          "range_lower": 14095596.0,
-          "range_upper": 2554365.484,
-          "product_id": null
-        },
-        {
-          "constraint": true,
-          "activity": "İşgücü Ekim",
-          "dual_value": 3047635.468,
-          "lower_bound": 0.0,
-          "upper_bound": -9e+99,
-          "range_lower": 14234509.0,
-          "range_upper": 3047635.468,
-          "product_id": null
-        },
-        {
-          "constraint": true,
-          "activity": "İşgücü Kasım",
-          "dual_value": 3198642.392,
-          "lower_bound": 0.0,
-          "upper_bound": -9e+99,
-          "range_lower": 14095596.0,
-          "range_upper": 3198642.392,
-          "product_id": null
-        },
-        {
-          "constraint": true,
-          "activity": "İşgücü Aralık",
-          "dual_value": 2939053.431,
-          "lower_bound": 0.0,
-          "upper_bound": -9e+99,
-          "range_lower": 14234509.0,
-          "range_upper": 2939053.431,
-          "product_id": null
-        },
-        {
-          "constraint": false,
-          "activity": "İşletme Sermayesi",
-          "dual_value": 2189124194.78,
-          "lower_bound": 0.202,
-          "upper_bound": -9e+99,
-          "range_lower": 2189124194.78,
-          "range_upper": 1471386655.013,
-          "product_id": null
-        },
-        {
-          "constraint": false,
-          "activity": "Ahır Yeri",
-          "dual_value": 1260800.0,
-          "lower_bound": 200.816,
-          "upper_bound": -9e+99,
-          "range_lower": 1260800.0,
-          "range_upper": 671284.216,
-          "product_id": null
-        },
-        {
-          "constraint": true,
-          "activity": "Ağıl Yeri",
-          "dual_value": 0.0,
-          "lower_bound": 0.0,
-          "upper_bound": -9e+99,
-          "range_lower": 1075200.0,
-          "range_upper": 0.0,
-          "product_id": null
+          "upper_bound": 9e+99,
+          "neither_bounds_are_binding": true
         }
       ]
     }

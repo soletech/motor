@@ -9,426 +9,411 @@
     "sensitivity": {
       "coeff": [
         {
-          "basic_variable": true,
-          "activity": "Buğday",
-          "dual_value": 870.388,
-          "obj_coef": 0.0,
-          "range_from": -239.38,
-          "range_till": -153383.397
+          "variable": "Buğday",
+          "value": 870.388,
+          "reduced_cost": -0.0,
+          "original_value": -239.38,
+          "lower_bound": -153383.397,
+          "upper_bound": 274.55,
+          "is_basic_variable": true
         },
         {
-          "basic_variable": true,
-          "activity": "Buğday+SM",
-          "dual_value": 57380.0,
-          "obj_coef": 0.0,
-          "range_from": -280.73,
-          "range_till": -3148.816
+          "variable": "Buğday+SM",
+          "value": 57380.0,
+          "reduced_cost": -0.0,
+          "original_value": -280.73,
+          "lower_bound": -3148.816,
+          "upper_bound": 9e+99,
+          "is_basic_variable": true
         },
         {
-          "basic_variable": true,
-          "activity": "Buğday satış",
-          "dual_value": 25484544.825,
-          "obj_coef": 0.0,
-          "range_from": 2.3,
-          "range_till": 0.0
+          "variable": "Buğday satış",
+          "value": 25484544.825,
+          "reduced_cost": -0.0,
+          "original_value": 2.3,
+          "lower_bound": 0.0,
+          "upper_bound": 3.475,
+          "is_basic_variable": true
         },
         {
-          "basic_variable": false,
-          "activity": "Silajlık mısır satış",
-          "dual_value": 0.0,
-          "obj_coef": -2.808,
-          "range_from": 1.33,
-          "range_till": -9e+99
+          "variable": "Silajlık mısır satış",
+          "value": 0.0,
+          "reduced_cost": 2.808,
+          "original_value": 1.33,
+          "lower_bound": -9e+99,
+          "upper_bound": 4.138,
+          "is_basic_variable": false
         },
         {
-          "basic_variable": true,
-          "activity": "Çeltik",
-          "dual_value": 30019.612,
-          "obj_coef": 0.0,
-          "range_from": -469.2,
-          "range_till": -983.13
+          "variable": "Çeltik",
+          "value": 30019.612,
+          "reduced_cost": -0.0,
+          "original_value": -469.2,
+          "lower_bound": -983.13,
+          "upper_bound": 2356.031,
+          "is_basic_variable": true
         },
         {
-          "basic_variable": true,
-          "activity": "Çeltik satış",
-          "dual_value": 21013728.281,
-          "obj_coef": 0.0,
-          "range_from": 2.5,
-          "range_till": 1.766
+          "variable": "Çeltik satış",
+          "value": 21013728.281,
+          "reduced_cost": -0.0,
+          "original_value": 2.5,
+          "lower_bound": 1.766,
+          "upper_bound": 6.536,
+          "is_basic_variable": true
         },
         {
-          "basic_variable": true,
-          "activity": "Fındık",
-          "dual_value": 20531.0,
-          "obj_coef": 0.0,
-          "range_from": -901.47,
-          "range_till": -2367.188
+          "variable": "Fındık",
+          "value": 20531.0,
+          "reduced_cost": -0.0,
+          "original_value": -901.47,
+          "lower_bound": -2367.188,
+          "upper_bound": 9e+99,
+          "is_basic_variable": true
         },
         {
-          "basic_variable": true,
-          "activity": "Fındık satış",
-          "dual_value": 1924781.25,
-          "obj_coef": 0.0,
-          "range_from": 25.25,
-          "range_till": 9.616
+          "variable": "Fındık satış",
+          "value": 1924781.25,
+          "reduced_cost": -0.0,
+          "original_value": 25.25,
+          "lower_bound": 9.616,
+          "upper_bound": 9e+99,
+          "is_basic_variable": true
         },
         {
-          "basic_variable": true,
-          "activity": "Buğday+lahana",
-          "dual_value": 30525.0,
-          "obj_coef": 0.0,
-          "range_from": -1899.15,
-          "range_till": -18000.0
+          "variable": "Buğday+lahana",
+          "value": 30525.0,
+          "reduced_cost": -0.0,
+          "original_value": -1899.15,
+          "lower_bound": -18000.0,
+          "upper_bound": 9e+99,
+          "is_basic_variable": true
         },
         {
-          "basic_variable": true,
-          "activity": "Lahana satış",
-          "dual_value": 183150000.0,
-          "obj_coef": 0.0,
-          "range_from": 3.0,
-          "range_till": 0.317
+          "variable": "Lahana satış",
+          "value": 183150000.0,
+          "reduced_cost": -0.0,
+          "original_value": 3.0,
+          "lower_bound": 0.317,
+          "upper_bound": 9e+99,
+          "is_basic_variable": true
         },
         {
-          "basic_variable": true,
-          "activity": "Süt sığırcılığı",
-          "dual_value": 33908.711,
-          "obj_coef": 0.0,
-          "range_from": 5806.18,
-          "range_till": 1875.192
+          "variable": "Süt sığırcılığı",
+          "value": 33908.711,
+          "reduced_cost": -0.0,
+          "original_value": 5806.18,
+          "lower_bound": 1875.192,
+          "upper_bound": 9e+99,
+          "is_basic_variable": true
         },
         {
-          "basic_variable": false,
-          "activity": "igk6",
-          "dual_value": 0.0,
-          "obj_coef": -12.5,
-          "range_from": -12.5,
-          "range_till": -9e+99
+          "variable": "igk6",
+          "value": 0.0,
+          "reduced_cost": 12.5,
+          "original_value": -12.5,
+          "lower_bound": -9e+99,
+          "upper_bound": 0.0,
+          "is_basic_variable": false
         },
         {
-          "basic_variable": false,
-          "activity": "igk7",
-          "dual_value": 0.0,
-          "obj_coef": -12.5,
-          "range_from": -12.5,
-          "range_till": -9e+99
+          "variable": "igk7",
+          "value": 0.0,
+          "reduced_cost": 12.5,
+          "original_value": -12.5,
+          "lower_bound": -9e+99,
+          "upper_bound": 0.0,
+          "is_basic_variable": false
         },
         {
-          "basic_variable": false,
-          "activity": "igk8",
-          "dual_value": 0.0,
-          "obj_coef": -12.5,
-          "range_from": -12.5,
-          "range_till": -9e+99
+          "variable": "igk8",
+          "value": 0.0,
+          "reduced_cost": 12.5,
+          "original_value": -12.5,
+          "lower_bound": -9e+99,
+          "upper_bound": 0.0,
+          "is_basic_variable": false
         },
         {
-          "basic_variable": false,
-          "activity": "Sermaye temini",
-          "dual_value": 0.0,
-          "obj_coef": -0.25,
-          "range_from": -0.25,
-          "range_till": -9e+99
+          "variable": "Sermaye temini",
+          "value": 0.0,
+          "reduced_cost": 0.25,
+          "original_value": -0.25,
+          "lower_bound": -9e+99,
+          "upper_bound": 0.0,
+          "is_basic_variable": false
         }
       ],
       "bound": [
         {
-          "constraint": true,
-          "activity": "Toplam arazi",
-          "dual_value": 88270.0,
+          "constraint": "Toplam arazi",
+          "shadow_price": 0.0,
+          "slack_or_surplus": 514350.0,
+          "original_value": 602620.0,
+          "lower_bound": 88270.0,
+          "upper_bound": 9e+99,
+          "neither_bounds_are_binding": true
+        },
+        {
+          "constraint": "Toplam kuru tarla arazisi",
+          "shadow_price": 0.0,
+          "slack_or_surplus": 301390.612,
+          "original_value": 359641.0,
+          "lower_bound": 58250.388,
+          "upper_bound": 9e+99,
+          "neither_bounds_are_binding": true
+        },
+        {
+          "constraint": "Toplam sulu tarla arazisi",
+          "shadow_price": 1280.8,
+          "slack_or_surplus": 0.0,
+          "original_value": 88270.0,
+          "lower_bound": 58250.388,
+          "upper_bound": 393126.388,
+          "neither_bounds_are_binding": false
+        },
+        {
+          "constraint": "Meyve arazisi",
+          "shadow_price": 0.0,
+          "slack_or_surplus": 4865.0,
+          "original_value": 25396.0,
+          "lower_bound": 20531.0,
+          "upper_bound": 9e+99,
+          "neither_bounds_are_binding": true
+        },
+        {
+          "constraint": "Sebze arazisi",
+          "shadow_price": 0.0,
+          "slack_or_surplus": 44215.0,
+          "original_value": 74740.0,
+          "lower_bound": 30525.0,
+          "upper_bound": 9e+99,
+          "neither_bounds_are_binding": true
+        },
+        {
+          "constraint": "Buğday arazisi",
+          "shadow_price": 0.0,
+          "slack_or_surplus": 164676.612,
+          "original_value": 253452.0,
+          "lower_bound": 88775.388,
+          "upper_bound": 9e+99,
+          "neither_bounds_are_binding": true
+        },
+        {
+          "constraint": "Silajlık mısır arazisi",
+          "shadow_price": 2868.086,
+          "slack_or_surplus": 0.0,
+          "original_value": 57380.0,
           "lower_bound": 0.0,
-          "upper_bound": -9e+99,
-          "range_lower": 602620.0,
-          "range_upper": 88270.0,
-          "product_id": null
+          "upper_bound": 84609.527,
+          "neither_bounds_are_binding": false
         },
         {
-          "constraint": true,
-          "activity": "Toplam kuru tarla arazisi",
-          "dual_value": 58250.388,
+          "constraint": "Çeltik arazisi",
+          "shadow_price": 0.0,
+          "slack_or_surplus": 304856.388,
+          "original_value": 334876.0,
+          "lower_bound": 30019.612,
+          "upper_bound": 9e+99,
+          "neither_bounds_are_binding": true
+        },
+        {
+          "constraint": "Fındık arazisi",
+          "shadow_price": 1465.717,
+          "slack_or_surplus": 0.0,
+          "original_value": 20531.0,
           "lower_bound": 0.0,
-          "upper_bound": -9e+99,
-          "range_lower": 359641.0,
-          "range_upper": 58250.388,
-          "product_id": null
+          "upper_bound": 25396.0,
+          "neither_bounds_are_binding": false
         },
         {
-          "constraint": false,
-          "activity": "Toplam sulu tarla arazisi",
-          "dual_value": 88270.0,
-          "lower_bound": 1280.8,
-          "upper_bound": -9e+99,
-          "range_lower": 88270.0,
-          "range_upper": 58250.388,
-          "product_id": null
-        },
-        {
-          "constraint": true,
-          "activity": "Meyve arazisi",
-          "dual_value": 20531.0,
+          "constraint": "Lahana arazisi",
+          "shadow_price": 16100.85,
+          "slack_or_surplus": 0.0,
+          "original_value": 30525.0,
           "lower_bound": 0.0,
-          "upper_bound": -9e+99,
-          "range_lower": 25396.0,
-          "range_upper": 20531.0,
-          "product_id": null
+          "upper_bound": 74740.0,
+          "neither_bounds_are_binding": false
         },
         {
-          "constraint": true,
-          "activity": "Sebze arazisi",
-          "dual_value": 30525.0,
-          "lower_bound": 0.0,
-          "upper_bound": -9e+99,
-          "range_lower": 74740.0,
-          "range_upper": 30525.0,
-          "product_id": null
+          "constraint": "Buğday transfer",
+          "shadow_price": 2.3,
+          "slack_or_surplus": 0.0,
+          "original_value": 0.0,
+          "lower_bound": -25484544.825,
+          "upper_bound": 9e+99,
+          "neither_bounds_are_binding": false
         },
         {
-          "constraint": true,
-          "activity": "Buğday arazisi",
-          "dual_value": 88775.388,
-          "lower_bound": 0.0,
-          "upper_bound": -9e+99,
-          "range_lower": 253452.0,
-          "range_upper": 88775.388,
-          "product_id": null
+          "constraint": "Silajlık mısır transfer",
+          "shadow_price": 4.138,
+          "slack_or_surplus": 0.0,
+          "original_value": 0.0,
+          "lower_bound": -47472195.4,
+          "upper_bound": 22527804.6,
+          "neither_bounds_are_binding": false
         },
         {
-          "constraint": false,
-          "activity": "Silajlık mısır arazisi",
-          "dual_value": 57380.0,
-          "lower_bound": 2868.086,
-          "upper_bound": -9e+99,
-          "range_lower": 57380.0,
-          "range_upper": 0.0,
-          "product_id": null
+          "constraint": "Çeltik transfer",
+          "shadow_price": 2.5,
+          "slack_or_surplus": 0.0,
+          "original_value": 0.0,
+          "lower_bound": -21013728.281,
+          "upper_bound": 9e+99,
+          "neither_bounds_are_binding": false
         },
         {
-          "constraint": true,
-          "activity": "Çeltik arazisi",
-          "dual_value": 30019.612,
-          "lower_bound": 0.0,
-          "upper_bound": -9e+99,
-          "range_lower": 334876.0,
-          "range_upper": 30019.612,
-          "product_id": null
+          "constraint": "Lahana transfer",
+          "shadow_price": 3.0,
+          "slack_or_surplus": 0.0,
+          "original_value": 0.0,
+          "lower_bound": -183150000.0,
+          "upper_bound": 9e+99,
+          "neither_bounds_are_binding": false
         },
         {
-          "constraint": false,
-          "activity": "Fındık arazisi",
-          "dual_value": 20531.0,
-          "lower_bound": 1465.717,
-          "upper_bound": -9e+99,
-          "range_lower": 20531.0,
-          "range_upper": 0.0,
-          "product_id": null
+          "constraint": "Fındık transfer",
+          "shadow_price": 25.25,
+          "slack_or_surplus": 0.0,
+          "original_value": 0.0,
+          "lower_bound": -1924781.25,
+          "upper_bound": 9e+99,
+          "neither_bounds_are_binding": false
         },
         {
-          "constraint": false,
-          "activity": "Lahana arazisi",
-          "dual_value": 30525.0,
-          "lower_bound": 16100.85,
-          "upper_bound": -9e+99,
-          "range_lower": 30525.0,
-          "range_upper": 0.0,
-          "product_id": null
+          "constraint": "İşgücü Ocak",
+          "shadow_price": 0.0,
+          "slack_or_surplus": 10598773.144,
+          "original_value": 11528550.0,
+          "lower_bound": 929776.856,
+          "upper_bound": 9e+99,
+          "neither_bounds_are_binding": true
         },
         {
-          "constraint": false,
-          "activity": "Buğday transfer",
-          "dual_value": 0.0,
-          "lower_bound": 2.3,
-          "upper_bound": -9e+99,
-          "range_lower": 0.0,
-          "range_upper": -25484544.825,
-          "product_id": null
+          "constraint": "İşgücü Şubat",
+          "shadow_price": 0.0,
+          "slack_or_surplus": 10662182.434,
+          "original_value": 11528550.0,
+          "lower_bound": 866367.566,
+          "upper_bound": 9e+99,
+          "neither_bounds_are_binding": true
         },
         {
-          "constraint": false,
-          "activity": "Silajlık mısır transfer",
-          "dual_value": 0.0,
-          "lower_bound": 4.138,
-          "upper_bound": -9e+99,
-          "range_lower": 0.0,
-          "range_upper": -47472195.4,
-          "product_id": null
+          "constraint": "İşgücü Mart",
+          "shadow_price": 0.0,
+          "slack_or_surplus": 10598773.144,
+          "original_value": 11528550.0,
+          "lower_bound": 929776.856,
+          "upper_bound": 9e+99,
+          "neither_bounds_are_binding": true
         },
         {
-          "constraint": false,
-          "activity": "Çeltik transfer",
-          "dual_value": 0.0,
-          "lower_bound": 2.5,
-          "upper_bound": -9e+99,
-          "range_lower": 0.0,
-          "range_upper": -21013728.281,
-          "product_id": null
+          "constraint": "İşgücü Nisan",
+          "shadow_price": 0.0,
+          "slack_or_surplus": 10393017.657,
+          "original_value": 11528550.0,
+          "lower_bound": 1135532.343,
+          "upper_bound": 9e+99,
+          "neither_bounds_are_binding": true
         },
         {
-          "constraint": false,
-          "activity": "Lahana transfer",
-          "dual_value": 0.0,
-          "lower_bound": 3.0,
-          "upper_bound": -9e+99,
-          "range_lower": 0.0,
-          "range_upper": -183150000.0,
-          "product_id": null
+          "constraint": "İşgücü Mayıs",
+          "shadow_price": 0.0,
+          "slack_or_surplus": 10572355.886,
+          "original_value": 11528550.0,
+          "lower_bound": 956194.114,
+          "upper_bound": 9e+99,
+          "neither_bounds_are_binding": true
         },
         {
-          "constraint": false,
-          "activity": "Fındık transfer",
-          "dual_value": 0.0,
-          "lower_bound": 25.25,
-          "upper_bound": -9e+99,
-          "range_lower": 0.0,
-          "range_upper": -1924781.25,
-          "product_id": null
+          "constraint": "İşgücü Haziran",
+          "shadow_price": 0.0,
+          "slack_or_surplus": 10568047.399,
+          "original_value": 11528550.0,
+          "lower_bound": 960502.601,
+          "upper_bound": 9e+99,
+          "neither_bounds_are_binding": true
         },
         {
-          "constraint": true,
-          "activity": "İşgücü Ocak",
-          "dual_value": 929776.856,
-          "lower_bound": 0.0,
-          "upper_bound": -9e+99,
-          "range_lower": 11528550.0,
-          "range_upper": 929776.856,
-          "product_id": null
+          "constraint": "İşgücü Temmuz",
+          "shadow_price": 0.0,
+          "slack_or_surplus": 9889975.432,
+          "original_value": 11528550.0,
+          "lower_bound": 1638574.568,
+          "upper_bound": 9e+99,
+          "neither_bounds_are_binding": true
         },
         {
-          "constraint": true,
-          "activity": "İşgücü Şubat",
-          "dual_value": 866367.566,
-          "lower_bound": 0.0,
-          "upper_bound": -9e+99,
-          "range_lower": 11528550.0,
-          "range_upper": 866367.566,
-          "product_id": null
+          "constraint": "İşgücü Ağustos",
+          "shadow_price": 0.0,
+          "slack_or_surplus": 10342135.644,
+          "original_value": 11528550.0,
+          "lower_bound": 1186414.356,
+          "upper_bound": 9e+99,
+          "neither_bounds_are_binding": true
         },
         {
-          "constraint": true,
-          "activity": "İşgücü Mart",
-          "dual_value": 929776.856,
-          "lower_bound": 0.0,
-          "upper_bound": -9e+99,
-          "range_lower": 11528550.0,
-          "range_upper": 929776.856,
-          "product_id": null
+          "constraint": "İşgücü Eylül",
+          "shadow_price": 0.0,
+          "slack_or_surplus": 10154350.775,
+          "original_value": 11528550.0,
+          "lower_bound": 1374199.225,
+          "upper_bound": 9e+99,
+          "neither_bounds_are_binding": true
         },
         {
-          "constraint": true,
-          "activity": "İşgücü Nisan",
-          "dual_value": 1135532.343,
-          "lower_bound": 0.0,
-          "upper_bound": -9e+99,
-          "range_lower": 11528550.0,
-          "range_upper": 1135532.343,
-          "product_id": null
+          "constraint": "İşgücü Ekim",
+          "shadow_price": 0.0,
+          "slack_or_surplus": 10424743.696,
+          "original_value": 11528550.0,
+          "lower_bound": 1103806.304,
+          "upper_bound": 9e+99,
+          "neither_bounds_are_binding": true
         },
         {
-          "constraint": true,
-          "activity": "İşgücü Mayıs",
-          "dual_value": 956194.114,
-          "lower_bound": 0.0,
-          "upper_bound": -9e+99,
-          "range_lower": 11528550.0,
-          "range_upper": 956194.114,
-          "product_id": null
+          "constraint": "İşgücü Kasım",
+          "shadow_price": 0.0,
+          "slack_or_surplus": 10602164.015,
+          "original_value": 11528550.0,
+          "lower_bound": 926385.985,
+          "upper_bound": 9e+99,
+          "neither_bounds_are_binding": true
         },
         {
-          "constraint": true,
-          "activity": "İşgücü Haziran",
-          "dual_value": 960502.601,
-          "lower_bound": 0.0,
-          "upper_bound": -9e+99,
-          "range_lower": 11528550.0,
-          "range_upper": 960502.601,
-          "product_id": null
+          "constraint": "İşgücü Aralık",
+          "shadow_price": 0.0,
+          "slack_or_surplus": 10598773.144,
+          "original_value": 11528550.0,
+          "lower_bound": 929776.856,
+          "upper_bound": 9e+99,
+          "neither_bounds_are_binding": true
         },
         {
-          "constraint": true,
-          "activity": "İşgücü Temmuz",
-          "dual_value": 1638574.568,
-          "lower_bound": 0.0,
-          "upper_bound": -9e+99,
-          "range_lower": 11528550.0,
-          "range_upper": 1638574.568,
-          "product_id": null
+          "constraint": "Saman",
+          "shadow_price": 1.175,
+          "slack_or_surplus": 0.0,
+          "original_value": 0.0,
+          "lower_bound": -13133580.175,
+          "upper_bound": 380794.825,
+          "neither_bounds_are_binding": false
         },
         {
-          "constraint": true,
-          "activity": "İşgücü Ağustos",
-          "dual_value": 1186414.356,
-          "lower_bound": 0.0,
-          "upper_bound": -9e+99,
-          "range_lower": 11528550.0,
-          "range_upper": 1186414.356,
-          "product_id": null
+          "constraint": "İşletme sermayesi",
+          "shadow_price": 0.0,
+          "slack_or_surplus": 532791694.948,
+          "original_value": 758079000.0,
+          "lower_bound": 225287305.052,
+          "upper_bound": 9e+99,
+          "neither_bounds_are_binding": true
         },
         {
-          "constraint": true,
-          "activity": "İşgücü Eylül",
-          "dual_value": 1374199.225,
-          "lower_bound": 0.0,
-          "upper_bound": -9e+99,
-          "range_lower": 11528550.0,
-          "range_upper": 1374199.225,
-          "product_id": null
-        },
-        {
-          "constraint": true,
-          "activity": "İşgücü Ekim",
-          "dual_value": 1103806.304,
-          "lower_bound": 0.0,
-          "upper_bound": -9e+99,
-          "range_lower": 11528550.0,
-          "range_upper": 1103806.304,
-          "product_id": null
-        },
-        {
-          "constraint": true,
-          "activity": "İşgücü Kasım",
-          "dual_value": 926385.985,
-          "lower_bound": 0.0,
-          "upper_bound": -9e+99,
-          "range_lower": 11528550.0,
-          "range_upper": 926385.985,
-          "product_id": null
-        },
-        {
-          "constraint": true,
-          "activity": "İşgücü Aralık",
-          "dual_value": 929776.856,
-          "lower_bound": 0.0,
-          "upper_bound": -9e+99,
-          "range_lower": 11528550.0,
-          "range_upper": 929776.856,
-          "product_id": null
-        },
-        {
-          "constraint": false,
-          "activity": "Saman",
-          "dual_value": 0.0,
-          "lower_bound": 1.175,
-          "upper_bound": -9e+99,
-          "range_lower": 0.0,
-          "range_upper": -13133580.175,
-          "product_id": null
-        },
-        {
-          "constraint": true,
-          "activity": "İşletme sermayesi",
-          "dual_value": 225287305.052,
-          "lower_bound": 0.0,
-          "upper_bound": -9e+99,
-          "range_lower": 758079000.0,
-          "range_upper": 225287305.052,
-          "product_id": null
-        },
-        {
-          "constraint": true,
-          "activity": "Ahır Yeri",
-          "dual_value": 203452.266,
-          "lower_bound": 0.0,
-          "upper_bound": -9e+99,
-          "range_lower": 300000.0,
-          "range_upper": 203452.266,
-          "product_id": null
+          "constraint": "Ahır Yeri",
+          "shadow_price": 0.0,
+          "slack_or_surplus": 96547.734,
+          "original_value": 300000.0,
+          "lower_bound": 203452.266,
+          "upper_bound": 9e+99,
+          "neither_bounds_are_binding": true
         }
       ]
     }
