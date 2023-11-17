@@ -5380,7 +5380,7 @@ GLP_UNDEF | solution is undefined."""
                     if me._solved in ('simplex', 'exact') else
               me.ipt_status() if me._solved == 'interior' else
               me.mip_status())
-       return ret # XXX: roktas:w
+       return ret # XXX: roktas
 
    @_globalize
    def vobj(me):
@@ -5676,6 +5676,7 @@ GLP_SF_AUTO | chooses the scaling options automatically.
       if me.verb: print(
 '''Note: rows marked with a * list a basic variable.
 ''')
+      # return me._viter(cols) # XXX: roktas
 
    @_globalize
    def bound_ranges(me, rows = None):
@@ -5714,6 +5715,7 @@ marked with a *, and RangeLower is the max for Lower.Bnd(whose min is -inf),
 and RangeUpper is the min for Upper.Bnd(whose max value is inf). Then the
 columns of RangeLower, RangeUpper and Activity all have identical values.
 ''')
+      # return me._citer(rows) # XXX: roktas
 
    def _viter(me, idx): #varialbes
       '''iterate over a set of raw index for variables.'''

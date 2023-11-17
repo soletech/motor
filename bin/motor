@@ -21,8 +21,8 @@ DATA_DEFAULTS = {
 }
 
 SENSITIVITY_KEYS = {
-    "coeff": ["basic_variable", "activity", "dual_value", "obj_coef",    "range_from",  "range_till"],
-    "bound": ["constraint",     "activity", "dual_value", "lower_bound", "upper_bound", "range_lower", "range_upper"]
+    "coeff": ["is_basic_variable", "variable", "activity", "dual_value", "obj_coef",    "range_from",  "range_till"],
+    "bound": ["neither_bounds_are_binding", "constraint", "activity", "dual_value", "lower_bound", "upper_bound", "range_lower", "range_upper"]
 }
 
 INFINITY = 9e99
@@ -170,13 +170,19 @@ def setup(data):
         case 'minimize':
             pm.minimize(objective, data['objective']['name'])
 
-def solve(data):
+import pprint
+
+def solve(data, sensitivity_file):
     pm.begin(data['name'])
 
     setup(data)
 
     glpk.glp_term_out(glpk.GLP_OFF)
+
     pm.solve()
+    if sensitivity_file:
+        pm.save(sen=sensitivity_file)
+
     status = pm.status()
 
     solution     = pm.vobj()
@@ -196,6 +202,10 @@ def solve(data):
                         result[k] = INFINITY if result[k] > 0 else -INFINITY
                     else:
                         result[k] = round(result[k], ndigits)
+            # Cosmetic arrangement: put flag to end
+            v = result.pop(keys[0])
+            result[keys[0]] = v
+
         return results
 
     def with_product_ids(bound):
@@ -203,6 +213,43 @@ def solve(data):
         for i, _ in enumerate(bound):
             bound[i]['product_id'] = constraints[i].get('product_id')
         return bound
+
+    def postprocess_coeff():
+        pom = []
+
+        for item in transfer(coeff, SENSITIVITY_KEYS["coeff"]):
+            new_item = {
+                "variable": item["variable"],
+                "value": item["activity"],
+                "reduced_cost": -item["dual_value"],
+                "original_value": item["obj_coef"],
+                "lower_bound": item["range_from"],
+                "upper_bound": item["range_till"],
+                "is_basic_variable": item["is_basic_variable"],
+            }
+
+            pom.append(new_item)
+
+        return pom
+
+
+    def postprocess_bound():
+        pom = []
+
+        for item in with_product_ids(transfer(bound, SENSITIVITY_KEYS["bound"])):
+            new_item = {
+                "constraint": item["constraint"],
+                "shadow_price": item["dual_value"],
+                "slack_or_surplus": item["upper_bound"] - item["range_lower"] if item["neither_bounds_are_binding"] else 0.0,
+                "original_value": item["upper_bound"],
+                "lower_bound": item["range_lower"],
+                "upper_bound": item["range_upper"] if not item["neither_bounds_are_binding"] else INFINITY,
+                "neither_bounds_are_binding": item["neither_bounds_are_binding"],
+            }
+
+            pom.append(new_item)
+
+        return pom
 
     return {
         "success": Status.is_success(status),
@@ -213,8 +260,8 @@ def solve(data):
         "response": {
             "solution": round(solution, ndigits),
             "sensitivity": {
-                "coeff": transfer(coeff, SENSITIVITY_KEYS["coeff"]),
-                "bound": with_product_ids(transfer(bound, SENSITIVITY_KEYS["bound"]))
+                "coeff": postprocess_coeff(),
+                "bound": postprocess_bound()
             }
         },
         "request": data
@@ -246,6 +293,7 @@ def main():
         sys.exit(100)
 
     if not validate_only:
-        store(output, solve(data))
+        sensitivity_file = os.path.splitext(output)[0]+".txt" if output else None
+        store(output, solve(data, sensitivity_file))
 
 main()
