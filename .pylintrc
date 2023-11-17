@@ -4,4 +4,4 @@ disable = missing-function-docstring, missing-module-docstring, missing-class-do
 
 [FORMAT]
 
-max-line-length=120
+max-line-length=140

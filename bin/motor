@@ -170,8 +170,6 @@ def setup(data):
         case 'minimize':
             pm.minimize(objective, data['objective']['name'])
 
-import pprint
-
 def solve(data, sensitivity_file):
     pm.begin(data['name'])
 
