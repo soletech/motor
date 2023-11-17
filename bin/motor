@@ -21,8 +21,12 @@ DATA_DEFAULTS = {
 }
 
 SENSITIVITY_KEYS = {
-    "coeff": ["is_basic_variable", "variable", "activity", "dual_value", "obj_coef",    "range_from",  "range_till"],
-    "bound": ["neither_bounds_are_binding", "constraint", "activity", "dual_value", "lower_bound", "upper_bound", "range_lower", "range_upper"]
+    "coeff": [
+        "is_basic_variable", "variable", "activity", "dual_value", "obj_coef",    "range_from",  "range_till"
+    ],
+    "bound": [
+        "neither_bounds_are_binding", "constraint", "activity", "dual_value", "lower_bound", "upper_bound", "range_lower", "range_upper"
+    ]
 }
 
 INFINITY = 9e99
@@ -201,8 +205,8 @@ def solve(data, sensitivity_file):
                     else:
                         result[k] = round(result[k], ndigits)
             # Cosmetic arrangement: put flag to end
-            v = result.pop(keys[0])
-            result[keys[0]] = v
+            value = result.pop(keys[0])
+            result[keys[0]] = value
 
         return results
 
