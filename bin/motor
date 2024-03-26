@@ -130,7 +130,7 @@ def validate(data):
             case _:
                 raise InvalidDataError(f'Error in constraint[{i}]: unrecognized relation')
 
-        validate_coefficients(constraint['coefficients'], f'constraint[{i}]')
+        validate_coefficients(constraint['coefficients'], f'[{i}] {constraint["name"]}')
 
     return data
 
