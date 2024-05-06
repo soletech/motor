@@ -6,7 +6,7 @@ require "tmpdir"
 module Motor
   extend self
 
-  MOTOR = File.expand_path(File.join(__dir__, "..", "bin", "motor"))
+  MOTOR = File.expand_path(File.join(__dir__, "..", "..", "bin", "motor"))
 
   InvalidData  = Class.new(Error)
   Unsuccessful = Class.new(Error)
