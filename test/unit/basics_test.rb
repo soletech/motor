@@ -3,7 +3,7 @@
 require_relative "../test_helper"
 
 class BasicsTest < Minitest::Test
-  FIXTURES = File.expand_path(File.join(__dir__, "..", "integration"))
+  FIXTURES = File.expand_path(File.join(__dir__, "..", "integration", "motor"))
 
   def test_solve
     request  = File.read(File.join(FIXTURES, "01-bafra-in.json"))

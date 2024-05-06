@@ -1,16 +1,38 @@
 # frozen_string_literal: true
 
-desc "Test"
-task :"test:integration" do
-  FileList["test/integration/*-in.json"].each do |infile|
+desc "Test integration"
+task "test:integration": [:"test:integration:motor", :"test:integration:rotor"]
+
+desc "Test Motor integration"
+task :"test:integration:motor" do
+  warn "Motor integration"
+
+  FileList["test/integration/motor/*-in.json"].each do |infile|
     outfile = infile.gsub("-in", "-out")
 
     actual = %x(bin/motor #{infile}).strip
     expected = File.read(outfile).strip
 
-    warn ">   #{infile}"
+    warn "  >   #{infile}"
     unless actual == expected
-      warn "❌   #{outfile}"
+      warn "  ❌   #{outfile}"
+    end
+  end
+end
+
+desc "Test Rotor integration"
+task :"test:integration:rotor" do
+  warn "Rotor integration"
+
+  FileList["test/integration/rotor/*-in.xlsx"].each do |infile|
+    outfile = infile.gsub("-in.xlsx", "-out.json")
+
+    actual = %x(bin/rotor #{infile}).encode("UTF-8").strip
+    expected = File.read(outfile).encode("UTF-8").strip
+
+    warn "  >   #{infile}"
+    unless actual == expected
+      warn "  ❌   #{outfile}"
     end
   end
 end
