@@ -4,16 +4,6 @@ require "forwardable"
 
 module Motor
   module Model
-    class Part
-      extend Forwardable
-
-      def_delegators :@lookup, :[]
-
-      attr_reader :name, :coefficients
-    end
-
-    private_constant :Part
-
     class Problem
       extend Forwardable
 
@@ -39,6 +29,16 @@ module Motor
 
       def to_json(...) = to_h.to_json(...)
     end
+
+    class Part
+      extend Forwardable
+
+      def_delegators :@lookup, :[]
+
+      attr_reader :name, :coefficients
+    end
+
+    private_constant :Part
 
     class Objective < Part
       def_delegators :@variables, :size, :index
