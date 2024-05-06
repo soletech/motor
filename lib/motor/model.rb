@@ -46,6 +46,8 @@ module Motor
       attr_reader :variables, :coefficients
 
       def initialize(variables:, coefficients:)
+        super()
+
         @name = "Objective Function"
         @variables = variables
         @coefficients = coefficients
@@ -74,6 +76,8 @@ module Motor
       attr_reader :relation, :rhs
 
       def initialize(name:, objective:, coefficients:, relation:, rhs:)
+        super()
+
         @name = name
         @objective = objective
         @coefficients = coefficients
@@ -102,6 +106,8 @@ module Motor
       def_delegators :@constraints, :each
 
       def initialize(constraints)
+        super()
+
         @constraints = constraints
 
         build
