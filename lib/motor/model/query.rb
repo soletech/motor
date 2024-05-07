@@ -11,7 +11,7 @@ module Motor
     private_constant :Query
 
     module Queryable
-      def [](key) = problem.query[self, key]
+      def [](key) = container.query[self, key]
     end
   end
 end

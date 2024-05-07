@@ -4,14 +4,14 @@ require "forwardable"
 
 module Motor
   module Model
-    Objective = Data.define(:name, :variables, :coefficients, :problem) do
+    Objective = Data.define(:name, :variables, :coefficients, :container) do
       extend Forwardable
       include Queryable
 
       def_delegators :variables, :size, :index
 
-      def initialize(name: "Objective Function", variables:, coefficients:, problem:)
-        super(name:, variables:, coefficients:, problem:)
+      def initialize(name: "Objective Function", variables:, coefficients:, container:)
+        super(name:, variables:, coefficients:, container:)
 
         sanitize!
       end
