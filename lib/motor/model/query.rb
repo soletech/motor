@@ -11,7 +11,7 @@ module Motor
     private_constant :Query
 
     module Queryable
-      def [](key) = container.query[self, key]
+      def [](key) = model.query[self, key]
     end
   end
 end

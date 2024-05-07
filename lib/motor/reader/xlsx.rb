@@ -67,7 +67,7 @@ module Motor
           Model::Objective.new(
             variables:    variables(rows),
             coefficients: coefficients(rows),
-            container:    problem
+            model:        problem
           )
         end
 
@@ -91,11 +91,11 @@ module Motor
                 coefficients: coefficients(row),
                 relation:     relation(row),
                 rhs:          rhs(row),
-                container:    problem
+                model:        problem
               )
             end,
 
-            container:   problem
+            model:       problem
           )
         end
 

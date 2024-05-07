@@ -4,12 +4,12 @@ require "forwardable"
 
 module Motor
   module Model
-    Constraint = Data.define(:name, :coefficients, :relation, :rhs, :container) do
+    Constraint = Data.define(:name, :coefficients, :relation, :rhs, :model) do
       extend Forwardable
       include Queryable
 
       def_delegators :coefficients, :size
-      def_delegators :container, :objective
+      def_delegators :model, :objective
 
       def initialize(...)
         super
@@ -30,7 +30,7 @@ module Motor
       end
     end
 
-    Constraints = Data.define(:constraints, :container) do
+    Constraints = Data.define(:constraints, :model) do
       extend Forwardable
       include Queryable
       include Enumerable
