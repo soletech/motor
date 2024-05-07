@@ -82,10 +82,10 @@ require "motor"
 def ilgili_metot(...)
   request = ...                     # JSON string ver
   response = Motor.solve!(request)  # Çöz ve JSON string al
-  ...                               # Çözüm başarılı, response'u işle      
+
+  # Çözüm başarılı, response'u işle
 rescue Motor::Error => e
   # Hata iletisi e.message ile hatayı yönet
-  ...
 end
 ```
 

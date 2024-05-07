@@ -1,10 +1,9 @@
 inherit_gem:
-  rubocop-shopify: rubocop.yml
+  rubocop-rails-omakase: rubocop.yml
 
 require:
-  - "rubocop-minitest"
+  - "rubocop-md"
   - "rubocop-packaging"
-  - "rubocop-performance"
   - "rubocop-rake"
 
 Layout/ExtraSpacing:
@@ -41,6 +40,13 @@ Metrics/MethodLength:
 Naming/MethodName:
   Enabled: false
 
+Minitest/UselessAssertion:
+  Exclude:
+    - "**/test/test_common.rb" # TODO: to avoid a bug
+
+Rails/RefuteMethods:
+  Enabled: false
+      
 Style/AsciiComments:
   Enabled: false
 Style/ClassAndModuleChildren:
@@ -64,9 +70,13 @@ Style/SymbolLiteral:
 Style/TrailingCommaInArguments:
   Exclude: 
     - "**/test/**/*.rb"
+Style/TrailingCommaInArrayLiteral:
+  Exclude: 
+    - "**/test/**/*.rb"
 
 AllCops:
   NewCops: enable
+  TargetRubyVersion: 3.2
   Exclude:
     - "vendor/**/*"
     - "_/**/*"

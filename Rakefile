@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 desc "Test integration"
-task "test:integration": [:"test:integration:motor", :"test:integration:rotor"]
+task "test:integration": %i[test:integration:motor test:integration:rotor]
 
 desc "Test Motor integration"
 task :"test:integration:motor" do
@@ -43,11 +43,11 @@ Rake::TestTask.new(:"test:unit") do |t|
 end
 
 desc "Run all tests"
-task test: [:"test:unit", :"test:integration"]
+task test: %i[test:unit test:integration]
 
 require "rubocop/rake_task"
 RuboCop::RakeTask.new(:rubocop) do |t|
-  t.options = ["--display-cop-names"]
+  t.options = [ "--display-cop-names" ]
 end
 
 desc "Pylint"
@@ -56,9 +56,9 @@ task :pylint do
 end
 
 desc "Lint code"
-task lint: [:pylint, :rubocop]
+task lint: %i[pylint rubocop]
 
-task default: [:test]
+task default: [ :test ]
 
 desc "Run all"
-task all: [:lint, :test]
+task all: %i[lint test]

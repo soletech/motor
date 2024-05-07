@@ -13,11 +13,12 @@ group :development do
   gem "minitest-reporters", ">= 1.4.3"
   gem "rake"
   gem "rubocop"
+  gem "rubocop-md"
   gem "rubocop-minitest"
   gem "rubocop-packaging"
   gem "rubocop-performance"
+  gem "rubocop-rails-omakase"
   gem "rubocop-rake"
-  gem "rubocop-shopify"
   gem "ruby-lsp"
   gem "rubygems-tasks"
 end

@@ -12,8 +12,8 @@ Gem::Specification.new do |s|
   s.description                       = "Motor Simplex Solver"
   s.homepage                          = "https://motor.roktas.dev"
   s.files                             = Dir["CHANGELOG.md", "LICENSE", "README.md", "lib/**/*"]
-  s.executables                       = ["motor", "rotor"]
-  s.require_paths                     = ["lib"]
+  s.executables                       = [ "motor", "rotor" ]
+  s.require_paths                     = [ "lib" ]
   s.required_ruby_version             = ">= 3.0.0"
   s.metadata["changelog_uri"]         = "https://github.com/soletech/motor/blob/main/CHANGELOG.md"
   s.metadata["source_code_uri"]       = "https://github.com/soletech/motor"

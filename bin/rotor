@@ -3,9 +3,10 @@
 
 require "motor"
 
-xlsx = Motor::Reader::XLSX.new(ARGV.first)
-# p xlsx.constraints.to_a
-problem = xlsx.call
-# puts problem.to_json
-puts Motor::Writer::JSON.(problem)
-# p problem.constraints["Toplam Arazi"]["Buğday (Sulu)"]
+def main
+  xlsx = Motor::Reader::XLSX.new(ARGV.first)
+  problem = Motor::Model::Problem.create(xlsx)
+  puts Motor::Writer::JSON.(problem)
+end
+
+main
