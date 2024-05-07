@@ -1,8 +1,11 @@
 # frozen_string_literal: true
 
+require "forwardable"
+
 module Motor
   module Model
     Objective = Data.define(:name, :variables, :coefficients, :problem) do
+      extend Forwardable
       include Queryable
 
       def_delegators :variables, :size, :index
@@ -13,7 +16,9 @@ module Motor
         sanitize!
       end
 
-      def index = Hash[*variables.zip(coefficients).flatten]
+      def index                  = Hash[*variables.zip(coefficients).flatten]
+
+      def query(index, variable) = index[variable]
 
       def to_h = { name:, coefficients: }
 

@@ -1,8 +1,11 @@
 # frozen_string_literal: true
 
+require "forwardable"
+
 module Motor
   module Model
     Constraint = Data.define(:name, :coefficients, :relation, :rhs, :problem) do
+      extend Forwardable
       include Queryable
 
       def_delegators :coefficients, :size
@@ -14,11 +17,13 @@ module Motor
         sanitize!
       end
 
-      def to_h = { name:, coefficients:, relation:, rhs: }
+      def index                  = Hash[*objective.variables.zip(coefficients).flatten]
+
+      def query(index, variable) = index[variable]
+
+      def to_h                   = { name:, coefficients:, relation:, rhs: }
 
       private
-
-      def index = Hash[*objective.variables.zip(coefficients).flatten]
 
       def sanitize!
         raise(Error, "Constraint with incorrect size: #{name}") unless size == objective.size
@@ -26,14 +31,17 @@ module Motor
     end
 
     Constraints = Data.define(:constraints, :problem) do
+      extend Forwardable
       include Queryable
       include Enumerable
 
       def_delegators :constraints, :each
 
-      def index = Hash[*constraints.map(&:name).zip(constraints).flatten]
+      def index                    = Hash[*constraints.map(&:name).zip(constraints).flatten]
 
-      def to_a  = constraints.map(&:to_h)
+      def query(index, constraint) = index[constraint]
+
+      def to_a                     = constraints.map(&:to_h)
     end
   end
 end
