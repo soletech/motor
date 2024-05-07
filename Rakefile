@@ -59,3 +59,6 @@ desc "Lint code"
 task lint: [:pylint, :rubocop]
 
 task default: [:test]
+
+desc "Run all"
+task all: [:lint, :test]
