@@ -1,12 +1,10 @@
 #!/usr/bin/env ruby
 # frozen_string_literal: true
 
-require "motor"
+require "motor/cli"
 
 def main
-  xlsx = Motor::Reader::XLSX.new(ARGV.first)
-  problem = Motor::Model::Problem.create(xlsx)
-  puts Motor::Writer::JSON.(problem)
+  Motor::CLI.(ARGV)
 end
 
 main

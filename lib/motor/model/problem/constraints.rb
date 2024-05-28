@@ -6,6 +6,7 @@ module Motor
   module Model
     Constraint = Data.define(:name, :coefficients, :relation, :rhs, :model) do
       extend Forwardable
+
       include Queryable
 
       def_delegators :coefficients, :size
@@ -32,8 +33,9 @@ module Motor
 
     Constraints = Data.define(:constraints, :model) do
       extend Forwardable
-      include Queryable
       include Enumerable
+
+      include Queryable
 
       def_delegators :constraints, :each
 

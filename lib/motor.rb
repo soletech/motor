@@ -6,3 +6,5 @@ require_relative "motor/api"
 require_relative "motor/model"
 require_relative "motor/reader"
 require_relative "motor/writer"
+
+require_relative "motor/version"

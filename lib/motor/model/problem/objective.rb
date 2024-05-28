@@ -6,9 +6,10 @@ module Motor
   module Model
     Objective = Data.define(:name, :variables, :coefficients, :model) do
       extend Forwardable
+
       include Queryable
 
-      def_delegators :variables, :size, :index
+      def_delegators :variables, :size
 
       def initialize(name: "Objective Function", variables:, coefficients:, model:)
         super(name:, variables:, coefficients:, model:)

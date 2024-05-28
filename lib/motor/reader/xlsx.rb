@@ -61,8 +61,6 @@ module Motor
       class Objective < Matrix
         HEADERS = Set["variable", "coefficient"].freeze
 
-        attr_reader :variable
-
         def call(problem)
           Model::Objective.new(
             variables:    variables(rows),
