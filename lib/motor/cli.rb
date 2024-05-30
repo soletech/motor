@@ -14,8 +14,8 @@ module Motor
         "xlsx": Reader::XLSX
       },
       write: {
-        "json": Writer::JSON
-        # "xlsx": Writer::XLSX
+        "json": Writer::JSON,
+        "xlsx": Writer::XLSX
       }
     }.freeze
 
@@ -32,8 +32,6 @@ module Motor
       rescue CLIError => e # rubocop:disable Lint/RescueException
         warn(parser.help)
         warn("")
-        abort(e.message)
-      rescue Exception => e # rubocop:disable Lint/RescueException
         abort(e.message)
       end
 
@@ -52,11 +50,11 @@ module Motor
           BANNER
 
           option.on("-r", "--read TYPE", "Read type: json, xslx, default: json", String) do |opt|
-            options.read = opt
+            options.read = reader!(opt)
           end
 
           option.on("-w", "--write TYPE", "Write type: json, xslx, default: json", String) do |opt|
-            options.write = opt
+            options.write = writer!(opt)
           end
 
           option.on_tail("-h", "--help", "Show this message") do
@@ -95,6 +93,9 @@ module Motor
         return if options.read && options.write
 
         options.read  = reader!(::File.extname(infile)[1..]) unless options.read
+
+        raise(CLIError, "No output file specified for XLSX") if options.write && !outfile
+
         options.write = writer!(outfile ? ::File.extname(outfile)[1..] : "json") unless options.write
 
         raise(CLIError, "Missing read type")  unless options.read

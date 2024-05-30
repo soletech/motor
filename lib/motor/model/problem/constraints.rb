@@ -37,7 +37,7 @@ module Motor
 
       include Queryable
 
-      def_delegators :constraints, :each
+      def_delegators :constraints, :each, :size
 
       def index                    = Hash[*constraints.map(&:name).zip(constraints).flatten]
 
