@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+require "tempfile"
+
 desc "Test integration"
 task "test:integration": %i[test:integration:motor test:integration:rotor]
 
@@ -20,19 +22,47 @@ task :"test:integration:motor" do
   end
 end
 
+def ignore_name(content)
+  content.split("\n").reject { _1.start_with?('  "name":') }.join("\n").strip
+end
+
 desc "Test Rotor integration"
 task :"test:integration:rotor" do
   warn "Rotor integration"
 
-  FileList["test/integration/rotor/*-in.xlsx"].each do |infile|
-    outfile = infile.gsub("-in.xlsx", "-out.json")
+  FileList["test/integration/rotor/*.json"].each do |file|
+    xlsx     = file.gsub(".json", ".xlsx")
+    expected = ignore_name(::File.read(file).encode("UTF-8"))
 
-    actual = %x(bin/rotor #{infile}).encode("UTF-8").strip
-    expected = File.read(outfile).encode("UTF-8").strip
+    warn "  >   #{file}: JSON read JSON write"
+    actual = %x(bin/rotor -r json -w json #{file}).encode("UTF-8").strip
+    unless ignore_name(actual) == expected
+      warn "  ❌   #{file}"
+    end
 
-    warn "  >   #{infile}"
-    unless actual == expected
-      warn "  ❌   #{outfile}"
+    warn "  >   #{file}: JSON read XLSX write"
+    actual = Tempfile.create("rotor") do |f|
+      sh "bin/rotor -r json -w xlsx #{file} #{f.path}.xlsx", verbose: false
+      %x(bin/rotor -r xlsx -w json #{f.path}.xlsx).encode("UTF-8")
+    end
+    unless ignore_name(actual) == expected
+      warn "  ❌   #{file}"
+    end
+
+    warn "  >   #{file}: XLSX read JSON write"
+    actual = %x(bin/rotor -r xlsx -w json #{xlsx})
+    unless ignore_name(actual) == expected
+      warn "  ❌   #{file}"
+    end
+
+    warn "  >   #{file}: XLSX read XLSX write"
+    actual = Tempfile.create("rotor") do |f|
+      sh "bin/rotor -r xlsx -w xlsx #{xlsx} #{f.path}.xlsx", verbose: false
+      %x(bin/rotor -r xlsx -w json #{f.path}.xlsx).encode("UTF-8").strip
+    end
+
+    unless ignore_name(actual) == expected
+      warn "  ❌   #{file}"
     end
   end
 end
