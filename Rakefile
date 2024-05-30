@@ -42,7 +42,7 @@ task :"test:integration:rotor" do
 
     warn "  >   #{file}: JSON read XLSX write"
     actual = Tempfile.create("rotor") do |f|
-      sh "bin/rotor -r json -w xlsx #{file} #{f.path}.xlsx", verbose: false
+      sh("bin/rotor -r json -w xlsx #{file} #{f.path}.xlsx", verbose: false)
       %x(bin/rotor -r xlsx -w json #{f.path}.xlsx).encode("UTF-8")
     end
     unless ignore_name(actual) == expected
@@ -57,7 +57,7 @@ task :"test:integration:rotor" do
 
     warn "  >   #{file}: XLSX read XLSX write"
     actual = Tempfile.create("rotor") do |f|
-      sh "bin/rotor -r xlsx -w xlsx #{xlsx} #{f.path}.xlsx", verbose: false
+      sh("bin/rotor -r xlsx -w xlsx #{xlsx} #{f.path}.xlsx", verbose: false)
       %x(bin/rotor -r xlsx -w json #{f.path}.xlsx).encode("UTF-8").strip
     end
 

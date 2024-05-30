@@ -92,7 +92,7 @@ module Motor
 
         return if options.read && options.write
 
-        options.read  = reader!(::File.extname(infile)[1..]) unless options.read
+        options.read = reader!(::File.extname(infile)[1..]) unless options.read
 
         raise(CLIError, "No output file specified for XLSX") if options.write && !outfile
 

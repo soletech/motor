@@ -28,6 +28,7 @@ Layout/MultilineOperationIndentation:
 
 Metrics/BlockLength:
   Exclude: 
+    - "Rakefile"
     - "**/test/**/*.rb"
     - "*.gemspec"
 Metrics/ClassLength:
