@@ -6,7 +6,8 @@ require "tmpdir"
 module Motor
   extend self
 
-  MOTOR = File.expand_path(File.join(__dir__, "..", "..", "bin", "motor"))
+  MOTOR   = File.expand_path(File.join(__dir__, "..", "..", "bin", "motor"))
+  MOROTOR = File.expand_path(File.join(__dir__, "..", "..", "bin", "morotor"))
 
   InvalidData  = Class.new(Error)
   Unsuccessful = Class.new(Error)
@@ -25,6 +26,19 @@ module Motor
     solve(request).tap do |json|
       response = JSON.parse(json)
       raise(Unsuccessful, response["status"]["desc"]) unless response["success"]
+    end
+  end
+
+  def run(excel_file)
+    Dir.mktmpdir do |dir|
+      response_file = File.join(dir, "response.json")
+
+      system(MOROTOR, excel_file, response_file)
+
+      File.read(response_file).tap do |json|
+        response = JSON.parse(json)
+        raise(Unsuccessful, response["status"]["desc"]) unless response["success"]
+      end
     end
   end
 

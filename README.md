@@ -89,6 +89,19 @@ rescue Motor::Error => e
 end
 ```
 
+Excel dosyalarıyla çalışmak için:
+
+```ruby
+require "motor"
+
+begin
+  response = Motor.run(excel_file)  # Excel dosyasını ver ve çözüme ait JSON çıktısını üret
+
+  # Çözüm başarılı, response'u işle (bu bir JSON verisi)
+rescue Motor::Error => e
+  # Hata iletisi e.message ile hatayı yönet
+end
+```
 
 ## Şema
 
