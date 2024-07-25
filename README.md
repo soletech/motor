@@ -80,8 +80,8 @@ Sadece başarılı bir çözümle ilgileniyorsanız `solve!` metodunun aşağıd
 require "motor"
 
 def ilgili_metot(...)
-  request = ...                     # JSON string ver
-  response = Motor.solve!(request)  # Çöz ve JSON string al
+  request = ...                    # JSON string ver
+  response = Motor.solve!(request) # Çöz ve JSON string al
 
   # Çözüm başarılı, response'u işle
 rescue Motor::Error => e
@@ -95,7 +95,7 @@ Excel dosyalarıyla çalışmak için:
 require "motor"
 
 begin
-  response = Motor.run(excel_file)  # Excel dosyasını ver ve çözüme ait JSON çıktısını üret
+  response = Motor.run(excel_file) # Excel dosyasını ver ve çözüme ait JSON çıktısını üret
 
   # Çözüm başarılı, response'u işle (bu bir JSON verisi)
 rescue Motor::Error => e
