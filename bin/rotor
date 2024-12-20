@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+# TODO: Rewrite in Ruby
+
 BINDIR=$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" &>/dev/null && pwd)
 
 die() {
