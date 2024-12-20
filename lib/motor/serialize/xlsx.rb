@@ -22,7 +22,7 @@ module Motor
 
           def initialize(file)
             @xlsx = Roo::Spreadsheet.open(file)
-            @name = { name: ::File.basename(file, ".*").split("-").map(&:capitalize).join("-") }.freeze
+            @name = ::File.basename(file, ".*").split("-").map(&:capitalize).join("-").freeze
             @index = Hash[
               *@xlsx.sheets.each_with_index.map { |title, i| [ title.strip.downcase, i ] }.flatten
             ]
@@ -30,7 +30,7 @@ module Motor
             sanitize
           end
 
-          def [](sheet)   = xlsx.sheet(index[SHEET[sheet]])
+          def [](sheet)   = has?(sheet) ? xlsx.sheet(index[SHEET[sheet]]) : nil
 
           def has?(sheet) = index.key?(SHEET[sheet])
 
@@ -44,7 +44,7 @@ module Motor
           spreadsheet = Spreadsheet.new(file)
 
           Problem.(
-            { "solution" => {} }.tap do |data|
+            { "name": spreadsheet.name, "solution" => {} }.tap do |data|
               Sheet::Objective.(spreadsheet, data)
               Sheet::Constraints.(spreadsheet, data)
               Sheet::Solution::Result.(spreadsheet, data)
@@ -55,21 +55,21 @@ module Motor
         end
 
         class Sheet
-          def self.call(spreadsheet, ...) = new(spreadsheet).call(...)
+          def self.call(spreadsheet, ...)
+            sheet = spreadsheet[self.name.split("::").last.downcase.to_sym]
+            new(sheet).call(...) if sheet
+          end
 
-          attr_reader :spreadsheet, :sheet, :rows, :headers
+          attr_reader :sheet, :rows, :headers
 
-          def initialize(spreadsheet)
-            @spreadsheet = spreadsheet
-            @sheet       = spreadsheet[name]
-            @rows        = sheet.to_a
+          def initialize(sheet)
+            @sheet = sheet
+            @rows  = sheet.to_a
 
             sanitize if respond_to?(:sanitize)
           end
 
           def header = strings(rows.shift)
-
-          def name   = self.class.name.split("::").last.downcase.to_sym
 
           private
 
@@ -83,7 +83,6 @@ module Motor
 
               data["variables"] = strings(rows.map(&:first))
               data["objective"] = {
-                "name"         => spreadsheet.name,
                 "coefficients" => floats(rows.map(&:last))
               }
             end
@@ -162,12 +161,10 @@ module Motor
           def initialize(instance, workbook)
             @instance  = instance
             @workbook  = workbook
-            @worksheet = workbook.add_worksheet(SHEET[name]).tap do |worksheet|
+            @worksheet = workbook.add_worksheet(SHEET[self.class.name.split("::").last.downcase.to_sym]).tap do |worksheet|
               worksheet.auto_width = true
             end
           end
-
-          def name = self.class.name.split("::").last.downcase.to_sym
 
           class Objective < Sheet
             def call

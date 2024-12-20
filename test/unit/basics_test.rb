@@ -22,7 +22,6 @@ class BasicsTest < Minitest::Test
   end
 
   def test_validate
-    skip # TODO:
     assert_raises(Motor::InvalidData, "Data empty") { Motor.validate("{}") }
   end
 end

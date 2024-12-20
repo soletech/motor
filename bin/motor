@@ -157,11 +157,13 @@ def validate(data):
 
 def invalid(error):
     return {
-        "success": False,
-        "result": {
-            "value": None,
-            "code": "invalid",
-            "desc": str(error),
+        "solution": {
+            "success": False,
+            "result": {
+                "value": None,
+                "code": "invalid",
+                "desc": str(error),
+            },
         },
     }
 

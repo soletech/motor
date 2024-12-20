@@ -9,9 +9,6 @@ module Motor
   MOTOR   = File.expand_path(File.join(__dir__, "..", "..", "bin", "motor"))
   MOROTOR = File.expand_path(File.join(__dir__, "..", "..", "bin", "morotor"))
 
-  InvalidData  = Class.new(Error)
-  Unsuccessful = Class.new(Error)
-
   def solve(request)
     Dir.mktmpdir do |dir|
       request_file, response_file = File.join(dir, "request.json"), File.join(dir, "response.json")

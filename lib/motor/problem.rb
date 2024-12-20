@@ -22,14 +22,21 @@ module Motor
       def to_json(...) = to_h.tap { |h| h.delete(:solution) if h[:solution] && h[:solution].empty? }.to_json(...)
 
       class << self
-        def create(hash)  = new(**hash.transform_keys(&:to_sym))
+        def create(hash)  = new(**assert!(hash).transform_keys(&:to_sym))
 
-        def series(array) = array.map { |hash| create(hash) }
+        def series(array) = array.map { |hash| create(assert!(hash)) }
+
+        private
+
+        def assert!(hash) = hash.tap do
+          raise(InvalidData, "Hash expected where found #{hash.class}") unless hash.is_a?(::Hash)
+          raise(InvalidData, "Empty data") if hash.empty?
+        end
       end
     end
 
     # rubocop:disable Metrics/LineLength
-    Objective  = Data.define(*%i[name coefficients])
+    Objective  = Data.define(*%i[coefficients])
     Constraint = Data.define(*%i[name coefficients relation rhs])
     Instance   = Data.define(*%i[name variables objective constraints solution]) do
       def initialize(name:, variables:, objective:, constraints:, solution: nil) = super
@@ -72,7 +79,7 @@ module Motor
           coefficients: Solution::Sensitivity::Coefficient.series(bucket["coefficients"]),
           boundaries:   Solution::Sensitivity::Boundary.series(bucket["boundaries"])
         )
-      ) if bucket
+      ) if bucket && !bucket.empty?
 
       Instance.new(
         name:        data["name"],
