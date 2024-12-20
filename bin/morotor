@@ -1,9 +1,0 @@
-#!/usr/bin/env bash
-
-BINDIR=$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" &>/dev/null && pwd)
-
-INPUT_EXCEL_FILE=$1
-OUTPUT_JSON_FILE=$2
-
-bundle exec "$BINDIR"/rotor "$INPUT_EXCEL_FILE" | "$BINDIR"/motor /dev/stdin "$OUTPUT_JSON_FILE"
-

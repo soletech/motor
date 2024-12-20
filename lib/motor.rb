@@ -13,8 +13,8 @@ require "tmpdir"
 module Motor
   extend self
 
-  MOTOR   = File.expand_path(File.join(__dir__, "..", "bin", "motor"))
-  MOROTOR = File.expand_path(File.join(__dir__, "..", "bin", "morotor"))
+  MOTOR = File.expand_path(File.join(__dir__, "..", "bin", "motor"))
+  ROTOR = File.expand_path(File.join(__dir__, "..", "bin", "rotor"))
 
   def solve(request)
     Dir.mktmpdir do |dir|
@@ -37,7 +37,7 @@ module Motor
     Dir.mktmpdir do |dir|
       response_file = File.join(dir, "response.json")
 
-      system(MOROTOR, excel_file, response_file)
+      system(ROTOR, excel_file, response_file)
 
       File.read(response_file).tap do |json|
         response = JSON.parse(json)

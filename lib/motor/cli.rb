@@ -6,7 +6,7 @@ require "motor"
 
 module Motor
   module CLI
-    PROGNAME = "rotor"
+    PROGNAME = "krank"
     CLIError = Class.new(Error)
 
     Options = Struct.new(:read, :write, :help, :version)

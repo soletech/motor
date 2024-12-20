@@ -3,7 +3,7 @@
 require "tempfile"
 
 desc "Test integration"
-task "test:integration": %i[test:integration:motor test:integration:rotor]
+task "test:integration": %i[test:integration:motor test:integration:krank]
 
 desc "Test Motor integration"
 task :"test:integration:motor" do
@@ -26,39 +26,39 @@ def ignore_name(content)
   content.split("\n").reject { _1.start_with?('  "name":') }.join("\n").strip
 end
 
-desc "Test Rotor integration"
-task :"test:integration:rotor" do
-  warn "Rotor integration"
+desc "Test krank integration"
+task :"test:integration:krank" do
+  warn "Krank integration"
 
-  FileList["test/integration/rotor/*.json"].each do |file|
+  FileList["test/integration/krank/*.json"].each do |file|
     xlsx     = file.gsub(".json", ".xlsx")
     expected = ignore_name(::File.read(file).encode("UTF-8"))
 
     warn "  >   #{file}: JSON read JSON write"
-    actual = %x(bin/rotor -r json -w json #{file}).encode("UTF-8").strip
+    actual = %x(bin/krank -r json -w json #{file}).encode("UTF-8").strip
     unless ignore_name(actual) == expected
       warn "  ❌   #{file}"
     end
 
     warn "  >   #{file}: JSON read XLSX write"
-    actual = Tempfile.create("rotor") do |f|
-      sh("bin/rotor -r json -w xlsx #{file} #{f.path}.xlsx", verbose: false)
-      %x(bin/rotor -r xlsx -w json #{f.path}.xlsx).encode("UTF-8")
+    actual = Tempfile.create("krank") do |f|
+      sh("bin/krank -r json -w xlsx #{file} #{f.path}.xlsx", verbose: false)
+      %x(bin/krank -r xlsx -w json #{f.path}.xlsx).encode("UTF-8")
     end
     unless ignore_name(actual) == expected
       warn "  ❌   #{file}"
     end
 
     warn "  >   #{file}: XLSX read JSON write"
-    actual = %x(bin/rotor -r xlsx -w json #{xlsx})
+    actual = %x(bin/krank -r xlsx -w json #{xlsx})
     unless ignore_name(actual) == expected
       warn "  ❌   #{file}"
     end
 
     warn "  >   #{file}: XLSX read XLSX write"
-    actual = Tempfile.create("rotor") do |f|
-      sh("bin/rotor -r xlsx -w xlsx #{xlsx} #{f.path}.xlsx", verbose: false)
-      %x(bin/rotor -r xlsx -w json #{f.path}.xlsx).encode("UTF-8").strip
+    actual = Tempfile.create("krank") do |f|
+      sh("bin/krank -r xlsx -w xlsx #{xlsx} #{f.path}.xlsx", verbose: false)
+      %x(bin/krank -r xlsx -w json #{f.path}.xlsx).encode("UTF-8").strip
     end
 
     unless ignore_name(actual) == expected
