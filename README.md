@@ -70,9 +70,9 @@ request = ...                    # JSON string ver
 response = Motor.solve(request)  # Çöz ve JSON string al
 ```
 
-Geçerli (optimal) bir çözüm elde edilmişse cevap verisinde `success` alanı `true` değerini alır.  Aksi tüm durumlarda
-`success` alanı `false` değerindedir ve sorunu görmek için `status` durum alanına bakılır.  Durum bilgisinde `code`
-alanı hata kodunu, `message` ise hata açıklamasını içerir.
+Geçerli (optimal) bir çözüm elde edilmişse cevap verisinde `success` alanı `true` değerini alır. Aksi tüm durumlarda
+`success` alanı `false` değerindedir ve sorunu görmek için `status` durum alanına bakılır. Durum bilgisinde `code` alanı
+hata kodunu, `message` ise hata açıklamasını içerir.
 
 Sadece başarılı bir çözümle ilgileniyorsanız `solve!` metodunun aşağıdaki örnekteki gibi kullanılması önerilir:
 
@@ -117,7 +117,6 @@ end
     ],
 
     "objective": { # Amaç fonksiyonu (katsayıları)
-        "name": <AMAÇ ADI: String>,
         "coefficients": [
             <KATSAYI: Float>,
             ...
@@ -144,22 +143,22 @@ end
 
 ```json
 {
-    "success": <ÇÖZÜMÜN BAŞARISI: Bool>,
-    "status": {
-        "code": <HATA KODU: String>,
-        "message": <HATA MESAJI: String>,
-    },
-    "response": { # Optimal Çözüm ve Duyarlılık Değerleri
-        "solution": <ÇÖZÜM: Float>,
-        "sensitivity": { # Duyarlık çözümlemesi sonuçları
-            "coeff": [
-                ...
-            ],
-            "bound": [
-                ...
-            ]
-        }
-    },
-    "request": <REQUEST VERİSİ: Hash>
+    <REQUEST VERİSİ: Hash>,
+
+    "solution": {
+        "success": <ÇÖZÜMÜN BAŞARISI: Bool>,
+        "result": {
+            "value": <ÇÖZÜM: Float>,
+            "code": <HATA KODU: String>,
+            "message": <HATA MESAJI: String>,
+        },
+        # Duyarlık çözümlemesi sonuçları
+        "coefficients": [
+            ...
+        ],
+        "boundaries": [
+            ...
+        ]
+    }
 }
 ```
