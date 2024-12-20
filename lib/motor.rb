@@ -3,8 +3,7 @@
 require_relative "motor/errors"
 
 require_relative "motor/api"
-require_relative "motor/model"
-require_relative "motor/reader"
-require_relative "motor/writer"
+require_relative "motor/problem"
+require_relative "motor/serialize"
 
 require_relative "motor/version"

@@ -25,7 +25,7 @@ module Motor
   def solve!(request)
     solve(request).tap do |json|
       response = JSON.parse(json)
-      raise(Unsuccessful, response["status"]["desc"]) unless response["success"]
+      raise(Unsuccessful, response["solution"]["result"]["desc"]) unless response["solution"]["success"]
     end
   end
 
@@ -37,7 +37,7 @@ module Motor
 
       File.read(response_file).tap do |json|
         response = JSON.parse(json)
-        raise(Unsuccessful, response["status"]["desc"]) unless response["success"]
+        raise(Unsuccessful, response["solution"]["result"]["desc"]) unless response["solution"]["success"]
       end
     end
   end
@@ -49,7 +49,7 @@ module Motor
 
       unless system(MOTOR, "-validate", request_file, response_file)
         response = JSON.load_file(response_file)
-        raise(InvalidData, response["status"]["desc"])
+        raise(InvalidData, response["solution"]["result"]["desc"])
       end
 
       true

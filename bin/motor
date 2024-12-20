@@ -14,38 +14,48 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "../lib/
 # pylint: disable=import-error,wrong-import-position
 import pymprog as pm
 
-DATA_DEFAULTS = {
-    "round": 3,
-    "relation": "<=",
-    "method": "maximize"
-}
+DATA_DEFAULTS = {"round": 3, "relation": "<=", "method": "maximize"}
 
 SENSITIVITY_KEYS = {
     "coeff": [
-        "is_basic_variable", "variable", "activity", "dual_value", "obj_coef",    "range_from",  "range_till"
+        "is_basic_variable",
+        "variable",
+        "activity",
+        "dual_value",
+        "obj_coef",
+        "range_from",
+        "range_till",
     ],
     "bound": [
-        "neither_bounds_are_binding", "constraint", "activity", "dual_value", "lower_bound", "upper_bound", "range_lower", "range_upper"
-    ]
+        "neither_bounds_are_binding",
+        "constraint",
+        "activity",
+        "dual_value",
+        "lower_bound",
+        "upper_bound",
+        "range_lower",
+        "range_upper",
+    ],
 }
 
 INFINITY = 9e99
 
+
 class Status(StrEnum):
-    OPTIMAL    = 'Solution is optimal'
-    FEASIBLE   = 'Solution is feasible'
-    INFEASIBLE = 'Solution is infeasible'
-    NOFEASIBLE = 'Problem has no feasible solution'
-    UNBOUNDED  = 'Problem has unbounded solution'
-    UNDEFINED  = 'Solution is undefined'
+    OPTIMAL = "Solution is optimal"
+    FEASIBLE = "Solution is feasible"
+    INFEASIBLE = "Solution is infeasible"
+    NOFEASIBLE = "Problem has no feasible solution"
+    UNBOUNDED = "Problem has unbounded solution"
+    UNDEFINED = "Solution is undefined"
 
     __glpk__ = {
-        glpk.GLP_OPT    : 'OPTIMAL',
-        glpk.GLP_FEAS   : 'FEASIBLE',
-        glpk.GLP_INFEAS : 'INFEASIBLE',
-        glpk.GLP_NOFEAS : 'NOFEASIBLE',
-        glpk.GLP_UNBND  : 'UNBOUNDED',
-        glpk.GLP_UNDEF  : 'UNDEFINED',
+        glpk.GLP_OPT: "OPTIMAL",
+        glpk.GLP_FEAS: "FEASIBLE",
+        glpk.GLP_INFEAS: "INFEASIBLE",
+        glpk.GLP_NOFEAS: "NOFEASIBLE",
+        glpk.GLP_UNBND: "UNBOUNDED",
+        glpk.GLP_UNDEF: "UNDEFINED",
     }
 
     @classmethod
@@ -60,10 +70,12 @@ class Status(StrEnum):
     def is_success(cls, status):
         return status == glpk.GLP_OPT
 
+
 def load(infile):
-    with open(infile, encoding='utf-8') as file:
+    with open(infile, encoding="utf-8") as file:
         data = json.load(file)
     return data
+
 
 def store(output, result):
     if output is None:
@@ -72,110 +84,135 @@ def store(output, result):
         except IOError:
             pass
     else:
-        with codecs.open(output, 'w', encoding='utf-8') as file:
+        with codecs.open(output, "w", encoding="utf-8") as file:
             json.dump(result, file, indent=2, ensure_ascii=False)
+
 
 class InvalidDataError(Exception):
     pass
 
+
 def validate(data):
     if not data:
-        raise InvalidDataError('Data empty')
+        raise InvalidDataError("Data empty")
 
-    for required in ['variables', 'objective', 'constraints']:
+    for required in ["variables", "objective", "constraints"]:
         if required not in data:
-            raise InvalidDataError(f'Missing field: {required}')
+            raise InvalidDataError(f"Missing field: {required}")
 
-    method = data.get('method')
+    method = data.get("method")
     match method:
-        case 'maximize' | 'minimize' | None:
+        case "maximize" | "minimize" | None:
             pass
         case _:
-            raise InvalidDataError(f'Invalid optimization method: {method}')
+            raise InvalidDataError(f"Invalid optimization method: {method}")
 
-    required = 'coefficients'
-    if required not in data['objective']:
-        raise InvalidDataError(f'Missing field in objective: {required}')
+    required = "coefficients"
+    if required not in data["objective"]:
+        raise InvalidDataError(f"Missing field in objective: {required}")
 
-    number_of_variables = len(data['variables'])
+    number_of_variables = len(data["variables"])
     if number_of_variables == 0:
-        raise InvalidDataError('Empty variables')
+        raise InvalidDataError("Empty variables")
 
-    for name in data['variables']:
+    for name in data["variables"]:
         if not isinstance(name, str):
-            raise InvalidDataError('Variable name must be a string')
+            raise InvalidDataError("Variable name must be a string")
 
     def validate_coefficients(coefficients, where):
         if len(coefficients) != number_of_variables:
-            raise InvalidDataError(f'Wrong number of coefficients at: {where}')
+            raise InvalidDataError(f"Wrong number of coefficients at: {where}")
         for coefficient in coefficients:
             if not isinstance(coefficient, (int, float)):
-                raise InvalidDataError(f'Non numeric coefficient at: {where}')
+                raise InvalidDataError(f"Non numeric coefficient at: {where}")
 
-    validate_coefficients(data['objective']['coefficients'], 'objective')
+    validate_coefficients(data["objective"]["coefficients"], "objective")
 
-    for i, constraint in enumerate(data['constraints']):
-        for required in ['name', 'rhs', 'coefficients']:
+    for i, constraint in enumerate(data["constraints"]):
+        for required in ["name", "rhs", "coefficients"]:
             if required not in constraint:
-                raise InvalidDataError(f'Error in constraint[{i}]: Missing field: {required}')
+                raise InvalidDataError(
+                    f"Error in constraint[{i}]: Missing field: {required}"
+                )
 
-        if not isinstance(constraint['name'], str):
-            raise InvalidDataError(f'Error in constraint[{i}]: Name must be a string')
-        if not isinstance(constraint['rhs'], (int, float)):
-            raise InvalidDataError(f'Error in constraint[{i}]: rhs value must be numeric')
+        if not isinstance(constraint["name"], str):
+            raise InvalidDataError(f"Error in constraint[{i}]: Name must be a string")
+        if not isinstance(constraint["rhs"], (int, float)):
+            raise InvalidDataError(
+                f"Error in constraint[{i}]: rhs value must be numeric"
+            )
 
-        match constraint.get('relation'):
-            case '<=' | '<' | '=' | '==' | '>' | '>=' | None:
+        match constraint.get("relation"):
+            case "<=" | "<" | "=" | "==" | ">" | ">=" | None:
                 pass
             case _:
-                raise InvalidDataError(f'Error in constraint[{i}]: unrecognized relation')
+                raise InvalidDataError(
+                    f"Error in constraint[{i}]: unrecognized relation"
+                )
 
-        validate_coefficients(constraint['coefficients'], f'[{i}] {constraint["name"]}')
+        validate_coefficients(constraint["coefficients"], f'[{i}] {constraint["name"]}')
 
     return data
+
 
 def invalid(error):
     return {
         "success": False,
-        "status": {
+        "result": {
+            "value": None,
             "code": "invalid",
             "desc": str(error),
         },
-        "response": {},
-        "request": {}
     }
+
 
 def setup(data):
     variables = []
-    for name in data['variables']:
+    for name in data["variables"]:
         variables.append(pm.simplevar(name))
 
-    objective = np.dot(variables, data['objective']['coefficients'])
+    objective = np.dot(variables, data["objective"]["coefficients"])
 
     constraints = []
-    for constraint_data in data['constraints']:
-        match constraint_data.get('relation', DATA_DEFAULTS['relation']):
-            case '<=':
-                constraint = np.dot(variables, constraint_data['coefficients']) <= constraint_data['rhs']
-            case '=' | '==':
-                constraint = np.dot(variables, constraint_data['coefficients']) == constraint_data['rhs']
-            case '<':
-                constraint = np.dot(variables, constraint_data['coefficients']) < constraint_data['rhs']
-            case '>=':
-                constraint = np.dot(variables, constraint_data['coefficients']) >= constraint_data['rhs']
-            case '>':
-                constraint = np.dot(variables, constraint_data['coefficients']) > constraint_data['rhs']
-        constraint.name = constraint_data['name']
+    for constraint_data in data["constraints"]:
+        match constraint_data.get("relation", DATA_DEFAULTS["relation"]):
+            case "<=":
+                constraint = (
+                    np.dot(variables, constraint_data["coefficients"])
+                    <= constraint_data["rhs"]
+                )
+            case "=" | "==":
+                constraint = (
+                    np.dot(variables, constraint_data["coefficients"])
+                    == constraint_data["rhs"]
+                )
+            case "<":
+                constraint = (
+                    np.dot(variables, constraint_data["coefficients"])
+                    < constraint_data["rhs"]
+                )
+            case ">=":
+                constraint = (
+                    np.dot(variables, constraint_data["coefficients"])
+                    >= constraint_data["rhs"]
+                )
+            case ">":
+                constraint = (
+                    np.dot(variables, constraint_data["coefficients"])
+                    > constraint_data["rhs"]
+                )
+        constraint.name = constraint_data["name"]
         constraints.append(constraint)
 
-    match data.get('method', DATA_DEFAULTS['method']):
-        case 'maximize':
-            pm.maximize(objective, data['objective']['name'])
-        case 'minimize':
-            pm.minimize(objective, data['objective']['name'])
+    match data.get("method", DATA_DEFAULTS["method"]):
+        case "maximize":
+            pm.maximize(objective, data["objective"]["name"])
+        case "minimize":
+            pm.minimize(objective, data["objective"]["name"])
+
 
 def solve(data, sensitivity_file):
-    pm.begin(data['name'])
+    pm.begin(data["name"])
 
     setup(data)
 
@@ -187,12 +224,12 @@ def solve(data, sensitivity_file):
 
     status = pm.status()
 
-    solution     = pm.vobj()
+    solution = pm.vobj()
     coeff, bound = pm.sensitivity()
 
     pm.end()
 
-    ndigits = int(data.get('round', DATA_DEFAULTS['round']))
+    ndigits = int(data.get("round", DATA_DEFAULTS["round"]))
 
     def transfer(results, keys):
         results = [dict(zip(keys, item)) for item in results]
@@ -211,9 +248,9 @@ def solve(data, sensitivity_file):
         return results
 
     def with_product_ids(bound):
-        constraints = data['constraints']
+        constraints = data["constraints"]
         for i, _ in enumerate(bound):
-            bound[i]['product_id'] = constraints[i].get('product_id')
+            bound[i]["product_id"] = constraints[i].get("product_id")
         return bound
 
     def postprocess_coeff():
@@ -234,7 +271,6 @@ def solve(data, sensitivity_file):
 
         return pom
 
-
     def postprocess_bound():
         pom = []
 
@@ -242,10 +278,14 @@ def solve(data, sensitivity_file):
             new_item = {
                 "constraint": item["constraint"],
                 "shadow_price": item["dual_value"],
-                "slack_or_surplus": item["upper_bound"] - item["range_lower"] if item["neither_bounds_are_binding"] else 0.0,
+                "slack_or_surplus": item["upper_bound"] - item["range_lower"]
+                if item["neither_bounds_are_binding"]
+                else 0.0,
                 "original_value": item["upper_bound"],
                 "lower_bound": item["range_lower"],
-                "upper_bound": item["range_upper"] if not item["neither_bounds_are_binding"] else INFINITY,
+                "upper_bound": item["range_upper"]
+                if not item["neither_bounds_are_binding"]
+                else INFINITY,
                 "neither_bounds_are_binding": item["neither_bounds_are_binding"],
             }
 
@@ -254,30 +294,29 @@ def solve(data, sensitivity_file):
         return pom
 
     return {
-        "success": Status.is_success(status),
-        "status": {
-            "code": Status.code(status),
-            "description": Status.desc(status)
+        **data,
+        "solution": {
+            "success": Status.is_success(status),
+            "result": {
+                "value": round(solution, ndigits),
+                "code": Status.code(status),
+                "description": Status.desc(status),
+            },
+            "coefficients": postprocess_coeff(),
+            "boundaries": postprocess_bound(),
         },
-        "response": {
-            "solution": round(solution, ndigits),
-            "sensitivity": {
-                "coeff": postprocess_coeff(),
-                "bound": postprocess_bound()
-            }
-        },
-        "request": data
     }
+
 
 def main():
     narg = len(sys.argv)
 
-    if narg == 1 or (sys.argv[1] == '-validate' and narg < 3):
+    if narg == 1 or (sys.argv[1] == "-validate" and narg < 3):
         sys.exit("Input data file required")
 
     validate_only = False
 
-    if sys.argv[1] == '-validate':
+    if sys.argv[1] == "-validate":
         validate_only = True
 
         infile = sys.argv[2]
@@ -295,7 +334,8 @@ def main():
         sys.exit(100)
 
     if not validate_only:
-        sensitivity_file = os.path.splitext(output)[0]+".txt" if output else None
+        sensitivity_file = os.path.splitext(output)[0] + ".txt" if output else None
         store(output, solve(data, sensitivity_file))
+
 
 main()
