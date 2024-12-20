@@ -19,7 +19,7 @@ module Motor
         super.transform_values(&transformer)
       end
 
-      def to_json(...) = to_h.to_json(...)
+      def to_json(...) = to_h.tap { |h| h.delete(:solution) if h[:solution] && h[:solution].empty? }.to_json(...)
 
       class << self
         def create(hash)  = new(**hash.transform_keys(&:to_sym))

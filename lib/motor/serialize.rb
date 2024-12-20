@@ -6,7 +6,7 @@ require_relative "serialize/xlsx"
 module Motor
   module Serialize
     def self.[](file, type = nil)
-      type = (type || file ? ::File.extname(file)[1..] : "json").downcase.to_sym
+      type = (type || (file ? ::File.extname(file)[1..] : "json")).downcase.to_sym
 
       [
         { json: JSON, xlsx: XLSX }[type].tap { |handler| raise(Error, "Unsupported data type: #{type}") unless handler },
