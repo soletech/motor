@@ -208,9 +208,9 @@ def setup(data):
 
     match data.get("method", DATA_DEFAULTS["method"]):
         case "maximize":
-            pm.maximize(objective, data["objective"]["name"])
+            pm.maximize(objective, "Maximization")
         case "minimize":
-            pm.minimize(objective, data["objective"]["name"])
+            pm.minimize(objective, "Minimization")
 
 
 def solve(data, sensitivity_file):

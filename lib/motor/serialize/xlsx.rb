@@ -44,7 +44,7 @@ module Motor
           spreadsheet = Spreadsheet.new(file)
 
           Problem.(
-            { "name": spreadsheet.name, "solution" => {} }.tap do |data|
+            { "name" => spreadsheet.name, "solution" => {} }.tap do |data|
               Sheet::Objective.(spreadsheet, data)
               Sheet::Constraints.(spreadsheet, data)
               Sheet::Solution::Result.(spreadsheet, data)
