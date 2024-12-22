@@ -32,6 +32,7 @@ module Motor
 
   def read_solve_process(infile, read: nil, write: nil)
     Tempfile.create("motor") do |tempfile|
+      tempfile.binmode
       read_solve_write(infile, tempfile.path, read:, write:)
       yield(tempfile) if block_given?
     end

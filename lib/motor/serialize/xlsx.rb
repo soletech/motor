@@ -96,7 +96,7 @@ module Motor
               data["variables"] = strings(rows.map { |row| row[0] })
               data["objective"] = {
                 "coefficients" => floats(rows.map { |row| row[1] }),
-                "name"         => strings(rows.first[2])
+                "name"         => strings(rows[2].first)
               }
             end
           end
