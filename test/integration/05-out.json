@@ -192,6 +192,7 @@
     "Sermaye temini"
   ],
   "objective": {
+    "name": {},
     "coefficients": [
       -531.3,
       2.5,
@@ -387,7 +388,7 @@
   "constraints": [
     {
       "name": "Toplam arazi",
-      "id": {},
+      "id": "",
       "coefficients": [
         1.0,
         0.0,
@@ -584,7 +585,7 @@
     },
     {
       "name": "Toplam kuru tarla arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         1.0,
         0.0,
@@ -781,7 +782,7 @@
     },
     {
       "name": "Toplam sulu tarla arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -978,7 +979,7 @@
     },
     {
       "name": "Meyve arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -1175,7 +1176,7 @@
     },
     {
       "name": "Sebze arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -1372,7 +1373,7 @@
     },
     {
       "name": "Örtüaltı arazi",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -1569,7 +1570,7 @@
     },
     {
       "name": "Süs bitkileri",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -1766,7 +1767,7 @@
     },
     {
       "name": "Durum Buğdayı (kuru) arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         1.0,
         0.0,
@@ -1963,7 +1964,7 @@
     },
     {
       "name": "Buğday, Durum Buğdayı Hariç (kuru) arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -2160,7 +2161,7 @@
     },
     {
       "name": "Mısır (dane) arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -2357,7 +2358,7 @@
     },
     {
       "name": "Arpa (Diğer) (kuru) arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -2554,7 +2555,7 @@
     },
     {
       "name": "Çavdar arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -2751,7 +2752,7 @@
     },
     {
       "name": "Yulaf arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -2948,7 +2949,7 @@
     },
     {
       "name": "Kaplıca arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -3145,7 +3146,7 @@
     },
     {
       "name": "Triticale arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -3342,7 +3343,7 @@
     },
     {
       "name": "Fasulye, Kuru arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -3539,7 +3540,7 @@
     },
     {
       "name": "Bakla, Kuru (İnsan Tüketimi İçin) arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -3736,7 +3737,7 @@
     },
     {
       "name": "Nohut, Kuru arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -3933,7 +3934,7 @@
     },
     {
       "name": "Bezelye, Kuru arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -4130,7 +4131,7 @@
     },
     {
       "name": "Buy (Çemen Otu) arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -4327,7 +4328,7 @@
     },
     {
       "name": "Soya Fasulyesi (kuru) arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -4524,7 +4525,7 @@
     },
     {
       "name": "Kanola Veya Kolza Tohumu arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -4721,7 +4722,7 @@
     },
     {
       "name": "Ayçiçeği Tohumu (Yağlık) (kuru) arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -4918,7 +4919,7 @@
     },
     {
       "name": "Kenevir Tohumu arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -5115,7 +5116,7 @@
     },
     {
       "name": "Aspir Tohumu (kuru) arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -5312,7 +5313,7 @@
     },
     {
       "name": "Çeltik arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -5509,7 +5510,7 @@
     },
     {
       "name": "Patates (Tatlı Patates Hariç) arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -5706,7 +5707,7 @@
     },
     {
       "name": "Salep arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -5903,7 +5904,7 @@
     },
     {
       "name": "Şeker Pancarı arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -6100,7 +6101,7 @@
     },
     {
       "name": "Tütün, İşlenmemiş arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -6297,7 +6298,7 @@
     },
     {
       "name": "Fiğ (Adi) (Yeşil Ot) arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -6494,7 +6495,7 @@
     },
     {
       "name": "Fiğ (Macar) (Yeşil Ot) arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -6691,7 +6692,7 @@
     },
     {
       "name": "Yonca (Yeşilot) arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -6888,7 +6889,7 @@
     },
     {
       "name": "Korunga (Yeşilot) arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -7085,7 +7086,7 @@
     },
     {
       "name": "Yulaf (Yeşilot) arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -7282,7 +7283,7 @@
     },
     {
       "name": "Sorgum (Yeşilot) arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -7479,7 +7480,7 @@
     },
     {
       "name": "Triticale (Yeşilot) arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -7676,7 +7677,7 @@
     },
     {
       "name": "Mısır (Slaj) arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -7873,7 +7874,7 @@
     },
     {
       "name": "Hayvan Pancarı arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -8070,7 +8071,7 @@
     },
     {
       "name": "Çayır Otu (Yeşilot) arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -8267,7 +8268,7 @@
     },
     {
       "name": "Bezelye (Yemlik) arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -8464,7 +8465,7 @@
     },
     {
       "name": "İtalyan Çimi (Yemlik) arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -8661,7 +8662,7 @@
     },
     {
       "name": "Fiğ (Adi) Tohumu arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -8858,7 +8859,7 @@
     },
     {
       "name": "Fiğ (Macar) Tohumu arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -9055,7 +9056,7 @@
     },
     {
       "name": "Adaçayı arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -9252,7 +9253,7 @@
     },
     {
       "name": "Lavanta arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -9449,7 +9450,7 @@
     },
     {
       "name": "Oğul Otu (Melisa) arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -9646,7 +9647,7 @@
     },
     {
       "name": "Fasulye, Taze arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -9843,7 +9844,7 @@
     },
     {
       "name": "Barbunya, Taze arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -10040,7 +10041,7 @@
     },
     {
       "name": "Bezelye, Taze arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -10237,7 +10238,7 @@
     },
     {
       "name": "Bakla, Taze arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -10434,7 +10435,7 @@
     },
     {
       "name": "Kuşkonmaz arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -10631,7 +10632,7 @@
     },
     {
       "name": "Lahana (Beyaz) arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -10828,7 +10829,7 @@
     },
     {
       "name": "Lahana (Kırmızı) arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -11025,7 +11026,7 @@
     },
     {
       "name": "Lahana (Kara Yaprak) arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -11222,7 +11223,7 @@
     },
     {
       "name": "Lahana (Brüksel) arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -11419,7 +11420,7 @@
     },
     {
       "name": "Karnabahar arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -11616,7 +11617,7 @@
     },
     {
       "name": "Brokoli arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -11813,7 +11814,7 @@
     },
     {
       "name": "Marul (Kıvırcık) arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -12010,7 +12011,7 @@
     },
     {
       "name": "Marul (Göbekli) arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -12207,7 +12208,7 @@
     },
     {
       "name": "Marul (İceberg) arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -12404,7 +12405,7 @@
     },
     {
       "name": "Ispanak arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -12601,7 +12602,7 @@
     },
     {
       "name": "Enginar arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -12798,7 +12799,7 @@
     },
     {
       "name": "Pazı arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -12995,7 +12996,7 @@
     },
     {
       "name": "Semizotu arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -13192,7 +13193,7 @@
     },
     {
       "name": "Maydanoz arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -13389,7 +13390,7 @@
     },
     {
       "name": "Roka arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -13586,7 +13587,7 @@
     },
     {
       "name": "Tere arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -13783,7 +13784,7 @@
     },
     {
       "name": "Nane arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -13980,7 +13981,7 @@
     },
     {
       "name": "Dereotu arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -14177,7 +14178,7 @@
     },
     {
       "name": "Karpuz arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -14374,7 +14375,7 @@
     },
     {
       "name": "Kavun arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -14571,7 +14572,7 @@
     },
     {
       "name": "Biber (Salçalık, Kapya) arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -14768,7 +14769,7 @@
     },
     {
       "name": "Biber (Dolmalık) arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -14965,7 +14966,7 @@
     },
     {
       "name": "Biber (Sivri) arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -15162,7 +15163,7 @@
     },
     {
       "name": "Biber (Çarliston) arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -15359,7 +15360,7 @@
     },
     {
       "name": "Hıyar (Sofralık) arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -15556,7 +15557,7 @@
     },
     {
       "name": "Hıyar (Turşuluk) arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -15753,7 +15754,7 @@
     },
     {
       "name": "Patlıcan arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -15950,7 +15951,7 @@
     },
     {
       "name": "Domates (Sofralık) arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -16147,7 +16148,7 @@
     },
     {
       "name": "Domates (Salçalık) arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -16344,7 +16345,7 @@
     },
     {
       "name": "Bamya arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -16541,7 +16542,7 @@
     },
     {
       "name": "Kabak (Sakız) arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -16738,7 +16739,7 @@
     },
     {
       "name": "Bal Kabağı arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -16935,7 +16936,7 @@
     },
     {
       "name": "Havuç arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -17132,7 +17133,7 @@
     },
     {
       "name": "Sarımsak (Taze) arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -17329,7 +17330,7 @@
     },
     {
       "name": "Sarımsak (Kuru) arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -17526,7 +17527,7 @@
     },
     {
       "name": "Soğan (Taze) arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -17723,7 +17724,7 @@
     },
     {
       "name": "Soğan (Kuru) arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -17920,7 +17921,7 @@
     },
     {
       "name": "Pırasa arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -18117,7 +18118,7 @@
     },
     {
       "name": "Kırmızı Pancar arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -18314,7 +18315,7 @@
     },
     {
       "name": "Kereviz (Kök) arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -18511,7 +18512,7 @@
     },
     {
       "name": "Turp (Bayır) arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -18708,7 +18709,7 @@
     },
     {
       "name": "Turp (Kırmızı) arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -18905,7 +18906,7 @@
     },
     {
       "name": "Turp (Beyaz) arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -19102,7 +19103,7 @@
     },
     {
       "name": "Mantar (Kültür) arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -19299,7 +19300,7 @@
     },
     {
       "name": "Sofralık Üzüm, Çekirdekli arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -19496,7 +19497,7 @@
     },
     {
       "name": "İncir (Yaş) arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -19693,7 +19694,7 @@
     },
     {
       "name": "Ema (bütünleştirilmiş) arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -19890,7 +19891,7 @@
     },
     {
       "name": "Armut arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -20087,7 +20088,7 @@
     },
     {
       "name": "Ayva arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -20284,7 +20285,7 @@
     },
     {
       "name": "Kiraz arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -20481,7 +20482,7 @@
     },
     {
       "name": "Vişne arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -20678,7 +20679,7 @@
     },
     {
       "name": "Şeftali arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -20875,7 +20876,7 @@
     },
     {
       "name": "Nektarin arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -21072,7 +21073,7 @@
     },
     {
       "name": "Erik arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -21269,7 +21270,7 @@
     },
     {
       "name": "Kızılcık arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -21466,7 +21467,7 @@
     },
     {
       "name": "Hünnap arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -21663,7 +21664,7 @@
     },
     {
       "name": "Kivi arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -21860,7 +21861,7 @@
     },
     {
       "name": "Ahududu arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -22057,7 +22058,7 @@
     },
     {
       "name": "Çilek arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -22254,7 +22255,7 @@
     },
     {
       "name": "Böğürtlen arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -22451,7 +22452,7 @@
     },
     {
       "name": "Dut arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -22648,7 +22649,7 @@
     },
     {
       "name": "Kestane arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -22845,7 +22846,7 @@
     },
     {
       "name": "Fındık arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -23042,7 +23043,7 @@
     },
     {
       "name": "Ceviz arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -23239,7 +23240,7 @@
     },
     {
       "name": "Muşmula arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -23436,7 +23437,7 @@
     },
     {
       "name": "Nar arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -23633,7 +23634,7 @@
     },
     {
       "name": "Trabzon Hurması (Cennet Elması) arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -23830,7 +23831,7 @@
     },
     {
       "name": "Sofralık Zeytinler arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -24027,7 +24028,7 @@
     },
     {
       "name": "Kekik, İşlenmemiş arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -24224,7 +24225,7 @@
     },
     {
       "name": "Çörek Otu Tohumu arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -24421,7 +24422,7 @@
     },
     {
       "name": "Gerbera, Kesme arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -24618,7 +24619,7 @@
     },
     {
       "name": "Gypsohilla, Kesme arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -24815,7 +24816,7 @@
     },
     {
       "name": "Kasımpatı (Krizantem) arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -25012,7 +25013,7 @@
     },
     {
       "name": "Gül, Kesme arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -25209,7 +25210,7 @@
     },
     {
       "name": "Lisianthus, Kesme arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -25406,7 +25407,7 @@
     },
     {
       "name": "Şebboy, Kesme arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -25603,7 +25604,7 @@
     },
     {
       "name": "Diğer Kesme Çiçek Ve Çiçek Koncaları arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -25800,7 +25801,7 @@
     },
     {
       "name": "İç Mekan Süs Bitkileri (Oda Bitkileri) arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -25997,7 +25998,7 @@
     },
     {
       "name": "Dış Mekan Süs Bitkileri arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -26194,7 +26195,7 @@
     },
     {
       "name": "Fasulye, Taze, (örtüaltı) arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -26391,7 +26392,7 @@
     },
     {
       "name": "Biber (Dolmalık) (örtüaltı) arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -26588,7 +26589,7 @@
     },
     {
       "name": "Biber (Sivri) (örtüaltı) arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -26785,7 +26786,7 @@
     },
     {
       "name": "Biber (Çarliston) (örtüaltı) arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -26982,7 +26983,7 @@
     },
     {
       "name": "Domates (Sofralık) (örtüaltı) arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -27179,7 +27180,7 @@
     },
     {
       "name": "Marul (Kıvırcık) (örtüaltı) arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -27376,7 +27377,7 @@
     },
     {
       "name": "Hıyar (Sofralık) (örtüaltı) arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -27573,7 +27574,7 @@
     },
     {
       "name": "Patlıcan (örtüaltı) arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -27770,7 +27771,7 @@
     },
     {
       "name": "Marul (Göbekli)(örtüaltı) arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -27967,7 +27968,7 @@
     },
     {
       "name": "Ispanak (örtüaltı) arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -28164,7 +28165,7 @@
     },
     {
       "name": "Maydanoz (örtüaltı) arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -28361,7 +28362,7 @@
     },
     {
       "name": "Roka (örtüaltı) arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -28558,7 +28559,7 @@
     },
     {
       "name": "Tere (örtüaltı) arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -28755,7 +28756,7 @@
     },
     {
       "name": "Dereotu (örtüaltı) arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -28952,7 +28953,7 @@
     },
     {
       "name": "Soğan (Taze) (örtüaltı) arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -29149,7 +29150,7 @@
     },
     {
       "name": "Durum Buğdayı (kuru) transfer",
-      "id": {},
+      "id": "",
       "coefficients": [
         -392.0,
         1.0,
@@ -29346,7 +29347,7 @@
     },
     {
       "name": "Buğday, Durum Buğdayı Hariç transfer",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -29543,7 +29544,7 @@
     },
     {
       "name": "Mısır (dane) transfer",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -29740,7 +29741,7 @@
     },
     {
       "name": "Arpa (Diğer) transfer",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -29937,7 +29938,7 @@
     },
     {
       "name": "Çavdar transfer",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -30134,7 +30135,7 @@
     },
     {
       "name": "Yulaf transfer",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -30331,7 +30332,7 @@
     },
     {
       "name": "Kaplıca transfer",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -30528,7 +30529,7 @@
     },
     {
       "name": "Triticale transfer",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -30725,7 +30726,7 @@
     },
     {
       "name": "Kuru Fasulye transfer",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -30922,7 +30923,7 @@
     },
     {
       "name": "Bakla (İnsan Tüketimi İçin) transfer",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -31119,7 +31120,7 @@
     },
     {
       "name": "Nohut transfer",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -31316,7 +31317,7 @@
     },
     {
       "name": "Buy (Çemen Otu) transfer",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -31513,7 +31514,7 @@
     },
     {
       "name": "Soya Fasulyesi transfer",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -31710,7 +31711,7 @@
     },
     {
       "name": "Kanola Veya Kolza Tohumu transfer",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -31907,7 +31908,7 @@
     },
     {
       "name": "Ayçiçeği Tohumu (Yağlık) transfer",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -32104,7 +32105,7 @@
     },
     {
       "name": "Kenevir Tohumu transfer",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -32301,7 +32302,7 @@
     },
     {
       "name": "Aspir Tohumu transfer",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -32498,7 +32499,7 @@
     },
     {
       "name": "Çeltik transfer",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -32695,7 +32696,7 @@
     },
     {
       "name": "Patates (Tatlı Patates Hariç) transfer",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -32892,7 +32893,7 @@
     },
     {
       "name": "Salep transfer",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -33089,7 +33090,7 @@
     },
     {
       "name": "Şeker Pancarı transfer",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -33286,7 +33287,7 @@
     },
     {
       "name": "Tütün, İşlenmemiş transfer",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -33483,7 +33484,7 @@
     },
     {
       "name": "Fiğ (Adi) (Yeşil Ot) transfer",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -33680,7 +33681,7 @@
     },
     {
       "name": "Fiğ (Macar) (Yeşil Ot) transfer",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -33877,7 +33878,7 @@
     },
     {
       "name": "Yonca (Yeşilot) transfer",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -34074,7 +34075,7 @@
     },
     {
       "name": "Korunga (Yeşilot) transfer",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -34271,7 +34272,7 @@
     },
     {
       "name": "Yulaf (Yeşilot) transfer",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -34468,7 +34469,7 @@
     },
     {
       "name": "Sorgum (Yeşilot) transfer",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -34665,7 +34666,7 @@
     },
     {
       "name": "Triticale (Yeşilot) transfer",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -34862,7 +34863,7 @@
     },
     {
       "name": "Mısır (Slaj) transfer",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -35059,7 +35060,7 @@
     },
     {
       "name": "Fiğ (Adi) Tohumu transfer",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -35256,7 +35257,7 @@
     },
     {
       "name": "Fiğ (Macar) Tohumu transfer",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -35453,7 +35454,7 @@
     },
     {
       "name": "ig1",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -35650,7 +35651,7 @@
     },
     {
       "name": "ig2",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -35847,7 +35848,7 @@
     },
     {
       "name": "ig3",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.18,
         0.0,
@@ -36044,7 +36045,7 @@
     },
     {
       "name": "ig4",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.43,
         0.0,
@@ -36241,7 +36242,7 @@
     },
     {
       "name": "ig5",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.18,
         0.0,
@@ -36438,7 +36439,7 @@
     },
     {
       "name": "ig6",
-      "id": {},
+      "id": "",
       "coefficients": [
         6.76,
         0.0,
@@ -36635,7 +36636,7 @@
     },
     {
       "name": "ig7",
-      "id": {},
+      "id": "",
       "coefficients": [
         3.09,
         0.0,
@@ -36832,7 +36833,7 @@
     },
     {
       "name": "ig8",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -37029,7 +37030,7 @@
     },
     {
       "name": "ig9",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -37226,7 +37227,7 @@
     },
     {
       "name": "ig10",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.5,
         0.0,
@@ -37423,7 +37424,7 @@
     },
     {
       "name": "ig11",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.45,
         0.0,
@@ -37620,7 +37621,7 @@
     },
     {
       "name": "ig12",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -37817,7 +37818,7 @@
     },
     {
       "name": "İşletme sermayesi",
-      "id": {},
+      "id": "",
       "coefficients": [
         531.3,
         0.0,
@@ -38014,7 +38015,7 @@
     },
     {
       "name": "Ahır yeri",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -38211,7 +38212,7 @@
     },
     {
       "name": "Ağıl yeri",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,

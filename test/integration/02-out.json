@@ -112,6 +112,7 @@
     "Sermaye Temini"
   ],
   "objective": {
+    "name": {},
     "coefficients": [
       -116.27,
       2.2,
@@ -227,7 +228,7 @@
   "constraints": [
     {
       "name": "Toplam Arazi",
-      "id": {},
+      "id": "",
       "coefficients": [
         1,
         0,
@@ -344,7 +345,7 @@
     },
     {
       "name": "Toplam Kuru Tarla Arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         1,
         0,
@@ -461,7 +462,7 @@
     },
     {
       "name": "Toplam Sulu Tarla Arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         0,
         0,
@@ -578,7 +579,7 @@
     },
     {
       "name": "Toplam Meyve Arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         0,
         0,
@@ -695,7 +696,7 @@
     },
     {
       "name": "Toplam Sebze Arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         0,
         0,
@@ -812,7 +813,7 @@
     },
     {
       "name": "Toplam Örtü Altı Arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         0,
         0,
@@ -929,7 +930,7 @@
     },
     {
       "name": "Toplam Süs Bitkisi Arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         0,
         0,
@@ -10172,7 +10173,7 @@
     },
     {
       "name": "Süt Sığırcılığı Transfer",
-      "id": {},
+      "id": "",
       "coefficients": [
         0,
         0,
@@ -10289,7 +10290,7 @@
     },
     {
       "name": "Besi Sığırcılığı Transfer",
-      "id": {},
+      "id": "",
       "coefficients": [
         0,
         0,
@@ -10406,7 +10407,7 @@
     },
     {
       "name": "Koyunculuk Transfer",
-      "id": {},
+      "id": "",
       "coefficients": [
         0,
         0,
@@ -10523,7 +10524,7 @@
     },
     {
       "name": "Keçicilik Transfer",
-      "id": {},
+      "id": "",
       "coefficients": [
         0,
         0,
@@ -10640,7 +10641,7 @@
     },
     {
       "name": "Mandacılık Transfer",
-      "id": {},
+      "id": "",
       "coefficients": [
         0,
         0,
@@ -11693,7 +11694,7 @@
     },
     {
       "name": "İşgücü Ocak",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0,
@@ -11810,7 +11811,7 @@
     },
     {
       "name": "İşgücü Şubat",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0,
@@ -11927,7 +11928,7 @@
     },
     {
       "name": "İşgücü Mart",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.18,
         0,
@@ -12044,7 +12045,7 @@
     },
     {
       "name": "İşgücü Nisan",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.43,
         0,
@@ -12161,7 +12162,7 @@
     },
     {
       "name": "İşgücü Mayıs",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.18,
         0,
@@ -12278,7 +12279,7 @@
     },
     {
       "name": "İşgücü Haziran",
-      "id": {},
+      "id": "",
       "coefficients": [
         6.76,
         0,
@@ -12395,7 +12396,7 @@
     },
     {
       "name": "İşgücü Temmuz",
-      "id": {},
+      "id": "",
       "coefficients": [
         3.09,
         0,
@@ -12512,7 +12513,7 @@
     },
     {
       "name": "İşgücü Ağustos",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0,
@@ -12629,7 +12630,7 @@
     },
     {
       "name": "İşgücü Eylül",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0,
@@ -12746,7 +12747,7 @@
     },
     {
       "name": "İşgücü Ekim",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.5,
         0,
@@ -12863,7 +12864,7 @@
     },
     {
       "name": "İşgücü Kasım",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.45,
         0,
@@ -12980,7 +12981,7 @@
     },
     {
       "name": "İşgücü Aralık",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0,
@@ -13097,7 +13098,7 @@
     },
     {
       "name": "İşletme Sermayesi",
-      "id": {},
+      "id": "",
       "coefficients": [
         116.27,
         0,
@@ -13214,7 +13215,7 @@
     },
     {
       "name": "Ahır Yeri",
-      "id": {},
+      "id": "",
       "coefficients": [
         0,
         0,
@@ -13331,7 +13332,7 @@
     },
     {
       "name": "Ağıl Yeri",
-      "id": {},
+      "id": "",
       "coefficients": [
         0,
         0,

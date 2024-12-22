@@ -19,7 +19,11 @@ module Motor
         super.transform_values(&transformer)
       end
 
-      def to_json(...) = to_h.tap { |h| h.delete(:solution) if h[:solution] && h[:solution].empty? }.to_json(...)
+      def to_json(...) = to_h.tap do |h|
+        %i[ analysis solution ].each do |key|
+          h.delete(key) if h.key?(key) && (h[key].nil? || h[key].empty?)
+        end
+      end.to_json(...)
 
       class << self
         def create(hash)  = new(**assert!(hash).transform_keys(&:to_sym))
@@ -36,11 +40,25 @@ module Motor
     end
 
     # rubocop:disable Metrics/LineLength
-    Objective = Data.define(*%i[coefficients])
-    Constraint = Data.define(*%i[name id coefficients relation rhs]) do
-      def initialize(name:, id: nil, coefficients:, relation:, rhs:) = super
+    ALLOWED_METHODS = %w[ maximize minimize ].freeze
+
+    Analysis = Data.define(*%i[method description]) do
+      def initialize(method: "maximize", description: "Untitled") = super
+
+      def sanitize
+        raise(Error, "Unrecognized method: #{method}") unless ALLOWED_METHODS.include?(method)
+      end
     end
-    Instance = Data.define(*%i[name variables objective constraints solution]) do
+    Objective = Data.define(*%i[name coefficients]) do
+      def initialize(name: nil, coefficients:) = super
+    end
+    Constraint = Data.define(*%i[name id coefficients relation rhs]) do
+      def initialize(name:, id: "", coefficients:, relation:, rhs:) = super
+    end
+    Instance = Data.define(*%i[name analysis variables objective constraints solution]) do
+      def initialize(name: "Untitled", analysis: nil, variables:, objective:, constraints:, solution: nil) = super
+
+      def has_analysis?    = analysis
       def has_solution?    = solution
       def has_sensitivity? = solution && solution.coefficients && !solution.coefficients.empty?
 
@@ -76,8 +94,12 @@ module Motor
         boundaries:   Solution::Boundary.series(bucket["boundaries"])
       ) if bucket && !bucket.empty?
 
+      bucket = data["analysis"]
+      analysis = Analysis.create(bucket) if bucket && !bucket.empty?
+
       Instance.new(
         name:        data["name"],
+        analysis:,
         variables:   data["variables"],
         objective:   Objective.create(data["objective"]),
         constraints: Constraint.series(data["constraints"]),

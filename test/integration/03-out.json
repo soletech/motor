@@ -44,6 +44,7 @@
     "Sermaye Temini"
   ],
   "objective": {
+    "name": {},
     "coefficients": [
       -324.12,
       2.73,
@@ -91,7 +92,7 @@
   "constraints": [
     {
       "name": "Toplam Arazi",
-      "id": {},
+      "id": "",
       "coefficients": [
         1.0,
         0.0,
@@ -140,7 +141,7 @@
     },
     {
       "name": "Toplam Kuru Tarla Arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         1.0,
         0.0,
@@ -189,7 +190,7 @@
     },
     {
       "name": "Toplam Sulu Tarla Arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -238,7 +239,7 @@
     },
     {
       "name": "Toplam Meyve Arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -287,7 +288,7 @@
     },
     {
       "name": "Toplam Sebze Arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -336,7 +337,7 @@
     },
     {
       "name": "Toplam Örtü Altı Arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -385,7 +386,7 @@
     },
     {
       "name": "Toplam Süs Bitkisi Arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -434,7 +435,7 @@
     },
     {
       "name": "Buğday, Durum Buğdayı Hariç Arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         1.0,
         0.0,
@@ -483,7 +484,7 @@
     },
     {
       "name": "Buğday (Sulu) Arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -532,7 +533,7 @@
     },
     {
       "name": "Mısır (Dane) Arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -581,7 +582,7 @@
     },
     {
       "name": "Arpa (Diğer) (Kuru) Arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -630,7 +631,7 @@
     },
     {
       "name": "Arpa (Sulu) Arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -679,7 +680,7 @@
     },
     {
       "name": "Fasulye, Taze Arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -728,7 +729,7 @@
     },
     {
       "name": "Karpuz Arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -777,7 +778,7 @@
     },
     {
       "name": "Kavun Arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -826,7 +827,7 @@
     },
     {
       "name": "Biber (Sivri) Arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -875,7 +876,7 @@
     },
     {
       "name": "Hıyar (Sofralık) Arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -924,7 +925,7 @@
     },
     {
       "name": "Patlıcan Arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -973,7 +974,7 @@
     },
     {
       "name": "Domates (Sofralık) Arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -1022,7 +1023,7 @@
     },
     {
       "name": "Elma (Bütünleştirilmiş) Arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -1071,7 +1072,7 @@
     },
     {
       "name": "Armut Arazisi",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -1120,7 +1121,7 @@
     },
     {
       "name": "Buğday, Durum Buğdayı Hariç Transfer",
-      "id": {},
+      "id": "",
       "coefficients": [
         -185.0,
         1.0,
@@ -1169,7 +1170,7 @@
     },
     {
       "name": "Buğday (Sulu) Transfer",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -1218,7 +1219,7 @@
     },
     {
       "name": "Mısır (Dane) Transfer",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -1267,7 +1268,7 @@
     },
     {
       "name": "Arpa (Diğer) (Kuru) Transfer",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -1316,7 +1317,7 @@
     },
     {
       "name": "Arpa (Sulu) Transfer",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -1365,7 +1366,7 @@
     },
     {
       "name": "Fasulye, Taze Transfer",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -1414,7 +1415,7 @@
     },
     {
       "name": "Karpuz Transfer",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -1463,7 +1464,7 @@
     },
     {
       "name": "Kavun Transfer",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -1512,7 +1513,7 @@
     },
     {
       "name": "Biber (Sivri) Transfer",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -1561,7 +1562,7 @@
     },
     {
       "name": "Hıyar (Sofralık) Transfer",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -1610,7 +1611,7 @@
     },
     {
       "name": "Patlıcan Transfer",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -1659,7 +1660,7 @@
     },
     {
       "name": "Domates (Sofralık) Transfer",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -1708,7 +1709,7 @@
     },
     {
       "name": "Elma (Bütünleştirilmiş) Transfer",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -1757,7 +1758,7 @@
     },
     {
       "name": "Armut Transfer",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -1806,7 +1807,7 @@
     },
     {
       "name": "İşgücü Ocak",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -1855,7 +1856,7 @@
     },
     {
       "name": "İşgücü Şubat",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -1904,7 +1905,7 @@
     },
     {
       "name": "İşgücü Mart",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.18,
         0.0,
@@ -1953,7 +1954,7 @@
     },
     {
       "name": "İşgücü Nisan",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.43,
         0.0,
@@ -2002,7 +2003,7 @@
     },
     {
       "name": "İşgücü Mayıs",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.18,
         0.0,
@@ -2051,7 +2052,7 @@
     },
     {
       "name": "İşgücü Haziran",
-      "id": {},
+      "id": "",
       "coefficients": [
         6.76,
         0.0,
@@ -2100,7 +2101,7 @@
     },
     {
       "name": "İşgücü Temmuz",
-      "id": {},
+      "id": "",
       "coefficients": [
         3.09,
         0.0,
@@ -2149,7 +2150,7 @@
     },
     {
       "name": "İşgücü Ağustos",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -2198,7 +2199,7 @@
     },
     {
       "name": "İşgücü Eylül",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -2247,7 +2248,7 @@
     },
     {
       "name": "İşgücü Ekim",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.5,
         0.0,
@@ -2296,7 +2297,7 @@
     },
     {
       "name": "İşgücü Kasım",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.45,
         0.0,
@@ -2345,7 +2346,7 @@
     },
     {
       "name": "İşgücü Aralık",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -2394,7 +2395,7 @@
     },
     {
       "name": "İşletme Sermayesi",
-      "id": {},
+      "id": "",
       "coefficients": [
         324.12,
         0.0,
@@ -2443,7 +2444,7 @@
     },
     {
       "name": "Ahır Yeri",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -2492,7 +2493,7 @@
     },
     {
       "name": "Ağıl Yeri",
-      "id": {},
+      "id": "",
       "coefficients": [
         0.0,
         0.0,

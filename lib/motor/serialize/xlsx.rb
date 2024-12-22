@@ -9,6 +9,7 @@ module Motor
   module Serialize
     module XLSX
       SHEET = {
+        analysis:     "analysis",
         objective:    "objective",
         constraints:  "constraints",
         result:       "result",
@@ -45,6 +46,7 @@ module Motor
 
           Problem.(
             { "name" => spreadsheet.name, "solution" => {} }.tap do |data|
+              Sheet::Analysis.(spreadsheet, data)
               Sheet::Objective.(spreadsheet, data)
               Sheet::Constraints.(spreadsheet, data)
               Sheet::Solution::Result.(spreadsheet, data)
@@ -73,17 +75,28 @@ module Motor
 
           private
 
-          def strings(data) = data.is_a?(::Array) ? data.map(&:strip) : data.strip
+          def strings(data) = data.is_a?(::Array) ? data.map(&:strip) : (data.nil? ? "" : data.strip)
 
           def floats(data)  = data.is_a?(::Array) ? data.map(&:to_f)  : data.to_f
 
-          class Objective < Sheet
+          class Analysis < Sheet
             def call(data)
               header
 
-              data["variables"] = strings(rows.map(&:first))
+              data["method"] = strings(rows.first[0])
+              data["description"] = strings(rows.first[1])
+            end
+          end
+
+          class Objective < Sheet
+            # TODO: Objective data must be transposed?
+            def call(data)
+              header
+
+              data["variables"] = strings(rows.map { |row| row[0] })
               data["objective"] = {
-                "coefficients" => floats(rows.map(&:last))
+                "coefficients" => floats(rows.map { |row| row[1] }),
+                "name"         => strings(rows.first[2])
               }
             end
           end
@@ -133,8 +146,9 @@ module Motor
 
       module Write
         def self.call(problem) # rubocop:disable Metrics/MethodLength
-          workbook = FastExcel.open(constant_memory: true)
+          workbook = FastExcel.open(constant_memory: false)
 
+          Sheet::Analysis.(problem, workbook) if problem.has_analysis?
           Sheet::Objective.(problem, workbook)
           Sheet::Constraints.(problem, workbook)
           if problem.has_solution?
@@ -151,7 +165,7 @@ module Motor
         class Sheet
           extend Forwardable
 
-          def_delegators :problem, :objective, :constraints, :variables, :solution
+          def_delegators :problem, :analysis, :objective, :constraints, :variables, :solution
           def_delegators :solution, :result, :coefficients, :boundaries
 
           attr_reader :problem, :workbook, :worksheet
@@ -164,18 +178,27 @@ module Motor
             end
           end
 
-          class Objective < Sheet
+          class Analysis < Sheet
             def call
-              worksheet.append_row(%w[ variable coefficient ])
+              worksheet.append_row(%w[ method description ])
+              worksheet.append_row(analysis.deconstruct)
+            end
+          end
+
+          class Objective < Sheet
+            # TODO: Objective data must be transposed?
+            def call
+              worksheet.append_row(%w[ variable coefficient name])
               variables.zip(objective.coefficients).each { worksheet.append_row(_1) }
+              worksheet.write_value(1, 2, objective.name)
             end
           end
 
           class Constraints < Sheet
             def call
-              worksheet.append_row(%w[ constraint relation rhs ] + variables)
+              worksheet.append_row(%w[ constraint id relation rhs ] + variables)
               constraints.each do |constraint|
-                worksheet.append_row([ constraint.name, constraint.relation, constraint.rhs, *constraint.coefficients ])
+                worksheet.append_row([ constraint.name, constraint.id, constraint.relation, constraint.rhs, *constraint.coefficients ])
               end
             end
           end
