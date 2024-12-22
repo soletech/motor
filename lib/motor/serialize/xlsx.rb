@@ -108,10 +108,9 @@ module Motor
               data["constraints"] = rows.map do |row|
                 {
                   "name"         => strings(row[0]),
-                  "id"           => strings(row[1]),
-                  "coefficients" => floats(row[4..]),
-                  "relation"     => strings(row[2]),
-                  "rhs"          => floats(row[3])
+                  "coefficients" => floats(row[3..]),
+                  "relation"     => strings(row[1]),
+                  "rhs"          => floats(row[2])
                 }
               end
             end
@@ -196,9 +195,9 @@ module Motor
 
           class Constraints < Sheet
             def call
-              worksheet.append_row(%w[ constraint id relation rhs ] + variables)
+              worksheet.append_row(%w[ constraint relation rhs ] + variables)
               constraints.each do |constraint|
-                worksheet.append_row([ constraint.name, constraint.id, constraint.relation, constraint.rhs, *constraint.coefficients ])
+                worksheet.append_row([ constraint.name, constraint.relation, constraint.rhs, *constraint.coefficients ])
               end
             end
           end

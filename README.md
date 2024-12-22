@@ -53,7 +53,21 @@ Depoyu klonladıktan sonra
 
 ### Geliştirme
 
-Elle deneme yapmak için:
+Sarmalayıcı programı ("rotor") denemek için:
+
+```sh
+bundle exec bin/rotor problem.json # Çıktı JSON biçiminde stdout'ta (ekranda) görüntülenilir
+bundle exec bin/rotor problem.json  solution.xlsx # Çıktı Excel dosyasında
+```
+
+Okuma ve yazmada kullanılacak veri biçimi (json veya xlsx) dosya uzantılarından otomatik belirlenir. Veri biçimlerini
+açık şekilde vermek için:
+
+```sh
+bundle exec bin/rotor -r json -w xlsx input output # JSON oku, çözümle, Excel dosyasına yaz
+```
+
+Doğrudan çözümleme yapan (Python ile yazılmış) programı ("motor") elle denemek için:
 
 ```sh
 bin/motor <JSON BİÇİMİNDE İSTEK DOSYASI> <JSON BİÇİMİNDE ÇIKTI DOSYASI ADI>

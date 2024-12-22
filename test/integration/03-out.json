@@ -92,7 +92,6 @@
   "constraints": [
     {
       "name": "Toplam Arazi",
-      "id": "",
       "coefficients": [
         1.0,
         0.0,
@@ -141,7 +140,6 @@
     },
     {
       "name": "Toplam Kuru Tarla Arazisi",
-      "id": "",
       "coefficients": [
         1.0,
         0.0,
@@ -190,7 +188,6 @@
     },
     {
       "name": "Toplam Sulu Tarla Arazisi",
-      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -239,7 +236,6 @@
     },
     {
       "name": "Toplam Meyve Arazisi",
-      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -288,7 +284,6 @@
     },
     {
       "name": "Toplam Sebze Arazisi",
-      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -337,7 +332,6 @@
     },
     {
       "name": "Toplam Örtü Altı Arazisi",
-      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -386,7 +380,6 @@
     },
     {
       "name": "Toplam Süs Bitkisi Arazisi",
-      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -435,7 +428,6 @@
     },
     {
       "name": "Buğday, Durum Buğdayı Hariç Arazisi",
-      "id": "",
       "coefficients": [
         1.0,
         0.0,
@@ -484,7 +476,6 @@
     },
     {
       "name": "Buğday (Sulu) Arazisi",
-      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -533,7 +524,6 @@
     },
     {
       "name": "Mısır (Dane) Arazisi",
-      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -582,7 +572,6 @@
     },
     {
       "name": "Arpa (Diğer) (Kuru) Arazisi",
-      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -631,7 +620,6 @@
     },
     {
       "name": "Arpa (Sulu) Arazisi",
-      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -680,7 +668,6 @@
     },
     {
       "name": "Fasulye, Taze Arazisi",
-      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -729,7 +716,6 @@
     },
     {
       "name": "Karpuz Arazisi",
-      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -778,7 +764,6 @@
     },
     {
       "name": "Kavun Arazisi",
-      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -827,7 +812,6 @@
     },
     {
       "name": "Biber (Sivri) Arazisi",
-      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -876,7 +860,6 @@
     },
     {
       "name": "Hıyar (Sofralık) Arazisi",
-      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -925,7 +908,6 @@
     },
     {
       "name": "Patlıcan Arazisi",
-      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -974,7 +956,6 @@
     },
     {
       "name": "Domates (Sofralık) Arazisi",
-      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -1023,7 +1004,6 @@
     },
     {
       "name": "Elma (Bütünleştirilmiş) Arazisi",
-      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -1072,7 +1052,6 @@
     },
     {
       "name": "Armut Arazisi",
-      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -1121,7 +1100,6 @@
     },
     {
       "name": "Buğday, Durum Buğdayı Hariç Transfer",
-      "id": "",
       "coefficients": [
         -185.0,
         1.0,
@@ -1170,7 +1148,6 @@
     },
     {
       "name": "Buğday (Sulu) Transfer",
-      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -1219,7 +1196,6 @@
     },
     {
       "name": "Mısır (Dane) Transfer",
-      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -1268,7 +1244,6 @@
     },
     {
       "name": "Arpa (Diğer) (Kuru) Transfer",
-      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -1317,7 +1292,6 @@
     },
     {
       "name": "Arpa (Sulu) Transfer",
-      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -1366,7 +1340,6 @@
     },
     {
       "name": "Fasulye, Taze Transfer",
-      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -1415,7 +1388,6 @@
     },
     {
       "name": "Karpuz Transfer",
-      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -1464,7 +1436,6 @@
     },
     {
       "name": "Kavun Transfer",
-      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -1513,7 +1484,6 @@
     },
     {
       "name": "Biber (Sivri) Transfer",
-      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -1562,7 +1532,6 @@
     },
     {
       "name": "Hıyar (Sofralık) Transfer",
-      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -1611,7 +1580,6 @@
     },
     {
       "name": "Patlıcan Transfer",
-      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -1660,7 +1628,6 @@
     },
     {
       "name": "Domates (Sofralık) Transfer",
-      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -1709,7 +1676,6 @@
     },
     {
       "name": "Elma (Bütünleştirilmiş) Transfer",
-      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -1758,7 +1724,6 @@
     },
     {
       "name": "Armut Transfer",
-      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -1807,7 +1772,6 @@
     },
     {
       "name": "İşgücü Ocak",
-      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -1856,7 +1820,6 @@
     },
     {
       "name": "İşgücü Şubat",
-      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -1905,7 +1868,6 @@
     },
     {
       "name": "İşgücü Mart",
-      "id": "",
       "coefficients": [
         0.18,
         0.0,
@@ -1954,7 +1916,6 @@
     },
     {
       "name": "İşgücü Nisan",
-      "id": "",
       "coefficients": [
         0.43,
         0.0,
@@ -2003,7 +1964,6 @@
     },
     {
       "name": "İşgücü Mayıs",
-      "id": "",
       "coefficients": [
         0.18,
         0.0,
@@ -2052,7 +2012,6 @@
     },
     {
       "name": "İşgücü Haziran",
-      "id": "",
       "coefficients": [
         6.76,
         0.0,
@@ -2101,7 +2060,6 @@
     },
     {
       "name": "İşgücü Temmuz",
-      "id": "",
       "coefficients": [
         3.09,
         0.0,
@@ -2150,7 +2108,6 @@
     },
     {
       "name": "İşgücü Ağustos",
-      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -2199,7 +2156,6 @@
     },
     {
       "name": "İşgücü Eylül",
-      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -2248,7 +2204,6 @@
     },
     {
       "name": "İşgücü Ekim",
-      "id": "",
       "coefficients": [
         0.5,
         0.0,
@@ -2297,7 +2252,6 @@
     },
     {
       "name": "İşgücü Kasım",
-      "id": "",
       "coefficients": [
         0.45,
         0.0,
@@ -2346,7 +2300,6 @@
     },
     {
       "name": "İşgücü Aralık",
-      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -2395,7 +2348,6 @@
     },
     {
       "name": "İşletme Sermayesi",
-      "id": "",
       "coefficients": [
         324.12,
         0.0,
@@ -2444,7 +2396,6 @@
     },
     {
       "name": "Ahır Yeri",
-      "id": "",
       "coefficients": [
         0.0,
         0.0,
@@ -2493,7 +2444,6 @@
     },
     {
       "name": "Ağıl Yeri",
-      "id": "",
       "coefficients": [
         0.0,
         0.0,

@@ -52,8 +52,8 @@ module Motor
     Objective = Data.define(*%i[name coefficients]) do
       def initialize(name: nil, coefficients:) = super
     end
-    Constraint = Data.define(*%i[name id coefficients relation rhs]) do
-      def initialize(name:, id: "", coefficients:, relation:, rhs:) = super
+    Constraint = Data.define(*%i[name coefficients relation rhs]) do
+      def initialize(name:, coefficients:, relation:, rhs:) = super
     end
     Instance = Data.define(*%i[name analysis variables objective constraints solution]) do
       def initialize(name: "Untitled", analysis: nil, variables:, objective:, constraints:, solution: nil) = super
