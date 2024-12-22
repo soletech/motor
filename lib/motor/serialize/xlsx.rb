@@ -48,8 +48,8 @@ module Motor
               Sheet::Objective.(spreadsheet, data)
               Sheet::Constraints.(spreadsheet, data)
               Sheet::Solution::Result.(spreadsheet, data)
-              Sheet::Solution::Sensitivity::Coefficients.(spreadsheet, data)
-              Sheet::Solution::Sensitivity::Boundaries.(spreadsheet, data)
+              Sheet::Solution::Coefficients.(spreadsheet, data)
+              Sheet::Solution::Boundaries.(spreadsheet, data)
             end
           )
         end
@@ -95,9 +95,10 @@ module Motor
               data["constraints"] = rows.map do |row|
                 {
                   "name"         => strings(row[0]),
-                  "coefficients" => floats(row[3..]),
-                  "relation"     => strings(row[1]),
-                  "rhs"          => floats(row[2])
+                  "id"           => strings(row[1]),
+                  "coefficients" => floats(row[4..]),
+                  "relation"     => strings(row[2]),
+                  "rhs"          => floats(row[3])
                 }
               end
             end
@@ -113,19 +114,17 @@ module Motor
               end
             end
 
-            module Sensitivity
-              class Coefficients < Sheet
-                def call(data)
-                  fields = header
-                  data["solution"]["coefficients"] = rows.map { |row| Hash[*fields.zip(row).flatten] }
-                end
+            class Coefficients < Sheet
+              def call(data)
+                fields = header
+                data["solution"]["coefficients"] = rows.map { |row| Hash[*fields.zip(row).flatten] }
               end
+            end
 
-              class Boundaries < Sheet
-                def call(data)
-                  fields = header
-                  data["solution"]["boundaries"] = rows.map { |row| Hash[*fields.zip(row).flatten] }
-                end
+            class Boundaries < Sheet
+              def call(data)
+                fields = header
+                data["solution"]["boundaries"] = rows.map { |row| Hash[*fields.zip(row).flatten] }
               end
             end
           end
@@ -133,16 +132,16 @@ module Motor
       end
 
       module Write
-        def self.call(instance) # rubocop:disable Metrics/MethodLength
+        def self.call(problem) # rubocop:disable Metrics/MethodLength
           workbook = FastExcel.open(constant_memory: true)
 
-          Sheet::Objective.(instance, workbook)
-          Sheet::Constraints.(instance, workbook)
-          if instance.has_solution?
-            Sheet::Solution::Result.(instance, workbook)
-            if instance.has_sensitivity?
-              Sheet::Solution::Sensitivity::Coefficients.(instance, workbook)
-              Sheet::Solution::Sensitivity::Boundaries.(instance, workbook)
+          Sheet::Objective.(problem, workbook)
+          Sheet::Constraints.(problem, workbook)
+          if problem.has_solution?
+            Sheet::Solution::Result.(problem, workbook)
+            if problem.has_sensitivity?
+              Sheet::Solution::Coefficients.(problem, workbook)
+              Sheet::Solution::Boundaries.(problem, workbook)
             end
           end
 
@@ -152,14 +151,13 @@ module Motor
         class Sheet
           extend Forwardable
 
-          def_delegators :instance, :objective, :constraints, :variables, :solution
-          def_delegators :solution, :result, :sensitivity
-          def_delegators :sensitivity, :coefficients, :boundaries
+          def_delegators :problem, :objective, :constraints, :variables, :solution
+          def_delegators :solution, :result, :coefficients, :boundaries
 
-          attr_reader :instance, :workbook, :worksheet
+          attr_reader :problem, :workbook, :worksheet
 
-          def initialize(instance, workbook)
-            @instance  = instance
+          def initialize(problem, workbook)
+            @problem   = problem
             @workbook  = workbook
             @worksheet = workbook.add_worksheet(SHEET[self.class.name.split("::").last.downcase.to_sym]).tap do |worksheet|
               worksheet.auto_width = true
@@ -189,22 +187,20 @@ module Motor
               end
             end
 
-            module Sensitivity
-              class Coefficients < Sheet
-                def call
-                  worksheet.append_row(Problem::Solution::Sensitivity::Coefficient.members.map(&:to_s))
-                  coefficients.each do |coefficient|
-                    worksheet.append_row(coefficient.deconstruct)
-                  end
+            class Coefficients < Sheet
+              def call
+                worksheet.append_row(Problem::Solution::Coefficient.members.map(&:to_s))
+                coefficients.each do |coefficient|
+                  worksheet.append_row(coefficient.deconstruct)
                 end
               end
+            end
 
-              class Boundaries < Sheet
-                def call
-                  worksheet.append_row(Problem::Solution::Sensitivity::Boundary.members.map(&:to_s))
-                  boundaries.each do |boundary|
-                    worksheet.append_row(boundary.deconstruct)
-                  end
+            class Boundaries < Sheet
+              def call
+                worksheet.append_row(Problem::Solution::Boundary.members.map(&:to_s))
+                boundaries.each do |boundary|
+                  worksheet.append_row(boundary.deconstruct)
                 end
               end
             end

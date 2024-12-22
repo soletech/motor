@@ -3,16 +3,13 @@
 require "tempfile"
 
 desc "Test integration"
-task "test:integration": %i[test:integration:motor test:integration:krank]
+task :"test:integration" do
+  warn "Integration test"
 
-desc "Test Motor integration"
-task :"test:integration:motor" do
-  warn "Motor integration"
-
-  FileList["test/integration/motor/*-in.json"].each do |infile|
+  FileList["test/integration/*-in.json"].each do |infile|
     outfile = infile.gsub("-in", "-out")
 
-    actual = %x(bin/motor #{infile}).strip
+    actual = %x(bin/rotor #{infile}).strip
     expected = File.read(outfile).strip
 
     warn "  >   #{infile}"
@@ -24,47 +21,6 @@ end
 
 def ignore_name(content)
   content.split("\n").reject { _1.start_with?('  "name":') }.join("\n").strip
-end
-
-desc "Test krank integration"
-task :"test:integration:krank" do
-  warn "Krank integration"
-
-  FileList["test/integration/krank/*.json"].each do |file|
-    xlsx     = file.gsub(".json", ".xlsx")
-    expected = ignore_name(::File.read(file).encode("UTF-8"))
-
-    warn "  >   #{file}: JSON read JSON write"
-    actual = %x(bin/krank -r json -w json #{file}).encode("UTF-8").strip
-    unless ignore_name(actual) == expected
-      warn "  ❌   #{file}"
-    end
-
-    warn "  >   #{file}: JSON read XLSX write"
-    actual = Tempfile.create("krank") do |f|
-      sh("bin/krank -r json -w xlsx #{file} #{f.path}.xlsx", verbose: false)
-      %x(bin/krank -r xlsx -w json #{f.path}.xlsx).encode("UTF-8")
-    end
-    unless ignore_name(actual) == expected
-      warn "  ❌   #{file}"
-    end
-
-    warn "  >   #{file}: XLSX read JSON write"
-    actual = %x(bin/krank -r xlsx -w json #{xlsx})
-    unless ignore_name(actual) == expected
-      warn "  ❌   #{file}"
-    end
-
-    warn "  >   #{file}: XLSX read XLSX write"
-    actual = Tempfile.create("krank") do |f|
-      sh("bin/krank -r xlsx -w xlsx #{xlsx} #{f.path}.xlsx", verbose: false)
-      %x(bin/krank -r xlsx -w json #{f.path}.xlsx).encode("UTF-8").strip
-    end
-
-    unless ignore_name(actual) == expected
-      warn "  ❌   #{file}"
-    end
-  end
 end
 
 require "rake/testtask"

@@ -1,53 +1,91 @@
-#!/usr/bin/env bash
+#!/usr/bin/env ruby
+# frozen_string_literal: true
 
-# TODO: Rewrite in Ruby
+require "optparse"
 
-BINDIR=$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" &>/dev/null && pwd)
+require "motor"
 
-die() {
-	echo -e "$*" >&2
-	exit 1
-}
+module Main
+  PROGNAME = "rotor"
+  CLIError = Class.new(StandardError)
 
-motor() {
-	"$BINDIR"/motor "$@"
-}
+  Options = Struct.new(:convert, :read, :write, :help, :version)
 
-krank() {
-	bundle exec "$BINDIR"/krank "$@"
-}
+  class << self
+    def call(argv)
+      arguments(parser = options(argv, options = Options.new), argv)
 
-main() {
-	local reader writer
+      infile, outfile = argv
 
-	while [[ $# -gt 0 ]]; do
-		case $1 in
-		--)
-			shift
-			break
-			;;
-		-r)
-			shift
-			reader=$1
-			;;
-		-w)
-			shift
-			writer=$1
-			;;
-		-*)
-			die "Unrecognized switch: $1"
-			;;
-		*)
-			break
-			;;
-		esac
+      options.convert ? convert(infile, outfile, options) : solve(infile, outfile, options)
+    rescue CLIError => e # rubocop:disable Lint/RescueException
+      warn(parser.help)
+      warn("")
+      abort(e.message)
+    end
 
-		shift
-	done
+    private
 
-	local infile=$1 outfile=$2
+    # rubocop:disable Metrics/MethodLength,Metrics/AbcSize
+    def options(argv, options)
+      Signal.trap("INT") { Kernel.abort("") }
 
-	krank -r "$reader" "$infile" | motor /dev/stdin | krank -r json -w "$writer" /dev/stdin "$outfile"
-}
+      OptionParser.new do |option| # rubocop:disable Metrics/BlockLength
+        option.banner = <<~BANNER
+          Usage: #{PROGNAME} [options...] <INFILE> [<OUTFILE>]
 
-main "$@"
+          Options:
+
+        BANNER
+
+        option.on_tail("-c", "--convert", "Convert only") do
+          options.convert = true
+        end
+
+        option.on("-r", "--read TYPE", "Read type: json, xslx, default: json", String) do |opt|
+          options.read = opt
+        end
+
+        option.on("-w", "--write TYPE", "Write type: json, xslx, default: json", String) do |opt|
+          options.write = opt
+        end
+
+        option.on_tail("-h", "--help", "Show this message") do
+          abort(option.help)
+        end
+
+        option.on_tail("-v", "--version", "Show version") do
+          warn(Motor::VERSION)
+          exit
+        end
+      end.tap { |parser| parser.parse!(argv) } # rubocop:disable Style/MultilineBlockChain
+    end
+    # rubocop:enable Metrics/MethodLength,Metrics/AbcSize
+
+    def arguments(parser, argv)
+      raise(CLIError, "Too many arguments.") if argv.size > 2
+    end
+
+    def convert(infile, outfile, options)
+      Motor.convert(
+        infile,
+        outfile,
+        read: options.read,
+        write: options.write
+      )
+    end
+
+    def solve(infile, outfile, options)
+      Motor.read_solve_write(
+        infile,
+        outfile,
+        read: options.read,
+        write: options.write
+      )
+    end
+  end
+end
+
+def main = Main.(ARGV)
+
+main

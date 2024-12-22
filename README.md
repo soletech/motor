@@ -95,12 +95,29 @@ Excel dosyalarıyla çalışmak için:
 require "motor"
 
 begin
-  response = Motor.run(excel_file) # Excel dosyasını ver ve çözüme ait JSON çıktısını üret
-
-  # Çözüm başarılı, response'u işle (bu bir JSON verisi)
+  Motor.read_solve_write(input_excel_file, output_excel_file, read: :xlsx, write: :xlsx)
+  # Başarılı, çözüm çıktı dosyasında
 rescue Motor::Error => e
-  # Hata iletisi e.message ile hatayı yönet
+  # Başarısız, hata iletisi e.message ile hatayı yönet
 end
+```
+
+Çözümü geçici bir dosyaya yazmak istersek:
+
+```ruby
+require "motor"
+
+begin
+  tempfile = Motor.read_solve_write_tempfile(input_excel_file, read: :xlsx, write: :xlsx)
+  # Başarılı, çözüm geçici dosyada
+rescue Motor::Error => e
+  # Başarısız, hata iletisi e.message ile hatayı yönet
+end
+
+# Başarısızlık halinde tempfile zaten yok edilir. Fakat
+# başarı halinde tempfile'ı kaldırmaktan sorumlusunuz. Örneğin:
+tempfile.close
+tempfile.unlink
 ```
 
 ## Şema

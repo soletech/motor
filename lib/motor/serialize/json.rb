@@ -6,10 +6,12 @@ module Motor
   module Serialize
     module JSON
       module Read
-        def self.call(file) = Problem.(::JSON.load_file(file))
+        def self.call(file)      = problem(::File.read(file))
+
+        def self.problem(string) = Problem.(::JSON.parse(string))
       end
       module Write
-        def self.call(instance) = ::JSON.pretty_generate(instance)
+        def self.call(problem) = ::JSON.pretty_generate(problem)
       end
     end
   end

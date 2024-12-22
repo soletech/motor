@@ -36,13 +36,13 @@ module Motor
     end
 
     # rubocop:disable Metrics/LineLength
-    Objective  = Data.define(*%i[coefficients])
-    Constraint = Data.define(*%i[name coefficients relation rhs])
-    Instance   = Data.define(*%i[name variables objective constraints solution]) do
-      def initialize(name:, variables:, objective:, constraints:, solution: nil) = super
-
-      def has_solution? = solution
-      def has_sensitivity? = solution && solution.sensitivity
+    Objective = Data.define(*%i[coefficients])
+    Constraint = Data.define(*%i[name id coefficients relation rhs]) do
+      def initialize(name:, id: nil, coefficients:, relation:, rhs:) = super
+    end
+    Instance = Data.define(*%i[name variables objective constraints solution]) do
+      def has_solution?    = solution
+      def has_sensitivity? = solution && solution.coefficients && !solution.coefficients.empty?
 
       def size = variables.size
 
@@ -57,15 +57,12 @@ module Motor
     end
 
     module Solution
-      module Sensitivity
-        Coefficient = Data.define(*%i[variable value reduced_cost original_value lower_bound upper_bound is_basic_variable])
-        Boundary    = Data.define(*%i[constraint shadow_price slack_or_surplus original_value lower_bound upper_bound neither_bounds_are_binding])
-        Instance    = Data.define(*%i[coefficients boundaries])
-      end
+      Result      = Data.define(*%i[value code description])
+      Coefficient = Data.define(*%i[variable value reduced_cost original_value lower_bound upper_bound is_basic_variable])
+      Boundary    = Data.define(*%i[constraint shadow_price slack_or_surplus original_value lower_bound upper_bound neither_bounds_are_binding])
 
-      Result   = Data.define(*%i[value code description])
-      Instance = Data.define(*%i[result sensitivity]) do
-        def initialize(result:, sensitivity: nil) = super
+      Instance    = Data.define(*%i[result coefficients boundaries]) do
+        def initialize(result:, coefficients: [], boundaries: []) = super
       end
     end
     # rubocop:enable Metrics/LineLength
@@ -74,11 +71,9 @@ module Motor
       bucket = data["solution"]
 
       solution = Solution::Instance.new(
-        result:      Solution::Result.create(bucket["result"]),
-        sensitivity: Solution::Sensitivity::Instance.new(
-          coefficients: Solution::Sensitivity::Coefficient.series(bucket["coefficients"]),
-          boundaries:   Solution::Sensitivity::Boundary.series(bucket["boundaries"])
-        )
+        result:       Solution::Result.create(bucket["result"]),
+        coefficients: Solution::Coefficient.series(bucket["coefficients"]),
+        boundaries:   Solution::Boundary.series(bucket["boundaries"])
       ) if bucket && !bucket.empty?
 
       Instance.new(

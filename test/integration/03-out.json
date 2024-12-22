@@ -1,5 +1,5 @@
 {
-  "name": "01-Kayseri-In",
+  "name": "03",
   "variables": [
     "Buğday, Durum Buğdayı Hariç",
     "Buğday, Durum Buğdayı Hariç Satış",
@@ -44,7 +44,6 @@
     "Sermaye Temini"
   ],
   "objective": {
-    "name": "Objective Function",
     "coefficients": [
       -324.12,
       2.73,
@@ -92,6 +91,7 @@
   "constraints": [
     {
       "name": "Toplam Arazi",
+      "id": {},
       "coefficients": [
         1.0,
         0.0,
@@ -140,6 +140,7 @@
     },
     {
       "name": "Toplam Kuru Tarla Arazisi",
+      "id": {},
       "coefficients": [
         1.0,
         0.0,
@@ -188,6 +189,7 @@
     },
     {
       "name": "Toplam Sulu Tarla Arazisi",
+      "id": {},
       "coefficients": [
         0.0,
         0.0,
@@ -236,6 +238,7 @@
     },
     {
       "name": "Toplam Meyve Arazisi",
+      "id": {},
       "coefficients": [
         0.0,
         0.0,
@@ -284,6 +287,7 @@
     },
     {
       "name": "Toplam Sebze Arazisi",
+      "id": {},
       "coefficients": [
         0.0,
         0.0,
@@ -332,6 +336,7 @@
     },
     {
       "name": "Toplam Örtü Altı Arazisi",
+      "id": {},
       "coefficients": [
         0.0,
         0.0,
@@ -380,6 +385,7 @@
     },
     {
       "name": "Toplam Süs Bitkisi Arazisi",
+      "id": {},
       "coefficients": [
         0.0,
         0.0,
@@ -428,6 +434,7 @@
     },
     {
       "name": "Buğday, Durum Buğdayı Hariç Arazisi",
+      "id": {},
       "coefficients": [
         1.0,
         0.0,
@@ -476,6 +483,7 @@
     },
     {
       "name": "Buğday (Sulu) Arazisi",
+      "id": {},
       "coefficients": [
         0.0,
         0.0,
@@ -524,6 +532,7 @@
     },
     {
       "name": "Mısır (Dane) Arazisi",
+      "id": {},
       "coefficients": [
         0.0,
         0.0,
@@ -572,6 +581,7 @@
     },
     {
       "name": "Arpa (Diğer) (Kuru) Arazisi",
+      "id": {},
       "coefficients": [
         0.0,
         0.0,
@@ -620,6 +630,7 @@
     },
     {
       "name": "Arpa (Sulu) Arazisi",
+      "id": {},
       "coefficients": [
         0.0,
         0.0,
@@ -668,6 +679,7 @@
     },
     {
       "name": "Fasulye, Taze Arazisi",
+      "id": {},
       "coefficients": [
         0.0,
         0.0,
@@ -716,6 +728,7 @@
     },
     {
       "name": "Karpuz Arazisi",
+      "id": {},
       "coefficients": [
         0.0,
         0.0,
@@ -764,6 +777,7 @@
     },
     {
       "name": "Kavun Arazisi",
+      "id": {},
       "coefficients": [
         0.0,
         0.0,
@@ -812,6 +826,7 @@
     },
     {
       "name": "Biber (Sivri) Arazisi",
+      "id": {},
       "coefficients": [
         0.0,
         0.0,
@@ -860,6 +875,7 @@
     },
     {
       "name": "Hıyar (Sofralık) Arazisi",
+      "id": {},
       "coefficients": [
         0.0,
         0.0,
@@ -908,6 +924,7 @@
     },
     {
       "name": "Patlıcan Arazisi",
+      "id": {},
       "coefficients": [
         0.0,
         0.0,
@@ -956,6 +973,7 @@
     },
     {
       "name": "Domates (Sofralık) Arazisi",
+      "id": {},
       "coefficients": [
         0.0,
         0.0,
@@ -1004,6 +1022,7 @@
     },
     {
       "name": "Elma (Bütünleştirilmiş) Arazisi",
+      "id": {},
       "coefficients": [
         0.0,
         0.0,
@@ -1052,6 +1071,7 @@
     },
     {
       "name": "Armut Arazisi",
+      "id": {},
       "coefficients": [
         0.0,
         0.0,
@@ -1100,6 +1120,7 @@
     },
     {
       "name": "Buğday, Durum Buğdayı Hariç Transfer",
+      "id": {},
       "coefficients": [
         -185.0,
         1.0,
@@ -1148,6 +1169,7 @@
     },
     {
       "name": "Buğday (Sulu) Transfer",
+      "id": {},
       "coefficients": [
         0.0,
         0.0,
@@ -1196,6 +1218,7 @@
     },
     {
       "name": "Mısır (Dane) Transfer",
+      "id": {},
       "coefficients": [
         0.0,
         0.0,
@@ -1244,6 +1267,7 @@
     },
     {
       "name": "Arpa (Diğer) (Kuru) Transfer",
+      "id": {},
       "coefficients": [
         0.0,
         0.0,
@@ -1292,6 +1316,7 @@
     },
     {
       "name": "Arpa (Sulu) Transfer",
+      "id": {},
       "coefficients": [
         0.0,
         0.0,
@@ -1340,6 +1365,7 @@
     },
     {
       "name": "Fasulye, Taze Transfer",
+      "id": {},
       "coefficients": [
         0.0,
         0.0,
@@ -1388,6 +1414,7 @@
     },
     {
       "name": "Karpuz Transfer",
+      "id": {},
       "coefficients": [
         0.0,
         0.0,
@@ -1436,6 +1463,7 @@
     },
     {
       "name": "Kavun Transfer",
+      "id": {},
       "coefficients": [
         0.0,
         0.0,
@@ -1484,6 +1512,7 @@
     },
     {
       "name": "Biber (Sivri) Transfer",
+      "id": {},
       "coefficients": [
         0.0,
         0.0,
@@ -1532,6 +1561,7 @@
     },
     {
       "name": "Hıyar (Sofralık) Transfer",
+      "id": {},
       "coefficients": [
         0.0,
         0.0,
@@ -1580,6 +1610,7 @@
     },
     {
       "name": "Patlıcan Transfer",
+      "id": {},
       "coefficients": [
         0.0,
         0.0,
@@ -1628,6 +1659,7 @@
     },
     {
       "name": "Domates (Sofralık) Transfer",
+      "id": {},
       "coefficients": [
         0.0,
         0.0,
@@ -1676,6 +1708,7 @@
     },
     {
       "name": "Elma (Bütünleştirilmiş) Transfer",
+      "id": {},
       "coefficients": [
         0.0,
         0.0,
@@ -1724,6 +1757,7 @@
     },
     {
       "name": "Armut Transfer",
+      "id": {},
       "coefficients": [
         0.0,
         0.0,
@@ -1772,6 +1806,7 @@
     },
     {
       "name": "İşgücü Ocak",
+      "id": {},
       "coefficients": [
         0.0,
         0.0,
@@ -1820,6 +1855,7 @@
     },
     {
       "name": "İşgücü Şubat",
+      "id": {},
       "coefficients": [
         0.0,
         0.0,
@@ -1868,6 +1904,7 @@
     },
     {
       "name": "İşgücü Mart",
+      "id": {},
       "coefficients": [
         0.18,
         0.0,
@@ -1916,6 +1953,7 @@
     },
     {
       "name": "İşgücü Nisan",
+      "id": {},
       "coefficients": [
         0.43,
         0.0,
@@ -1964,6 +2002,7 @@
     },
     {
       "name": "İşgücü Mayıs",
+      "id": {},
       "coefficients": [
         0.18,
         0.0,
@@ -2012,6 +2051,7 @@
     },
     {
       "name": "İşgücü Haziran",
+      "id": {},
       "coefficients": [
         6.76,
         0.0,
@@ -2060,6 +2100,7 @@
     },
     {
       "name": "İşgücü Temmuz",
+      "id": {},
       "coefficients": [
         3.09,
         0.0,
@@ -2108,6 +2149,7 @@
     },
     {
       "name": "İşgücü Ağustos",
+      "id": {},
       "coefficients": [
         0.0,
         0.0,
@@ -2156,6 +2198,7 @@
     },
     {
       "name": "İşgücü Eylül",
+      "id": {},
       "coefficients": [
         0.0,
         0.0,
@@ -2204,6 +2247,7 @@
     },
     {
       "name": "İşgücü Ekim",
+      "id": {},
       "coefficients": [
         0.5,
         0.0,
@@ -2252,6 +2296,7 @@
     },
     {
       "name": "İşgücü Kasım",
+      "id": {},
       "coefficients": [
         0.45,
         0.0,
@@ -2300,6 +2345,7 @@
     },
     {
       "name": "İşgücü Aralık",
+      "id": {},
       "coefficients": [
         0.0,
         0.0,
@@ -2348,6 +2394,7 @@
     },
     {
       "name": "İşletme Sermayesi",
+      "id": {},
       "coefficients": [
         324.12,
         0.0,
@@ -2396,6 +2443,7 @@
     },
     {
       "name": "Ahır Yeri",
+      "id": {},
       "coefficients": [
         0.0,
         0.0,
@@ -2444,6 +2492,7 @@
     },
     {
       "name": "Ağıl Yeri",
+      "id": {},
       "coefficients": [
         0.0,
         0.0,
@@ -2492,7 +2541,6 @@
     }
   ],
   "solution": {
-    "success": true,
     "result": {
       "value": 185267649.936,
       "code": "OPTIMAL",
@@ -2504,7 +2552,7 @@
         "value": 0.0,
         "reduced_cost": 43.587,
         "original_value": -324.12,
-        "lower_bound": -9e+99,
+        "lower_bound": -9.0e+99,
         "upper_bound": -280.533,
         "is_basic_variable": false
       },
@@ -2522,7 +2570,7 @@
         "value": 0.0,
         "reduced_cost": 371.333,
         "original_value": -839.12,
-        "lower_bound": -9e+99,
+        "lower_bound": -9.0e+99,
         "upper_bound": -467.787,
         "is_basic_variable": false
       },
@@ -2541,7 +2589,7 @@
         "reduced_cost": -0.0,
         "original_value": -1439.82,
         "lower_bound": -1811.153,
-        "upper_bound": 9e+99,
+        "upper_bound": 9.0e+99,
         "is_basic_variable": true
       },
       {
@@ -2550,7 +2598,7 @@
         "reduced_cost": -0.0,
         "original_value": 2.6,
         "lower_bound": 2.335,
-        "upper_bound": 9e+99,
+        "upper_bound": 9.0e+99,
         "is_basic_variable": true
       },
       {
@@ -2559,7 +2607,7 @@
         "reduced_cost": -0.0,
         "original_value": -292.92,
         "lower_bound": -308.563,
-        "upper_bound": 9e+99,
+        "upper_bound": 9.0e+99,
         "is_basic_variable": true
       },
       {
@@ -2568,7 +2616,7 @@
         "reduced_cost": -0.0,
         "original_value": 2.5,
         "lower_bound": 2.417,
-        "upper_bound": 9e+99,
+        "upper_bound": 9.0e+99,
         "is_basic_variable": true
       },
       {
@@ -2576,7 +2624,7 @@
         "value": 0.0,
         "reduced_cost": 390.55,
         "original_value": -721.12,
-        "lower_bound": -9e+99,
+        "lower_bound": -9.0e+99,
         "upper_bound": -330.57,
         "is_basic_variable": false
       },
@@ -2594,7 +2642,7 @@
         "value": 0.0,
         "reduced_cost": 1814.957,
         "original_value": -1935.27,
-        "lower_bound": -9e+99,
+        "lower_bound": -9.0e+99,
         "upper_bound": -120.313,
         "is_basic_variable": false
       },
@@ -2613,7 +2661,7 @@
         "reduced_cost": -0.0,
         "original_value": -2710.05,
         "lower_bound": -2800.0,
-        "upper_bound": 9e+99,
+        "upper_bound": 9.0e+99,
         "is_basic_variable": true
       },
       {
@@ -2622,7 +2670,7 @@
         "reduced_cost": -0.0,
         "original_value": 1.0,
         "lower_bound": 0.978,
-        "upper_bound": 9e+99,
+        "upper_bound": 9.0e+99,
         "is_basic_variable": true
       },
       {
@@ -2630,7 +2678,7 @@
         "value": 0.0,
         "reduced_cost": 449.805,
         "original_value": -2166.68,
-        "lower_bound": -9e+99,
+        "lower_bound": -9.0e+99,
         "upper_bound": -1716.875,
         "is_basic_variable": false
       },
@@ -2649,7 +2697,7 @@
         "reduced_cost": -0.0,
         "original_value": -8502.95,
         "lower_bound": -10892.438,
-        "upper_bound": 9e+99,
+        "upper_bound": 9.0e+99,
         "is_basic_variable": true
       },
       {
@@ -2658,7 +2706,7 @@
         "reduced_cost": -0.0,
         "original_value": 2.3,
         "lower_bound": 1.902,
-        "upper_bound": 9e+99,
+        "upper_bound": 9.0e+99,
         "is_basic_variable": true
       },
       {
@@ -2667,7 +2715,7 @@
         "reduced_cost": -0.0,
         "original_value": -5892.95,
         "lower_bound": -10026.0,
-        "upper_bound": 9e+99,
+        "upper_bound": 9.0e+99,
         "is_basic_variable": true
       },
       {
@@ -2676,7 +2724,7 @@
         "reduced_cost": -0.0,
         "original_value": 2.6,
         "lower_bound": 1.682,
-        "upper_bound": 9e+99,
+        "upper_bound": 9.0e+99,
         "is_basic_variable": true
       },
       {
@@ -2684,7 +2732,7 @@
         "value": 0.0,
         "reduced_cost": 439.637,
         "original_value": -7597.45,
-        "lower_bound": -9e+99,
+        "lower_bound": -9.0e+99,
         "upper_bound": -7157.813,
         "is_basic_variable": false
       },
@@ -2703,7 +2751,7 @@
         "reduced_cost": -0.0,
         "original_value": -6173.95,
         "lower_bound": -6453.85,
-        "upper_bound": 9e+99,
+        "upper_bound": 9.0e+99,
         "is_basic_variable": true
       },
       {
@@ -2712,7 +2760,7 @@
         "reduced_cost": -0.0,
         "original_value": 1.7,
         "lower_bound": 1.645,
-        "upper_bound": 9e+99,
+        "upper_bound": 9.0e+99,
         "is_basic_variable": true
       },
       {
@@ -2721,7 +2769,7 @@
         "reduced_cost": -0.0,
         "original_value": -3040.0,
         "lower_bound": -5320.5,
-        "upper_bound": 9e+99,
+        "upper_bound": 9.0e+99,
         "is_basic_variable": true
       },
       {
@@ -2730,7 +2778,7 @@
         "reduced_cost": -0.0,
         "original_value": 2.3,
         "lower_bound": 1.54,
-        "upper_bound": 9e+99,
+        "upper_bound": 9.0e+99,
         "is_basic_variable": true
       },
       {
@@ -2739,7 +2787,7 @@
         "reduced_cost": -0.0,
         "original_value": -1004.65,
         "lower_bound": -2368.438,
-        "upper_bound": 9e+99,
+        "upper_bound": 9.0e+99,
         "is_basic_variable": true
       },
       {
@@ -2748,7 +2796,7 @@
         "reduced_cost": -0.0,
         "original_value": 4.0,
         "lower_bound": 2.608,
-        "upper_bound": 9e+99,
+        "upper_bound": 9.0e+99,
         "is_basic_variable": true
       },
       {
@@ -2756,7 +2804,7 @@
         "value": 0.0,
         "reduced_cost": 18.75,
         "original_value": -18.75,
-        "lower_bound": -9e+99,
+        "lower_bound": -9.0e+99,
         "upper_bound": 0.0,
         "is_basic_variable": false
       },
@@ -2846,7 +2894,7 @@
         "value": 0.0,
         "reduced_cost": 18.75,
         "original_value": -18.75,
-        "lower_bound": -9e+99,
+        "lower_bound": -9.0e+99,
         "upper_bound": 0.0,
         "is_basic_variable": false
       },
@@ -2864,7 +2912,7 @@
         "value": 0.0,
         "reduced_cost": 0.25,
         "original_value": -0.25,
-        "lower_bound": -9e+99,
+        "lower_bound": -9.0e+99,
         "upper_bound": 0.0,
         "is_basic_variable": false
       }
@@ -2876,7 +2924,7 @@
         "slack_or_surplus": 5415534.8,
         "original_value": 5508331.0,
         "lower_bound": 92796.2,
-        "upper_bound": 9e+99,
+        "upper_bound": 9.0e+99,
         "neither_bounds_are_binding": true
       },
       {
@@ -2903,7 +2951,7 @@
         "slack_or_surplus": 80544.0,
         "original_value": 154013.0,
         "lower_bound": 73469.0,
-        "upper_bound": 9e+99,
+        "upper_bound": 9.0e+99,
         "neither_bounds_are_binding": true
       },
       {
@@ -2912,7 +2960,7 @@
         "slack_or_surplus": 377830.8,
         "original_value": 397158.0,
         "lower_bound": 19327.2,
-        "upper_bound": 9e+99,
+        "upper_bound": 9.0e+99,
         "neither_bounds_are_binding": true
       },
       {
@@ -2921,7 +2969,7 @@
         "slack_or_surplus": 0.0,
         "original_value": 0.0,
         "lower_bound": 0.0,
-        "upper_bound": 9e+99,
+        "upper_bound": 9.0e+99,
         "neither_bounds_are_binding": true
       },
       {
@@ -2930,7 +2978,7 @@
         "slack_or_surplus": 0.0,
         "original_value": 0.0,
         "lower_bound": 0.0,
-        "upper_bound": 9e+99,
+        "upper_bound": 9.0e+99,
         "neither_bounds_are_binding": true
       },
       {
@@ -2939,7 +2987,7 @@
         "slack_or_surplus": 2189475.0,
         "original_value": 2189475.0,
         "lower_bound": 0.0,
-        "upper_bound": 9e+99,
+        "upper_bound": 9.0e+99,
         "neither_bounds_are_binding": true
       },
       {
@@ -2948,7 +2996,7 @@
         "slack_or_surplus": 279382.5,
         "original_value": 279382.5,
         "lower_bound": 0.0,
-        "upper_bound": 9e+99,
+        "upper_bound": 9.0e+99,
         "neither_bounds_are_binding": true
       },
       {
@@ -2957,7 +3005,7 @@
         "slack_or_surplus": 13156.5,
         "original_value": 13156.5,
         "lower_bound": 0.0,
-        "upper_bound": 9e+99,
+        "upper_bound": 9.0e+99,
         "neither_bounds_are_binding": true
       },
       {
@@ -2966,7 +3014,7 @@
         "slack_or_surplus": 1359679.5,
         "original_value": 1359679.5,
         "lower_bound": 0.0,
-        "upper_bound": 9e+99,
+        "upper_bound": 9.0e+99,
         "neither_bounds_are_binding": true
       },
       {
@@ -2975,7 +3023,7 @@
         "slack_or_surplus": 87864.0,
         "original_value": 87864.0,
         "lower_bound": 0.0,
-        "upper_bound": 9e+99,
+        "upper_bound": 9.0e+99,
         "neither_bounds_are_binding": true
       },
       {
@@ -2984,7 +3032,7 @@
         "slack_or_surplus": 1962.0,
         "original_value": 1962.0,
         "lower_bound": 0.0,
-        "upper_bound": 9e+99,
+        "upper_bound": 9.0e+99,
         "neither_bounds_are_binding": true
       },
       {
@@ -3002,7 +3050,7 @@
         "slack_or_surplus": 1614.0,
         "original_value": 1614.0,
         "lower_bound": 0.0,
-        "upper_bound": 9e+99,
+        "upper_bound": 9.0e+99,
         "neither_bounds_are_binding": true
       },
       {
@@ -3029,7 +3077,7 @@
         "slack_or_surplus": 957.0,
         "original_value": 957.0,
         "lower_bound": 0.0,
-        "upper_bound": 9e+99,
+        "upper_bound": 9.0e+99,
         "neither_bounds_are_binding": true
       },
       {
@@ -3065,7 +3113,7 @@
         "slack_or_surplus": 0.0,
         "original_value": 0.0,
         "lower_bound": 0.0,
-        "upper_bound": 9e+99,
+        "upper_bound": 9.0e+99,
         "neither_bounds_are_binding": false
       },
       {
@@ -3074,7 +3122,7 @@
         "slack_or_surplus": 0.0,
         "original_value": 0.0,
         "lower_bound": 0.0,
-        "upper_bound": 9e+99,
+        "upper_bound": 9.0e+99,
         "neither_bounds_are_binding": false
       },
       {
@@ -3083,7 +3131,7 @@
         "slack_or_surplus": 0.0,
         "original_value": 0.0,
         "lower_bound": 0.0,
-        "upper_bound": 9e+99,
+        "upper_bound": 9.0e+99,
         "neither_bounds_are_binding": false
       },
       {
@@ -3092,7 +3140,7 @@
         "slack_or_surplus": 0.0,
         "original_value": 0.0,
         "lower_bound": 0.0,
-        "upper_bound": 9e+99,
+        "upper_bound": 9.0e+99,
         "neither_bounds_are_binding": false
       },
       {
@@ -3101,7 +3149,7 @@
         "slack_or_surplus": 0.0,
         "original_value": 0.0,
         "lower_bound": 0.0,
-        "upper_bound": 9e+99,
+        "upper_bound": 9.0e+99,
         "neither_bounds_are_binding": false
       },
       {
@@ -3110,7 +3158,7 @@
         "slack_or_surplus": 0.0,
         "original_value": 0.0,
         "lower_bound": 0.0,
-        "upper_bound": 9e+99,
+        "upper_bound": 9.0e+99,
         "neither_bounds_are_binding": false
       },
       {
@@ -3119,7 +3167,7 @@
         "slack_or_surplus": 0.0,
         "original_value": 0.0,
         "lower_bound": -19968000.0,
-        "upper_bound": 9e+99,
+        "upper_bound": 9.0e+99,
         "neither_bounds_are_binding": false
       },
       {
@@ -3128,7 +3176,7 @@
         "slack_or_surplus": 0.0,
         "original_value": 0.0,
         "lower_bound": 0.0,
-        "upper_bound": 9e+99,
+        "upper_bound": 9.0e+99,
         "neither_bounds_are_binding": false
       },
       {
@@ -3137,7 +3185,7 @@
         "slack_or_surplus": 0.0,
         "original_value": 0.0,
         "lower_bound": -5537400.0,
-        "upper_bound": 9e+99,
+        "upper_bound": 9.0e+99,
         "neither_bounds_are_binding": false
       },
       {
@@ -3146,7 +3194,7 @@
         "slack_or_surplus": 0.0,
         "original_value": 0.0,
         "lower_bound": -4954950.0,
-        "upper_bound": 9e+99,
+        "upper_bound": 9.0e+99,
         "neither_bounds_are_binding": false
       },
       {
@@ -3155,7 +3203,7 @@
         "slack_or_surplus": 0.0,
         "original_value": 0.0,
         "lower_bound": 0.0,
-        "upper_bound": 9e+99,
+        "upper_bound": 9.0e+99,
         "neither_bounds_are_binding": false
       },
       {
@@ -3164,7 +3212,7 @@
         "slack_or_surplus": 0.0,
         "original_value": 0.0,
         "lower_bound": -62516273.6,
-        "upper_bound": 9e+99,
+        "upper_bound": 9.0e+99,
         "neither_bounds_are_binding": false
       },
       {
@@ -3173,7 +3221,7 @@
         "slack_or_surplus": 0.0,
         "original_value": 0.0,
         "lower_bound": -218349000.0,
-        "upper_bound": 9e+99,
+        "upper_bound": 9.0e+99,
         "neither_bounds_are_binding": false
       },
       {
@@ -3182,7 +3230,7 @@
         "slack_or_surplus": 0.0,
         "original_value": 0.0,
         "lower_bound": -672280.0,
-        "upper_bound": 9e+99,
+        "upper_bound": 9.0e+99,
         "neither_bounds_are_binding": false
       },
       {
@@ -3191,7 +3239,7 @@
         "slack_or_surplus": 28727.4,
         "original_value": 28727.4,
         "lower_bound": 0.0,
-        "upper_bound": 9e+99,
+        "upper_bound": 9.0e+99,
         "neither_bounds_are_binding": true
       },
       {
@@ -3281,7 +3329,7 @@
         "slack_or_surplus": 33796.94,
         "original_value": 33796.94,
         "lower_bound": 0.0,
-        "upper_bound": 9e+99,
+        "upper_bound": 9.0e+99,
         "neither_bounds_are_binding": true
       },
       {
@@ -3299,7 +3347,7 @@
         "slack_or_surplus": 9712707183.366,
         "original_value": 10184195908.55,
         "lower_bound": 471488725.184,
-        "upper_bound": 9e+99,
+        "upper_bound": 9.0e+99,
         "neither_bounds_are_binding": true
       },
       {
@@ -3308,7 +3356,7 @@
         "slack_or_surplus": 0.0,
         "original_value": 0.0,
         "lower_bound": 0.0,
-        "upper_bound": 9e+99,
+        "upper_bound": 9.0e+99,
         "neither_bounds_are_binding": true
       },
       {
@@ -3317,7 +3365,7 @@
         "slack_or_surplus": 0.0,
         "original_value": 0.0,
         "lower_bound": 0.0,
-        "upper_bound": 9e+99,
+        "upper_bound": 9.0e+99,
         "neither_bounds_are_binding": true
       }
     ]
