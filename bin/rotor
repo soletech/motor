@@ -22,6 +22,8 @@ module Main
       warn(parser.help)
       warn("")
       abort(e.message)
+    rescue Motor::Error => e
+      abort(e.message)
     end
 
     private

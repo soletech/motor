@@ -5,6 +5,7 @@ module Motor
 
   InvalidData  = Class.new(Error)
   Unsuccessful = Class.new(Error)
+  Unsolveable  = Class.new(Error)
 
   module Serialize
     Error = Class.new(Error)

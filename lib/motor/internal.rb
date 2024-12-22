@@ -4,7 +4,9 @@ require "open3"
 
 module Motor
   Result = Struct.new(:args, :outs, :errs, :exit_code) do
+    def all     = [ *outs, "\n\n", *errs ].join("\n").strip
     def cmd     = args.join(" ")
+    def err     = errs.join("\n")
     def notok?  = !ok?
     def ok?     = exit_code&.zero?
     def out     = outs.join("\n")

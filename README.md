@@ -6,7 +6,10 @@
 Depo bir program ve Web uygulamasında kullanılacak bir kitaplık sunuyor.
 
 - `bin/motor`: Python ile çözümleme yapan ana program. Bu programı (test hariç) doğrudan kullanmak yerine `Motor`
-  kitaplığıyla kullanıyoruz.
+  kitaplığı veya `rotor` sarmalayıcı programı üzerinden kullanıyoruz.
+
+- `bin/rotor`: Çözümleme verisini JSON veya XLSX biçiminde alıp (JSON biçiminde) doğrulanmış olarak `motor`'a veren ve
+  çözümleme sonucunu JSON veya XLSX biçiminde kaydeden "sarmalayıcı" program.
 
 - `lib/motor`: Web uygulamasında kullanılacak ana kitaplık.
 
@@ -67,6 +70,12 @@ açık şekilde vermek için:
 bundle exec bin/rotor -r json -w xlsx input output # JSON oku, çözümle, Excel dosyasına yaz
 ```
 
+Çözümleme yapmadan sadece veri biçimlerini dönüştürmek için:
+
+```sh
+bundle exec bin/rotor -c data.json data.xlsx # JSON'dan Excel'e çevir
+```
+
 Doğrudan çözümleme yapan (Python ile yazılmış) programı ("motor") elle denemek için:
 
 ```sh
@@ -75,63 +84,32 @@ bin/motor <JSON BİÇİMİNDE İSTEK DOSYASI> <JSON BİÇİMİNDE ÇIKTI DOSYASI
 
 ### Entegrasyon
 
-Çözümlenecek veriyi JSON biçiminde `request` adıyla `Motor`'a gönderen ve sonucu `response` adıyla alan örnek kod:
-
-```ruby
-require "motor"
-
-request = ...                    # JSON string ver
-response = Motor.solve(request)  # Çöz ve JSON string al
-```
-
-Geçerli (optimal) bir çözüm elde edilmişse cevap verisinde `success` alanı `true` değerini alır. Aksi tüm durumlarda
-`success` alanı `false` değerindedir ve sorunu görmek için `status` durum alanına bakılır. Durum bilgisinde `code` alanı
-hata kodunu, `message` ise hata açıklamasını içerir.
-
-Sadece başarılı bir çözümle ilgileniyorsanız `solve!` metodunun aşağıdaki örnekteki gibi kullanılması önerilir:
-
-```ruby
-require "motor"
-
-def ilgili_metot(...)
-  request = ...                    # JSON string ver
-  response = Motor.solve!(request) # Çöz ve JSON string al
-
-  # Çözüm başarılı, response'u işle
-rescue Motor::Error => e
-  # Hata iletisi e.message ile hatayı yönet
-end
-```
-
-Excel dosyalarıyla çalışmak için:
+Çözümlenecek girdi dosyasını, çıktı dosyasını ve bu dosyaların veri biçimlerini belirliyor ve `read_solve_write`
+metodunu çağırıyoruz. Örnekte girdi ve çıktı Excel biçiminde (aynı biçimde olması gerekmiyor):
 
 ```ruby
 require "motor"
 
 begin
-  Motor.read_solve_write(input_excel_file, output_excel_file, read: :xlsx, write: :xlsx)
+  Motor.read_solve_write(input_file, output_file, read: :xlsx, write: :xlsx)
   # Başarılı, çözüm çıktı dosyasında
 rescue Motor::Error => e
   # Başarısız, hata iletisi e.message ile hatayı yönet
 end
 ```
 
-Çözümü geçici bir dosyaya yazmak istersek:
+Çözümü geçici bir dosyaya yazarak dosyayı blok içinde işlemek istersek:
 
 ```ruby
 require "motor"
 
-begin
-  tempfile = Motor.read_solve_write_tempfile(input_excel_file, read: :xlsx, write: :xlsx)
-  # Başarılı, çözüm geçici dosyada
+Motor.read_solve_process(input_file, read: :xlsx, write: :xlsx) do |tempfile|
+  # Başarılı, çözüm geçici dosya tutamacında.
+  # tempfile.read ile dosyayı okuyabilir, tempfile.path ile yolunu öğrenebiliriz.
 rescue Motor::Error => e
   # Başarısız, hata iletisi e.message ile hatayı yönet
 end
-
-# Başarısızlık halinde tempfile zaten yok edilir. Fakat
-# başarı halinde tempfile'ı kaldırmaktan sorumlusunuz. Örneğin:
-tempfile.close
-tempfile.unlink
+# Blok sonunda tempfile yok edilir, özel bir işleme gerek yok.
 ```
 
 ## Şema

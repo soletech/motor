@@ -7,6 +7,8 @@ module Motor
 
   def solve(problem)
     result = invoke(to_json(problem))
+    raise(Unsolveable, "#{result.all}\n\nProblem is unsolveable, check the data.") unless result.ok?
+
     from_json(result.out)
   end
 
