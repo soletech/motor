@@ -19,7 +19,7 @@ module Motor
       raise(Error, "Output file required for XLSX") if type == :xlsx && !file
 
       blob = handler::Write.(instance)
-      file ? ::File.write(file, blob) : puts(blob)
+      file ? ::File.open(file, "wb") { |f| f.write(blob) } : puts(blob)
     end
   end
 
