@@ -5,17 +5,17 @@ require_relative "serialize/xlsx"
 
 module Motor
   module Serialize
-    def self.[](file, type)
+    def self.[](type)
       { json: JSON, xlsx: XLSX }[type].tap { |handler| raise(Error, "Unsupported data type: #{type}") unless handler }
     end
 
     def self.read(file, type:)
-      handler = self[file, type]
+      handler = self[type]
       handler::Read.(file)
     end
 
     def self.write(file, instance, type:)
-      handler = self[file, type]
+      handler = self[type]
       raise(Error, "Output file required for XLSX") if type == :xlsx && !file
 
       blob = handler::Write.(instance)
