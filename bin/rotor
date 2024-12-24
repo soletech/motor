@@ -44,11 +44,11 @@ module Main
           options.convert = true
         end
 
-        option.on("-r", "--read TYPE", "Read type: json, xslx, default: json", String) do |opt|
+        option.on("-r", "--read TYPE", "Read type: json, xlsx, default: json", String) do |opt|
           options.read = opt
         end
 
-        option.on("-w", "--write TYPE", "Write type: json, xslx, default: json", String) do |opt|
+        option.on("-w", "--write TYPE", "Write type: json, xlsx, default: json", String) do |opt|
           options.write = opt
         end
 

@@ -22,19 +22,24 @@ module Motor
     )
   end
 
+  def read_solve_dump(infile, read: nil, write: nil)
+    self.dump(
+      solve(
+        self.read(
+          infile,
+          type: read = (filetype(infile, type: read, default: DEFAULT_FILE_TYPE))
+        )
+      ),
+      type: write || read || DEFAULT_FILE_TYPE
+    )
+  end
+
   def read_solve_write(infile, outfile, read: nil, write: nil)
     self.write(
       outfile,
       solve(self.read(infile, type: filetype(infile, type: read, default: DEFAULT_FILE_TYPE))),
       type: filetype(outfile, type: write, default: DEFAULT_FILE_TYPE)
     )
-  end
-
-  def read_solve_process(infile, read: nil, write: nil)
-    Tempfile.create("motor") do |tempfile|
-      read_solve_write(infile, tempfile.path, read:, write:)
-      yield(tempfile) if block_given?
-    end
   end
 
   def validate_file(file, type: nil)
