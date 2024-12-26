@@ -52,39 +52,38 @@ module Motor
 
         module Sheets
           def objective(data)
-            downcase_header
             data["objective"] = {
-              "name"         => (hash = hashify_rows)["name"]&.first,
-              "variables"    => hash["variable"],
-              "coefficients" => hash["coefficient"]
+              "variables"    => strings(rows.map { |row| row[0] }),
+              "coefficients" => floats(rows.map { |row| row[1] }),
+              "name"         => strings(rows[2].first)
             }
           end
 
           def constraints(data)
-            downcase_header(*%w[ constraint rhs relation ])
-            data["constraints"] = hashify_table_consolidated("coefficients", data["objective"]["variables"]).map do |constraint|
-              constraint["coefficients"].map!(&:to_f)
-              constraint
+            data["constraints"] = rows.map do |row|
+              {
+                "constraint"   => strings(row[0]),
+                "coefficients" => floats(row[3..]),
+                "relation"     => strings(row[1]),
+                "rhs"          => floats(row[2])
+              }
             end
           end
 
           def result(data)
-            downcase_header
             data["solution"]["result"] = {
-              "value"       => (hash = hashify_rows)["value"].first,
-              "code"        => hash["code"].first,
-              "description" => hash["description"].first
+              "value"       => floats(rows.first[0]),
+              "code"        => strings(rows.first[1]),
+              "description" => strings(rows.first[2])
             }
           end
 
           def coefficients(data)
-            downcase_header
-            data["solution"]["sensitivity"]["coefficients"] = hashify_table
+            data["solution"]["sensitivity"]["coefficients"] = rows.map { |row| Hash[*header.zip(row).flatten] }
           end
 
           def boundaries(data)
-            downcase_header
-            data["solution"]["sensitivity"]["boundaries"] = hashify_table
+            data["solution"]["sensitivity"]["boundaries"] = rows.map { |row| Hash[*header.zip(row).flatten] }
           end
         end
 
@@ -103,32 +102,9 @@ module Motor
 
           private
 
-          def hashify_rows
-            transposed = rows.transpose.map! { |row| row.compact }
+          def strings(data) = data.is_a?(::Array) ? data.map(&:strip) : (data.nil? ? "" : data.strip)
 
-            Hash[
-              *header.map.with_index { |key, i| [ key, transposed[i] ] }.flatten(1)
-            ]
-          end
-
-          def hashify_table_consolidated(...)
-            hashify_table.map { |h| consolidate_columns(h, ...) }
-          end
-
-          def hashify_table
-            rows.map { |row| Hash[*header.zip(row).flatten] }
-          end
-
-          def consolidate_columns(hash, consolidation_key, unconsolidated_keys)
-            a, b = hash.partition { |key, _| unconsolidated_keys.include?(key) }.map(&:to_h)
-            { **b, consolidation_key => a.values_at(*unconsolidated_keys) }
-          end
-
-          def downcase_header(*keys)
-            return header.map!(&:downcase) if keys.empty?
-
-            header.map! { |key| keys.include?(downcased = key.downcase) ? downcased : key }
-          end
+          def floats(data)  = data.is_a?(::Array) ? data.map(&:to_f)  : data.to_f
         end
       end
 
