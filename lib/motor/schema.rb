@@ -18,7 +18,9 @@ module Motor
       required(:coefficients).array(:float)
 
       before(:value_coercer) do |result|
-        result.to_h.map { |h| h[:relation] = "=" if h[:relation] == "==" }
+        result.to_h.map do |h|
+          h[:relation] = "=" if h[:relation] == "=="
+        end
       end
     end
 

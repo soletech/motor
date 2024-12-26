@@ -42,7 +42,7 @@ module Motor
 
         def self.call(file)
           F.autohash("name" => (spreadsheet = Spreadsheet.new(file)).name).tap do |data|
-            Sheets.public_instance_methods.each do |name|
+            SHEET.keys.each do |name|
               next unless (sheet = spreadsheet[name])
 
               Sheet.new(sheet).public_send(name, data)
@@ -62,7 +62,10 @@ module Motor
 
           def constraints(data)
             downcase_header(*%w[ constraint rhs relation ])
-            data["constraints"] = hashify_table_consolidated("coefficients", data["objective"]["variables"])
+            data["constraints"] = hashify_table_consolidated("coefficients", data["objective"]["variables"]).map do |constraint|
+              constraint["coefficients"].map!(&:to_f)
+              constraint
+            end
           end
 
           def result(data)
