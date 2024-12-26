@@ -20,6 +20,7 @@ Gem::Specification.new do |s|
   s.metadata["bug_tracker_uri"]       = "https://github.com/soletech/motor/issues"
   s.metadata["rubygems_mfa_required"] = "true"
 
+  s.add_runtime_dependency("dry-schema")
   s.add_runtime_dependency("fast_excel")
   s.add_runtime_dependency("roo")
 end

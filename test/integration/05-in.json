@@ -1,197 +1,196 @@
 {
-  "name": "05",
-  "variables": [
-    "Durum Buğdayı (kuru)",
-    "Durum buğdayı satış",
-    "Buğday, Durum Buğdayı Hariç (kuru)",
-    "Buğday (durum hariç) satış",
-    "Mısır (dane)",
-    "Mısır (dane satış",
-    "Arpa (Diğer) (kuru)",
-    "Arpa (diğer) satış",
-    "Çavdar",
-    "Çavdar satış",
-    "Yulaf",
-    "Yulaf satış",
-    "Kaplıca",
-    "Kaplıca satış",
-    "Triticale",
-    "Triticale satış",
-    "Fasulye, Kuru",
-    "Kuru fasulye satış",
-    "Bakla, Kuru (İnsan Tüketimi İçin)",
-    "Bakla (yemeklik) satış",
-    "Nohut, Kuru",
-    "Nohut satış",
-    "Bezelye, Kuru",
-    "Buy (Çemen Otu)",
-    "Buy (çemenotu) satış",
-    "Soya Fasulyesi (kuru)",
-    "Soya fasulyesi satış",
-    "Kanola Veya Kolza Tohumu",
-    "Kanola veya Kolza satış",
-    "Ayçiçeği Tohumu (Yağlık) (kuru)",
-    "Ayçiçeği tohumu (satış)",
-    "Kenevir Tohumu",
-    "Kenevir tohumu satış",
-    "Aspir Tohumu (kuru)",
-    "Aspir tohumu satış",
-    "Çeltik",
-    "Çeltik satış",
-    "Patates (Tatlı Patates Hariç)",
-    "Patates satış",
-    "Salep",
-    "Salep satış",
-    "Şeker Pancarı",
-    "Şeker pancarı satış",
-    "Tütün, İşlenmemiş",
-    "Tütün satış",
-    "Fiğ (Adi) (Yeşil Ot)",
-    "Fiğ (Adi) (yeşilot) satış",
-    "Fiğ (Macar) (Yeşil Ot)",
-    "Fiğ (Macar) (Yeşilot) satış",
-    "Yonca (Yeşilot)",
-    "Yonca (yeşilot) satış",
-    "Korunga (Yeşilot)",
-    "korunga (yeşilot) satış",
-    "Yulaf (Yeşilot)",
-    "Yulaf (yeşilot) satış",
-    "Sorgum (Yeşilot)",
-    "Sorgum (yeşilot) satış",
-    "Triticale (Yeşilot)",
-    "Triticale (yeşilot) satış",
-    "Mısır (Slaj)",
-    "Mısır (silaj) satış",
-    "Hayvan Pancarı",
-    "Çayır Otu (Yeşilot)",
-    "Bezelye (Yemlik)",
-    "İtalyan Çimi (Yemlik)",
-    "Fiğ (Adi) Tohumu",
-    "Fiğ (Adi tohumu) satış",
-    "Fiğ (Macar) Tohumu",
-    "Fiğ (Macar) tohumu satış",
-    "Adaçayı",
-    "Lavanta",
-    "Oğul Otu (Melisa)",
-    "Fasulye, Taze",
-    "Barbunya, Taze",
-    "Bezelye, Taze",
-    "Bakla, Taze",
-    "Kuşkonmaz",
-    "Lahana (Beyaz)",
-    "Lahana (Kırmızı)",
-    "Lahana (Kara Yaprak)",
-    "Lahana (Brüksel)",
-    "Karnabahar",
-    "Brokoli",
-    "Marul (Kıvırcık)",
-    "Marul (Göbekli)",
-    "Marul (İceberg)",
-    "Ispanak",
-    "Enginar",
-    "Pazı",
-    "Semizotu",
-    "Maydanoz",
-    "Roka",
-    "Tere",
-    "Nane",
-    "Dereotu",
-    "Karpuz",
-    "Kavun",
-    "Biber (Salçalık, Kapya)",
-    "Biber (Dolmalık)",
-    "Biber (Sivri)",
-    "Biber (Çarliston)",
-    "Hıyar (Sofralık)",
-    "Hıyar (Turşuluk)",
-    "Patlıcan",
-    "Domates (Sofralık)",
-    "Domates (Salçalık)",
-    "Bamya",
-    "Kabak (Sakız)",
-    "Bal Kabağı",
-    "Havuç",
-    "Sarımsak (Taze)",
-    "Sarımsak (Kuru)",
-    "Soğan (Taze)",
-    "Soğan (Kuru)",
-    "Pırasa",
-    "Kırmızı Pancar",
-    "Kereviz (Kök)",
-    "Turp (Bayır)",
-    "Turp (Kırmızı)",
-    "Turp (Beyaz)",
-    "Mantar (Kültür)",
-    "Sofralık Üzüm, Çekirdekli",
-    "İncir (Yaş)",
-    "Ema (bütünleştirilmiş)",
-    "Armut",
-    "Ayva",
-    "Kiraz",
-    "Vişne",
-    "Şeftali",
-    "Nektarin",
-    "Erik",
-    "Kızılcık",
-    "Hünnap",
-    "Kivi",
-    "Ahududu",
-    "Çilek",
-    "Böğürtlen",
-    "Dut",
-    "Kestane",
-    "Fındık",
-    "Ceviz",
-    "Muşmula",
-    "Nar",
-    "Trabzon Hurması (Cennet Elması)",
-    "Sofralık Zeytinler",
-    "Kekik, İşlenmemiş",
-    "Çörek Otu Tohumu",
-    "Gerbera, Kesme",
-    "Gypsohilla, Kesme",
-    "Kasımpatı (Krizantem)",
-    "Gül, Kesme",
-    "Lisianthus, Kesme",
-    "Şebboy, Kesme",
-    "Diğer Kesme Çiçek Ve Çiçek Koncaları",
-    "İç Mekan Süs Bitkileri (Oda Bitkileri)",
-    "Dış Mekan Süs Bitkileri",
-    "Fasulye, Taze, (örtüaltı)",
-    "Biber (Dolmalık) (örtüaltı)",
-    "Biber (Sivri) (örtüaltı)",
-    "Biber (Çarliston) (örtüaltı)",
-    "Domates (Sofralık) (örtüaltı)",
-    "Marul (Kıvırcık) (örtüaltı)",
-    "Hıyar (Sofralık) (örtüaltı)",
-    "Patlıcan (örtüaltı)",
-    "Marul (Göbekli)(örtüaltı)",
-    "Ispanak (örtüaltı)",
-    "Maydanoz (örtüaltı)",
-    "Roka (örtüaltı)",
-    "Tere (örtüaltı)",
-    "Dereotu (örtüaltı)",
-    "Soğan (Taze) (örtüaltı)",
-    "Süt sığırcılığı",
-    "Besi sığırcılığı",
-    "Koyunculuk",
-    "Keçicilik",
-    "Mandacılık",
-    "İşgücü kiralama (ocak)",
-    "İşgücü kiralama (şubat)",
-    "İşgücü kiralama (mart)",
-    "İşgücü kiralama (nisan)",
-    "İşgücü kiralama (mayıs)",
-    "İşgücü kiralama (haziran)",
-    "İşgücü kiralama (temmuz)",
-    "İşgücü kiralama (ağustos)",
-    "İşgücü kiralama (eylül)",
-    "İşgücü kiralama (ekim)",
-    "İşgücü kiralama (kasım)",
-    "İşgücü kiralama (aralık)",
-    "Sermaye temini"
-  ],
   "objective": {
+    "variables": [
+      "Durum Buğdayı (kuru)",
+      "Durum buğdayı satış",
+      "Buğday, Durum Buğdayı Hariç (kuru)",
+      "Buğday (durum hariç) satış",
+      "Mısır (dane)",
+      "Mısır (dane satış",
+      "Arpa (Diğer) (kuru)",
+      "Arpa (diğer) satış",
+      "Çavdar",
+      "Çavdar satış",
+      "Yulaf",
+      "Yulaf satış",
+      "Kaplıca",
+      "Kaplıca satış",
+      "Triticale",
+      "Triticale satış",
+      "Fasulye, Kuru",
+      "Kuru fasulye satış",
+      "Bakla, Kuru (İnsan Tüketimi İçin)",
+      "Bakla (yemeklik) satış",
+      "Nohut, Kuru",
+      "Nohut satış",
+      "Bezelye, Kuru",
+      "Buy (Çemen Otu)",
+      "Buy (çemenotu) satış",
+      "Soya Fasulyesi (kuru)",
+      "Soya fasulyesi satış",
+      "Kanola Veya Kolza Tohumu",
+      "Kanola veya Kolza satış",
+      "Ayçiçeği Tohumu (Yağlık) (kuru)",
+      "Ayçiçeği tohumu (satış)",
+      "Kenevir Tohumu",
+      "Kenevir tohumu satış",
+      "Aspir Tohumu (kuru)",
+      "Aspir tohumu satış",
+      "Çeltik",
+      "Çeltik satış",
+      "Patates (Tatlı Patates Hariç)",
+      "Patates satış",
+      "Salep",
+      "Salep satış",
+      "Şeker Pancarı",
+      "Şeker pancarı satış",
+      "Tütün, İşlenmemiş",
+      "Tütün satış",
+      "Fiğ (Adi) (Yeşil Ot)",
+      "Fiğ (Adi) (yeşilot) satış",
+      "Fiğ (Macar) (Yeşil Ot)",
+      "Fiğ (Macar) (Yeşilot) satış",
+      "Yonca (Yeşilot)",
+      "Yonca (yeşilot) satış",
+      "Korunga (Yeşilot)",
+      "korunga (yeşilot) satış",
+      "Yulaf (Yeşilot)",
+      "Yulaf (yeşilot) satış",
+      "Sorgum (Yeşilot)",
+      "Sorgum (yeşilot) satış",
+      "Triticale (Yeşilot)",
+      "Triticale (yeşilot) satış",
+      "Mısır (Slaj)",
+      "Mısır (silaj) satış",
+      "Hayvan Pancarı",
+      "Çayır Otu (Yeşilot)",
+      "Bezelye (Yemlik)",
+      "İtalyan Çimi (Yemlik)",
+      "Fiğ (Adi) Tohumu",
+      "Fiğ (Adi tohumu) satış",
+      "Fiğ (Macar) Tohumu",
+      "Fiğ (Macar) tohumu satış",
+      "Adaçayı",
+      "Lavanta",
+      "Oğul Otu (Melisa)",
+      "Fasulye, Taze",
+      "Barbunya, Taze",
+      "Bezelye, Taze",
+      "Bakla, Taze",
+      "Kuşkonmaz",
+      "Lahana (Beyaz)",
+      "Lahana (Kırmızı)",
+      "Lahana (Kara Yaprak)",
+      "Lahana (Brüksel)",
+      "Karnabahar",
+      "Brokoli",
+      "Marul (Kıvırcık)",
+      "Marul (Göbekli)",
+      "Marul (İceberg)",
+      "Ispanak",
+      "Enginar",
+      "Pazı",
+      "Semizotu",
+      "Maydanoz",
+      "Roka",
+      "Tere",
+      "Nane",
+      "Dereotu",
+      "Karpuz",
+      "Kavun",
+      "Biber (Salçalık, Kapya)",
+      "Biber (Dolmalık)",
+      "Biber (Sivri)",
+      "Biber (Çarliston)",
+      "Hıyar (Sofralık)",
+      "Hıyar (Turşuluk)",
+      "Patlıcan",
+      "Domates (Sofralık)",
+      "Domates (Salçalık)",
+      "Bamya",
+      "Kabak (Sakız)",
+      "Bal Kabağı",
+      "Havuç",
+      "Sarımsak (Taze)",
+      "Sarımsak (Kuru)",
+      "Soğan (Taze)",
+      "Soğan (Kuru)",
+      "Pırasa",
+      "Kırmızı Pancar",
+      "Kereviz (Kök)",
+      "Turp (Bayır)",
+      "Turp (Kırmızı)",
+      "Turp (Beyaz)",
+      "Mantar (Kültür)",
+      "Sofralık Üzüm, Çekirdekli",
+      "İncir (Yaş)",
+      "Ema (bütünleştirilmiş)",
+      "Armut",
+      "Ayva",
+      "Kiraz",
+      "Vişne",
+      "Şeftali",
+      "Nektarin",
+      "Erik",
+      "Kızılcık",
+      "Hünnap",
+      "Kivi",
+      "Ahududu",
+      "Çilek",
+      "Böğürtlen",
+      "Dut",
+      "Kestane",
+      "Fındık",
+      "Ceviz",
+      "Muşmula",
+      "Nar",
+      "Trabzon Hurması (Cennet Elması)",
+      "Sofralık Zeytinler",
+      "Kekik, İşlenmemiş",
+      "Çörek Otu Tohumu",
+      "Gerbera, Kesme",
+      "Gypsohilla, Kesme",
+      "Kasımpatı (Krizantem)",
+      "Gül, Kesme",
+      "Lisianthus, Kesme",
+      "Şebboy, Kesme",
+      "Diğer Kesme Çiçek Ve Çiçek Koncaları",
+      "İç Mekan Süs Bitkileri (Oda Bitkileri)",
+      "Dış Mekan Süs Bitkileri",
+      "Fasulye, Taze, (örtüaltı)",
+      "Biber (Dolmalık) (örtüaltı)",
+      "Biber (Sivri) (örtüaltı)",
+      "Biber (Çarliston) (örtüaltı)",
+      "Domates (Sofralık) (örtüaltı)",
+      "Marul (Kıvırcık) (örtüaltı)",
+      "Hıyar (Sofralık) (örtüaltı)",
+      "Patlıcan (örtüaltı)",
+      "Marul (Göbekli)(örtüaltı)",
+      "Ispanak (örtüaltı)",
+      "Maydanoz (örtüaltı)",
+      "Roka (örtüaltı)",
+      "Tere (örtüaltı)",
+      "Dereotu (örtüaltı)",
+      "Soğan (Taze) (örtüaltı)",
+      "Süt sığırcılığı",
+      "Besi sığırcılığı",
+      "Koyunculuk",
+      "Keçicilik",
+      "Mandacılık",
+      "İşgücü kiralama (ocak)",
+      "İşgücü kiralama (şubat)",
+      "İşgücü kiralama (mart)",
+      "İşgücü kiralama (nisan)",
+      "İşgücü kiralama (mayıs)",
+      "İşgücü kiralama (haziran)",
+      "İşgücü kiralama (temmuz)",
+      "İşgücü kiralama (ağustos)",
+      "İşgücü kiralama (eylül)",
+      "İşgücü kiralama (ekim)",
+      "İşgücü kiralama (kasım)",
+      "İşgücü kiralama (aralık)",
+      "Sermaye temini"
+    ],
     "coefficients": [
       -531.3, 2.5, -402.64, 2.36, -533.55, 2.3, -563.93, 2.1, -402.64, 2.0, -782.0, 2.47, -402.64, 2.36, -462.58, 2.92,
       -702.9, 10.0, -785.63, 5.55, -554.31, 7.14, 170.32, -1261.0, 20.0, -689.71, 3.79, -296.85, 7.0, -440.91, 4.02,
@@ -212,7 +211,7 @@
   },
   "constraints": [
     {
-      "name": "Toplam arazi",
+      "constraint": "Toplam arazi",
       "coefficients": [
         1.0, 0.0, 1.0, 0.0, 1.0, 0.0, 1.0, 0.0, 1.0, 0.0, 1.0, 0.0, 1.0, 0.0, 1.0, 0.0, 1.0, 0.0, 1.0, 0.0, 1.0, 0.0,
         1.0, 1.0, 0.0, 1.0, 0.0, 1.0, 0.0, 1.0, 0.0, 1.0, 0.0, 1.0, 0.0, 1.0, 0.0, 1.0, 0.0, 1.0, 0.0, 1.0, 0.0, 1.0,
@@ -228,7 +227,7 @@
       "rhs": 3746464.0
     },
     {
-      "name": "Toplam kuru tarla arazisi",
+      "constraint": "Toplam kuru tarla arazisi",
       "coefficients": [
         1.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 1.0, 0.0, 1.0, 0.0, 1.0, 0.0, 1.0, 0.0, 1.0, 0.0, 1.0, 0.0, 1.0, 0.0,
         1.0, 1.0, 0.0, 1.0, 0.0, 1.0, 0.0, 1.0, 0.0, 1.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 1.0, 0.0, 1.0, 0.0, 1.0,
@@ -244,7 +243,7 @@
       "rhs": 1585879.0
     },
     {
-      "name": "Toplam sulu tarla arazisi",
+      "constraint": "Toplam sulu tarla arazisi",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -260,7 +259,7 @@
       "rhs": 816908.0
     },
     {
-      "name": "Meyve arazisi",
+      "constraint": "Meyve arazisi",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -276,7 +275,7 @@
       "rhs": 1192643.36
     },
     {
-      "name": "Sebze arazisi",
+      "constraint": "Sebze arazisi",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -292,7 +291,7 @@
       "rhs": 145096.0
     },
     {
-      "name": "Örtüaltı arazi",
+      "constraint": "Örtüaltı arazi",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -308,7 +307,7 @@
       "rhs": 5310.0
     },
     {
-      "name": "Süs bitkileri",
+      "constraint": "Süs bitkileri",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -324,7 +323,7 @@
       "rhs": 627.64
     },
     {
-      "name": "Durum Buğdayı (kuru) arazisi",
+      "constraint": "Durum Buğdayı (kuru) arazisi",
       "coefficients": [
         1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -340,7 +339,7 @@
       "rhs": 180.0
     },
     {
-      "name": "Buğday, Durum Buğdayı Hariç (kuru) arazisi",
+      "constraint": "Buğday, Durum Buğdayı Hariç (kuru) arazisi",
       "coefficients": [
         0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -356,7 +355,7 @@
       "rhs": 1444523.0
     },
     {
-      "name": "Mısır (dane) arazisi",
+      "constraint": "Mısır (dane) arazisi",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -372,7 +371,7 @@
       "rhs": 149796.0
     },
     {
-      "name": "Arpa (Diğer) (kuru) arazisi",
+      "constraint": "Arpa (Diğer) (kuru) arazisi",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -388,7 +387,7 @@
       "rhs": 162945.0
     },
     {
-      "name": "Çavdar arazisi",
+      "constraint": "Çavdar arazisi",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -404,7 +403,7 @@
       "rhs": 1554.0
     },
     {
-      "name": "Yulaf arazisi",
+      "constraint": "Yulaf arazisi",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -420,7 +419,7 @@
       "rhs": 12555.0
     },
     {
-      "name": "Kaplıca arazisi",
+      "constraint": "Kaplıca arazisi",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -436,7 +435,7 @@
       "rhs": 2475.0
     },
     {
-      "name": "Triticale arazisi",
+      "constraint": "Triticale arazisi",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -452,7 +451,7 @@
       "rhs": 13824.0
     },
     {
-      "name": "Fasulye, Kuru arazisi",
+      "constraint": "Fasulye, Kuru arazisi",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -468,7 +467,7 @@
       "rhs": 13376.0
     },
     {
-      "name": "Bakla, Kuru (İnsan Tüketimi İçin) arazisi",
+      "constraint": "Bakla, Kuru (İnsan Tüketimi İçin) arazisi",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -484,7 +483,7 @@
       "rhs": 22.5
     },
     {
-      "name": "Nohut, Kuru arazisi",
+      "constraint": "Nohut, Kuru arazisi",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -500,7 +499,7 @@
       "rhs": 6461.0
     },
     {
-      "name": "Bezelye, Kuru arazisi",
+      "constraint": "Bezelye, Kuru arazisi",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -516,7 +515,7 @@
       "rhs": 20.0
     },
     {
-      "name": "Buy (Çemen Otu) arazisi",
+      "constraint": "Buy (Çemen Otu) arazisi",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -532,7 +531,7 @@
       "rhs": 765.0
     },
     {
-      "name": "Soya Fasulyesi (kuru) arazisi",
+      "constraint": "Soya Fasulyesi (kuru) arazisi",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -548,7 +547,7 @@
       "rhs": 28566.0
     },
     {
-      "name": "Kanola Veya Kolza Tohumu arazisi",
+      "constraint": "Kanola Veya Kolza Tohumu arazisi",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -564,7 +563,7 @@
       "rhs": 1875.0
     },
     {
-      "name": "Ayçiçeği Tohumu (Yağlık) (kuru) arazisi",
+      "constraint": "Ayçiçeği Tohumu (Yağlık) (kuru) arazisi",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -580,7 +579,7 @@
       "rhs": 295454.0
     },
     {
-      "name": "Kenevir Tohumu arazisi",
+      "constraint": "Kenevir Tohumu arazisi",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -596,7 +595,7 @@
       "rhs": 173.0
     },
     {
-      "name": "Aspir Tohumu (kuru) arazisi",
+      "constraint": "Aspir Tohumu (kuru) arazisi",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -612,7 +611,7 @@
       "rhs": 332.0
     },
     {
-      "name": "Çeltik arazisi",
+      "constraint": "Çeltik arazisi",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -628,7 +627,7 @@
       "rhs": 313968.0
     },
     {
-      "name": "Patates (Tatlı Patates Hariç) arazisi",
+      "constraint": "Patates (Tatlı Patates Hariç) arazisi",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -644,7 +643,7 @@
       "rhs": 6938.0
     },
     {
-      "name": "Salep arazisi",
+      "constraint": "Salep arazisi",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0,
@@ -660,7 +659,7 @@
       "rhs": 82.0
     },
     {
-      "name": "Şeker Pancarı arazisi",
+      "constraint": "Şeker Pancarı arazisi",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0,
@@ -676,7 +675,7 @@
       "rhs": 28199.0
     },
     {
-      "name": "Tütün, İşlenmemiş arazisi",
+      "constraint": "Tütün, İşlenmemiş arazisi",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0,
@@ -692,7 +691,7 @@
       "rhs": 47094.0
     },
     {
-      "name": "Fiğ (Adi) (Yeşil Ot) arazisi",
+      "constraint": "Fiğ (Adi) (Yeşil Ot) arazisi",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -708,7 +707,7 @@
       "rhs": 386298.0
     },
     {
-      "name": "Fiğ (Macar) (Yeşil Ot) arazisi",
+      "constraint": "Fiğ (Macar) (Yeşil Ot) arazisi",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -724,7 +723,7 @@
       "rhs": 31005.0
     },
     {
-      "name": "Yonca (Yeşilot) arazisi",
+      "constraint": "Yonca (Yeşilot) arazisi",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -740,7 +739,7 @@
       "rhs": 45218.0
     },
     {
-      "name": "Korunga (Yeşilot) arazisi",
+      "constraint": "Korunga (Yeşilot) arazisi",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -756,7 +755,7 @@
       "rhs": 18315.0
     },
     {
-      "name": "Yulaf (Yeşilot) arazisi",
+      "constraint": "Yulaf (Yeşilot) arazisi",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -772,7 +771,7 @@
       "rhs": 103230.0
     },
     {
-      "name": "Sorgum (Yeşilot) arazisi",
+      "constraint": "Sorgum (Yeşilot) arazisi",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -788,7 +787,7 @@
       "rhs": 375.0
     },
     {
-      "name": "Triticale (Yeşilot) arazisi",
+      "constraint": "Triticale (Yeşilot) arazisi",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -804,7 +803,7 @@
       "rhs": 1950.0
     },
     {
-      "name": "Mısır (Slaj) arazisi",
+      "constraint": "Mısır (Slaj) arazisi",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -820,7 +819,7 @@
       "rhs": 366116.0
     },
     {
-      "name": "Hayvan Pancarı arazisi",
+      "constraint": "Hayvan Pancarı arazisi",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -836,7 +835,7 @@
       "rhs": 165.0
     },
     {
-      "name": "Çayır Otu (Yeşilot) arazisi",
+      "constraint": "Çayır Otu (Yeşilot) arazisi",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -852,7 +851,7 @@
       "rhs": 5865.0
     },
     {
-      "name": "Bezelye (Yemlik) arazisi",
+      "constraint": "Bezelye (Yemlik) arazisi",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -868,7 +867,7 @@
       "rhs": 31650.0
     },
     {
-      "name": "İtalyan Çimi (Yemlik) arazisi",
+      "constraint": "İtalyan Çimi (Yemlik) arazisi",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -884,7 +883,7 @@
       "rhs": 3848.0
     },
     {
-      "name": "Fiğ (Adi) Tohumu arazisi",
+      "constraint": "Fiğ (Adi) Tohumu arazisi",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -900,7 +899,7 @@
       "rhs": 21975.0
     },
     {
-      "name": "Fiğ (Macar) Tohumu arazisi",
+      "constraint": "Fiğ (Macar) Tohumu arazisi",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -916,7 +915,7 @@
       "rhs": 7545.0
     },
     {
-      "name": "Adaçayı arazisi",
+      "constraint": "Adaçayı arazisi",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -932,7 +931,7 @@
       "rhs": 20.4
     },
     {
-      "name": "Lavanta arazisi",
+      "constraint": "Lavanta arazisi",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -948,7 +947,7 @@
       "rhs": 42.0
     },
     {
-      "name": "Oğul Otu (Melisa) arazisi",
+      "constraint": "Oğul Otu (Melisa) arazisi",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -964,7 +963,7 @@
       "rhs": 12.0
     },
     {
-      "name": "Fasulye, Taze arazisi",
+      "constraint": "Fasulye, Taze arazisi",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -980,7 +979,7 @@
       "rhs": 22964.0
     },
     {
-      "name": "Barbunya, Taze arazisi",
+      "constraint": "Barbunya, Taze arazisi",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -996,7 +995,7 @@
       "rhs": 7674.0
     },
     {
-      "name": "Bezelye, Taze arazisi",
+      "constraint": "Bezelye, Taze arazisi",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -1012,7 +1011,7 @@
       "rhs": 1596.0
     },
     {
-      "name": "Bakla, Taze arazisi",
+      "constraint": "Bakla, Taze arazisi",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -1028,7 +1027,7 @@
       "rhs": 198.0
     },
     {
-      "name": "Kuşkonmaz arazisi",
+      "constraint": "Kuşkonmaz arazisi",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -1044,7 +1043,7 @@
       "rhs": 6.0
     },
     {
-      "name": "Lahana (Beyaz) arazisi",
+      "constraint": "Lahana (Beyaz) arazisi",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -1060,7 +1059,7 @@
       "rhs": 34908.0
     },
     {
-      "name": "Lahana (Kırmızı) arazisi",
+      "constraint": "Lahana (Kırmızı) arazisi",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -1076,7 +1075,7 @@
       "rhs": 30900.0
     },
     {
-      "name": "Lahana (Kara Yaprak) arazisi",
+      "constraint": "Lahana (Kara Yaprak) arazisi",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -1092,7 +1091,7 @@
       "rhs": 13276.0
     },
     {
-      "name": "Lahana (Brüksel) arazisi",
+      "constraint": "Lahana (Brüksel) arazisi",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -1108,7 +1107,7 @@
       "rhs": 60.0
     },
     {
-      "name": "Karnabahar arazisi",
+      "constraint": "Karnabahar arazisi",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -1124,7 +1123,7 @@
       "rhs": 18054.0
     },
     {
-      "name": "Brokoli arazisi",
+      "constraint": "Brokoli arazisi",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -1140,7 +1139,7 @@
       "rhs": 7200.0
     },
     {
-      "name": "Marul (Kıvırcık) arazisi",
+      "constraint": "Marul (Kıvırcık) arazisi",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -1156,7 +1155,7 @@
       "rhs": 7752.0
     },
     {
-      "name": "Marul (Göbekli) arazisi",
+      "constraint": "Marul (Göbekli) arazisi",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -1172,7 +1171,7 @@
       "rhs": 292.0
     },
     {
-      "name": "Marul (İceberg) arazisi",
+      "constraint": "Marul (İceberg) arazisi",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -1188,7 +1187,7 @@
       "rhs": 96.0
     },
     {
-      "name": "Ispanak arazisi",
+      "constraint": "Ispanak arazisi",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -1204,7 +1203,7 @@
       "rhs": 6083.0
     },
     {
-      "name": "Enginar arazisi",
+      "constraint": "Enginar arazisi",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -1220,7 +1219,7 @@
       "rhs": 36.0
     },
     {
-      "name": "Pazı arazisi",
+      "constraint": "Pazı arazisi",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -1236,7 +1235,7 @@
       "rhs": 48.0
     },
     {
-      "name": "Semizotu arazisi",
+      "constraint": "Semizotu arazisi",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -1252,7 +1251,7 @@
       "rhs": 61.0
     },
     {
-      "name": "Maydanoz arazisi",
+      "constraint": "Maydanoz arazisi",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -1268,7 +1267,7 @@
       "rhs": 270.0
     },
     {
-      "name": "Roka arazisi",
+      "constraint": "Roka arazisi",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -1284,7 +1283,7 @@
       "rhs": 89.0
     },
     {
-      "name": "Tere arazisi",
+      "constraint": "Tere arazisi",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -1300,7 +1299,7 @@
       "rhs": 70.0
     },
     {
-      "name": "Nane arazisi",
+      "constraint": "Nane arazisi",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -1316,7 +1315,7 @@
       "rhs": 121.0
     },
     {
-      "name": "Dereotu arazisi",
+      "constraint": "Dereotu arazisi",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -1332,7 +1331,7 @@
       "rhs": 113.0
     },
     {
-      "name": "Karpuz arazisi",
+      "constraint": "Karpuz arazisi",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -1348,7 +1347,7 @@
       "rhs": 19488.0
     },
     {
-      "name": "Kavun arazisi",
+      "constraint": "Kavun arazisi",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -1364,7 +1363,7 @@
       "rhs": 15252.0
     },
     {
-      "name": "Biber (Salçalık, Kapya) arazisi",
+      "constraint": "Biber (Salçalık, Kapya) arazisi",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -1380,7 +1379,7 @@
       "rhs": 38850.0
     },
     {
-      "name": "Biber (Dolmalık) arazisi",
+      "constraint": "Biber (Dolmalık) arazisi",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -1396,7 +1395,7 @@
       "rhs": 6865.0
     },
     {
-      "name": "Biber (Sivri) arazisi",
+      "constraint": "Biber (Sivri) arazisi",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -1412,7 +1411,7 @@
       "rhs": 7158.0
     },
     {
-      "name": "Biber (Çarliston) arazisi",
+      "constraint": "Biber (Çarliston) arazisi",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -1428,7 +1427,7 @@
       "rhs": 8370.0
     },
     {
-      "name": "Hıyar (Sofralık) arazisi",
+      "constraint": "Hıyar (Sofralık) arazisi",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -1444,7 +1443,7 @@
       "rhs": 4590.0
     },
     {
-      "name": "Hıyar (Turşuluk) arazisi",
+      "constraint": "Hıyar (Turşuluk) arazisi",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -1460,7 +1459,7 @@
       "rhs": 60.0
     },
     {
-      "name": "Patlıcan arazisi",
+      "constraint": "Patlıcan arazisi",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -1476,7 +1475,7 @@
       "rhs": 7604.0
     },
     {
-      "name": "Domates (Sofralık) arazisi",
+      "constraint": "Domates (Sofralık) arazisi",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -1492,7 +1491,7 @@
       "rhs": 14762.0
     },
     {
-      "name": "Domates (Salçalık) arazisi",
+      "constraint": "Domates (Salçalık) arazisi",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -1508,7 +1507,7 @@
       "rhs": 2400.0
     },
     {
-      "name": "Bamya arazisi",
+      "constraint": "Bamya arazisi",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -1524,7 +1523,7 @@
       "rhs": 239.0
     },
     {
-      "name": "Kabak (Sakız) arazisi",
+      "constraint": "Kabak (Sakız) arazisi",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -1540,7 +1539,7 @@
       "rhs": 438.0
     },
     {
-      "name": "Bal Kabağı arazisi",
+      "constraint": "Bal Kabağı arazisi",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -1556,7 +1555,7 @@
       "rhs": 2148.0
     },
     {
-      "name": "Havuç arazisi",
+      "constraint": "Havuç arazisi",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -1572,7 +1571,7 @@
       "rhs": 24.0
     },
     {
-      "name": "Sarımsak (Taze) arazisi",
+      "constraint": "Sarımsak (Taze) arazisi",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -1588,7 +1587,7 @@
       "rhs": 11.0
     },
     {
-      "name": "Sarımsak (Kuru) arazisi",
+      "constraint": "Sarımsak (Kuru) arazisi",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -1604,7 +1603,7 @@
       "rhs": 204.0
     },
     {
-      "name": "Soğan (Taze) arazisi",
+      "constraint": "Soğan (Taze) arazisi",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -1620,7 +1619,7 @@
       "rhs": 740.0
     },
     {
-      "name": "Soğan (Kuru) arazisi",
+      "constraint": "Soğan (Kuru) arazisi",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -1636,7 +1635,7 @@
       "rhs": 444.0
     },
     {
-      "name": "Pırasa arazisi",
+      "constraint": "Pırasa arazisi",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -1652,7 +1651,7 @@
       "rhs": 10360.0
     },
     {
-      "name": "Kırmızı Pancar arazisi",
+      "constraint": "Kırmızı Pancar arazisi",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -1668,7 +1667,7 @@
       "rhs": 240.0
     },
     {
-      "name": "Kereviz (Kök) arazisi",
+      "constraint": "Kereviz (Kök) arazisi",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -1684,7 +1683,7 @@
       "rhs": 240.0
     },
     {
-      "name": "Turp (Bayır) arazisi",
+      "constraint": "Turp (Bayır) arazisi",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -1700,7 +1699,7 @@
       "rhs": 612.0
     },
     {
-      "name": "Turp (Kırmızı) arazisi",
+      "constraint": "Turp (Kırmızı) arazisi",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -1716,7 +1715,7 @@
       "rhs": 1752.0
     },
     {
-      "name": "Turp (Beyaz) arazisi",
+      "constraint": "Turp (Beyaz) arazisi",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -1732,7 +1731,7 @@
       "rhs": 1224.0
     },
     {
-      "name": "Mantar (Kültür) arazisi",
+      "constraint": "Mantar (Kültür) arazisi",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -1748,7 +1747,7 @@
       "rhs": 13.0
     },
     {
-      "name": "Sofralık Üzüm, Çekirdekli arazisi",
+      "constraint": "Sofralık Üzüm, Çekirdekli arazisi",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -1764,7 +1763,7 @@
       "rhs": 500.0
     },
     {
-      "name": "İncir (Yaş) arazisi",
+      "constraint": "İncir (Yaş) arazisi",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -1780,7 +1779,7 @@
       "rhs": 150.0
     },
     {
-      "name": "Ema (bütünleştirilmiş) arazisi",
+      "constraint": "Ema (bütünleştirilmiş) arazisi",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -1796,7 +1795,7 @@
       "rhs": 2642.0
     },
     {
-      "name": "Armut arazisi",
+      "constraint": "Armut arazisi",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -1812,7 +1811,7 @@
       "rhs": 763.0
     },
     {
-      "name": "Ayva arazisi",
+      "constraint": "Ayva arazisi",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -1828,7 +1827,7 @@
       "rhs": 74.0
     },
     {
-      "name": "Kiraz arazisi",
+      "constraint": "Kiraz arazisi",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -1844,7 +1843,7 @@
       "rhs": 419.0
     },
     {
-      "name": "Vişne arazisi",
+      "constraint": "Vişne arazisi",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -1860,7 +1859,7 @@
       "rhs": 198.0
     },
     {
-      "name": "Şeftali arazisi",
+      "constraint": "Şeftali arazisi",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -1876,7 +1875,7 @@
       "rhs": 4861.0
     },
     {
-      "name": "Nektarin arazisi",
+      "constraint": "Nektarin arazisi",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -1892,7 +1891,7 @@
       "rhs": 185.0
     },
     {
-      "name": "Erik arazisi",
+      "constraint": "Erik arazisi",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -1908,7 +1907,7 @@
       "rhs": 91.0
     },
     {
-      "name": "Kızılcık arazisi",
+      "constraint": "Kızılcık arazisi",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -1924,7 +1923,7 @@
       "rhs": 2.0
     },
     {
-      "name": "Hünnap arazisi",
+      "constraint": "Hünnap arazisi",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -1940,7 +1939,7 @@
       "rhs": 8.0
     },
     {
-      "name": "Kivi arazisi",
+      "constraint": "Kivi arazisi",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -1956,7 +1955,7 @@
       "rhs": 3757.0
     },
     {
-      "name": "Ahududu arazisi",
+      "constraint": "Ahududu arazisi",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -1972,7 +1971,7 @@
       "rhs": 1.0
     },
     {
-      "name": "Çilek arazisi",
+      "constraint": "Çilek arazisi",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -1988,7 +1987,7 @@
       "rhs": 353.0
     },
     {
-      "name": "Böğürtlen arazisi",
+      "constraint": "Böğürtlen arazisi",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -2004,7 +2003,7 @@
       "rhs": 39.0
     },
     {
-      "name": "Dut arazisi",
+      "constraint": "Dut arazisi",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -2020,7 +2019,7 @@
       "rhs": 4.0
     },
     {
-      "name": "Kestane arazisi",
+      "constraint": "Kestane arazisi",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -2036,7 +2035,7 @@
       "rhs": 15.0
     },
     {
-      "name": "Fındık arazisi",
+      "constraint": "Fındık arazisi",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -2052,7 +2051,7 @@
       "rhs": 1168039.0
     },
     {
-      "name": "Ceviz arazisi",
+      "constraint": "Ceviz arazisi",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -2068,7 +2067,7 @@
       "rhs": 15358.0
     },
     {
-      "name": "Muşmula arazisi",
+      "constraint": "Muşmula arazisi",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -2084,7 +2083,7 @@
       "rhs": 11.0
     },
     {
-      "name": "Nar arazisi",
+      "constraint": "Nar arazisi",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -2100,7 +2099,7 @@
       "rhs": 7.0
     },
     {
-      "name": "Trabzon Hurması (Cennet Elması) arazisi",
+      "constraint": "Trabzon Hurması (Cennet Elması) arazisi",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -2116,7 +2115,7 @@
       "rhs": 108.0
     },
     {
-      "name": "Sofralık Zeytinler arazisi",
+      "constraint": "Sofralık Zeytinler arazisi",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -2132,7 +2131,7 @@
       "rhs": 251.0
     },
     {
-      "name": "Kekik, İşlenmemiş arazisi",
+      "constraint": "Kekik, İşlenmemiş arazisi",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -2148,7 +2147,7 @@
       "rhs": 35.0
     },
     {
-      "name": "Çörek Otu Tohumu arazisi",
+      "constraint": "Çörek Otu Tohumu arazisi",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -2164,7 +2163,7 @@
       "rhs": 92.0
     },
     {
-      "name": "Gerbera, Kesme arazisi",
+      "constraint": "Gerbera, Kesme arazisi",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -2180,7 +2179,7 @@
       "rhs": 3.5
     },
     {
-      "name": "Gypsohilla, Kesme arazisi",
+      "constraint": "Gypsohilla, Kesme arazisi",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -2196,7 +2195,7 @@
       "rhs": 0.1
     },
     {
-      "name": "Kasımpatı (Krizantem) arazisi",
+      "constraint": "Kasımpatı (Krizantem) arazisi",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -2212,7 +2211,7 @@
       "rhs": 2.0
     },
     {
-      "name": "Gül, Kesme arazisi",
+      "constraint": "Gül, Kesme arazisi",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -2228,7 +2227,7 @@
       "rhs": 20.6
     },
     {
-      "name": "Lisianthus, Kesme arazisi",
+      "constraint": "Lisianthus, Kesme arazisi",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -2244,7 +2243,7 @@
       "rhs": 0.25
     },
     {
-      "name": "Şebboy, Kesme arazisi",
+      "constraint": "Şebboy, Kesme arazisi",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -2260,7 +2259,7 @@
       "rhs": 1.0
     },
     {
-      "name": "Diğer Kesme Çiçek Ve Çiçek Koncaları arazisi",
+      "constraint": "Diğer Kesme Çiçek Ve Çiçek Koncaları arazisi",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -2276,7 +2275,7 @@
       "rhs": 2.5
     },
     {
-      "name": "İç Mekan Süs Bitkileri (Oda Bitkileri) arazisi",
+      "constraint": "İç Mekan Süs Bitkileri (Oda Bitkileri) arazisi",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -2292,7 +2291,7 @@
       "rhs": 4.12
     },
     {
-      "name": "Dış Mekan Süs Bitkileri arazisi",
+      "constraint": "Dış Mekan Süs Bitkileri arazisi",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -2308,7 +2307,7 @@
       "rhs": 593.57
     },
     {
-      "name": "Fasulye, Taze, (örtüaltı) arazisi",
+      "constraint": "Fasulye, Taze, (örtüaltı) arazisi",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -2324,7 +2323,7 @@
       "rhs": 274.0
     },
     {
-      "name": "Biber (Dolmalık) (örtüaltı) arazisi",
+      "constraint": "Biber (Dolmalık) (örtüaltı) arazisi",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -2340,7 +2339,7 @@
       "rhs": 341.0
     },
     {
-      "name": "Biber (Sivri) (örtüaltı) arazisi",
+      "constraint": "Biber (Sivri) (örtüaltı) arazisi",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -2356,7 +2355,7 @@
       "rhs": 303.0
     },
     {
-      "name": "Biber (Çarliston) (örtüaltı) arazisi",
+      "constraint": "Biber (Çarliston) (örtüaltı) arazisi",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -2372,7 +2371,7 @@
       "rhs": 226.0
     },
     {
-      "name": "Domates (Sofralık) (örtüaltı) arazisi",
+      "constraint": "Domates (Sofralık) (örtüaltı) arazisi",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -2388,7 +2387,7 @@
       "rhs": 679.0
     },
     {
-      "name": "Marul (Kıvırcık) (örtüaltı) arazisi",
+      "constraint": "Marul (Kıvırcık) (örtüaltı) arazisi",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -2404,7 +2403,7 @@
       "rhs": 2190.0
     },
     {
-      "name": "Hıyar (Sofralık) (örtüaltı) arazisi",
+      "constraint": "Hıyar (Sofralık) (örtüaltı) arazisi",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -2420,7 +2419,7 @@
       "rhs": 654.0
     },
     {
-      "name": "Patlıcan (örtüaltı) arazisi",
+      "constraint": "Patlıcan (örtüaltı) arazisi",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -2436,7 +2435,7 @@
       "rhs": 303.0
     },
     {
-      "name": "Marul (Göbekli)(örtüaltı) arazisi",
+      "constraint": "Marul (Göbekli)(örtüaltı) arazisi",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -2452,7 +2451,7 @@
       "rhs": 12.0
     },
     {
-      "name": "Ispanak (örtüaltı) arazisi",
+      "constraint": "Ispanak (örtüaltı) arazisi",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -2468,7 +2467,7 @@
       "rhs": 233.0
     },
     {
-      "name": "Maydanoz (örtüaltı) arazisi",
+      "constraint": "Maydanoz (örtüaltı) arazisi",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -2484,7 +2483,7 @@
       "rhs": 40.0
     },
     {
-      "name": "Roka (örtüaltı) arazisi",
+      "constraint": "Roka (örtüaltı) arazisi",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -2500,7 +2499,7 @@
       "rhs": 24.0
     },
     {
-      "name": "Tere (örtüaltı) arazisi",
+      "constraint": "Tere (örtüaltı) arazisi",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -2516,7 +2515,7 @@
       "rhs": 5.0
     },
     {
-      "name": "Dereotu (örtüaltı) arazisi",
+      "constraint": "Dereotu (örtüaltı) arazisi",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -2532,7 +2531,7 @@
       "rhs": 1.0
     },
     {
-      "name": "Soğan (Taze) (örtüaltı) arazisi",
+      "constraint": "Soğan (Taze) (örtüaltı) arazisi",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -2548,7 +2547,7 @@
       "rhs": 25.0
     },
     {
-      "name": "Durum Buğdayı (kuru) transfer",
+      "constraint": "Durum Buğdayı (kuru) transfer",
       "coefficients": [
         -392.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -2564,7 +2563,7 @@
       "rhs": 0.0
     },
     {
-      "name": "Buğday, Durum Buğdayı Hariç transfer",
+      "constraint": "Buğday, Durum Buğdayı Hariç transfer",
       "coefficients": [
         0.0, 0.0, -352.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -2580,7 +2579,7 @@
       "rhs": 0.0
     },
     {
-      "name": "Mısır (dane) transfer",
+      "constraint": "Mısır (dane) transfer",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, -354.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -2596,7 +2595,7 @@
       "rhs": 0.0
     },
     {
-      "name": "Arpa (Diğer) transfer",
+      "constraint": "Arpa (Diğer) transfer",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, -309.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -2612,7 +2611,7 @@
       "rhs": 0.0
     },
     {
-      "name": "Çavdar transfer",
+      "constraint": "Çavdar transfer",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, -272.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -2628,7 +2627,7 @@
       "rhs": 0.0
     },
     {
-      "name": "Yulaf transfer",
+      "constraint": "Yulaf transfer",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, -205.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -2644,7 +2643,7 @@
       "rhs": 0.0
     },
     {
-      "name": "Kaplıca transfer",
+      "constraint": "Kaplıca transfer",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, -220.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -2660,7 +2659,7 @@
       "rhs": 0.0
     },
     {
-      "name": "Triticale transfer",
+      "constraint": "Triticale transfer",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, -352.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -2676,7 +2675,7 @@
       "rhs": 0.0
     },
     {
-      "name": "Kuru Fasulye transfer",
+      "constraint": "Kuru Fasulye transfer",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, -122.0, 1.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -2692,7 +2691,7 @@
       "rhs": 0.0
     },
     {
-      "name": "Bakla (İnsan Tüketimi İçin) transfer",
+      "constraint": "Bakla (İnsan Tüketimi İçin) transfer",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, -200.0, 1.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -2708,7 +2707,7 @@
       "rhs": 0.0
     },
     {
-      "name": "Nohut transfer",
+      "constraint": "Nohut transfer",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, -117.0, 1.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -2724,7 +2723,7 @@
       "rhs": 0.0
     },
     {
-      "name": "Buy (Çemen Otu) transfer",
+      "constraint": "Buy (Çemen Otu) transfer",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, -110.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -2740,7 +2739,7 @@
       "rhs": 0.0
     },
     {
-      "name": "Soya Fasulyesi transfer",
+      "constraint": "Soya Fasulyesi transfer",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, -334.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -2756,7 +2755,7 @@
       "rhs": 0.0
     },
     {
-      "name": "Kanola Veya Kolza Tohumu transfer",
+      "constraint": "Kanola Veya Kolza Tohumu transfer",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, -350.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -2772,7 +2771,7 @@
       "rhs": 0.0
     },
     {
-      "name": "Ayçiçeği Tohumu (Yağlık) transfer",
+      "constraint": "Ayçiçeği Tohumu (Yağlık) transfer",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, -258.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -2788,7 +2787,7 @@
       "rhs": 0.0
     },
     {
-      "name": "Kenevir Tohumu transfer",
+      "constraint": "Kenevir Tohumu transfer",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, -43.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -2804,7 +2803,7 @@
       "rhs": 0.0
     },
     {
-      "name": "Aspir Tohumu transfer",
+      "constraint": "Aspir Tohumu transfer",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, -186.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -2820,7 +2819,7 @@
       "rhs": 0.0
     },
     {
-      "name": "Çeltik transfer",
+      "constraint": "Çeltik transfer",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, -732.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -2836,7 +2835,7 @@
       "rhs": 0.0
     },
     {
-      "name": "Patates (Tatlı Patates Hariç) transfer",
+      "constraint": "Patates (Tatlı Patates Hariç) transfer",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, -2299.0, 1.0, 0.0, 0.0, 0.0, 0.0,
@@ -2852,7 +2851,7 @@
       "rhs": 0.0
     },
     {
-      "name": "Salep transfer",
+      "constraint": "Salep transfer",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, -729.0, 1.0, 0.0, 0.0, 0.0,
@@ -2868,7 +2867,7 @@
       "rhs": 0.0
     },
     {
-      "name": "Şeker Pancarı transfer",
+      "constraint": "Şeker Pancarı transfer",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, -5554.0, 1.0,
@@ -2884,7 +2883,7 @@
       "rhs": 0.0
     },
     {
-      "name": "Tütün, İşlenmemiş transfer",
+      "constraint": "Tütün, İşlenmemiş transfer",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, -122.0,
@@ -2900,7 +2899,7 @@
       "rhs": 0.0
     },
     {
-      "name": "Fiğ (Adi) (Yeşil Ot) transfer",
+      "constraint": "Fiğ (Adi) (Yeşil Ot) transfer",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -2916,7 +2915,7 @@
       "rhs": 0.0
     },
     {
-      "name": "Fiğ (Macar) (Yeşil Ot) transfer",
+      "constraint": "Fiğ (Macar) (Yeşil Ot) transfer",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -2932,7 +2931,7 @@
       "rhs": 0.0
     },
     {
-      "name": "Yonca (Yeşilot) transfer",
+      "constraint": "Yonca (Yeşilot) transfer",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -2948,7 +2947,7 @@
       "rhs": 0.0
     },
     {
-      "name": "Korunga (Yeşilot) transfer",
+      "constraint": "Korunga (Yeşilot) transfer",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -2964,7 +2963,7 @@
       "rhs": 0.0
     },
     {
-      "name": "Yulaf (Yeşilot) transfer",
+      "constraint": "Yulaf (Yeşilot) transfer",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -2980,7 +2979,7 @@
       "rhs": 0.0
     },
     {
-      "name": "Sorgum (Yeşilot) transfer",
+      "constraint": "Sorgum (Yeşilot) transfer",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -2996,7 +2995,7 @@
       "rhs": 0.0
     },
     {
-      "name": "Triticale (Yeşilot) transfer",
+      "constraint": "Triticale (Yeşilot) transfer",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -3012,7 +3011,7 @@
       "rhs": 0.0
     },
     {
-      "name": "Mısır (Slaj) transfer",
+      "constraint": "Mısır (Slaj) transfer",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -3028,7 +3027,7 @@
       "rhs": 0.0
     },
     {
-      "name": "Fiğ (Adi) Tohumu transfer",
+      "constraint": "Fiğ (Adi) Tohumu transfer",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -3044,7 +3043,7 @@
       "rhs": 0.0
     },
     {
-      "name": "Fiğ (Macar) Tohumu transfer",
+      "constraint": "Fiğ (Macar) Tohumu transfer",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -3060,7 +3059,7 @@
       "rhs": 0.0
     },
     {
-      "name": "ig1",
+      "constraint": "ig1",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.25, 0.0, 0.0, 0.0, 0.0, 0.0, 0.19, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -3076,7 +3075,7 @@
       "rhs": 51101769.0
     },
     {
-      "name": "ig2",
+      "constraint": "ig2",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.35, 0.0, 0.0, 0.0, 0.0, 0.0, 6.05, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -3092,7 +3091,7 @@
       "rhs": 46156436.0
     },
     {
-      "name": "ig3",
+      "constraint": "ig3",
       "coefficients": [
         0.18, 0.0, 0.18, 0.0, 1.7, 0.0, 0.58, 0.0, 0.27, 0.0, 0.27, 0.0, 0.18, 0.0, 0.25, 0.0, 0.0, 0.0, 0.5, 0.0, 0.18,
         0.0, 0.6, 0.17, 0.0, 3.5, 0.0, 3.5, 0.0, 0.32, 0.0, 0.54, 0.0, 0.0, 0.0, 0.0, 0.0, 4.13, 0.0, 0.0, 0.0, 1.23,
@@ -3109,7 +3108,7 @@
       "rhs": 51101769.0
     },
     {
-      "name": "ig4",
+      "constraint": "ig4",
       "coefficients": [
         0.43, 0.0, 0.43, 0.0, 0.51, 0.0, 0.0, 0.0, 0.12, 0.0, 0.12, 0.0, 0.43, 0.0, 0.43, 0.0, 2.95, 0.0, 0.6, 0.0,
         2.98, 0.0, 0.0, 0.44, 0.0, 3.2, 0.0, 3.2, 0.0, 0.78, 0.0, 0.3, 0.0, 3.5, 0.0, 15.79, 0.0, 13.27, 0.0, 2.5, 0.0,
@@ -3126,7 +3125,7 @@
       "rhs": 49453325.0
     },
     {
-      "name": "ig5",
+      "constraint": "ig5",
       "coefficients": [
         0.18, 0.0, 0.18, 0.0, 0.0, 0.0, 0.15, 0.0, 0.12, 0.0, 0.12, 0.0, 0.18, 0.0, 3.52, 0.0, 7.78, 0.0, 32.4, 0.0,
         0.0, 0.0, 0.1, 0.0, 0.0, 3.7, 0.0, 3.7, 0.0, 0.38, 0.0, 0.55, 0.0, 3.2, 0.0, 15.94, 0.0, 0.0, 0.0, 3.5, 0.0,
@@ -3143,7 +3142,7 @@
       "rhs": 51101769.0
     },
     {
-      "name": "ig6",
+      "constraint": "ig6",
       "coefficients": [
         6.76, 0.0, 6.76, 0.0, 12.35, 0.0, 0.57, 0.0, 0.1, 0.0, 0.1, 0.0, 6.76, 0.0, 0.15, 0.0, 8.62, 0.0, 13.5, 0.0,
         11.3, 0.0, 0.5, 0.0, 0.0, 3.2, 0.0, 3.2, 0.0, 10.53, 0.0, 0.73, 0.0, 3.7, 0.0, 14.67, 0.0, 27.55, 0.0, 3.2, 0.0,
@@ -3160,7 +3159,7 @@
       "rhs": 49453325.0
     },
     {
-      "name": "ig7",
+      "constraint": "ig7",
       "coefficients": [
         3.09, 0.0, 3.09, 0.0, 0.0, 0.0, 7.31, 0.0, 0.32, 0.0, 0.32, 0.0, 3.09, 0.0, 0.0, 0.0, 2.29, 0.0, 36.5, 0.0, 0.0,
         0.0, 11.25, 5.81, 0.0, 0.2, 0.0, 0.2, 0.0, 0.0, 0.0, 0.25, 0.0, 3.2, 0.0, 15.91, 0.0, 21.97, 0.0, 0.2, 0.0, 0.0,
@@ -3177,7 +3176,7 @@
       "rhs": 51101769.0
     },
     {
-      "name": "ig8",
+      "constraint": "ig8",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 10.29, 0.0, 30.6, 0.0, 9.07,
         0.0, 11.5, 0.0, 0.0, 3.2, 0.0, 3.2, 0.0, 0.0, 0.0, 8.16, 0.0, 0.2, 0.0, 0.0, 0.0, 0.2, 0.0, 0.2, 0.0, 0.0, 0.0,
@@ -3194,7 +3193,7 @@
       "rhs": 51101769.0
     },
     {
-      "name": "ig9",
+      "constraint": "ig9",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.93, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 10.03, 0.0, 2.1, 0.0, 4.66,
         0.0, 2.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.5, 0.0, 3.2, 0.0, 13.31, 0.0, 0.0, 0.0, 3.2, 0.0, 0.0, 0.0,
@@ -3211,7 +3210,7 @@
       "rhs": 49453325.0
     },
     {
-      "name": "ig10",
+      "constraint": "ig10",
       "coefficients": [
         0.5, 0.0, 0.5, 0.0, 15.29, 0.0, 0.0, 0.0, 0.4, 0.0, 0.4, 0.0, 0.5, 0.0, 0.54, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         24.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.33, 0.0, 1.25, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -3228,7 +3227,7 @@
       "rhs": 51101769.0
     },
     {
-      "name": "ig11",
+      "constraint": "ig11",
       "coefficients": [
         0.45, 0.0, 0.45, 0.0, 0.0, 0.0, 0.37, 0.0, 0.0, 0.0, 0.0, 0.0, 0.45, 0.0, 0.35, 0.0, 0.41, 0.0, 0.0, 0.0, 0.26,
         0.0, 25.3, 0.35, 0.0, 0.9, 0.0, 0.9, 0.0, 0.0, 0.0, 4.23, 0.0, 0.9, 0.0, 0.0, 0.0, 0.0, 0.0, 0.9, 0.0, 24.84,
@@ -3245,7 +3244,7 @@
       "rhs": 49453325.0
     },
     {
-      "name": "ig12",
+      "constraint": "ig12",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 1.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 24.16, 0.0, 0.0,
@@ -3261,7 +3260,7 @@
       "rhs": 51101769.0
     },
     {
-      "name": "İşletme sermayesi",
+      "constraint": "İşletme sermayesi",
       "coefficients": [
         531.3, 0.0, 402.64, 0.0, 533.55, 0.0, 563.93, 0.0, 402.64, 0.0, 782.0, 0.0, 402.64, 0.0, 462.58, 0.0, 702.9,
         0.0, 785.63, 0.0, 554.31, 0.0, 707.48, 1261.0, 0.0, 689.71, 0.0, 296.85, 0.0, 440.91, 0.0, 1987.5, 0.0, 339.53,
@@ -3282,7 +3281,7 @@
       "rhs": 2397737000.0
     },
     {
-      "name": "Ahır yeri",
+      "constraint": "Ahır yeri",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -3298,7 +3297,7 @@
       "rhs": 979200.0
     },
     {
-      "name": "Ağıl yeri",
+      "constraint": "Ağıl yeri",
       "coefficients": [
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,

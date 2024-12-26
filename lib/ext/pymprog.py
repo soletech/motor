@@ -777,8 +777,15 @@ the result is: A1 <= x <= B2
        c = me.m.replace_last(None)
        if me._bad_type(b): return NotImplemented
        if isConst(b):
-          return me.boundby(None, b, c is me)
+           return me.boundby(None, b, c is me)
        return me.m.newcon(None, me-b, 0).used()
+
+   def __lt__(me, b):
+       c = me.m.replace_last(None)
+       if me._bad_type(b): return NotImplemented
+       if isConst(b):
+           return me.boundby(None, None, c is me)
+       return me.m.newcon(None, me - b, None).used()
 
    def __ge__(me, b):
        c = me.m.replace_last(None)
@@ -786,6 +793,13 @@ the result is: A1 <= x <= B2
        if isConst(b):
           return me.boundby(b, None, c is me)
        return me.m.newcon(0, me-b, None).used()
+
+   def __gt__(me, b):
+       c = me.m.replace_last(None)
+       if me._bad_type(b): return NotImplemented
+       if isConst(b):
+          return me.boundby(None, None, c is me)
+       return me.m.newcon(None, me - b, None).used()
 
    def __eq__(me, b):
        c = me.m.replace_last(None)
@@ -867,7 +881,7 @@ class _exup(object):
    @staticmethod
    def pretty_push(expr, op, nodes):
       def priority(op):
-         if op in ('<=', '>=', '=='):
+         if op in ("<", "<=", ">=", "==", ">"):
             return -1
          return ['+','-','*','/','ps','ng','**'].index(op)//2
 
@@ -934,7 +948,9 @@ class _exup(object):
             '/': operator.truediv, #lambda a,b: (a+0.0)/b,
             '**': operator.pow, #lambda a,b: a**b,
             '<=': operator.le, #lambda a,b: a<=b,
+            '<': operator.lt, #lambda a,b: a<b,
             '>=': operator.ge, #lambda a,b: a>=b,
+            '>': operator.gt, #lambda a,b: a>b,
             '==': operator.eq, #lambda a,b: a==b,
             'ps': lambda a,b: +b,
             'ng': lambda a,b: -b
@@ -1036,6 +1052,19 @@ variables taking their primal values.
        expr = me-b
        return expr.m.newcon(None, expr, 0).used()
 
+   def __lt__(me, b):  # me < b
+       if me._bad_type(b): return NotImplemented
+       if isConst(me):
+          return me.value < b if isConst(b) else b > me
+       c = me.m.replace_last(None)
+       if not isinstance(c, _cons): c = None
+       if isConst(b):
+           if c and c.up.expr is me.up:
+               return c.boundby(None, b).used()
+           return me.m.newcon(None, me, b)
+       expr = me - b
+       return expr.m.newcon(None, expr, None).used()
+
    def __ge__(me, b): # me >= b
        if me._bad_type(b): return NotImplemented
        if isConst(me):
@@ -1048,6 +1077,19 @@ variables taking their primal values.
            return me.m.newcon(b, me, None)
        expr = me-b
        return expr.m.newcon(0, expr, None).used()
+
+   def __gt__(me, b):  # me > b
+       if me._bad_type(b): return NotImplemented
+       if isConst(me):
+           return me.value > b if isConst(b) else b < me
+       c = me.m.replace_last(None)
+       if not isinstance(c, _cons): c = None
+       if isConst(b):
+           if c and c.up.expr is me.up:
+                return c.boundby(b, None).used()
+           return me.m.newcon(b, me, None)
+       expr = me - b
+       return expr.m.newcon(None, expr, None).used()
 
    def __eq__(me, b):
        if me._bad_type(b): return NotImplemented

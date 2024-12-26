@@ -96,7 +96,7 @@ def validate(data):
     if not data:
         raise InvalidDataError("Data empty")
 
-    for required in ["variables", "objective", "constraints"]:
+    for required in ["objective", "constraints"]:
         if required not in data:
             raise InvalidDataError(f"Missing field: {required}")
 
@@ -107,15 +107,15 @@ def validate(data):
         case _:
             raise InvalidDataError(f"Invalid optimization method: {method}")
 
-    required = "coefficients"
-    if required not in data["objective"]:
-        raise InvalidDataError(f"Missing field in objective: {required}")
+    for required in ["variables", "coefficients"]:
+        if required not in data["objective"]:
+            raise InvalidDataError(f"Missing field in objective: {required}")
 
-    number_of_variables = len(data["variables"])
+    number_of_variables = len(data["objective"]["variables"])
     if number_of_variables == 0:
         raise InvalidDataError("Empty variables")
 
-    for name in data["variables"]:
+    for name in data["objective"]["variables"]:
         if not isinstance(name, str):
             raise InvalidDataError("Variable name must be a string")
 
@@ -129,13 +129,13 @@ def validate(data):
     validate_coefficients(data["objective"]["coefficients"], "objective")
 
     for i, constraint in enumerate(data["constraints"]):
-        for required in ["name", "rhs", "coefficients"]:
+        for required in ["constraint", "rhs", "coefficients"]:
             if required not in constraint:
                 raise InvalidDataError(
                     f"Error in constraint[{i}]: Missing field: {required}"
                 )
 
-        if not isinstance(constraint["name"], str):
+        if not isinstance(constraint["constraint"], str):
             raise InvalidDataError(f"Error in constraint[{i}]: Name must be a string")
         if not isinstance(constraint["rhs"], (int, float)):
             raise InvalidDataError(
@@ -150,7 +150,9 @@ def validate(data):
                     f"Error in constraint[{i}]: unrecognized relation"
                 )
 
-        validate_coefficients(constraint["coefficients"], f'[{i}] {constraint["name"]}')
+        validate_coefficients(
+            constraint["coefficients"], f'[{i}] {constraint["constraint"]}'
+        )
 
     return data
 
@@ -170,7 +172,7 @@ def invalid(error):
 
 def setup(data):
     variables = []
-    for name in data["variables"]:
+    for name in data["objective"]["variables"]:
         variables.append(pm.simplevar(name))
 
     objective = np.dot(variables, data["objective"]["coefficients"])
@@ -203,10 +205,10 @@ def setup(data):
                     np.dot(variables, constraint_data["coefficients"])
                     > constraint_data["rhs"]
                 )
-        constraint.name = constraint_data["name"]
+        constraint.name = constraint_data["constraint"]
         constraints.append(constraint)
 
-    match data.get("method", DATA_DEFAULTS["method"]):
+    match data["objective"].get("method", DATA_DEFAULTS["method"]):
         case "maximize":
             pm.maximize(objective, "Maximization")
         case "minimize":
@@ -214,7 +216,7 @@ def setup(data):
 
 
 def solve(data, sensitivity_file):
-    pm.begin(data["name"])
+    pm.begin("Solution")
 
     setup(data)
 
@@ -304,8 +306,10 @@ def solve(data, sensitivity_file):
                 "code": Status.code(status),
                 "description": Status.desc(status),
             },
-            "coefficients": postprocess_coeff(),
-            "boundaries": postprocess_bound(),
+            "sensitivity": {
+                "coefficients": postprocess_coeff(),
+                "boundaries": postprocess_bound(),
+            },
         },
     }
 

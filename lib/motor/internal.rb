@@ -1,8 +1,17 @@
 # frozen_string_literal: true
 
 require "open3"
+require "amazing_print" # TODO: XXX
 
 module Motor
+  module Function
+    extend self
+
+    def autohash(initial) = Hash.new { |h, k| h[k] = Hash.new(&h.default_proc) }.merge!(initial)
+  end
+
+  F = Function
+
   Result = Struct.new(:args, :outs, :errs, :exit_code) do
     def all     = [ *outs, "\n\n", *errs ].join("\n").strip
     def cmd     = args.join(" ")

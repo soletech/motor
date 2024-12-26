@@ -23,7 +23,7 @@ module Main
       warn("")
       abort(e.message)
     rescue Motor::Error => e
-      abort(e.message)
+      abort(e.summary)
     end
 
     private

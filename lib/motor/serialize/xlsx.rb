@@ -1,20 +1,19 @@
 # frozen_string_literal: true
 
-require "forwardable"
-
 require "fast_excel"
 require "roo"
 
 module Motor
   module Serialize
     module XLSX
+      SheetData = Data.define(:name, :path)
+
       SHEET = {
-        analysis:     "analysis",
-        objective:    "objective",
-        constraints:  "constraints",
-        result:       "result",
-        coefficients: "sensitivity.coefficients",
-        boundaries:   "sensitivity.boundaries"
+        objective:    SheetData["objective",                %i[ objective                         ]],
+        constraints:  SheetData["constraints",              %i[ constraints                       ]],
+        result:       SheetData["result",                   %i[ solution result                   ]],
+        coefficients: SheetData["sensitivity.coefficients", %i[ solution sensitivity coefficients ]],
+        boundaries:   SheetData["sensitivity.boundaries",   %i[ solution sensitivity boundaries   ]]
       }.freeze
 
       module Read
@@ -31,9 +30,9 @@ module Motor
             sanitize
           end
 
-          def [](sheet)   = has?(sheet) ? xlsx.sheet(index[SHEET[sheet]]) : nil
+          def [](sheet)   = has?(sheet) ? xlsx.sheet(index[SHEET[sheet].name]) : nil
 
-          def has?(sheet) = index.key?(SHEET[sheet])
+          def has?(sheet) = index.key?(SHEET[sheet].name)
 
           def sanitize
             missings = %i[objective constraints].reject { has?(_1) }
@@ -41,194 +40,144 @@ module Motor
           end
         end
 
-        def self.call(file) # rubocop:disable Metrics/MethodLength
-          spreadsheet = Spreadsheet.new(file)
+        def self.call(file)
+          F.autohash("name" => (spreadsheet = Spreadsheet.new(file)).name).tap do |data|
+            Sheets.public_instance_methods.each do |name|
+              next unless (sheet = spreadsheet[name])
 
-          Problem.(
-            { "name" => spreadsheet.name, "solution" => {} }.tap do |data|
-              Sheet::Analysis.(spreadsheet, data)
-              Sheet::Objective.(spreadsheet, data)
-              Sheet::Constraints.(spreadsheet, data)
-              Sheet::Solution::Result.(spreadsheet, data)
-              Sheet::Solution::Coefficients.(spreadsheet, data)
-              Sheet::Solution::Boundaries.(spreadsheet, data)
+              Sheet.new(sheet).public_send(name, data)
             end
-          )
+          end
+        end
+
+        module Sheets
+          def objective(data)
+            data["objective"] = {
+              "name"         => (hash = hashify_rows)["name"]&.first,
+              "variables"    => hash["variable"],
+              "coefficients" => hash["coefficient"]
+            }
+          end
+
+          def constraints(data)
+            data["constraints"] = hashify_table_consolidated("coefficients", data["objective"]["variables"])
+          end
+
+          def result(data)
+            data["solution"]["result"] = {
+              "value"       => (hash = hashify_rows)["value"].first,
+              "code"        => hash["code"].first,
+              "description" => hash["description"].first
+            }
+          end
+
+          def coefficients(data)
+            data["solution"]["sensitivity"]["coefficients"] = hashify_table
+          end
+
+          def boundaries(data)
+            data["solution"]["sensitivity"]["boundaries"] = hashify_table
+          end
         end
 
         class Sheet
-          def self.call(spreadsheet, ...)
-            sheet = spreadsheet[self.name.split("::").last.downcase.to_sym]
-            new(sheet).call(...) if sheet
-          end
+          include Sheets
 
-          attr_reader :sheet, :rows, :headers
+          attr_reader :sheet, :rows, :header
 
           def initialize(sheet)
-            @sheet = sheet
-            @rows  = sheet.to_a
+            @sheet  = sheet
+            @rows   = sheet.to_a
+            @header = @rows.shift
 
             sanitize if respond_to?(:sanitize)
           end
 
-          def header = strings(rows.shift)
-
           private
 
-          def strings(data) = data.is_a?(::Array) ? data.map(&:strip) : (data.nil? ? "" : data.strip)
+          def hashify_rows
+            transposed = rows.transpose.map! { |row| row.compact }
 
-          def floats(data)  = data.is_a?(::Array) ? data.map(&:to_f)  : data.to_f
-
-          class Analysis < Sheet
-            def call(data)
-              header
-
-              data["method"] = strings(rows.first[0])
-              data["description"] = strings(rows.first[1])
-            end
+            Hash[
+              *header.map.with_index { |key, i| [ key, transposed[i] ] }.flatten(1)
+            ]
           end
 
-          class Objective < Sheet
-            # TODO: Objective data must be transposed?
-            def call(data)
-              header
-
-              data["variables"] = strings(rows.map { |row| row[0] })
-              data["objective"] = {
-                "coefficients" => floats(rows.map { |row| row[1] }),
-                "name"         => strings(rows[2].first)
-              }
-            end
+          def hashify_table_consolidated(...)
+            hashify_table.map { |h| consolidate_columns(h, ...) }
           end
 
-          class Constraints < Sheet
-            def call(data)
-              header
-
-              data["constraints"] = rows.map do |row|
-                {
-                  "name"         => strings(row[0]),
-                  "coefficients" => floats(row[3..]),
-                  "relation"     => strings(row[1]),
-                  "rhs"          => floats(row[2])
-                }
-              end
-            end
+          def hashify_table
+            rows.map { |row| Hash[*header.zip(row).flatten] }
           end
 
-          module Solution
-            class Result < Sheet
-              def call(data)
-                result = rows.to_h
-                result.transform_keys!(&:downcase)
-                result["value"] = result["value"].to_f
-                data["solution"]["result"] = result
-              end
-            end
-
-            class Coefficients < Sheet
-              def call(data)
-                fields = header
-                data["solution"]["coefficients"] = rows.map { |row| Hash[*fields.zip(row).flatten] }
-              end
-            end
-
-            class Boundaries < Sheet
-              def call(data)
-                fields = header
-                data["solution"]["boundaries"] = rows.map { |row| Hash[*fields.zip(row).flatten] }
-              end
-            end
+          def consolidate_columns(hash, consolidation_key, unconsolidated_keys)
+            a, b = hash.partition { |key, _| unconsolidated_keys.include?(key) }.map(&:to_h)
+            { **b, consolidation_key => a.values_at(*unconsolidated_keys) }
           end
         end
       end
 
       module Write
-        def self.call(problem) # rubocop:disable Metrics/MethodLength
+        def self.call(data) # rubocop:disable Metrics/MethodLength
           workbook = FastExcel.open(constant_memory: false)
 
-          Sheet::Analysis.(problem, workbook) if problem.has_analysis?
-          Sheet::Objective.(problem, workbook)
-          Sheet::Constraints.(problem, workbook)
-          if problem.has_solution?
-            Sheet::Solution::Result.(problem, workbook)
-            if problem.has_sensitivity?
-              Sheet::Solution::Coefficients.(problem, workbook)
-              Sheet::Solution::Boundaries.(problem, workbook)
-            end
+          SHEET.each do |key, value|
+            next unless data.dig(*value.path)
+
+            Sheet.new(workbook, SHEET[key].name).public_send(key, data)
           end
 
           workbook.read_string
         end
 
+        module Sheets
+          def objective(data)
+            sheet.append_row(%w[ variable coefficient name method])
+            data[:objective][:variables].zip(data[:objective][:coefficients]).each { sheet.append_row(_1) }
+            sheet.write_value(1, 2, data[:objective][:name]) if data[:objective][:name]
+            sheet.write_value(1, 3, data[:objective][:method]) if data[:objective][:method]
+          end
+
+          def constraints(data)
+            sheet.append_row(%w[ constraint relation rhs ] + data[:objective][:variables])
+            data[:constraints].each do |hash|
+              sheet.append_row([ hash[:name], hash[:relation], hash[:rhs], *hash[:coefficients] ])
+            end
+          end
+
+          def result(data)
+            sheet.append_row(data[:solution][:result].keys)
+            sheet.append_row(data[:solution][:result].values)
+          end
+
+          def coefficients(data)
+            sample = data[:solution][:sensitivity][:coefficients].first
+            sheet.append_row(sample.keys)
+            data[:solution][:sensitivity][:coefficients].each do |hash|
+              sheet.append_row(hash.values)
+            end
+          end
+
+          def boundaries(data)
+            sample = data[:solution][:sensitivity][:boundaries].first
+            sheet.append_row(sample.keys)
+            data[:solution][:sensitivity][:boundaries].each do |hash|
+              sheet.append_row(hash.values)
+            end
+          end
+        end
+
         class Sheet
-          extend Forwardable
+          include Sheets
 
-          def_delegators :problem, :analysis, :objective, :constraints, :variables, :solution
-          def_delegators :solution, :result, :coefficients, :boundaries
+          attr_reader :sheet
 
-          attr_reader :problem, :workbook, :worksheet
-
-          def initialize(problem, workbook)
-            @problem   = problem
-            @workbook  = workbook
-            @worksheet = workbook.add_worksheet(SHEET[self.class.name.split("::").last.downcase.to_sym]).tap do |worksheet|
-              worksheet.auto_width = true
+          def initialize(workbook, name)
+            @sheet = workbook.add_worksheet(name).tap do |sheet|
+              sheet.auto_width = true
             end
           end
-
-          class Analysis < Sheet
-            def call
-              worksheet.append_row(%w[ method description ])
-              worksheet.append_row(analysis.deconstruct)
-            end
-          end
-
-          class Objective < Sheet
-            # TODO: Objective data must be transposed?
-            def call
-              worksheet.append_row(%w[ variable coefficient name])
-              variables.zip(objective.coefficients).each { worksheet.append_row(_1) }
-              worksheet.write_value(1, 2, objective.name)
-            end
-          end
-
-          class Constraints < Sheet
-            def call
-              worksheet.append_row(%w[ constraint relation rhs ] + variables)
-              constraints.each do |constraint|
-                worksheet.append_row([ constraint.name, constraint.relation, constraint.rhs, *constraint.coefficients ])
-              end
-            end
-          end
-
-          module Solution
-            class Result < Sheet
-              def call
-                result.to_h.each { |key, value| worksheet.append_row([ key, value ]) }
-              end
-            end
-
-            class Coefficients < Sheet
-              def call
-                worksheet.append_row(Problem::Solution::Coefficient.members.map(&:to_s))
-                coefficients.each do |coefficient|
-                  worksheet.append_row(coefficient.deconstruct)
-                end
-              end
-            end
-
-            class Boundaries < Sheet
-              def call
-                worksheet.append_row(Problem::Solution::Boundary.members.map(&:to_s))
-                boundaries.each do |boundary|
-                  worksheet.append_row(boundary.deconstruct)
-                end
-              end
-            end
-          end
-
-          def self.call(...) = new(...).call
         end
       end
     end

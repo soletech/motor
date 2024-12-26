@@ -7,6 +7,7 @@ ruby File.read(File.expand_path(".ruby-version", __dir__)).strip
 gemspec
 
 group :development do
+  gem "amazing_print"
   gem "bundler"
   gem "minitest"
   gem "minitest-focus", ">= 1.2.1"

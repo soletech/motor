@@ -27,10 +27,10 @@ module Motor
     end
   end
 
-  def self.to_json(problem)  = Serialize::JSON::Write.(problem)
-  def self.from_json(string) = Serialize::JSON::Read.problem(string)
+  def self.to_json(problem)       = Serialize::JSON::Write.(problem)
+  def self.from_json(json_string) = Serialize::JSON::Read.from_json(json_string)
 
-  def self.read(...)         = Serialize.read(...)
-  def self.write(...)        = Serialize.write(...)
-  def self.dump(...)         = Serialize.dump(...)
+  def self.read(...)              = Serialize.read(...)
+  def self.write(...)             = Serialize.write(...)
+  def self.dump(...)              = Serialize.dump(...)
 end

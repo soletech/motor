@@ -1,6 +1,116 @@
 {
-  "name": "02",
   "objective": {
+    "variables": [
+      "Buğday, Durum Buğdayı Hariç",
+      "Buğday, Durum Buğdayı Hariç Satış",
+      "Buğday (Sulu)",
+      "Buğday (Sulu) Satış",
+      "Arpa (Diğer) (Kuru)",
+      "Arpa (Diğer) (Kuru) Satış",
+      "Arpa (Sulu)",
+      "Arpa (Sulu) Satış",
+      "Yulaf",
+      "Yulaf Satış",
+      "Yulaf (Yeşilot)",
+      "Yulaf (Yeşilot) Satış",
+      "Triticale",
+      "Triticale Satış",
+      "Fasulye, Taze",
+      "Fasulye, Taze Satış",
+      "Patates (Tatlı Patates Hariç)",
+      "Patates (Tatlı Patates Hariç) Satış",
+      "Şeker Pancarı",
+      "Şeker Pancarı Satış",
+      "Fiğ (Adi) (Yeşil Ot)",
+      "Fiğ (Adi) (Yeşil Ot) Satış",
+      "Fiğ (Macar) (Yeşil Ot)",
+      "Fiğ (Macar) (Yeşil Ot) Satış",
+      "Yonca (Yeşilot)",
+      "Yonca (Yeşilot) Satış",
+      "Korunga (Yeşilot)",
+      "Korunga (Yeşilot) Satış",
+      "Mısır (Slaj)",
+      "Mısır (Slaj) Satış",
+      "Çayır Otu (Yeşilot)",
+      "Çayır Otu (Yeşilot) Satış",
+      "Bezelye (Yemlik)",
+      "Bezelye (Yemlik) Satış",
+      "Barbunya, Taze",
+      "Barbunya, Taze Satış",
+      "Lahana (Beyaz)",
+      "Lahana (Beyaz) Satış",
+      "Marul (Kıvırcık)",
+      "Marul (Kıvırcık) Satış",
+      "Marul (Göbekli)",
+      "Marul (Göbekli) Satış",
+      "Ispanak",
+      "Ispanak Satış",
+      "Maydanoz",
+      "Maydanoz Satış",
+      "Biber (Sivri)",
+      "Biber (Sivri) Satış",
+      "Hıyar (Sofralık)",
+      "Hıyar (Sofralık) Satış",
+      "Hıyar (Sofralık, Örtüaltı)",
+      "Hıyar (Sofralık, Örtüaltı) Satış",
+      "Domates (Sofralık)",
+      "Domates (Sofralık) Satış",
+      "Domates (Sofralık, Örtüaltı)",
+      "Domates (Sofralık, Örtüaltı) Satış",
+      "Bal Kabağı",
+      "Bal Kabağı Satış",
+      "Havuç",
+      "Havuç Satış",
+      "Soğan (Taze)",
+      "Soğan (Taze) Satış",
+      "Elma (Bütünleştirilmiş)",
+      "Elma (Bütünleştirilmiş) Satış",
+      "Armut",
+      "Armut Satış",
+      "Kiraz",
+      "Kiraz Satış",
+      "Vişne",
+      "Vişne Satış",
+      "Süt Sığırcılığı",
+      "Süt Sığırcılığı Satış",
+      "Besi Sığırcılığı",
+      "Besi Sığırcılığı Satış",
+      "Koyunculuk",
+      "Koyunculuk Satış",
+      "Keçicilik",
+      "Keçicilik Satış",
+      "Mandacılık",
+      "Mandacılık Satış",
+      "Çavdar",
+      "Çavdar Satış",
+      "Fiğ (Adi) Tohumu",
+      "Fiğ (Adi) Tohumu Satış",
+      "Mercimek, Kuru (Yeşil)",
+      "Mercimek, Kuru (Yeşil) Satış",
+      "Nohut, Kuru",
+      "Nohut, Kuru Satış",
+      "Triticale (Sulu)",
+      "Triticale (Sulu) Satış",
+      "Mercimek, Sulu (Yeşil)",
+      "Mercimek, Sulu (Yeşil) Satış",
+      "Fasulye, Kuru (Sulu)",
+      "Fasulye, Kuru (Sulu) Satış",
+      "Yulaf (Sulu)",
+      "Yulaf (Sulu) Satış",
+      "İg1",
+      "İg2",
+      "İg3",
+      "İg4",
+      "İg5",
+      "İg6",
+      "İg7",
+      "İg8",
+      "İg9",
+      "İg10",
+      "İg11",
+      "İg12",
+      "Sermaye Temini"
+    ],
     "coefficients": [
       -116.27, 2.2, -445.33, 2.2, -218.37, 2.48, -454.21, 2.48, -126.32, 2.5, -489.65, 1.1, -326.56, 3.5, -2905.21, 5.0,
       -2745.98, 1.7, -952.12, 0.45, -485.16, 1.15, -485.16, 1.15, -624.41, 1.65, -715.32, 1.95, -677.6, 0.42, -598.63,
@@ -12,121 +122,10 @@
       -17.43, -17.43, -17.43, -17.43, -0.25
     ]
   },
-  "variables": [
-    "Buğday, Durum Buğdayı Hariç",
-    "Buğday, Durum Buğdayı Hariç Satış",
-    "Buğday (Sulu)",
-    "Buğday (Sulu) Satış",
-    "Arpa (Diğer) (Kuru)",
-    "Arpa (Diğer) (Kuru) Satış",
-    "Arpa (Sulu)",
-    "Arpa (Sulu) Satış",
-    "Yulaf",
-    "Yulaf Satış",
-    "Yulaf (Yeşilot)",
-    "Yulaf (Yeşilot) Satış",
-    "Triticale",
-    "Triticale Satış",
-    "Fasulye, Taze",
-    "Fasulye, Taze Satış",
-    "Patates (Tatlı Patates Hariç)",
-    "Patates (Tatlı Patates Hariç) Satış",
-    "Şeker Pancarı",
-    "Şeker Pancarı Satış",
-    "Fiğ (Adi) (Yeşil Ot)",
-    "Fiğ (Adi) (Yeşil Ot) Satış",
-    "Fiğ (Macar) (Yeşil Ot)",
-    "Fiğ (Macar) (Yeşil Ot) Satış",
-    "Yonca (Yeşilot)",
-    "Yonca (Yeşilot) Satış",
-    "Korunga (Yeşilot)",
-    "Korunga (Yeşilot) Satış",
-    "Mısır (Slaj)",
-    "Mısır (Slaj) Satış",
-    "Çayır Otu (Yeşilot)",
-    "Çayır Otu (Yeşilot) Satış",
-    "Bezelye (Yemlik)",
-    "Bezelye (Yemlik) Satış",
-    "Barbunya, Taze",
-    "Barbunya, Taze Satış",
-    "Lahana (Beyaz)",
-    "Lahana (Beyaz) Satış",
-    "Marul (Kıvırcık)",
-    "Marul (Kıvırcık) Satış",
-    "Marul (Göbekli)",
-    "Marul (Göbekli) Satış",
-    "Ispanak",
-    "Ispanak Satış",
-    "Maydanoz",
-    "Maydanoz Satış",
-    "Biber (Sivri)",
-    "Biber (Sivri) Satış",
-    "Hıyar (Sofralık)",
-    "Hıyar (Sofralık) Satış",
-    "Hıyar (Sofralık, Örtüaltı)",
-    "Hıyar (Sofralık, Örtüaltı) Satış",
-    "Domates (Sofralık)",
-    "Domates (Sofralık) Satış",
-    "Domates (Sofralık, Örtüaltı)",
-    "Domates (Sofralık, Örtüaltı) Satış",
-    "Bal Kabağı",
-    "Bal Kabağı Satış",
-    "Havuç",
-    "Havuç Satış",
-    "Soğan (Taze)",
-    "Soğan (Taze) Satış",
-    "Elma (Bütünleştirilmiş)",
-    "Elma (Bütünleştirilmiş) Satış",
-    "Armut",
-    "Armut Satış",
-    "Kiraz",
-    "Kiraz Satış",
-    "Vişne",
-    "Vişne Satış",
-    "Süt Sığırcılığı",
-    "Süt Sığırcılığı Satış",
-    "Besi Sığırcılığı",
-    "Besi Sığırcılığı Satış",
-    "Koyunculuk",
-    "Koyunculuk Satış",
-    "Keçicilik",
-    "Keçicilik Satış",
-    "Mandacılık",
-    "Mandacılık Satış",
-    "Çavdar",
-    "Çavdar Satış",
-    "Fiğ (Adi) Tohumu",
-    "Fiğ (Adi) Tohumu Satış",
-    "Mercimek, Kuru (Yeşil)",
-    "Mercimek, Kuru (Yeşil) Satış",
-    "Nohut, Kuru",
-    "Nohut, Kuru Satış",
-    "Triticale (Sulu)",
-    "Triticale (Sulu) Satış",
-    "Mercimek, Sulu (Yeşil)",
-    "Mercimek, Sulu (Yeşil) Satış",
-    "Fasulye, Kuru (Sulu)",
-    "Fasulye, Kuru (Sulu) Satış",
-    "Yulaf (Sulu)",
-    "Yulaf (Sulu) Satış",
-    "İg1",
-    "İg2",
-    "İg3",
-    "İg4",
-    "İg5",
-    "İg6",
-    "İg7",
-    "İg8",
-    "İg9",
-    "İg10",
-    "İg11",
-    "İg12",
-    "Sermaye Temini"
-  ],
   "constraints": [
     {
       "rhs": 1143058.0,
-      "name": "Toplam Arazi",
+      "constraint": "Toplam Arazi",
       "relation": "<=",
       "coefficients": [
         1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1,
@@ -136,7 +135,7 @@
     },
     {
       "rhs": 933464.68,
-      "name": "Toplam Kuru Tarla Arazisi",
+      "constraint": "Toplam Kuru Tarla Arazisi",
       "relation": "<=",
       "coefficients": [
         1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0, 1, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0,
@@ -146,7 +145,7 @@
     },
     {
       "rhs": 110760.32,
-      "name": "Toplam Sulu Tarla Arazisi",
+      "constraint": "Toplam Sulu Tarla Arazisi",
       "relation": "<=",
       "coefficients": [
         0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
@@ -156,7 +155,7 @@
     },
     {
       "rhs": 1700.0,
-      "name": "Toplam Meyve Arazisi",
+      "constraint": "Toplam Meyve Arazisi",
       "relation": "=",
       "coefficients": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
@@ -166,7 +165,7 @@
     },
     {
       "rhs": 2693.0,
-      "name": "Toplam Sebze Arazisi",
+      "constraint": "Toplam Sebze Arazisi",
       "relation": "<=",
       "coefficients": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1,
@@ -176,7 +175,7 @@
     },
     {
       "rhs": 34.0,
-      "name": "Toplam Örtü Altı Arazisi",
+      "constraint": "Toplam Örtü Altı Arazisi",
       "relation": "=",
       "coefficients": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
@@ -186,7 +185,7 @@
     },
     {
       "rhs": 0.0,
-      "name": "Toplam Süs Bitkisi Arazisi",
+      "constraint": "Toplam Süs Bitkisi Arazisi",
       "relation": "<=",
       "coefficients": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
@@ -196,7 +195,7 @@
     },
     {
       "rhs": 217095.0,
-      "name": "Buğday, Durum Buğdayı Hariç Arazisi",
+      "constraint": "Buğday, Durum Buğdayı Hariç Arazisi",
       "relation": "<=",
       "coefficients": [
         1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
@@ -206,7 +205,7 @@
     },
     {
       "rhs": 62344.5,
-      "name": "Buğday (Sulu) Arazisi",
+      "constraint": "Buğday (Sulu) Arazisi",
       "relation": "<=",
       "coefficients": [
         0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
@@ -216,7 +215,7 @@
     },
     {
       "rhs": 157138.5,
-      "name": "Arpa (Diğer) (Kuru) Arazisi",
+      "constraint": "Arpa (Diğer) (Kuru) Arazisi",
       "relation": "<=",
       "coefficients": [
         0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
@@ -226,7 +225,7 @@
     },
     {
       "rhs": 89521.5,
-      "name": "Arpa (Sulu) Arazisi",
+      "constraint": "Arpa (Sulu) Arazisi",
       "relation": "<=",
       "coefficients": [
         0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
@@ -236,7 +235,7 @@
     },
     {
       "rhs": 1303.5,
-      "name": "Yulaf Arazisi",
+      "constraint": "Yulaf Arazisi",
       "relation": "<=",
       "coefficients": [
         0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
@@ -246,7 +245,7 @@
     },
     {
       "rhs": 197191.50000000003,
-      "name": "Yulaf (Yeşilot) Arazisi",
+      "constraint": "Yulaf (Yeşilot) Arazisi",
       "relation": "<=",
       "coefficients": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
@@ -256,7 +255,7 @@
     },
     {
       "rhs": 26476.5,
-      "name": "Triticale Arazisi",
+      "constraint": "Triticale Arazisi",
       "relation": "<=",
       "coefficients": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
@@ -266,7 +265,7 @@
     },
     {
       "rhs": 518.1,
-      "name": "Fasulye, Taze Arazisi",
+      "constraint": "Fasulye, Taze Arazisi",
       "relation": "<=",
       "coefficients": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
@@ -276,7 +275,7 @@
     },
     {
       "rhs": 8698.5,
-      "name": "Patates (Tatlı Patates Hariç) Arazisi",
+      "constraint": "Patates (Tatlı Patates Hariç) Arazisi",
       "relation": "<=",
       "coefficients": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
@@ -286,7 +285,7 @@
     },
     {
       "rhs": 18943.5,
-      "name": "Şeker Pancarı Arazisi",
+      "constraint": "Şeker Pancarı Arazisi",
       "relation": "<=",
       "coefficients": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
@@ -296,7 +295,7 @@
     },
     {
       "rhs": 52444.5,
-      "name": "Fiğ (Adi) (Yeşil Ot) Arazisi",
+      "constraint": "Fiğ (Adi) (Yeşil Ot) Arazisi",
       "relation": "<=",
       "coefficients": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
@@ -306,7 +305,7 @@
     },
     {
       "rhs": 345.0,
-      "name": "Fiğ (Macar) (Yeşil Ot) Arazisi",
+      "constraint": "Fiğ (Macar) (Yeşil Ot) Arazisi",
       "relation": "<=",
       "coefficients": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
@@ -316,7 +315,7 @@
     },
     {
       "rhs": 212472.7,
-      "name": "Yonca (Yeşilot) Arazisi",
+      "constraint": "Yonca (Yeşilot) Arazisi",
       "relation": "<=",
       "coefficients": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
@@ -326,7 +325,7 @@
     },
     {
       "rhs": 110056.1,
-      "name": "Korunga (Yeşilot) Arazisi",
+      "constraint": "Korunga (Yeşilot) Arazisi",
       "relation": "<=",
       "coefficients": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
@@ -336,7 +335,7 @@
     },
     {
       "rhs": 7635.0,
-      "name": "Mısır (Slaj) Arazisi",
+      "constraint": "Mısır (Slaj) Arazisi",
       "relation": "<=",
       "coefficients": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0,
@@ -346,7 +345,7 @@
     },
     {
       "rhs": 100568.6,
-      "name": "Çayır Otu (Yeşilot) Arazisi",
+      "constraint": "Çayır Otu (Yeşilot) Arazisi",
       "relation": "<=",
       "coefficients": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0,
@@ -356,7 +355,7 @@
     },
     {
       "rhs": 3521.1000000000004,
-      "name": "Bezelye (Yemlik) Arazisi",
+      "constraint": "Bezelye (Yemlik) Arazisi",
       "relation": "<=",
       "coefficients": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0,
@@ -366,7 +365,7 @@
     },
     {
       "rhs": 119.9,
-      "name": "Barbunya, Taze Arazisi",
+      "constraint": "Barbunya, Taze Arazisi",
       "relation": "<=",
       "coefficients": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0,
@@ -376,7 +375,7 @@
     },
     {
       "rhs": 1608.2,
-      "name": "Lahana (Beyaz) Arazisi",
+      "constraint": "Lahana (Beyaz) Arazisi",
       "relation": "<=",
       "coefficients": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1,
@@ -386,7 +385,7 @@
     },
     {
       "rhs": 18.0,
-      "name": "Marul (Kıvırcık) Arazisi",
+      "constraint": "Marul (Kıvırcık) Arazisi",
       "relation": "<=",
       "coefficients": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
@@ -396,7 +395,7 @@
     },
     {
       "rhs": 3.5999999999999996,
-      "name": "Marul (Göbekli) Arazisi",
+      "constraint": "Marul (Göbekli) Arazisi",
       "relation": "<=",
       "coefficients": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
@@ -406,7 +405,7 @@
     },
     {
       "rhs": 8.4,
-      "name": "Ispanak Arazisi",
+      "constraint": "Ispanak Arazisi",
       "relation": "<=",
       "coefficients": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
@@ -416,7 +415,7 @@
     },
     {
       "rhs": 5.5,
-      "name": "Maydanoz Arazisi",
+      "constraint": "Maydanoz Arazisi",
       "relation": "<=",
       "coefficients": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
@@ -426,7 +425,7 @@
     },
     {
       "rhs": 13.200000000000001,
-      "name": "Biber (Sivri) Arazisi",
+      "constraint": "Biber (Sivri) Arazisi",
       "relation": "<=",
       "coefficients": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
@@ -436,7 +435,7 @@
     },
     {
       "rhs": 181.50000000000003,
-      "name": "Hıyar (Sofralık) Arazisi",
+      "constraint": "Hıyar (Sofralık) Arazisi",
       "relation": "<=",
       "coefficients": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
@@ -446,7 +445,7 @@
     },
     {
       "rhs": 28.6,
-      "name": "Hıyar (Sofralık, Örtüaltı) Arazisi",
+      "constraint": "Hıyar (Sofralık, Örtüaltı) Arazisi",
       "relation": "<=",
       "coefficients": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
@@ -456,7 +455,7 @@
     },
     {
       "rhs": 391.6,
-      "name": "Domates (Sofralık) Arazisi",
+      "constraint": "Domates (Sofralık) Arazisi",
       "relation": "<=",
       "coefficients": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
@@ -466,7 +465,7 @@
     },
     {
       "rhs": 8.8,
-      "name": "Domates (Sofralık, Örtüaltı) Arazisi",
+      "constraint": "Domates (Sofralık, Örtüaltı) Arazisi",
       "relation": "<=",
       "coefficients": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
@@ -476,7 +475,7 @@
     },
     {
       "rhs": 68.2,
-      "name": "Bal Kabağı Arazisi",
+      "constraint": "Bal Kabağı Arazisi",
       "relation": "<=",
       "coefficients": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
@@ -486,7 +485,7 @@
     },
     {
       "rhs": 8.8,
-      "name": "Havuç Arazisi",
+      "constraint": "Havuç Arazisi",
       "relation": "<=",
       "coefficients": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
@@ -496,7 +495,7 @@
     },
     {
       "rhs": 19.8,
-      "name": "Soğan (Taze) Arazisi",
+      "constraint": "Soğan (Taze) Arazisi",
       "relation": "<=",
       "coefficients": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
@@ -506,7 +505,7 @@
     },
     {
       "rhs": 800.0,
-      "name": "Elma (Bütünleştirilmiş) Arazisi",
+      "constraint": "Elma (Bütünleştirilmiş) Arazisi",
       "relation": "<=",
       "coefficients": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
@@ -516,7 +515,7 @@
     },
     {
       "rhs": 145.0,
-      "name": "Armut Arazisi",
+      "constraint": "Armut Arazisi",
       "relation": "<=",
       "coefficients": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
@@ -526,7 +525,7 @@
     },
     {
       "rhs": 310.0,
-      "name": "Kiraz Arazisi",
+      "constraint": "Kiraz Arazisi",
       "relation": "<=",
       "coefficients": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
@@ -536,7 +535,7 @@
     },
     {
       "rhs": 445.0,
-      "name": "Vişne Arazisi",
+      "constraint": "Vişne Arazisi",
       "relation": "<=",
       "coefficients": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
@@ -546,7 +545,7 @@
     },
     {
       "rhs": 53197.5,
-      "name": "Çavdar Arazisi",
+      "constraint": "Çavdar Arazisi",
       "relation": "<=",
       "coefficients": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
@@ -556,7 +555,7 @@
     },
     {
       "rhs": 1584.0,
-      "name": "Fiğ (Adi) Tohumu Arazisi",
+      "constraint": "Fiğ (Adi) Tohumu Arazisi",
       "relation": "<=",
       "coefficients": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
@@ -566,7 +565,7 @@
     },
     {
       "rhs": 4187.3,
-      "name": "Mercimek, Kuru (Yeşil) Arazisi",
+      "constraint": "Mercimek, Kuru (Yeşil) Arazisi",
       "relation": "<=",
       "coefficients": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
@@ -576,7 +575,7 @@
     },
     {
       "rhs": 3029.0,
-      "name": "Nohut, Kuru Arazisi",
+      "constraint": "Nohut, Kuru Arazisi",
       "relation": "<=",
       "coefficients": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
@@ -586,7 +585,7 @@
     },
     {
       "rhs": 2575.1000000000004,
-      "name": "Triticale (Sulu) Arazisi",
+      "constraint": "Triticale (Sulu) Arazisi",
       "relation": "<=",
       "coefficients": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
@@ -596,7 +595,7 @@
     },
     {
       "rhs": 907.5000000000001,
-      "name": "Mercimek, Sulu (Yeşil) Arazisi",
+      "constraint": "Mercimek, Sulu (Yeşil) Arazisi",
       "relation": "<=",
       "coefficients": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
@@ -606,7 +605,7 @@
     },
     {
       "rhs": 3734.9,
-      "name": "Fasulye, Kuru (Sulu) Arazisi",
+      "constraint": "Fasulye, Kuru (Sulu) Arazisi",
       "relation": "<=",
       "coefficients": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
@@ -616,7 +615,7 @@
     },
     {
       "rhs": 1575.0,
-      "name": "Yulaf (Sulu) Arazisi",
+      "constraint": "Yulaf (Sulu) Arazisi",
       "relation": "<=",
       "coefficients": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
@@ -626,7 +625,7 @@
     },
     {
       "rhs": 0,
-      "name": "Buğday, Durum Buğdayı Hariç Transfer",
+      "constraint": "Buğday, Durum Buğdayı Hariç Transfer",
       "relation": "<=",
       "coefficients": [
         -200.0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
@@ -636,7 +635,7 @@
     },
     {
       "rhs": 0,
-      "name": "Buğday (Sulu) Transfer",
+      "constraint": "Buğday (Sulu) Transfer",
       "relation": "<=",
       "coefficients": [
         0, 0, -248.0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
@@ -646,7 +645,7 @@
     },
     {
       "rhs": 0,
-      "name": "Arpa (Diğer) (Kuru) Transfer",
+      "constraint": "Arpa (Diğer) (Kuru) Transfer",
       "relation": "<=",
       "coefficients": [
         0, 0, 0, 0, -143.0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
@@ -656,7 +655,7 @@
     },
     {
       "rhs": 0,
-      "name": "Arpa (Sulu) Transfer",
+      "constraint": "Arpa (Sulu) Transfer",
       "relation": "<=",
       "coefficients": [
         0, 0, 0, 0, 0, 0, -237.0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
@@ -666,7 +665,7 @@
     },
     {
       "rhs": 0,
-      "name": "Yulaf Transfer",
+      "constraint": "Yulaf Transfer",
       "relation": "<=",
       "coefficients": [
         0, 0, 0, 0, 0, 0, 0, 0, -75.0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
@@ -676,7 +675,7 @@
     },
     {
       "rhs": 0,
-      "name": "Yulaf (Yeşilot) Transfer",
+      "constraint": "Yulaf (Yeşilot) Transfer",
       "relation": "<=",
       "coefficients": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1368.0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
@@ -686,7 +685,7 @@
     },
     {
       "rhs": 0,
-      "name": "Triticale Transfer",
+      "constraint": "Triticale Transfer",
       "relation": "<=",
       "coefficients": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -312.0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
@@ -696,7 +695,7 @@
     },
     {
       "rhs": 0,
-      "name": "Fasulye, Taze Transfer",
+      "constraint": "Fasulye, Taze Transfer",
       "relation": "<=",
       "coefficients": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1053.0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
@@ -706,7 +705,7 @@
     },
     {
       "rhs": 0,
-      "name": "Patates (Tatlı Patates Hariç) Transfer",
+      "constraint": "Patates (Tatlı Patates Hariç) Transfer",
       "relation": "<=",
       "coefficients": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -2817.0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
@@ -716,7 +715,7 @@
     },
     {
       "rhs": 0,
-      "name": "Şeker Pancarı Transfer",
+      "constraint": "Şeker Pancarı Transfer",
       "relation": "<=",
       "coefficients": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -2775.0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
@@ -726,7 +725,7 @@
     },
     {
       "rhs": 0,
-      "name": "Fiğ (Adi) (Yeşil Ot) Transfer",
+      "constraint": "Fiğ (Adi) (Yeşil Ot) Transfer",
       "relation": "<=",
       "coefficients": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1254.0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
@@ -736,7 +735,7 @@
     },
     {
       "rhs": 0,
-      "name": "Fiğ (Macar) (Yeşil Ot) Transfer",
+      "constraint": "Fiğ (Macar) (Yeşil Ot) Transfer",
       "relation": "<=",
       "coefficients": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1252.0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
@@ -746,7 +745,7 @@
     },
     {
       "rhs": 0,
-      "name": "Yonca (Yeşilot) Transfer",
+      "constraint": "Yonca (Yeşilot) Transfer",
       "relation": "<=",
       "coefficients": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1374.0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0,
@@ -756,7 +755,7 @@
     },
     {
       "rhs": 0,
-      "name": "Korunga (Yeşilot) Transfer",
+      "constraint": "Korunga (Yeşilot) Transfer",
       "relation": "<=",
       "coefficients": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1225.0, 1, 0, 0, 0, 0, 0, 0, 0,
@@ -766,7 +765,7 @@
     },
     {
       "rhs": 0,
-      "name": "Mısır (Slaj) Transfer",
+      "constraint": "Mısır (Slaj) Transfer",
       "relation": "<=",
       "coefficients": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -5359.0, 1, 0, 0, 0, 0, 0,
@@ -776,7 +775,7 @@
     },
     {
       "rhs": 0,
-      "name": "Çayır Otu (Yeşilot) Transfer",
+      "constraint": "Çayır Otu (Yeşilot) Transfer",
       "relation": "<=",
       "coefficients": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1197.0, 1, 0, 0, 0,
@@ -786,7 +785,7 @@
     },
     {
       "rhs": 0,
-      "name": "Bezelye (Yemlik) Transfer",
+      "constraint": "Bezelye (Yemlik) Transfer",
       "relation": "<=",
       "coefficients": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1400.0, 1, 0,
@@ -796,7 +795,7 @@
     },
     {
       "rhs": 0,
-      "name": "Barbunya, Taze Transfer",
+      "constraint": "Barbunya, Taze Transfer",
       "relation": "<=",
       "coefficients": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -147.0, 1,
@@ -806,7 +805,7 @@
     },
     {
       "rhs": 0,
-      "name": "Lahana (Beyaz) Transfer",
+      "constraint": "Lahana (Beyaz) Transfer",
       "relation": "<=",
       "coefficients": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
@@ -816,7 +815,7 @@
     },
     {
       "rhs": 0,
-      "name": "Marul (Kıvırcık) Transfer",
+      "constraint": "Marul (Kıvırcık) Transfer",
       "relation": "<=",
       "coefficients": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
@@ -826,7 +825,7 @@
     },
     {
       "rhs": 0,
-      "name": "Marul (Göbekli) Transfer",
+      "constraint": "Marul (Göbekli) Transfer",
       "relation": "<=",
       "coefficients": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
@@ -836,7 +835,7 @@
     },
     {
       "rhs": 0,
-      "name": "Ispanak Transfer",
+      "constraint": "Ispanak Transfer",
       "relation": "<=",
       "coefficients": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
@@ -846,7 +845,7 @@
     },
     {
       "rhs": 0,
-      "name": "Maydanoz Transfer",
+      "constraint": "Maydanoz Transfer",
       "relation": "<=",
       "coefficients": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
@@ -856,7 +855,7 @@
     },
     {
       "rhs": 0,
-      "name": "Biber (Sivri) Transfer",
+      "constraint": "Biber (Sivri) Transfer",
       "relation": "<=",
       "coefficients": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
@@ -866,7 +865,7 @@
     },
     {
       "rhs": 0,
-      "name": "Hıyar (Sofralık) Transfer",
+      "constraint": "Hıyar (Sofralık) Transfer",
       "relation": "<=",
       "coefficients": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
@@ -876,7 +875,7 @@
     },
     {
       "rhs": 0,
-      "name": "Hıyar (Sofralık, Örtüaltı) Transfer",
+      "constraint": "Hıyar (Sofralık, Örtüaltı) Transfer",
       "relation": "<=",
       "coefficients": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
@@ -886,7 +885,7 @@
     },
     {
       "rhs": 0,
-      "name": "Domates (Sofralık) Transfer",
+      "constraint": "Domates (Sofralık) Transfer",
       "relation": "<=",
       "coefficients": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
@@ -896,7 +895,7 @@
     },
     {
       "rhs": 0,
-      "name": "Domates (Sofralık, Örtüaltı) Transfer",
+      "constraint": "Domates (Sofralık, Örtüaltı) Transfer",
       "relation": "<=",
       "coefficients": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
@@ -906,7 +905,7 @@
     },
     {
       "rhs": 0,
-      "name": "Bal Kabağı Transfer",
+      "constraint": "Bal Kabağı Transfer",
       "relation": "<=",
       "coefficients": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
@@ -916,7 +915,7 @@
     },
     {
       "rhs": 0,
-      "name": "Havuç Transfer",
+      "constraint": "Havuç Transfer",
       "relation": "<=",
       "coefficients": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
@@ -926,7 +925,7 @@
     },
     {
       "rhs": 0,
-      "name": "Soğan (Taze) Transfer",
+      "constraint": "Soğan (Taze) Transfer",
       "relation": "<=",
       "coefficients": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
@@ -936,7 +935,7 @@
     },
     {
       "rhs": 0,
-      "name": "Elma (Bütünleştirilmiş) Transfer",
+      "constraint": "Elma (Bütünleştirilmiş) Transfer",
       "relation": "<=",
       "coefficients": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
@@ -946,7 +945,7 @@
     },
     {
       "rhs": 0,
-      "name": "Armut Transfer",
+      "constraint": "Armut Transfer",
       "relation": "<=",
       "coefficients": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
@@ -956,7 +955,7 @@
     },
     {
       "rhs": 0,
-      "name": "Kiraz Transfer",
+      "constraint": "Kiraz Transfer",
       "relation": "<=",
       "coefficients": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
@@ -966,7 +965,7 @@
     },
     {
       "rhs": 0,
-      "name": "Vişne Transfer",
+      "constraint": "Vişne Transfer",
       "relation": "<=",
       "coefficients": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
@@ -976,7 +975,7 @@
     },
     {
       "rhs": 0,
-      "name": "Süt Sığırcılığı Transfer",
+      "constraint": "Süt Sığırcılığı Transfer",
       "relation": "<=",
       "coefficients": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
@@ -986,7 +985,7 @@
     },
     {
       "rhs": 0,
-      "name": "Besi Sığırcılığı Transfer",
+      "constraint": "Besi Sığırcılığı Transfer",
       "relation": "<=",
       "coefficients": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
@@ -996,7 +995,7 @@
     },
     {
       "rhs": 0,
-      "name": "Koyunculuk Transfer",
+      "constraint": "Koyunculuk Transfer",
       "relation": "<=",
       "coefficients": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
@@ -1006,7 +1005,7 @@
     },
     {
       "rhs": 0,
-      "name": "Keçicilik Transfer",
+      "constraint": "Keçicilik Transfer",
       "relation": "<=",
       "coefficients": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
@@ -1016,7 +1015,7 @@
     },
     {
       "rhs": 0,
-      "name": "Mandacılık Transfer",
+      "constraint": "Mandacılık Transfer",
       "relation": "<=",
       "coefficients": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
@@ -1026,7 +1025,7 @@
     },
     {
       "rhs": 0,
-      "name": "Çavdar Transfer",
+      "constraint": "Çavdar Transfer",
       "relation": "<=",
       "coefficients": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
@@ -1036,7 +1035,7 @@
     },
     {
       "rhs": 0,
-      "name": "Fiğ (Adi) Tohumu Transfer",
+      "constraint": "Fiğ (Adi) Tohumu Transfer",
       "relation": "<=",
       "coefficients": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
@@ -1046,7 +1045,7 @@
     },
     {
       "rhs": 0,
-      "name": "Mercimek, Kuru (Yeşil) Transfer",
+      "constraint": "Mercimek, Kuru (Yeşil) Transfer",
       "relation": "<=",
       "coefficients": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
@@ -1056,7 +1055,7 @@
     },
     {
       "rhs": 0,
-      "name": "Nohut, Kuru Transfer",
+      "constraint": "Nohut, Kuru Transfer",
       "relation": "<=",
       "coefficients": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
@@ -1066,7 +1065,7 @@
     },
     {
       "rhs": 0,
-      "name": "Triticale (Sulu) Transfer",
+      "constraint": "Triticale (Sulu) Transfer",
       "relation": "<=",
       "coefficients": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
@@ -1076,7 +1075,7 @@
     },
     {
       "rhs": 0,
-      "name": "Mercimek, Sulu (Yeşil) Transfer",
+      "constraint": "Mercimek, Sulu (Yeşil) Transfer",
       "relation": "<=",
       "coefficients": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
@@ -1086,7 +1085,7 @@
     },
     {
       "rhs": 0,
-      "name": "Fasulye, Kuru (Sulu) Transfer",
+      "constraint": "Fasulye, Kuru (Sulu) Transfer",
       "relation": "<=",
       "coefficients": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
@@ -1096,7 +1095,7 @@
     },
     {
       "rhs": 0,
-      "name": "Yulaf (Sulu) Transfer",
+      "constraint": "Yulaf (Sulu) Transfer",
       "relation": "<=",
       "coefficients": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
@@ -1106,7 +1105,7 @@
     },
     {
       "rhs": 10486180.0,
-      "name": "İşgücü Ocak",
+      "constraint": "İşgücü Ocak",
       "relation": "<=",
       "coefficients": [
         0.0, 0, 0.0, 0, 0.0, 0, 0.0, 0, 0.0, 0, 0.0, 0, 0.0, 0, 0.0, 0, 0.19, 0, 0.0, 0, 0.0, 0, 0.0, 0, 0.0, 0, 0.0, 0,
@@ -1117,7 +1116,7 @@
     },
     {
       "rhs": 13588972.0,
-      "name": "İşgücü Şubat",
+      "constraint": "İşgücü Şubat",
       "relation": "<=",
       "coefficients": [
         0.0, 0, 0.0, 0, 0.0, 0, 0.0, 0, 0.0, 0, 0.0, 0, 0.0, 0, 0.0, 0, 6.05, 0, 0.0, 0, 0.0, 0, 0.0, 0, 0.0, 0, 0.0, 0,
@@ -1128,7 +1127,7 @@
     },
     {
       "rhs": 14234509.0,
-      "name": "İşgücü Mart",
+      "constraint": "İşgücü Mart",
       "relation": "<=",
       "coefficients": [
         0.18, 0, 0.0, 0, 0.58, 0, 0.58, 0, 0.27, 0, 0.27, 0, 0.25, 0, 0.5, 0, 4.13, 0, 1.23, 0, 0.17, 0, 0.17, 0, 0.0,
@@ -1140,7 +1139,7 @@
     },
     {
       "rhs": 14095596.0,
-      "name": "İşgücü Nisan",
+      "constraint": "İşgücü Nisan",
       "relation": "<=",
       "coefficients": [
         0.43, 0, 0.2, 0, 0.0, 0, 0.15, 0, 0.12, 0, 0.12, 0, 0.43, 0, 0.6, 0, 13.27, 0, 18.72, 0, 0.44, 0, 0.44, 0, 0.5,
@@ -1152,7 +1151,7 @@
     },
     {
       "rhs": 14234509.0,
-      "name": "İşgücü Mayıs",
+      "constraint": "İşgücü Mayıs",
       "relation": "<=",
       "coefficients": [
         0.18, 0, 0.81, 0, 0.15, 0, 0.1, 0, 0.12, 0, 0.44, 0, 3.52, 0, 32.4, 0, 0.0, 0, 18.72, 0, 0.0, 0, 0.0, 0, 0.0, 0,
@@ -1164,7 +1163,7 @@
     },
     {
       "rhs": 14095596.0,
-      "name": "İşgücü Haziran",
+      "constraint": "İşgücü Haziran",
       "relation": "<=",
       "coefficients": [
         6.76, 0, 0.82, 0, 0.57, 0, 0.57, 0, 0.1, 0, 0.1, 0, 0.15, 0, 13.5, 0, 27.55, 0, 18.72, 0, 0.0, 0, 0.0, 0, 26.25,
@@ -1176,7 +1175,7 @@
     },
     {
       "rhs": 14234509.0,
-      "name": "İşgücü Temmuz",
+      "constraint": "İşgücü Temmuz",
       "relation": "<=",
       "coefficients": [
         3.09, 0, 0.4, 0, 7.31, 0, 7.31, 0, 0.32, 0, 0.0, 0, 0.0, 0, 36.5, 0, 21.97, 0, 0.0, 0, 5.81, 0, 5.81, 0, 26.25,
@@ -1188,7 +1187,7 @@
     },
     {
       "rhs": 14234509.0,
-      "name": "İşgücü Ağustos",
+      "constraint": "İşgücü Ağustos",
       "relation": "<=",
       "coefficients": [
         0.0, 0, 0.0, 0, 0.0, 0, 0.0, 0, 0.0, 0, 0.0, 0, 0.0, 0, 30.6, 0, 0.2, 0, 0.0, 0, 0.0, 0, 0.0, 0, 0.0, 0, 0.0, 0,
@@ -1199,7 +1198,7 @@
     },
     {
       "rhs": 14095596.0,
-      "name": "İşgücü Eylül",
+      "constraint": "İşgücü Eylül",
       "relation": "<=",
       "coefficients": [
         0.0, 0, 0.0, 0, 0.0, 0, 0.0, 0, 0.0, 0, 0.0, 0, 0.0, 0, 2.1, 0, 0.0, 0, 0.0, 0, 0.0, 0, 0.0, 0, 0.0, 0, 0.0, 0,
@@ -1210,7 +1209,7 @@
     },
     {
       "rhs": 14234509.0,
-      "name": "İşgücü Ekim",
+      "constraint": "İşgücü Ekim",
       "relation": "<=",
       "coefficients": [
         0.5, 0, 0.51, 0, 0.0, 0, 0.0, 0, 0.4, 0, 0.4, 0, 0.54, 0, 0.0, 0, 0.0, 0, 0.0, 0, 0.0, 0, 0.0, 0, 0.2, 0, 2.0,
@@ -1221,7 +1220,7 @@
     },
     {
       "rhs": 14095596.0,
-      "name": "İşgücü Kasım",
+      "constraint": "İşgücü Kasım",
       "relation": "<=",
       "coefficients": [
         0.45, 0, 0.63, 0, 0.37, 0, 0.37, 0, 0.0, 0, 0.0, 0, 0.35, 0, 0.0, 0, 0.0, 0, 24.84, 0, 0.35, 0, 0.35, 0, 0.0, 0,
@@ -1233,7 +1232,7 @@
     },
     {
       "rhs": 14234509.0,
-      "name": "İşgücü Aralık",
+      "constraint": "İşgücü Aralık",
       "relation": "<=",
       "coefficients": [
         0.0, 0, 0.0, 0, 0.0, 0, 0.0, 0, 0.0, 0, 0.0, 0, 0.0, 0, 0.0, 0, 0.0, 0, 24.16, 0, 0.0, 0, 0.0, 0, 0.0, 0, 0.0,
@@ -1244,7 +1243,7 @@
     },
     {
       "rhs": 2189124194.78,
-      "name": "İşletme Sermayesi",
+      "constraint": "İşletme Sermayesi",
       "relation": "<=",
       "coefficients": [
         116.27, 0, 445.33, 0, 218.37, 0, 454.21, 0, 126.32, 0, 489.65, 0, 326.56, 0, 2905.21, 0, 2745.98, 0, 952.12, 0,
@@ -1257,7 +1256,7 @@
     },
     {
       "rhs": 1260800.0,
-      "name": "Ahır Yeri",
+      "constraint": "Ahır Yeri",
       "relation": "<=",
       "coefficients": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
@@ -1268,7 +1267,7 @@
     },
     {
       "rhs": 1075200.0,
-      "name": "Ağıl Yeri",
+      "constraint": "Ağıl Yeri",
       "relation": "<=",
       "coefficients": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
