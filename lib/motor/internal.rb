@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
 require "open3"
-require "amazing_print" # TODO: XXX
 
 module Motor
   module Function

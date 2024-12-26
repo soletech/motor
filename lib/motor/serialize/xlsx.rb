@@ -52,6 +52,7 @@ module Motor
 
         module Sheets
           def objective(data)
+            downcase_header
             data["objective"] = {
               "name"         => (hash = hashify_rows)["name"]&.first,
               "variables"    => hash["variable"],
@@ -60,10 +61,12 @@ module Motor
           end
 
           def constraints(data)
+            downcase_header(*%w[ constraint rhs relation ])
             data["constraints"] = hashify_table_consolidated("coefficients", data["objective"]["variables"])
           end
 
           def result(data)
+            downcase_header
             data["solution"]["result"] = {
               "value"       => (hash = hashify_rows)["value"].first,
               "code"        => hash["code"].first,
@@ -72,10 +75,12 @@ module Motor
           end
 
           def coefficients(data)
+            downcase_header
             data["solution"]["sensitivity"]["coefficients"] = hashify_table
           end
 
           def boundaries(data)
+            downcase_header
             data["solution"]["sensitivity"]["boundaries"] = hashify_table
           end
         end
@@ -115,6 +120,12 @@ module Motor
             a, b = hash.partition { |key, _| unconsolidated_keys.include?(key) }.map(&:to_h)
             { **b, consolidation_key => a.values_at(*unconsolidated_keys) }
           end
+
+          def downcase_header(*keys)
+            return header.map!(&:downcase) if keys.empty?
+
+            header.map! { |key| keys.include?(downcased = key.downcase) ? downcased : key }
+          end
         end
       end
 
@@ -135,8 +146,8 @@ module Motor
           def objective(data)
             sheet.append_row(%w[ variable coefficient name method])
             data[:objective][:variables].zip(data[:objective][:coefficients]).each { sheet.append_row(_1) }
-            sheet.write_value(1, 2, data[:objective][:name]) if data[:objective][:name]
-            sheet.write_value(1, 3, data[:objective][:method]) if data[:objective][:method]
+            sheet.write_value(1, 2, data[:objective][:name]) if data[:objective][:name] && !data[:objective][:name].empty?
+            sheet.write_value(1, 3, data[:objective][:method]) if data[:objective][:method] && !data[:objective][:method].empty?
           end
 
           def constraints(data)
