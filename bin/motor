@@ -92,6 +92,7 @@ class InvalidDataError(Exception):
     pass
 
 
+# pylint: disable-next=too-many-branches
 def validate(data):
     if not data:
         raise InvalidDataError("Data empty")
