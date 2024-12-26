@@ -48,6 +48,13 @@ module Main
           options.read = opt
         end
 
+        option.on_tail("-s", "--schema", "Dump JSON schema") do
+          require "json"
+
+          puts JSON.pretty_generate(Motor::Schema.json_schema)
+          exit
+        end
+
         option.on("-w", "--write TYPE", "Write type: json, xlsx, default: json", String) do |opt|
           options.write = opt
         end
