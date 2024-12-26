@@ -98,14 +98,14 @@ rescue Motor::Error => e
 end
 ```
 
-Çözümü geçici bir dosyaya yazarak dosyayı blok içinde işlemek istersek:
+Çözümü (bir dosyaya yazılabilir) ham veri olarak almak istersek:
 
 ```ruby
 require "motor"
 
-Motor.read_solve_process(input_file, read: :xlsx, write: :xlsx) do |tempfile|
-  # Başarılı, çözüm geçici dosya tutamacında.
-  # tempfile.read ile dosyayı okuyabilir, tempfile.path ile yolunu öğrenebiliriz.
+begin
+  blob = Motor.read_solve_dump(input_file, read: :xlsx, write: :xlsx)
+  # Başarılı, çözüm blob verisinde
 rescue Motor::Error => e
   # Başarısız, hata iletisi e.message ile hatayı yönet
 end
@@ -118,14 +118,14 @@ end
 
 ```json
 {
-    "name": <ANALİZ_ADI: String>,
-
-    "variables":  [ # Değişkenler dizisi
-        <DEĞİŞKEN ADI: String>,
-        ...
-    ],
-
     "objective": { # Amaç fonksiyonu (katsayıları)
+        "name": <AMAÇ ADI: String>,
+
+        "variables":  [ # Değişkenler dizisi
+            <DEĞİŞKEN ADI: String>,
+            ...
+        ],
+
         "coefficients": [
             <KATSAYI: Float>,
             ...
@@ -134,7 +134,7 @@ end
 
     "constraints": [ # Kısıtlar dizisi
          { # Kısıt
-           "name": <KISIT ADI: String>,
+           "constraint": <KISIT ADI: String>,
            "coefficients": [
                <KATSAYI: Float>,
                ...
@@ -162,12 +162,14 @@ end
             "message": <HATA MESAJI: String>,
         },
         # Duyarlık çözümlemesi sonuçları
-        "coefficients": [
-            ...
-        ],
-        "boundaries": [
-            ...
-        ]
+        "sensitivity": {
+            "coefficients": [
+                ...
+            ],
+            "boundaries": [
+                ...
+            ]
+        }
     }
 }
 ```
