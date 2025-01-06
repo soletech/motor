@@ -55,7 +55,8 @@ module Motor
             data["objective"] = {
               "variables"    => strings(rows.map { |row| row[0] }),
               "coefficients" => floats(rows.map { |row| row[1] }),
-              "name"         => strings(rows[2].first)
+              "name"         => strings(rows.map { |row| row[2] }.compact).first,
+              "method"       => strings(rows.map { |row| row[3] }.compact).first
             }
           end
 
