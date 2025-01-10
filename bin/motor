@@ -210,10 +210,10 @@ def setup(data):
         constraints.append(constraint)
 
     match data["objective"].get("method", DATA_DEFAULTS["method"]):
-        case "maximize":
-            pm.maximize(objective, "Maximization")
         case "minimize":
             pm.minimize(objective, "Minimization")
+        case _:
+            pm.maximize(objective, "Maximization")
 
 
 def solve(data, sensitivity_file):
