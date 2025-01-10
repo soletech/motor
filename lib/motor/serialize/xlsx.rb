@@ -133,7 +133,7 @@ module Motor
           def constraints(data)
             sheet.append_row(%w[ constraint relation rhs ] + data[:objective][:variables])
             data[:constraints].each do |hash|
-              sheet.append_row([ hash[:name], hash[:relation], hash[:rhs], *hash[:coefficients] ])
+              sheet.append_row([ hash[:constraint], hash[:relation], hash[:rhs], *hash[:coefficients] ])
             end
           end
 
