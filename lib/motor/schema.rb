@@ -7,7 +7,7 @@ module Motor
     Root = Dry::Schema.Params do # rubocop:disable Metrics/BlockLength
       required(:objective).hash do
         optional(:name).maybe(:string)
-        optional(:method).filled(:str?, included_in?: %w[ maximize minimize ])
+        optional(:method).maybe(:str?, included_in?: %w[ maximize minimize ])
         required(:variables).array(:string)
         required(:coefficients).array(:float)
       end
