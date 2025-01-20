@@ -103,9 +103,21 @@ module Motor
 
           private
 
-          def strings(data) = data.is_a?(::Array) ? data.map(&:strip) : (data.nil? ? "" : data.strip)
+          def strings(data)
+            case data
+            when ::Array             then data.compact.map(&:to_s).map(&:strip)
+            when ::Numeric, ::String then data.to_s.strip
+            else                          ""
+            end
+          end
 
-          def floats(data)  = data.is_a?(::Array) ? data.map(&:to_f)  : data.to_f
+          def floats(data)
+            case data
+            when ::Array             then data.map(&:to_f)
+            when ::Numeric, ::String then data.to_f
+            else                          0.0
+            end
+          end
         end
       end
 
